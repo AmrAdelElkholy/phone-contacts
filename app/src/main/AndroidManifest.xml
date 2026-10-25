@@ -30,6 +30,8 @@
     <queries>
         <package android:name="org.fossify.contacts.debug" />
         <package android:name="org.fossify.contacts" />
+        <package android:name="com.whatsapp" />
+        <package android:name="com.whatsapp.w4b" />
 
         <!-- Required for loading contact accounts -->
         <intent>
