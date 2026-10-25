@@ -17,6 +17,14 @@
         android:icon="@drawable/ic_sms_vector"
         android:title="@string/send_sms" />
     <item
+        android:id="@+id/cab_whatsapp"
+        android:icon="@drawable/ic_whatsapp_chat_vector"
+        android:title="@string/whatsapp_message" />
+    <item
+        android:id="@+id/cab_whatsapp_business"
+        android:icon="@drawable/ic_whatsapp_business_chat_vector"
+        android:title="@string/whatsapp_business_message" />
+    <item
         android:id="@+id/cab_view_details"
         android:icon="@drawable/ic_view_contact_details_vector"
         android:title="@string/view_contact_details" />

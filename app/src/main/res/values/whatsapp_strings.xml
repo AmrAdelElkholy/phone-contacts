@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="whatsapp_message">Message on WhatsApp</string>
+    <string name="whatsapp_business_message">Message on WhatsApp Business</string>
+    <string name="whatsapp_not_installed">WhatsApp is not installed</string>
+    <string name="whatsapp_business_not_installed">WhatsApp Business is not installed</string>
+    <string name="whatsapp_invalid_number">Invalid phone number</string>
+</resources>

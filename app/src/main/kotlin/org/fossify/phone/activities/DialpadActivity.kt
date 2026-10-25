@@ -53,6 +53,7 @@ import org.fossify.phone.extensions.boundingBox
 import org.fossify.phone.extensions.config
 import org.fossify.phone.extensions.disableKeyboard
 import org.fossify.phone.extensions.getKeyEvent
+import org.fossify.phone.extensions.openWhatsAppChat
 import org.fossify.phone.extensions.setupWithContacts
 import org.fossify.phone.extensions.startAddContactIntent
 import org.fossify.phone.extensions.startCallWithConfirmationCheck
@@ -231,6 +232,8 @@ class DialpadActivity : SimpleActivity() {
         binding.dialpadToolbar.setOnMenuItemClickListener { menuItem ->
             when (menuItem.itemId) {
                 R.id.add_number_to_contact -> addNumberToContact()
+                R.id.dialpad_whatsapp -> openWhatsAppChat(binding.dialpadInput.value, false)
+                R.id.dialpad_whatsapp_business -> openWhatsAppChat(binding.dialpadInput.value, true)
                 else -> return@setOnMenuItemClickListener false
             }
             return@setOnMenuItemClickListener true

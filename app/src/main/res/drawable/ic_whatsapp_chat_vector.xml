@@ -1,0 +1,11 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Filled chat bubble with a handset cut out (stays readable when tinted) -->
+    <path
+        android:fillColor="#25D366"
+        android:fillType="evenOdd"
+        android:pathData="M12,2C6.48,2 2,6.2 2,11.4c0,1.9 0.6,3.66 1.62,5.14L2.5,21.5l5.13,-1.33C8.97,20.7 10.45,21 12,21c5.52,0 10,-4.2 10,-9.4S17.52,2 12,2zM8.6,7.2c0.25,0 0.5,0.05 0.65,0.4l0.75,1.75c0.1,0.25 0.05,0.5 -0.1,0.7l-0.55,0.65c0.6,1.2 1.6,2.2 2.85,2.85l0.65,-0.55c0.2,-0.17 0.47,-0.2 0.7,-0.1l1.75,0.75c0.35,0.15 0.4,0.4 0.4,0.65c0,1.1 -0.9,1.95 -2,1.95C10.4,16.25 7,12.85 7,9.2C7,8.1 7.6,7.2 8.6,7.2z" />
+</vector>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="whatsapp_message">مراسلة على واتساب</string>
+    <string name="whatsapp_business_message">مراسلة على واتساب بيزنس</string>
+    <string name="whatsapp_not_installed">واتساب مش متثبت</string>
+    <string name="whatsapp_business_not_installed">واتساب بيزنس مش متثبت</string>
+    <string name="whatsapp_invalid_number">رقم غير صالح</string>
+</resources>

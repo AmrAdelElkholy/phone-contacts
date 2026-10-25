@@ -6,4 +6,14 @@
         android:icon="@drawable/ic_plus_vector"
         android:title="@string/add_number_to_contact"
         app:showAsAction="always" />
+    <item
+        android:id="@+id/dialpad_whatsapp"
+        android:icon="@drawable/ic_whatsapp_chat_vector"
+        android:title="@string/whatsapp_message"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/dialpad_whatsapp_business"
+        android:icon="@drawable/ic_whatsapp_business_chat_vector"
+        android:title="@string/whatsapp_business_message"
+        app:showAsAction="always" />
 </menu>

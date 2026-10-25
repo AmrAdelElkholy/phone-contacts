@@ -55,6 +55,7 @@ import org.fossify.phone.extensions.areMultipleSIMsAvailable
 import org.fossify.phone.extensions.callContactWithSimWithConfirmationCheck
 import org.fossify.phone.extensions.config
 import org.fossify.phone.extensions.getDayCode
+import org.fossify.phone.extensions.openWhatsAppChat
 import org.fossify.phone.extensions.startAddContactIntent
 import org.fossify.phone.extensions.startCallWithConfirmationCheck
 import org.fossify.phone.extensions.startContactDetailsIntent
@@ -112,6 +113,8 @@ class RecentCallsAdapter(
             findItem(R.id.cab_block_number).isVisible = isNougatPlus()
             findItem(R.id.cab_add_number).isVisible = isOneItemSelected
             findItem(R.id.cab_copy_number).isVisible = isOneItemSelected
+            findItem(R.id.cab_whatsapp).isVisible = isOneItemSelected
+            findItem(R.id.cab_whatsapp_business).isVisible = isOneItemSelected
             findItem(R.id.cab_show_call_details).isVisible = isOneItemSelected
             findItem(R.id.cab_view_details).isVisible = isOneItemSelected && findContactByCall(selectedItems.first()) != null
         }
@@ -131,6 +134,8 @@ class RecentCallsAdapter(
             R.id.cab_send_sms -> sendSMS()
             R.id.cab_show_call_details -> showCallDetails()
             R.id.cab_copy_number -> copyNumber()
+            R.id.cab_whatsapp -> openWhatsApp(false)
+            R.id.cab_whatsapp_business -> openWhatsApp(true)
             R.id.cab_remove -> askConfirmRemove()
             R.id.cab_select_all -> selectAll()
             R.id.cab_view_details -> launchContactDetailsIntent(findContactByCall(getSelectedItems().first()))
@@ -273,6 +278,12 @@ class RecentCallsAdapter(
         activity.launchSendSMSIntent(recipient)
     }
 
+    private fun openWhatsApp(business: Boolean) {
+        val phoneNumber = getSelectedPhoneNumber() ?: return
+        activity.openWhatsAppChat(phoneNumber, business)
+        finishActMode()
+    }
+
     private fun showCallDetails() {
         val recentCall = getSelectedItems().firstOrNull() ?: return
         val recentCalls = recentCall.groupedCalls ?: listOf(recentCall)
@@ -366,6 +377,8 @@ class RecentCallsAdapter(
                 findItem(R.id.cab_view_details).isVisible = contact != null && !call.isUnknownNumber
                 findItem(R.id.cab_add_number).isVisible = !call.isUnknownNumber
                 findItem(R.id.cab_copy_number).isVisible = !call.isUnknownNumber
+                findItem(R.id.cab_whatsapp).isVisible = !call.isUnknownNumber
+                findItem(R.id.cab_whatsapp_business).isVisible = !call.isUnknownNumber
                 findItem(R.id.cab_show_call_details).isVisible = !call.isUnknownNumber
                 findItem(R.id.cab_block_number).title = activity.getString(R.string.block_number)
                 findItem(R.id.cab_block_number).isVisible = isNougatPlus() && !call.isUnknownNumber
@@ -432,6 +445,10 @@ class RecentCallsAdapter(
                             copyNumber()
                         }
                     }
+
+                    R.id.cab_whatsapp -> activity.openWhatsAppChat(call.phoneNumber, false)
+
+                    R.id.cab_whatsapp_business -> activity.openWhatsAppChat(call.phoneNumber, true)
 
                     R.id.cab_remove_default_sim -> {
                         executeItemMenuOperation(callId) {
@@ -603,6 +620,16 @@ class RecentCallsAdapter(
 
                 overflowMenuIcon.setOnClickListener {
                     showPopupMenu(overflowMenuAnchor, call)
+                }
+
+                val showWhatsApp = showOverflowMenu && !call.isUnknownNumber
+                itemRecentsWhatsapp.beVisibleIf(showWhatsApp)
+                itemRecentsWhatsappBusiness.beVisibleIf(showWhatsApp)
+                itemRecentsWhatsapp.setOnClickListener {
+                    if (actModeCallback.isSelectable) viewClicked(call) else activity.openWhatsAppChat(call.phoneNumber, false)
+                }
+                itemRecentsWhatsappBusiness.setOnClickListener {
+                    if (actModeCallback.isSelectable) viewClicked(call) else activity.openWhatsAppChat(call.phoneNumber, true)
                 }
             }
         }
