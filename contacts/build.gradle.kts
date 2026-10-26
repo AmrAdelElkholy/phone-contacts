@@ -44,7 +44,7 @@ android {
 }
 
 dependencies {
-    implementation(libs.fossify.commons)
+    implementation(project(":commons"))
     implementation(libs.androidx.swiperefreshlayout)
     implementation(libs.autofit.text.view)
     implementation(libs.ezvcard)
