@@ -52,6 +52,10 @@ import org.greenrobot.eventbus.Subscribe
 import org.greenrobot.eventbus.ThreadMode
 
 class MainActivity : SimpleActivity() {
+    companion object {
+        private const val CONTACT_TABS_REFRESH_DELAY_MS = 1500L
+    }
+
     override var isSearchBarEnabled = true
     
     private val binding by viewBinding(ActivityMainBinding::inflate)
@@ -546,9 +550,17 @@ class MainActivity : SimpleActivity() {
         // reload contacts once for this refresh, every consumer below shares that load
         ContactsCache.invalidate()
         cacheContacts()
-        getContactsFragment()?.refreshItems()
-        getFavoritesFragment()?.refreshItems()
         getRecentsFragment()?.refreshItems()
+
+        // give the call history a head start when it's the visible tab, low end phones
+        // otherwise load every list at once
+        val delay = if (isOnRecentsTab()) CONTACT_TABS_REFRESH_DELAY_MS else 0L
+        binding.viewPager.postDelayed({
+            if (!isDestroyed && !isFinishing) {
+                getContactsFragment()?.refreshItems()
+                getFavoritesFragment()?.refreshItems()
+            }
+        }, delay)
     }
 
     private fun getAllFragments(): ArrayList<MyViewPagerFragment<*>?> {

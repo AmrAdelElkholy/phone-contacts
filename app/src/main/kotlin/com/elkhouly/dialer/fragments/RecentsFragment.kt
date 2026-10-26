@@ -78,6 +78,10 @@ class RecentsFragment(
             allRecentCalls = emptyList()
         }
 
+        if (allRecentCalls.isEmpty()) {
+            showQuickCallLog()
+        }
+
         refreshCallLog(loadAll = false) {
             binding.recentsList.runAfterAnimations {
                 refreshCallLog(loadAll = true)
@@ -207,6 +211,28 @@ class RecentsFragment(
             }
 
             callback?.invoke()
+        }
+    }
+
+    // shows the call log straight from the system before contacts are loaded, the full load
+    // that follows adds photos and number types. It isn't kept in allRecentCalls, which the
+    // full load merges with
+    private fun showQuickCallLog() {
+        val onQuickCalls: (List<RecentCall>) -> Unit = { calls ->
+            val callLog = groupCallsByDate(calls)
+            activity?.runOnUiThread {
+                if (allRecentCalls.isEmpty() && searchQuery.isNullOrEmpty()) {
+                    gotRecents(callLog)
+                }
+            }
+        }
+
+        // separate helper, the shared one keeps the query limit of the full load
+        val quickHelper = RecentsHelper(context)
+        if (context.config.groupSubsequentCalls) {
+            quickHelper.getGroupedRecentCalls(withContacts = false, callback = onQuickCalls)
+        } else {
+            quickHelper.getRecentCalls(withContacts = false, callback = onQuickCalls)
         }
     }
 

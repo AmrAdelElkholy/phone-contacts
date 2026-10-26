@@ -28,6 +28,7 @@ class RecentsHelper(private val context: Context) {
     fun getRecentCalls(
         previousRecents: List<RecentCall> = ArrayList(),
         queryLimit: Int = QUERY_LIMIT,
+        withContacts: Boolean = true,
         callback: (List<RecentCall>) -> Unit,
     ) {
         if (!context.hasPermission(PERMISSION_READ_CALL_LOG)) {
@@ -35,7 +36,14 @@ class RecentsHelper(private val context: Context) {
             return
         }
 
-        ContactsCache.get(context) { contacts, privateContacts ->
+        val getContacts: ((ArrayList<Contact>, ArrayList<Contact>) -> Unit) -> Unit = if (withContacts) {
+            { ContactsCache.get(context, it) }
+        } else {
+            // the call log caches names itself, good enough for a first paint
+            { it(ArrayList(), ArrayList()) }
+        }
+
+        getContacts { contacts, privateContacts ->
             ensureBackgroundThread {
                 if (privateContacts.isNotEmpty()) {
                     contacts.addAll(privateContacts)
@@ -76,9 +84,10 @@ class RecentsHelper(private val context: Context) {
     fun getGroupedRecentCalls(
         previousRecents: List<RecentCall> = ArrayList(),
         queryLimit: Int = QUERY_LIMIT,
+        withContacts: Boolean = true,
         callback: (List<RecentCall>) -> Unit,
     ) {
-        getRecentCalls(previousRecents, queryLimit) { recentCalls ->
+        getRecentCalls(previousRecents, queryLimit, withContacts) { recentCalls ->
             callback(
                 groupSubsequentCalls(calls = recentCalls)
             )
