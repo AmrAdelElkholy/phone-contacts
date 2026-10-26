@@ -221,7 +221,8 @@ class RecentsFragment(
         val onQuickCalls: (List<RecentCall>) -> Unit = { calls ->
             val callLog = groupCallsByDate(calls)
             activity?.runOnUiThread {
-                if (allRecentCalls.isEmpty() && searchQuery.isNullOrEmpty()) {
+                // only the full load may report an empty history, until then keep the spinner
+                if (callLog.isNotEmpty() && allRecentCalls.isEmpty() && searchQuery.isNullOrEmpty()) {
                     gotRecents(callLog)
                 }
             }
