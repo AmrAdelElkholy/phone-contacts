@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <!-- commons labels these switches for messaging apps unless the package id starts with org.fossify.phone -->
+    <string name="block_unknown_messages">संग्रहित न किए गए संपर्कों से आने वाली कॉल को अवरुद्ध करें</string>
+    <string name="block_hidden_messages">छुपे हुए नंबरों से आने वाली कॉल को अवरुद्ध करें</string>
+</resources>

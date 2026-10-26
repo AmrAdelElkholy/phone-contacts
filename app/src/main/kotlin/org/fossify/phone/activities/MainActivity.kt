@@ -3,6 +3,7 @@ package org.fossify.phone.activities
 import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Intent
+import org.fossify.contacts.activities.MainActivity as ContactsManagerActivity
 import android.content.pm.ShortcutInfo
 import android.content.res.Configuration
 import android.graphics.drawable.Drawable
@@ -202,7 +203,7 @@ class MainActivity : SimpleActivity() {
             findItem(R.id.create_new_contact).isVisible = currentFragment == getContactsFragment()
             findItem(R.id.change_view_type).isVisible = currentFragment == getFavoritesFragment()
             findItem(R.id.column_count).isVisible = currentFragment == getFavoritesFragment() && config.viewType == VIEW_TYPE_GRID
-            findItem(R.id.more_apps_from_us).isVisible = resources.getBoolean(R.bool.is_google_play_build)
+            findItem(R.id.more_apps_from_us).isVisible = false
         }
     }
 
@@ -226,6 +227,7 @@ class MainActivity : SimpleActivity() {
                 when (menuItem.itemId) {
                     R.id.clear_call_history -> clearCallHistory()
                     R.id.create_new_contact -> launchCreateNewContactIntent()
+                    R.id.contacts_manager -> startActivity(Intent(this@MainActivity, ContactsManagerActivity::class.java))
                     R.id.sort -> showSortingDialog(showCustomSorting = getCurrentFragment() is FavoritesFragment)
                     R.id.filter -> showFilterDialog()
                     R.id.more_apps_from_us -> launchMoreAppsFromUsIntent()

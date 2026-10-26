@@ -1,0 +1,4 @@
+<resources>
+    <integer name="contacts_default_sorting">128</integer>
+    <integer name="contacts_default_font_size">2</integer>
+</resources>

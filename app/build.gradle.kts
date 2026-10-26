@@ -24,7 +24,7 @@ fun hasSigningVars(): Boolean {
 
 base {
     val versionCode = project.property("VERSION_CODE").toString().toInt()
-    archivesName = "phone-$versionCode"
+    archivesName = "easy-phone-$versionCode"
 }
 
 android {
@@ -35,6 +35,8 @@ android {
         minSdk = project.libs.versions.app.build.minimumSDK.get().toInt()
         targetSdk = project.libs.versions.app.build.targetSDK.get().toInt()
         versionName = project.property("VERSION_NAME").toString()
+        // commons toggles launcher icon aliases named <appId without .debug>.activities.SplashActivity.<Color>
+        manifestPlaceholders["baseAppId"] = project.property("APP_ID").toString()
         versionCode = project.property("VERSION_CODE").toString().toInt()
     }
 
@@ -137,6 +139,7 @@ detekt {
 }
 
 dependencies {
+    implementation(project(":contacts"))
     implementation(libs.fossify.commons)
     implementation(libs.indicator.fast.scroll)
     implementation(libs.autofit.text.view)

@@ -1,4 +1,4 @@
-rootProject.name = "Phone"
+rootProject.name = "EasyPhone"
 pluginManagement {
     repositories {
         gradlePluginPortal()
@@ -15,4 +15,4 @@ dependencyResolutionManagement {
         mavenLocal()
     }
 }
-include(":app")
+include(":app", ":contacts")

@@ -2,6 +2,7 @@ package org.fossify.phone.extensions
 
 import android.annotation.SuppressLint
 import android.content.Intent
+import android.net.Uri
 import android.telecom.PhoneAccount
 import android.telecom.PhoneAccountHandle
 import android.telecom.TelecomManager
@@ -12,10 +13,11 @@ import org.fossify.commons.dialogs.PermissionRequiredDialog
 import org.fossify.commons.extensions.canUseFullScreenIntent
 import org.fossify.commons.extensions.initiateCall
 import org.fossify.commons.extensions.isDefaultDialer
-import org.fossify.commons.extensions.launchCallIntent
+import org.fossify.commons.extensions.launchActivityIntent
 import org.fossify.commons.extensions.openFullScreenIntentSettings
 import org.fossify.commons.extensions.openNotificationSettings
 import org.fossify.commons.extensions.telecomManager
+import org.fossify.commons.helpers.PERMISSION_CALL_PHONE
 import org.fossify.commons.helpers.PERMISSION_READ_PHONE_STATE
 import org.fossify.commons.models.contacts.Contact
 import org.fossify.phone.BuildConfig
@@ -33,10 +35,30 @@ fun SimpleActivity.startCallIntent(
             phoneNumber = recipient,
             forceSimSelector = forceSimSelector
         ) { handle ->
-            launchCallIntent(recipient, handle)
+            launchOwnCallIntent(recipient, handle)
         }
     } else {
-        launchCallIntent(recipient, null)
+        launchOwnCallIntent(recipient, null)
+    }
+}
+
+// commons' launchCallIntent targets org.fossify.phone explicitly, which is not this app
+private fun BaseSimpleActivity.launchOwnCallIntent(recipient: String, handle: PhoneAccountHandle? = null) {
+    handlePermission(PERMISSION_CALL_PHONE) {
+        val action = if (it) Intent.ACTION_CALL else Intent.ACTION_DIAL
+        Intent(action).apply {
+            data = Uri.fromParts("tel", recipient, null)
+
+            if (handle != null) {
+                putExtra(TelecomManager.EXTRA_PHONE_ACCOUNT_HANDLE, handle)
+            }
+
+            if (isDefaultDialer()) {
+                setClass(this@launchOwnCallIntent, DialerActivity::class.java)
+            }
+
+            launchActivityIntent(this)
+        }
     }
 }
 
@@ -60,10 +82,10 @@ fun SimpleActivity.startCallWithConfirmationCheck(contact: Contact) {
             activity = this,
             callee = contact.getNameToDisplay()
         ) {
-            initiateCall(contact) { launchCallIntent(it) }
+            initiateCall(contact) { launchOwnCallIntent(it) }
         }
     } else {
-        initiateCall(contact) { launchCallIntent(it) }
+        initiateCall(contact) { launchOwnCallIntent(it) }
     }
 }
 
@@ -76,7 +98,7 @@ fun BaseSimpleActivity.callContactWithSim(
         val handle = getAvailableSIMCardLabels()
             .sortedBy { it.id }
             .getOrNull(wantedSimIndex)?.handle
-        launchCallIntent(recipient, handle)
+        launchOwnCallIntent(recipient, handle)
     }
 }
 

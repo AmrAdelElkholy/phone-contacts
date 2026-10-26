@@ -20,6 +20,11 @@
         android:title="@string/create_new_contact"
         app:showAsAction="ifRoom" />
     <item
+        android:id="@+id/contacts_manager"
+        android:icon="@drawable/ic_people_vector"
+        android:title="@string/contacts_manager"
+        app:showAsAction="never" />
+    <item
         android:id="@+id/clear_call_history"
         android:icon="@drawable/ic_delete_vector"
         android:title="@string/clear_call_history"

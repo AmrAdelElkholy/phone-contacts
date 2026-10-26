@@ -91,6 +91,7 @@ fun Activity.startAddContactIntent(phoneNumber: String) {
     Intent().apply {
         action = Intent.ACTION_INSERT_OR_EDIT
         type = "vnd.android.cursor.item/contact"
+        `package` = packageName
         putExtra(KEY_PHONE, phoneNumber)
         launchActivityIntent(this)
     }
