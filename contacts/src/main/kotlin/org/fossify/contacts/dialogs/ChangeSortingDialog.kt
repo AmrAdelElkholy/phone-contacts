@@ -38,7 +38,7 @@ class ChangeSortingDialog(val activity: BaseSimpleActivity, private val showCust
         sortingRadio.setOnCheckedChangeListener { group, checkedId ->
             val isCustomSorting = checkedId == binding.sortingDialogRadioCustom.id
             binding.sortingDialogRadioOrder.beGoneIf(isCustomSorting)
-            binding.divider.beGoneIf(isCustomSorting)
+            binding.divider.root.beGoneIf(isCustomSorting)
         }
 
         val sortBtn = when {
