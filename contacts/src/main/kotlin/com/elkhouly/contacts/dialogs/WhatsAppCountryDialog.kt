@@ -28,15 +28,6 @@ class WhatsAppCountryDialog(
         binding.whatsappCountrySpinner.apply {
             adapter = ArrayAdapter(activity, android.R.layout.simple_spinner_item, regions.map(::getRegionLabel))
             setSelection(regions.indexOf(preselectedRegion).coerceAtLeast(0))
-            // match the dialog, the default popup background is dark and hides the text.
-            // getDialogBackgroundColor() resolves to transparent for dynamic colors outside compose
-            val dialogBackgroundColor = if (activity.isDynamicTheme()) {
-                activity.getColor(com.elkhouly.commons.R.color.you_dialog_background_color)
-            } else {
-                activity.getDialogBackgroundColor()
-            }
-            setColors(activity.getProperTextColor(), activity.getProperPrimaryColor(), dialogBackgroundColor)
-            setPopupBackgroundDrawable(ColorDrawable(dialogBackgroundColor))
         }
 
         activity.getAlertDialogBuilder()
@@ -45,7 +36,19 @@ class WhatsAppCountryDialog(
             }
             .setNegativeButton(com.elkhouly.commons.R.string.cancel, null)
             .apply {
-                activity.setupDialogStuff(binding.root, this, R.string.whatsapp_country_required)
+                activity.setupDialogStuff(binding.root, this, R.string.whatsapp_country_required) {
+                    // setupDialogStuff recolors every view with the screen background, so color the
+                    // dropdown afterwards to match the dialog and keep its text readable
+                    val dialogBackgroundColor = if (activity.isDynamicTheme()) {
+                        activity.getColor(com.elkhouly.commons.R.color.you_dialog_background_color)
+                    } else {
+                        activity.getDialogBackgroundColor()
+                    }
+                    binding.whatsappCountrySpinner.apply {
+                        setColors(activity.getProperTextColor(), activity.getProperPrimaryColor(), dialogBackgroundColor)
+                        setPopupBackgroundDrawable(ColorDrawable(dialogBackgroundColor))
+                    }
+                }
             }
     }
 

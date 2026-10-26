@@ -169,10 +169,12 @@ class MainDialpad(
         return TextView(activity).apply {
             text = label
             gravity = Gravity.CENTER
-            isSingleLine = true
+            // carrier names can be long, allow two small lines before ellipsizing
+            maxLines = 2
             ellipsize = TextUtils.TruncateAt.END
+            setLineSpacing(0f, 0.9f)
             setTextColor(contentColor)
-            setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.resources.getDimension(com.elkhouly.commons.R.dimen.normal_text_size))
+            setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.resources.getDimension(com.elkhouly.commons.R.dimen.small_text_size))
             background = ResourcesCompat.getDrawable(activity.resources, R.drawable.pill_background, activity.theme)?.mutate()
             background.applyColorFilter(primaryColor)
             val icon = activity.resources.getColoredDrawableWithColor(R.drawable.ic_phone_vector, contentColor)
