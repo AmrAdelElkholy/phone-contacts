@@ -49,4 +49,5 @@ dependencies {
     implementation(libs.autofit.text.view)
     implementation(libs.ezvcard)
     implementation(libs.indicator.fast.scroll)
+    implementation(libs.libphonenumber)
 }

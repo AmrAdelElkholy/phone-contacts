@@ -13,7 +13,7 @@
         android:layout_width="@dimen/contact_icons_size"
         android:layout_height="match_parent"
         android:layout_centerVertical="true"
-        android:layout_toStartOf="@+id/contact_number_type"
+        android:layout_toStartOf="@+id/contact_whatsapp"
         android:padding="@dimen/tiny_margin"
         android:visibility="gone"
         app:srcCompat="@drawable/ic_star_vector" />
@@ -28,6 +28,28 @@
         android:maxLines="1"
         android:singleLine="true"
         android:textSize="@dimen/bigger_text_size" />
+
+    <ImageView
+        android:id="@+id/contact_whatsapp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/contact_whatsapp_business"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/whatsapp_message"
+        android:padding="8dp"
+        android:src="@drawable/ic_whatsapp_chat_vector" />
+
+    <ImageView
+        android:id="@+id/contact_whatsapp_business"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/contact_number_type"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/whatsapp_business_message"
+        android:padding="8dp"
+        android:src="@drawable/ic_whatsapp_business_chat_vector" />
 
     <org.fossify.commons.views.MyTextView
         android:id="@+id/contact_number_type"

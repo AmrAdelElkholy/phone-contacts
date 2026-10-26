@@ -402,6 +402,9 @@ class ViewContactActivity : ContactActivity() {
                         }
                     }
 
+                    contactWhatsapp.setOnClickListener { openWhatsAppChat(phoneNumber.value, false) }
+                    contactWhatsappBusiness.setOnClickListener { openWhatsAppChat(phoneNumber.value, true) }
+
                     defaultToggleIcon.isVisible = phoneNumber.isPrimary
                     defaultToggleIcon.applyColorFilter(getProperTextColor())
                 }
