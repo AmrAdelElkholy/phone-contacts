@@ -54,6 +54,7 @@ import org.greenrobot.eventbus.ThreadMode
 class MainActivity : SimpleActivity() {
     companion object {
         private const val CONTACT_TABS_REFRESH_DELAY_MS = 1500L
+        private const val CONTACTS_CACHE_MAX_AGE_MS = 5000L
     }
 
     override var isSearchBarEnabled = true
@@ -547,8 +548,9 @@ class MainActivity : SimpleActivity() {
     }
 
     fun refreshFragments() {
-        // reload contacts once for this refresh, every consumer below shares that load
-        ContactsCache.invalidate()
+        // reload contacts for this refresh unless a load is running or just finished,
+        // contact edits invalidate the cache on their own
+        ContactsCache.invalidateIfOlderThan(CONTACTS_CACHE_MAX_AGE_MS)
         cacheContacts()
         getRecentsFragment()?.refreshItems()
 

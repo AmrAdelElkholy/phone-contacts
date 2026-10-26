@@ -19,10 +19,21 @@ object ContactsCache {
     class Snapshot(val contacts: List<Contact>, val privateContacts: List<Contact>)
 
     private var snapshot: Snapshot? = null
+    private var snapshotTime = 0L
     private var isLoading = false
     private var loadGeneration = 0
     private val waiting = mutableListOf<(Snapshot) -> Unit>()
     private var observer: ContentObserver? = null
+
+    // the main screen refreshes several times while opening, reuse a load that is running or recent
+    fun invalidateIfOlderThan(maxAgeMs: Long) {
+        synchronized(this) {
+            if (isLoading || (snapshot != null && System.currentTimeMillis() - snapshotTime < maxAgeMs)) {
+                return
+            }
+        }
+        invalidate()
+    }
 
     fun invalidate() {
         synchronized(this) {
@@ -72,6 +83,7 @@ object ContactsCache {
             synchronized(this) {
                 if (generation == loadGeneration) {
                     snapshot = result
+                    snapshotTime = System.currentTimeMillis()
                     isLoading = false
                     callbacks = waiting.toList()
                     waiting.clear()

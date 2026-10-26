@@ -36,6 +36,9 @@ class RecentsFragment(
 
     private lateinit var binding: FragmentRecentsBinding
     private var allRecentCalls = listOf<CallLogItem>()
+
+    // calls from the quick first load, used for searching until the full load lands
+    private var quickRecentCalls = listOf<CallLogItem>()
     private var recentsAdapter: RecentCallsAdapter? = null
 
     private var searchQuery: String? = null
@@ -102,22 +105,34 @@ class RecentsFragment(
     }
 
     override fun onSearchClosed() {
-        android.util.Log.i("EasyPerf", "onSearchClosed", Throwable())
         searchQuery = null
-        showOrHidePlaceholder(allRecentCalls.isEmpty())
-        recentsAdapter?.updateItems(allRecentCalls)
+        val calls = getSearchableCalls()
+        if (calls.isEmpty() && allRecentCalls.isEmpty()) {
+            // still loading, keep whatever is shown
+            return
+        }
+
+        showOrHidePlaceholder(calls.isEmpty())
+        recentsAdapter?.updateItems(calls)
     }
 
     override fun onSearchQueryChanged(text: String) {
+        if (text.isEmpty()) {
+            onSearchClosed()
+            return
+        }
+
         searchQuery = text
         updateSearchResult()
     }
+
+    private fun getSearchableCalls() = allRecentCalls.ifEmpty { quickRecentCalls }
 
     @Suppress("UNCHECKED_CAST")
     private fun updateSearchResult() {
         ensureBackgroundThread {
             val fixedText = searchQuery!!.trim().replace("\\s+".toRegex(), " ")
-            val recentCalls = allRecentCalls
+            val recentCalls = getSearchableCalls()
                 .filterIsInstance<RecentCall>()
                 .filter {
                     it.name.contains(fixedText, true) || it.doesContainPhoneNumber(fixedText)
@@ -228,8 +243,11 @@ class RecentsFragment(
             val callLog = groupCallsByDate(calls)
             activity?.runOnUiThread {
                 // only the full load may report an empty history, until then keep the spinner
-                if (callLog.isNotEmpty() && allRecentCalls.isEmpty() && searchQuery.isNullOrEmpty()) {
-                    gotRecents(callLog)
+                if (callLog.isNotEmpty() && allRecentCalls.isEmpty()) {
+                    quickRecentCalls = callLog
+                    if (searchQuery.isNullOrEmpty()) {
+                        gotRecents(callLog)
+                    }
                 }
             }
         }
