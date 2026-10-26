@@ -70,7 +70,7 @@
     </plurals>
     <string name="contacts_faq_1_title">Saya ingin mengubah ruas yang ditampilkan pada kontak. Bisakah saya melakukannya?</string>
     <string name="contacts_faq_1_text">Ya, yang perlu anda lakukan adalah kunjungi Pengaturan -&gt; Kelola ruas kontak yang ditampilkan. Lalu anda bisa memilih ruas yang ingin ditampilkan. Beberapa ruas dinonaktifkan secara bawaan, jadi anda mungkin akan menemukan yang baru di sana.</string>
-    <string name="show_private_contacts">Tampilkan kontak pribadi ke Fossify Phone, Messages, dan Calendar</string>
+    <string name="show_private_contacts">Tampilkan kontak pribadi ke Easy Phone, Messages, dan Calendar</string>
     <string name="format_phone_numbers">Format nomor telepon</string>
     <string name="street">Jalan</string>
     <string name="neighborhood">Nomor apartemen atau suite</string>

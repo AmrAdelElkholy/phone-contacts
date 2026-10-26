@@ -69,7 +69,7 @@
     </plurals>
     <string name="contacts_faq_1_title">Tôi muốn thay đổi những trường hiển thị tại danh bạ. Tôi có thể làm được không\?</string>
     <string name="contacts_faq_1_text">Có, tất cả những gì bạn phải làm là vào Cài đặt → Quản lý các trường liên hệ được hiển thị. Ở đó bạn có thể chọn những trường nào sẽ hiển thị. Một số trong số chúng thậm chí còn bị tắt theo mặc định, vì vậy bạn có thể tìm thấy một số cái mới ở đó.</string>
-    <string name="show_private_contacts">Cho phép Fossify Phone, Messages, và Calendar đọc danh bạ</string>
+    <string name="show_private_contacts">Cho phép Easy Phone, Messages, và Calendar đọc danh bạ</string>
     <string name="street">Đường</string>
     <string name="neighborhood">Số căn hộ hoặc phòng</string>
     <string name="city">Thành phố</string>

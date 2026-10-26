@@ -70,7 +70,7 @@
     </plurals>
     <string name="contacts_faq_1_title">Quero cambialos campos visibles nos contactos. Podo facelo\?</string>
     <string name="contacts_faq_1_text">Si, chega con acceder a Axustes -&gt; Xestionar campos mostrados. Aquí, pode escoller os campos que serán mostrados. Algúns dos campos xa están agochados e así pode mostrar algúns destes.</string>
-    <string name="show_private_contacts">Mostrar os contactos privados en Fossify Phone, Fossify SMS Messenger e Fossify Calendar</string>
+    <string name="show_private_contacts">Mostrar os contactos privados en Easy Phone, Easy SMS Messenger e Easy Calendar</string>
     <string name="format_phone_numbers">Formato dos números de teléfono</string>
     <string name="street">Rúa</string>
     <string name="neighborhood">Número de apartamento ou habitación</string>

@@ -258,7 +258,7 @@
     <string name="system_folder_restriction">El sistema no permite la operación en esta carpeta, por favor seleccione otra</string>
     <string name="system_folder_copy_restriction">El sistema no permite copiar en esta carpeta, por favor seleccione otra</string>
     <string name="developer_description">Un grupo de aplicaciones simples de Android de código libre con widgets personalizables, sin anuncios y permisos innecesarios.</string>
-    <string name="pro_app_refund">No te olvides de que si desinstalas cualquier aplicación de pago dentro de 2 horas, automáticamente recibirás un reembolso. Si quieres un reembolso luego, solo contáctenos a hello@fossify.org y lo recibirás. Eso hará que sea más fácil probarlo :)</string>
+    <string name="pro_app_refund">No te olvides de que si desinstalas cualquier aplicación de pago dentro de 2 horas, automáticamente recibirás un reembolso. Si quieres un reembolso luego, solo contáctenos a  y lo recibirás. Eso hará que sea más fácil probarlo :)</string>
     <string name="number_picker_title">Seleccionador de Números (seleccionador de números personalizable)</string>
     <string name="exoplayer_title">ExoPlayer (reproductor de videos)</string>
     <string name="sanselan_title">Apache Sanselan (lector de metadata de imágenes)</string>
@@ -352,7 +352,7 @@
     <string name="undo_changes_confirmation">¿Verdaderamente quieres deshacer tus cambios?</string>
     <string name="cannot_be_undone">Esta acción no se puede deshacer.</string>
     <string name="save_before_closing">Tienes cambios sin guardar. ¿Quieres guardar antes de salir?</string>
-    <string name="apply_to_all_apps">Aplicar tema a todas las aplicaciones Fossify</string>
+    <string name="apply_to_all_apps">Aplicar tema a todas las aplicaciones Easy</string>
     <string name="format_phone_numbers">Dar formato a números telefónicos</string>
     <plurals name="trial_expires_days">
         <item quantity="one">Tu prueba expirará en %d día.</item>
@@ -366,7 +366,7 @@
     <string name="confirm_storage_access_restricted_text">Debido a restricciones del sistema, esta carpeta no está disponible.</string>
     <string name="confirm_storage_access_restricted_text_open_system">Abrir en la aplicación del sistema</string>
     <string name="app_icon_color_warning">Peligro: Ciertos launchers pueden no controlar la personalización de iconos de aplicaciones correctamente. Si el icono desaparece, intenta abrir la aplicación desde Google Play o un widget, si es accesible. Después de abrirla, restaura el icono verde por defecto color #106D1F. En casos extremos, reinstalar la aplicación podría ser necesario.</string>
-    <string name="global_theme_success">El tema actual se ha aplicado con éxito a todas las aplicaciones Fossify. Todos los cambios futuros a este tema se sincronizarán automáticamente.</string>
+    <string name="global_theme_success">El tema actual se ha aplicado con éxito a todas las aplicaciones Easy. Todos los cambios futuros a este tema se sincronizarán automáticamente.</string>
     <string name="light_theme">Claro</string>
     <string name="dark_theme">Oscuro</string>
     <string name="auto_theme">Automático</string>
@@ -466,7 +466,7 @@
     <string name="enter_pin">Ingresar PIN</string>
     <string name="please_enter_pin">Por favor ingrese un PIN</string>
     <string name="wrong_pin">PIN equivocado</string>
-    <string name="purchase_thank_you"><![CDATA[Por favor compre <a href="https://play.google.com/store/apps/details?id=org.fossify.thankyou">Fossify Gracias</a> para usar esta función y apoyar el desarrollo. ¡Gracias!]]></string>
+    <string name="purchase_thank_you"><![CDATA[Por favor compre <a href="https://play.google.com/store/apps/details?id=com.elkhouly.thankyou">Easy Gracias</a> para usar esta función y apoyar el desarrollo. ¡Gracias!]]></string>
     <string name="pin_must_be_4_digits_long">El PIN debe tener al menos 4 dígitos de largo</string>
     <string name="too_many_incorrect_attempts">Demasiados intentos fallidos.\nVuelva a intentar en %d segundos.</string>
     <string name="repeat_pin">Repetir PIN</string>
@@ -664,8 +664,8 @@
     <string name="during_day_at_hh_mm">Durante el día a la hh:mm</string>
     <string name="during_day_at">Durante el día a la %1$02d:%2$02d</string>
     <string name="settings">Configuraciones</string>
-    <string name="purchase_simple_thank_you">Comprar Fossify Gracias</string>
-    <string name="requires_fossify_thank_you">Requiere Fossify Gracias</string>
+    <string name="purchase_simple_thank_you">Comprar Easy Gracias</string>
+    <string name="requires_easy_thank_you">Requiere Easy Gracias</string>
     <string name="enables_more_customization">Permitir más personalización</string>
     <string name="general_settings">General</string>
     <string name="color_customization">Aspecto y comportamiento</string>
@@ -851,14 +851,13 @@
     <string name="website_label">Para los códigos fuente visite</string>
     <string name="email_label">Envíe sus sugerencias y retroalimentación a</string>
     <string name="known_issues">Errores conocidos</string>
-    <string name="more_fossify_apps">Más apps Fossify</string>
+    <string name="more_easy_apps">Más apps Easy</string>
     <string name="invite_friends">Invitar amig@s</string>
     <string name="share_text">Hey, ven a ver %1$s en %2$s</string>
     <string name="invite_via">Invitar por</string>
     <string name="rate_this_app">Califica esta app</string>
     <string name="donate">Donar</string>
     <string name="follow_us">Síguenos</string>
-    <string name="copyright">v %1$s\nCopyright © Fossify %2$d</string>
     <string name="support">Soporte</string>
     <string name="help_us">Apóyanos</string>
     <string name="social">Social</string>
@@ -871,6 +870,6 @@
     <string name="app_version">Versión de app: %s</string>
     <string name="device_os">SO del Dispositivo: %s</string>
     <string name="purchase">Comprar</string>
-    <string name="update_thank_you">Por favor actualiza Fossify Gracias a la última versión</string>
+    <string name="update_thank_you">Por favor actualiza Easy Gracias a la última versión</string>
     <string name="upgrade_calendar">Tienes que migrar los eventos almacenados localmente manualmente exportándolos en un archivo .ics y luego importándolos. Puedes encontrar tanto los botones de exportación como de importación en el menú principal.</string>
 </resources>

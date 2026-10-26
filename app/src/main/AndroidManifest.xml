@@ -38,7 +38,7 @@
     </queries>
 
     <application
-        android:name="org.fossify.commons.FossifyApp"
+        android:name="com.elkhouly.commons.EasyApp"
         android:allowBackup="true"
         android:appCategory="productivity"
         android:icon="@mipmap/ic_launcher"
@@ -64,21 +64,21 @@
         </activity>
 
         <activity
-            android:name="org.fossify.commons.activities.AboutActivity"
+            android:name="com.elkhouly.commons.activities.AboutActivity"
             android:configChanges="orientation"
             android:exported="false"
             android:label="@string/about"
             android:parentActivityName=".activities.MainActivity" />
 
         <activity
-            android:name="org.fossify.commons.activities.CustomizationActivity"
+            android:name="com.elkhouly.commons.activities.CustomizationActivity"
             android:configChanges="orientation"
             android:exported="false"
             android:label="@string/customize_colors"
             android:parentActivityName=".activities.SettingsActivity" />
 
         <activity
-            android:name="org.fossify.commons.activities.ManageBlockedNumbersActivity"
+            android:name="com.elkhouly.commons.activities.ManageBlockedNumbersActivity"
             android:configChanges="orientation"
             android:exported="false"
             android:label="@string/blocked_numbers"
@@ -97,7 +97,7 @@
             android:configChanges="orientation"
             android:exported="false"
             android:label="@string/conference"
-            android:parentActivityName="org.fossify.phone.activities.CallActivity" />
+            android:parentActivityName="com.elkhouly.dialer.activities.CallActivity" />
 
         <activity
             android:name=".activities.SettingsActivity"
@@ -113,7 +113,7 @@
         </activity>
 
         <activity
-            android:name="org.fossify.phone.activities.CallActivity"
+            android:name="com.elkhouly.dialer.activities.CallActivity"
             android:excludeFromRecents="true"
             android:exported="false"
             android:label="@string/ongoing_call"

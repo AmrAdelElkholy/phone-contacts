@@ -328,7 +328,7 @@
     <string name="cannot_be_undone">Αυτή η ενέργεια δεν μπορεί να αναιρεθεί.</string>
     <string name="save_before_closing">Έχετε αλλαγές που δεν έχουν αποθηκευτεί. Αποθήκευση πριν από την έξοδο?</string>
     <string name="global_theme_success">Τα χρώματα ενημερώθηκαν με επιτυχία. Ένα νέο θέμα που ονομάζεται \"Κοινόχρηστο\" έχει προστεθεί, παρακαλούμε να χρησιμοποιήστε το για την ενημέρωση των χρωμάτων όλων των εφαρμ. στο μέλλον.</string>
-    <string name="purchase_thank_you"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Παρακαλώ αγοράστε την <a href="https://play.google.com/store/apps/details?id=org.fossify.thankyou">Fossify Thank You</a> για να ξεκλειδώσετε αυτή τη λειτουργία για να υποστηρίξετε την ανάπτυξη. Ευχαριστώ!\n \u0020 \u0020 \u0020 \u0020]]></string>
+    <string name="purchase_thank_you"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Παρακαλώ αγοράστε την <a href="https://play.google.com/store/apps/details?id=com.elkhouly.thankyou">Easy Thank You</a> για να ξεκλειδώσετε αυτή τη λειτουργία για να υποστηρίξετε την ανάπτυξη. Ευχαριστώ!\n \u0020 \u0020 \u0020 \u0020]]></string>
     <string name="light_theme">Φωτεινό</string>
     <string name="dark_theme">Σκοτεινό</string>
     <string name="auto_theme">Αυτόματο</string>
@@ -824,7 +824,7 @@
     <string name="faq_2_title_commons">Θέλω να σας υποστηρίξω, αλλά δεν μπορώ να δωρίσω χρήματα. Υπάρχει κάτι άλλο που μπορώ να κάνω;</string>
     <string name="faq_2_text_commons"><![CDATA[
             Ναι, φυσικά. Μπορείτε να διαδώσετε τις εφαρμογές ή να δώσετε καλά σχόλια και αξιολογήσεις. Μπορείτε επίσης να βοηθήσετε με τη μετάφραση των εφαρμογών σε μια νέα γλώσσα ή απλώς να ενημερώστε κάποιες υπάρχουσες μεταφράσεις..
-            Ο οδηγός μετάφρασης βρίσκεται στον <a href="https://github.com/FossifyOrg/General-Discussion#contributing-translations">ιστότοπο</a>, ή απλά επικοινωνήστε μαζί μας στο <a href="mailto:hello@fossify.org">hello@fossify.org</a> αν έχετε οποιεσδήποτε ερωτήσεις.
+            Ο οδηγός μετάφρασης βρίσκεται στον <a href="https://github.com/AmrAdelElkholy/phone-contacts">ιστότοπο</a>, ή απλά επικοινωνήστε μαζί μας στο <a href="mailto:"></a> αν έχετε οποιεσδήποτε ερωτήσεις.
         ]]></string>
     <string name="faq_3_title_commons">Διαγραφή κάποιων αρχείων κατά λάθος, πώς μπορώ να τα ανακτήσω;</string>
     <string name="faq_3_text_commons">Δυστυχώς, δεν μπορείτε. Τα αρχεία διαγράφονται αμέσως μετά το παράθυρο διαλόγου επιβεβαίωσης, δεν υπάρχει διαθέσιμος Κάδος ανακύκλωσης.</string>
@@ -844,8 +844,8 @@
     <string name="development">Ανάπτυξη</string>
     <string name="other_help">Άλλη Βοήθεια</string>
     <string name="contributors_label"><![CDATA[
-            Αυτή η λίστα περιέχει όλους όσους βοήθησαν αισθητά οποιαδήποτε εφαρμογή της σουίτας Fossify, όχι μόνο αυτή. Οι μεταφράσεις γίνονται από εθελοντές,
-            πείτε μας αν θέλετε να βοηθήσετε κι εσείς. Ο οδηγός για τη μετάφραση βρίσκεται στον <a href="https://github.com/FossifyOrg/General-Discussion#contributing-translations">ιστότοπο</a>, ή επικοινωνήστε μαζί μας στο <a href="mailto:hello@fossify.org">hello@fossify.org</a> αν έχετε οποιεσδήποτε ερωτήσεις.
+            Αυτή η λίστα περιέχει όλους όσους βοήθησαν αισθητά οποιαδήποτε εφαρμογή της σουίτας Easy, όχι μόνο αυτή. Οι μεταφράσεις γίνονται από εθελοντές,
+            πείτε μας αν θέλετε να βοηθήσετε κι εσείς. Ο οδηγός για τη μετάφραση βρίσκεται στον <a href="https://github.com/AmrAdelElkholy/phone-contacts">ιστότοπο</a>, ή επικοινωνήστε μαζί μας στο <a href="mailto:"></a> αν έχετε οποιεσδήποτε ερωτήσεις.
             Ευχαριστούμε όλους τους συνεισφέροντες και υποστηρικτές!
         ]]></string>
     <string name="third_party_licences">Άδειες τρίτων</string>
@@ -859,23 +859,23 @@
         <item quantity="one">Η δοκιμή σας λήγει σε %d ημέρα.</item>
         <item quantity="other">Η δοκιμή σας λήγει σε %d ημέρες.</item>
     </plurals>
-    <string name="pro_app_refund">Μην ξεχνάτε οτι αν απεγκατασταθεί εντός 2 ωρών, θα επιστραφούν αυτόματα τα χρήματα σας. Αν θέλετε επιστροφή χρημάτων οποιαδήποτε στιγμή αργότερα, απλά επικοινωνήστε μαζί μας στο hello@fossify.org και θα τα λάβετε. Αυτό το κάνει εύκολότερο για να την δοκιμάσετε :)</string>
+    <string name="pro_app_refund">Μην ξεχνάτε οτι αν απεγκατασταθεί εντός 2 ωρών, θα επιστραφούν αυτόματα τα χρήματα σας. Αν θέλετε επιστροφή χρημάτων οποιαδήποτε στιγμή αργότερα, απλά επικοινωνήστε μαζί μας στο  και θα τα λάβετε. Αυτό το κάνει εύκολότερο για να την δοκιμάσετε :)</string>
     <string name="developer_description">Μια ομάδα Απλών εφαρμογών Android ανοιχτού κώδικα με προσαρμόσιμα γραφικά στοιχεία, χωρίς διαφημίσεις και περιττές Άδειες.</string>
     <string name="ok">Εντάξει</string>
     <string name="email">Ηλεκτρονικό ταχυδρομείο</string>
     <string name="format_phone_numbers">Μορφοποίηση αριθμών τηλεφώνου</string>
     <string name="known_issues">Γνωστά προβλήματα</string>
     <string name="rate_this_app">Αξιολόγηση</string>
-    <string name="donate_to_fossify">Δωρεά στο Fossify</string>
-    <string name="more_fossify_apps">Περισσότερες εφαρμογές Fossify</string>
+    <string name="donate_to_easy">Δωρεά στο Easy</string>
+    <string name="more_easy_apps">Περισσότερες εφαρμογές Easy</string>
     <string name="faq_6_text_commons">Αυτό το πρόβλημα προκύπτει όταν το πρόγραμμα εκκίνησης δεν υποστηρίζει πλήρως την προσαρμογή εικονιδίων. Δοκιμάστε να εκκινήσετε την εφαρμογή μέσω του Google Play ή ενός γραφικού στοιχείου, εάν είναι προσβάσιμο. Μετά την εκκίνηση, επαναφέρετε το προεπιλεγμένο πράσινο χρώμα εικονιδίου #106D1F. Σε ακραίες περιπτώσεις, ενδέχεται να χρειαστεί επανεγκατάσταση της εφαρμογής.</string>
     <string name="theme_and_colors">Χρώματα θέματος</string>
     <string name="app_icon_color_warning">Προσοχή: Ορισμένα προγράμματα εκκίνησης ενδέχεται να μην χειρίζονται σωστά την προσαρμογή εικονιδίων εφαρμογών. Εάν το εικονίδιο εξαφανιστεί, δοκιμάστε να εκκινήσετε την εφαρμογή μέσω του Google Play ή ενός γραφικού στοιχείου, εάν είναι προσβάσιμο. Μετά την εκκίνηση, επαναφέρετε το προεπιλεγμένο πράσινο χρώμα εικονιδίου #106D1F. Σε ακραίες περιπτώσεις, ενδέχεται να χρειαστεί επανεγκατάσταση της εφαρμογής.</string>
-    <string name="apply_to_all_apps">Εφαρμογή θέματος σε όλες τις εφαρμογές Fossify</string>
-    <string name="donate_short">Υποστηρίξτε την ανάπτυξη των χωρίς διαφημίσεις εφαρμογών μας αγοράζοντας το &lt;a href=\"https://play.google.com/store/apps/details?id=org.fossify.thankyou\"&gt;Fossify Ευχαριστώ&lt;/a&gt;. Θα ξεκλειδώσει επίσης την επιλογή γραμματοσειρών και την κοινή προσαρμογή διεπαφής για όλες τις εφαρμογές Fossify!</string>
-    <string name="all_fossify_apps">Όλες οι εφαρμογές Fossify</string>
-    <string name="requires_fossify_thank_you">Χρειάζεται την Fossify Thank You</string>
-    <string name="purchase_simple_thank_you">Αγορά Fossify Thank You</string>
+    <string name="apply_to_all_apps">Εφαρμογή θέματος σε όλες τις εφαρμογές Easy</string>
+    <string name="donate_short">Υποστηρίξτε την ανάπτυξη των χωρίς διαφημίσεις εφαρμογών μας αγοράζοντας το &lt;a href=\"https://play.google.com/store/apps/details?id=com.elkhouly.thankyou\"&gt;Easy Ευχαριστώ&lt;/a&gt;. Θα ξεκλειδώσει επίσης την επιλογή γραμματοσειρών και την κοινή προσαρμογή διεπαφής για όλες τις εφαρμογές Easy!</string>
+    <string name="all_easy_apps">Όλες οι εφαρμογές Easy</string>
+    <string name="requires_easy_thank_you">Χρειάζεται την Easy Thank You</string>
+    <string name="purchase_simple_thank_you">Αγορά Easy Thank You</string>
     <string name="enables_more_customization">Ενεργοποιεί περισσότερη προσαρμογή</string>
     <string name="badge_deprecated">(απαρχαιωμένο)</string>
     <string name="platforms">Πλατφόρμες</string>
@@ -896,5 +896,5 @@
     <string name="on_contact_click">Στην επιλογή επαφής</string>
     <string name="call_contact">Κλήση επαφής</string>
     <string name="view_contact">Εμφάνιση λεπτομερειών επαφής</string>
-    <string name="donation_prompt">Αν σας αρέσει αυτή η εφαρμογή, παρακαλώ υποστήριξης την ανάπτυξη των εφαρμογών Fossify.</string>
+    <string name="donation_prompt">Αν σας αρέσει αυτή η εφαρμογή, παρακαλώ υποστήριξης την ανάπτυξη των εφαρμογών Easy.</string>
 </resources>

@@ -312,7 +312,7 @@
     <string name="undo_changes">Desfazer alterações</string>
     <string name="undo_changes_confirmation">Tem certeza que deseja desfazer as alterações?</string>
     <string name="save_before_closing">Existem alterações não salvas. Salvar antes de sair?</string>
-    <string name="purchase_thank_you"><![CDATA["\n            Compre <a href=https://play.google.com/store/apps/details?id=org.fossify.thankyou>Agradecimento Fossify</a> para usar esta função e apoiar o desenvolvimento. Obrigado!\n        "]]></string>
+    <string name="purchase_thank_you"><![CDATA["\n            Compre <a href=https://play.google.com/store/apps/details?id=com.elkhouly.thankyou>Agradecimento Easy</a> para usar esta função e apoiar o desenvolvimento. Obrigado!\n        "]]></string>
     <string name="light_theme">Claro</string>
     <string name="dark_theme">Escuro</string>
     <string name="auto_theme">Auto</string>
@@ -494,7 +494,7 @@
     <string name="add_new_sound">Adicionar um novo som</string>
     <string name="no_sound">Sem som</string>
     <string name="settings">Configurações</string>
-    <string name="purchase_simple_thank_you">Compre Fossify Thank You</string>
+    <string name="purchase_simple_thank_you">Compre Easy Thank You</string>
     <string name="during_day_at_hh_mm">Durante o dia às hh:mm</string>
     <string name="during_day_at">Durante o dia às %1$02d:%2$02d</string>
     <string name="general_settings">Geral</string>
@@ -571,10 +571,10 @@
     <string name="additional_info">Informações adicionais</string>
     <string name="app_version">Versão do app: %s</string>
     <string name="purchase">Comprar</string>
-    <string name="update_thank_you">Por favor, atualize o Fossify Thank You para a versão mais recente</string>
+    <string name="update_thank_you">Por favor, atualize o Easy Thank You para a versão mais recente</string>
     <string name="before_asking_question_read_faq">Antes de fazer uma pergunta, por favor verifique as configurações do aplicativo e leia a lista de Perguntas Frequentes.</string>
     <string name="make_sure_latest">Verifique também se você está usando a versão mais recente do aplicativo.</string>
-    <string name="all_fossify_apps">Todos os aplicativos Fossify</string>
+    <string name="all_easy_apps">Todos os aplicativos Easy</string>
     <string name="app_launcher_short">Lançador de Aplicativos</string>
     <string name="calculator_short">Calculadora</string>
     <string name="calendar_short">Calendário</string>
@@ -671,7 +671,7 @@
     <string name="path">Caminho</string>
     <string name="date_created">Data de criação</string>
     <string name="artist">Artista</string>
-    <string name="pro_app_refund">Não se esqueça de que se você desinstalar um aplicativo pago em menos que duas horas você receberá reembolsado(a) automaticamente. Se você precisar de um reembolso após isso, entre em contato conosco através hello@fossify.org. Isso torna tudo mais fácil se você quiser testar :)</string>
+    <string name="pro_app_refund">Não se esqueça de que se você desinstalar um aplicativo pago em menos que duas horas você receberá reembolsado(a) automaticamente. Se você precisar de um reembolso após isso, entre em contato conosco através . Isso torna tudo mais fácil se você quiser testar :)</string>
     <string name="do_not_show_again">Não mostrar novamente</string>
     <string name="set_as">Definir como</string>
     <string name="always">Sempre</string>
@@ -790,7 +790,7 @@
     <string name="translation">Tradução</string>
     <string name="block_unknown_calls">Bloquear chamadas de números que não estão nos contactos</string>
     <string name="block_unknown_messages">Bloquear mensagens de números que não estão nos contactos</string>
-    <string name="global_theme_success">O tema atual foi aplicado com sucesso a todos os aplicativos Fossify. Quaisquer alterações futuras neste tema serão sincronizadas automaticamente.</string>
+    <string name="global_theme_success">O tema atual foi aplicado com sucesso a todos os aplicativos Easy. Quaisquer alterações futuras neste tema serão sincronizadas automaticamente.</string>
     <string name="fee_up_to_pct">Taxa de até %1$d%%</string>
     <plurals name="by_hours">
         <item quantity="one">%d hora</item>
@@ -836,7 +836,7 @@
     <string name="tuesday_short">Ter</string>
     <string name="notes_short">Notas</string>
     <string name="sms_messenger_short">Mensagens SMS</string>
-    <string name="donate_to_fossify">Doe para Fossify</string>
+    <string name="donate_to_easy">Doe para Easy</string>
     <string name="platforms">Plataformas</string>
     <string name="little_to_no_fee">Pouca ou nenhuma taxa</string>
     <string name="translation_english">Inglês</string>
@@ -891,7 +891,6 @@
     <string name="in_september">em Setembro</string>
     <string name="more_info">Mais informação</string>
     <string name="upgrade_calendar">Precisará migrar de forma manual os eventos armazenados localmente. Pode fazer isso exportando-os para um ficheiro .ics, e depois importando este ficheiro. Pode encontrar os botões de importar/exportar no menu da tela inicial.</string>
-    <string name="copyright">v %1$s\nDireitos autorais © Fossify %2$d</string>
     <string name="privacy_policy">Política de Privacidade</string>
     <string name="version_placeholder">Versão %s</string>
     <string name="hello">Olá :)</string>
@@ -931,7 +930,7 @@
     <string name="other_help">Outra ajuda</string>
     <string name="translation_croatian">Croata</string>
     <string name="translation_hungarian">Húngaro</string>
-    <string name="apply_to_all_apps">Aplicar tema a todas as apps Fossify</string>
+    <string name="apply_to_all_apps">Aplicar tema a todas as apps Easy</string>
     <plurals name="in_seconds">
         <item quantity="one">%d segundo</item>
         <item quantity="many">%d segundos</item>
@@ -970,7 +969,7 @@
     <string name="reorder_items_by_dragging">Reordenar elementos arrastando</string>
     <string name="faq_6_text_commons">Este problema surge quando o seu lançador não suporta totalmente a personalização de ícones. Tente iniciar a app pelo Google Play ou um widget, se acessível. Após iniciar, restaure a cor verde padrão do ícone #106D1F. Em casos extremos, pode ser necessário reinstalar a app.</string>
     <string name="number_of_items">Número de elementos</string>
-    <string name="donate_short">Apoie-nos comprando &lt;a href=https://play.google.com/store/apps/details?id=org.fossify.thankyou&gt;Fossify Thank You&lt;/a&gt;, o que também desbloqueará todos os recursos da app, incluindo personalização de cores.</string>
+    <string name="donate_short">Apoie-nos comprando &lt;a href=https://play.google.com/store/apps/details?id=com.elkhouly.thankyou&gt;Easy Thank You&lt;/a&gt;, o que também desbloqueará todos os recursos da app, incluindo personalização de cores.</string>
     <string name="allow_full_screen_notifications_reminders">Deve permitir a app de mostrar notificações de ecrã cheio, caso contrário, pode perder alguns lembretes.</string>
     <string name="allow_notifications_files">Deve permitir que a app exiba notificações, caso contrário, ele não poderá mostrar a barra de progresso.</string>
     <string name="allow_notifications_music_player">Deve permitir que a app exiba notificações, caso contrário ele não poderá reproduzir músicas.</string>
@@ -982,8 +981,8 @@
     <string name="direct_children_count">Elementos nesta pasta</string>
     <string name="remove_exif_confirmation">Tem certeza de que desejava remover os valores EXIF, como coordenadas de GPS, modelo de câmara, etc.?</string>
     <string name="app_icon_color_warning">Cuidado: Certos lançadores podem não lidar corretamente com a personalização do ícone da app. Se o ícone desaparecer, tente iniciar a app pelo Google Play ou por um widget, se acessível. Após iniciar, restaure a cor verde padrão do ícone #106D1F. Em casos extremos, pode ser necessário reinstalar a app.</string>
-    <string name="faq_2_text_commons"><![CDATA[\nSim, claro. Pode espalhar a informação sobre as apps ou dar um bom feedback e avaliações. Também pode ajudar traduzindo as apps para um novo idioma ou apenas atualizando algumas traduções existentes.\nO guia para tradução está <a href="https://github.com/FossifyOrg/General-Discussion#contributing-translations">neste site</a>, ou entre em contato conosco em <a href="mailto:hello@fossify.org">hello@fossify.org</a> se tiver alguma dúvida.\n]]></string>
-    <string name="contributors_label"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Esta lista contém todos que ajudaram visivelmente qualquer app dentro do pacote Fossify, não apenas este. As traduções são feitas por voluntários,\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020avise-nos se também quiser ajudar também. O guia para tradução está <a href="https://github.com/FossifyOrg/General-Discussion#contributing-translations">neste site</a>, ou entre em contato conosco em <a href="mailto:hello@fossify.org">hello@fossify.org</a> se tiver alguma dúvida.\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Obrigado a todos os contribuidores e outros apoiadores!\n \u0020 \u0020 \u0020 \u0020]]></string>
+    <string name="faq_2_text_commons"><![CDATA[\nSim, claro. Pode espalhar a informação sobre as apps ou dar um bom feedback e avaliações. Também pode ajudar traduzindo as apps para um novo idioma ou apenas atualizando algumas traduções existentes.\nO guia para tradução está <a href="https://github.com/AmrAdelElkholy/phone-contacts">neste site</a>, ou entre em contato conosco em <a href="mailto:"></a> se tiver alguma dúvida.\n]]></string>
+    <string name="contributors_label"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Esta lista contém todos que ajudaram visivelmente qualquer app dentro do pacote Easy, não apenas este. As traduções são feitas por voluntários,\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020avise-nos se também quiser ajudar também. O guia para tradução está <a href="https://github.com/AmrAdelElkholy/phone-contacts">neste site</a>, ou entre em contato conosco em <a href="mailto:"></a> se tiver alguma dúvida.\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Obrigado a todos os contribuidores e outros apoiadores!\n \u0020 \u0020 \u0020 \u0020]]></string>
     <string name="translation_chuvash">Chuvache</string>
     <string name="allow_alarm_scheduled_messages">Deve permitir que a app acede alarmes internos, caso contrário ele não poderá enviar mensagens programadas.</string>
     <string name="allow_alarm_sleep_timer">Deve permitir que a app acede os alarmes internos, caso contrário, não poderá desligar a app após o temporizador de suspensão.</string>
@@ -1000,14 +999,14 @@
     <string name="confirm_storage_access_restricted_text">Devido a restrições do sistema, esta pasta não está disponível.</string>
     <string name="confirm_storage_access_restricted_text_open_system">Abrir na aplicação do sistema</string>
     <string name="confirm_storage_access_restricted_text_not_found">Não foi possível encontrar uma app de gestor de ficheiros do sistema.</string>
-    <string name="requires_fossify_thank_you">Requer Fossify Thank You</string>
+    <string name="requires_easy_thank_you">Requer Easy Thank You</string>
     <string name="enables_more_customization">Permite mais personalização</string>
     <string name="font">Fonte</string>
     <string name="app_font">Fonte da aplicação</string>
     <string name="font_monospace">Monoespaçada</string>
     <string name="select_font_file">Selecione o ficheiro da fonte…</string>
     <string name="invalid_font_file">Ficheiro de fonte inválido</string>
-    <string name="more_fossify_apps">Mais apps do Fossify</string>
+    <string name="more_easy_apps">Mais apps do Easy</string>
     <string name="rate_this_app">Avalie esta app</string>
     <string name="badge_deprecated">(obsoleto)</string>
     <string name="label_with_badge">%1$s %2$s</string>

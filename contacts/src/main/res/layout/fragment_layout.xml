@@ -7,7 +7,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <org.fossify.commons.views.MyTextView
+        <com.elkhouly.commons.views.MyTextView
             android:id="@+id/fragment_placeholder"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -22,7 +22,7 @@
             android:textStyle="italic"
             android:visibility="gone" />
 
-        <org.fossify.commons.views.MyTextView
+        <com.elkhouly.commons.views.MyTextView
             android:id="@+id/fragment_placeholder_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -40,19 +40,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <org.fossify.commons.views.MyRecyclerView
+            <com.elkhouly.commons.views.MyRecyclerView
                 android:id="@+id/fragment_list"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:clipToPadding="false"
                 android:layoutAnimation="@anim/layout_animation"
                 android:scrollbars="none"
-                app:layoutManager="org.fossify.commons.views.MyLinearLayoutManager" />
+                app:layoutManager="com.elkhouly.commons.views.MyLinearLayoutManager" />
 
         </com.qtalk.recyclerviewfastscroller.RecyclerViewFastScroller>
     </RelativeLayout>
 
-    <org.fossify.commons.views.MyFloatingActionButton
+    <com.elkhouly.commons.views.MyFloatingActionButton
         android:id="@+id/fragment_fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

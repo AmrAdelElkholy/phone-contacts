@@ -11,7 +11,7 @@
     <string name="no_sound">Gan fuaim</string>
     <string name="during_day_at_hh_mm">I rith an lae ag hh:mm</string>
     <string name="settings">Socruithe</string>
-    <string name="purchase_simple_thank_you">Ceannaigh Fossify Go raibh maith agat</string>
+    <string name="purchase_simple_thank_you">Ceannaigh Easy Go raibh maith agat</string>
     <string name="customize_colors">Saincheap an chuma</string>
     <string name="customize_widget_colors">Saincheap dathanna giuirléidí</string>
     <string name="customize_notifications">Saincheap fógraí</string>
@@ -179,10 +179,10 @@
     <string name="app_version">Leagan feidhmchláir: %s</string>
     <string name="device_os">Gléas OS: %s</string>
     <string name="before_asking_question_read_faq">Sula gcuireann tú ceist, seiceáil socruithe na haipe agus léigh na Ceisteanna Coitianta ar dtús. B\'fhéidir go bhfuil an réiteach ann.</string>
-    <string name="update_thank_you">Nuashonraigh Fossify Go raibh maith agat leis an leagan is déanaí</string>
+    <string name="update_thank_you">Nuashonraigh Easy Go raibh maith agat leis an leagan is déanaí</string>
     <string name="make_sure_latest">Déan cinnte freisin go bhfuil an leagan is déanaí den aip á úsáid agat.</string>
     <string name="read_faq">Léigh Ceisteanna Coitianta</string>
-    <string name="all_fossify_apps">Gach feidhmchlár Fossify</string>
+    <string name="all_easy_apps">Gach feidhmchlár Easy</string>
     <string name="app_launcher_short">Tosaitheoir Feidhmchláir</string>
     <string name="calculator_short">Áireamhán</string>
     <string name="calendar_short">Féilire</string>
@@ -200,7 +200,7 @@
     <string name="music_player_short">Seinnteoir Ceoil</string>
     <string name="thank_you_short">Go raibh maith agat</string>
     <string name="voice_recorder_short">Taifeadán Gutha</string>
-    <string name="donate_to_fossify">Deonaigh do Fossify</string>
+    <string name="donate_to_easy">Deonaigh do Easy</string>
     <string name="platforms">Ardáin</string>
     <string name="little_to_no_fee">Beagán gan aon táille</string>
     <string name="fee_up_to_pct">Suas le táille %1$d%%</string>
@@ -276,7 +276,7 @@
     <string name="duration">Fad ama</string>
     <string name="accent_color_black_and_white">Dath accent an téama Dubh &amp; Bán</string>
     <string name="undo_changes_confirmation">An bhfuil tú cinnte go bhfuil fonn ort do chuid athruithe a chealú?</string>
-    <string name="global_theme_success">Cuireadh an téama reatha i bhfeidhm go rathúil ar gach feidhmchlár Fossify. Déanfar aon athruithe ar an téama seo amach anseo a shioncronú go huathoibríoch.</string>
+    <string name="global_theme_success">Cuireadh an téama reatha i bhfeidhm go rathúil ar gach feidhmchlár Easy. Déanfar aon athruithe ar an téama seo amach anseo a shioncronú go huathoibríoch.</string>
     <string name="dark_theme">Dorcha</string>
     <string name="auto_theme">Carr</string>
     <string name="auto_light_dark_theme">Solas uathoibríoch / dorcha</string>
@@ -817,7 +817,7 @@
     <string name="undo_changes">Cealaigh athruithe</string>
     <string name="cannot_be_undone">Ní féidir an gníomh seo a chealú.</string>
     <string name="save_before_closing">Tá athruithe gan sábháil agat. Sábháil roimh scor?</string>
-    <string name="apply_to_all_apps">Cuir an téama i bhfeidhm ar gach Aip Fossify</string>
+    <string name="apply_to_all_apps">Cuir an téama i bhfeidhm ar gach Aip Easy</string>
     <string name="app_icon_color_warning">Rabhadh: Ní fhéadfaidh lainseálaithe áirithe saincheaptha deilbhín feidhmchláir a láimhseáil i gceart. Má imíonn an deilbhín, déan iarracht an aip a sheoladh trí Google Play nó giuirléid, más inrochtana. Tar éis seoladh, athchóirigh an #106D1F réamhshocraithe dath deilbhín glas. I gcásanna tromchúiseacha, d\'fhéadfadh sé go mbeadh gá leis an aip a athshuiteáil.</string>
     <string name="white">Bán</string>
     <string name="light_theme">Solas</string>
@@ -960,18 +960,18 @@
         <item quantity="many">Ag bogadh %d míreanna isteach sa bhosca athchúrsála</item>
         <item quantity="other">Ag bogadh %d míreanna isteach sa bhosca athchúrsála</item>
     </plurals>
-    <string name="donate_short">An dtaitníonn Fossify leat? Tacaigh le forbairt ár n-aipeanna gan fógraí trí &lt;a href=\"https://play.google.com/store/apps/details?id=org.fossify.thankyou\"&gt;Fossify Thank You&lt;/a&gt; a cheannach. Cuirfidh sé ar do chumas clónna saincheaptha a úsáid agus socruithe saincheaptha a roinnt idir aipeanna Fossify chomh maith. Go raibh maith agat as do thacaíocht!</string>
+    <string name="donate_short">An dtaitníonn Easy leat? Tacaigh le forbairt ár n-aipeanna gan fógraí trí &lt;a href=\"https://play.google.com/store/apps/details?id=com.elkhouly.thankyou\"&gt;Easy Thank You&lt;/a&gt; a cheannach. Cuirfidh sé ar do chumas clónna saincheaptha a úsáid agus socruithe saincheaptha a roinnt idir aipeanna Easy chomh maith. Go raibh maith agat as do thacaíocht!</string>
     <string name="new_app"><![CDATA["\n            Haigh,<br><br>\n            ag cur in iúl duit go bhfuil roinnt aipeanna nua eisithe le déanaí:<br><br>\n            <a href=\"%1$s\">%2$s</a><br><br>\n            <a href=\"%3$s\">%4$s</a><br><br>\n            <a href=\"%5$s\">%6$s</a><br><br>\n            Is féidir leat iad a íoslódáil trí bhrú ar a dteidil nó a ndeilbhíní.<br><br>\n            Go raibh maith agat\n"]]></string>
     <string name="sideloaded_app"><![CDATA[
             Tá an chuma ar an scéal go bhfuil leagan do aipe truaillithe. Íoslódáil an bunleagan <a href="%s">anseo</a>, le do thoil.
         ]]></string>
     <string name="faq_2_text_commons"><![CDATA[
             Sea, ar ndóigh. Is féidir leat an scéal a scaipeadh faoi na haipeanna nó aiseolas agus rátálacha maithe a thabhairt. Is féidir leat cabhrú freisin trí na haipeanna a aistriú go teanga nua, nó trí aistriúcháin atá ann cheana a nuashonrú. 
-            Tá an treoir maidir le haistriúchán le fáil ar <a href="https://github.com/FossifyOrg/General-Discussion#contributing-translations">an suíomh gréasáin seo</a>, nó is féidir leat teagmháil a dhéanamh linn ag <a href="mailto:hello@fossify.org">hello@fossify.org</a> má tá aon cheist agat. 
+            Tá an treoir maidir le haistriúchán le fáil ar <a href="https://github.com/AmrAdelElkholy/phone-contacts">an suíomh gréasáin seo</a>, nó is féidir leat teagmháil a dhéanamh linn ag <a href="mailto:"></a> má tá aon cheist agat. 
             ]]></string>
     <string name="contributors_label"><![CDATA[
-            Tá gach duine ar an liosta seo a chabhraigh go suntasach le haon aip i sraith Fossify, ní hamháin leis an gceann seo. Is oibrithe deonacha a dhéanann an obair aistriúcháin;
-            cuir in iúl dúinn má tá fonn ort cabhrú freisin. Tá an treoir aistriúcháin le fáil ar <a href="https://github.com/FossifyOrg/General-Discussion#contributing-translations">an suíomh gréasáin seo</a>, nó is féidir leat teagmháil a dhéanamh linn ag <a href="mailto:hello@fossify.org">hello@fossify.org</a> má tá ceisteanna ar bith agat. 
+            Tá gach duine ar an liosta seo a chabhraigh go suntasach le haon aip i sraith Easy, ní hamháin leis an gceann seo. Is oibrithe deonacha a dhéanann an obair aistriúcháin;
+            cuir in iúl dúinn má tá fonn ort cabhrú freisin. Tá an treoir aistriúcháin le fáil ar <a href="https://github.com/AmrAdelElkholy/phone-contacts">an suíomh gréasáin seo</a>, nó is féidir leat teagmháil a dhéanamh linn ag <a href="mailto:"></a> má tá ceisteanna ar bith agat. 
             Buíochas leis na rannpháirtithe agus leis na daoine eile ar fad a thug tacaíocht dúinn! 
         ]]></string>
     <string name="august_short">Lún</string>
@@ -993,7 +993,7 @@
         <item quantity="other">%d míreanna á scriosadh</item>
     </plurals>
     <string name="purchase_thank_you"><![CDATA[
-            Ceannaigh <a href="https://play.google.com/store/apps/details?id=org.fossify.thankyou">Fossify Thank You</a> chun an ghné seo a úsáid agus tacú leis an bhforbairt. Go raibh maith agat! 
+            Ceannaigh <a href="https://play.google.com/store/apps/details?id=com.elkhouly.thankyou">Easy Thank You</a> chun an ghné seo a úsáid agus tacú leis an bhforbairt. Go raibh maith agat! 
             ]]></string>
     <string name="faq_9_text_commons">Tá bealaí éagsúla ann chun é sin a dhéanamh. Tá an chéad cheann ag tosú ar an modh roghnúcháin trí mhír amháin a bhrú le fada, ansin cliceáil gearr ar dhaoine eile chun iad a roghnú. Tá an dara bealach cosúil le míreanna a roghnú ar ríomhairí pearsanta le luch, ach tús a chur leis an modh roghnúcháin trí mhír amháin a bhrú le fada, ansin le do mhéar fós síos tarraing é thar mhíreanna eile le roghnú. Is é an tríú bealach chun míreanna iolracha a roghnú ná mír amháin a bhrú le fada, ansin brú fada ar cheann eile agus roghnaítear gach rud idir eatarthu. Más mian leat gach mír a roghnú, brúigh mír amháin le fada, ansin cliceáil ar an gcuntar míre roghnaithe ag an gcúinne ag barr na láimhe clé. Roghnóidh sé sin gach rud nó díroghnaigh é.</string>
     <string name="faq_10_title_commons">Cheannaigh mé an aip, ach ní féidir liom é a íoslódáil ar ghléas eile.</string>
@@ -1068,8 +1068,7 @@
     <string name="start_free_trial">Tosaigh triail saor in aisce</string>
     <string name="trial_expires_soon">Rachaidh do thriail in éag go luath.</string>
     <string name="welcome_to_app_name">Fáilte go %s!</string>
-    <string name="pro_app_refund">Ná déan dearmad go n-aisíocfar thú go huathoibríoch má dhíshuiteálann tú aon fheidhmchlár íoctha laistigh de 2 uair an chloig. Más mian leat aisíocaíocht ag am ar bith ina dhiaidh sin, déan teagmháil linn ag hello@fossify.org agus gheobhaidh tú é. Fágann sin go bhfuil sé éasca triail a bhaint as :)</string>
-    <string name="copyright">in aghaidh %1$s\nCóipcheart © Fossify %2$d</string>
+    <string name="pro_app_refund">Ná déan dearmad go n-aisíocfar thú go huathoibríoch má dhíshuiteálann tú aon fheidhmchlár íoctha laistigh de 2 uair an chloig. Más mian leat aisíocaíocht ag am ar bith ina dhiaidh sin, déan teagmháil linn ag  agus gheobhaidh tú é. Fágann sin go bhfuil sé éasca triail a bhaint as :)</string>
     <string name="sms_messenger_short">Teachtaireachtaí SMS</string>
     <string name="cryptocurrency">Criptea-airgeadra</string>
     <string name="translation_kabyle">Kabyle</string>
@@ -1079,9 +1078,9 @@
     <string name="confirm_storage_access_restricted_text_not_found">Níorbh fhéidir aip bainisteora comhad córais a aimsiú.</string>
     <string name="confirm_storage_access_restricted_text">De bharr srianta córais, níl an fillteán seo ar fáil.</string>
     <string name="confirm_storage_access_restricted_text_open_system">Oscail san aip córais</string>
-    <string name="more_fossify_apps">Tuilleadh aipeanna Fossify</string>
+    <string name="more_easy_apps">Tuilleadh aipeanna Easy</string>
     <string name="rate_this_app">Rátáil an aip seo</string>
-    <string name="requires_fossify_thank_you">Éilíonn Fossify Go raibh maith agat</string>
+    <string name="requires_easy_thank_you">Éilíonn Easy Go raibh maith agat</string>
     <string name="evalex_title">EvalEx (meastóireacht ar shloinnt mhatamaitice)</string>
     <string name="enables_more_customization">Cumasaíonn sé níos mó saincheaptha</string>
     <string name="translation_latvian">Laitvis</string>
@@ -1107,6 +1106,6 @@
     <string name="commonmark_title">CommonMark (parsálaí Markdown)</string>
     <string name="jsoup_title">jsoup (parsálaí HTML)</string>
     <string name="commons_csv_title">Apache Commons CSV (parsálaí CSV)</string>
-    <string name="donation_prompt">Má bhaineann tú taitneamh as an aip seo a úsáid, smaoinigh le do thoil ar thacú le forbairt Fossify.</string>
+    <string name="donation_prompt">Má bhaineann tú taitneamh as an aip seo a úsáid, smaoinigh le do thoil ar thacú le forbairt Easy.</string>
     <string name="rate_app_prompt">Ag baint taitnimh as an aip? Déan í a rátáil ar Google Play, le do thoil.</string>
 </resources>

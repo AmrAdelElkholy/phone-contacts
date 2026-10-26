@@ -291,8 +291,8 @@
     <string name="undo_changes_confirmation">変更を元に戻してもよろしいですか？</string>
     <string name="cannot_be_undone">この操作は元に戻せません。</string>
     <string name="save_before_closing">保存していない変更があります。保存しますか？</string>
-    <string name="global_theme_success">現在のテーマがFossifyの全アプリに適用されました。今後テーマに変更を行った場合、変更は自動的に同期されます。</string>
-    <string name="purchase_thank_you"><![CDATA["\n            この機能のロックを解除して開発者をサポートするには、<a href=https://play.google.com/store/apps/details?id=org.fossify.thankyou>Fossify Thank You</a>アプリを購入してください。\n        "]]></string>
+    <string name="global_theme_success">現在のテーマがEasyの全アプリに適用されました。今後テーマに変更を行った場合、変更は自動的に同期されます。</string>
+    <string name="purchase_thank_you"><![CDATA["\n            この機能のロックを解除して開発者をサポートするには、<a href=https://play.google.com/store/apps/details?id=com.elkhouly.thankyou>Easy Thank You</a>アプリを購入してください。\n        "]]></string>
     <string name="light_theme">ライト</string>
     <string name="dark_theme">ダーク</string>
     <string name="auto_theme">自動</string>
@@ -778,7 +778,7 @@
     <plurals name="trial_expires_days">
         <item quantity="other">試用期間の残りは %d 日です。</item>
     </plurals>
-    <string name="pro_app_refund">どのアプリでも、購入後２時間以内にアンインストールすると自動的に払い戻しされることを覚えていてください。それ以降に払い戻しが必要な場合は、こちらにお問い合わせください。hello@fossify.org お試ししやすいかと思います :)</string>
+    <string name="pro_app_refund">どのアプリでも、購入後２時間以内にアンインストールすると自動的に払い戻しされることを覚えていてください。それ以降に払い戻しが必要な場合は、こちらにお問い合わせください。 お試ししやすいかと思います :)</string>
     <string name="developer_description">広告や不要な権限がなく、カスタマイズ可能なウィジェットを備えたシンプルな複数のオープンソースAndroidアプリ。</string>
     <string name="ok">OK</string>
     <string name="notification_sound">通知音</string>
@@ -786,7 +786,7 @@
     <string name="translation_danish">デンマーク語</string>
     <string name="translation_english">英語</string>
     <string name="unblock_contact_success">連絡先のブロックを解除しました</string>
-    <string name="apply_to_all_apps">テーマを全てのFossifyアプリに適用</string>
+    <string name="apply_to_all_apps">テーマを全てのEasyアプリに適用</string>
     <string name="add_password">パスワードを追加</string>
     <string name="translation_bengali">ベンガル語</string>
     <string name="translation_german">ドイツ語</string>
@@ -814,8 +814,7 @@
     <string name="hours_letter">%d時間</string>
     <string name="theme_and_colors">テーマと色</string>
     <string name="skip_the_recycle_bin">ごみ箱に入れずに直接ファイルを削除</string>
-    <string name="copyright">v %1$s \nCopyright © Fossify %2$d</string>
-    <string name="all_fossify_apps">Fossifyの全アプリ</string>
+    <string name="all_easy_apps">Easyの全アプリ</string>
     <string name="thank_you_short">ありがとうございます</string>
     <string name="cryptocurrency">暗号通貨</string>
     <string name="translation_belarusian">ベラルーシ語</string>
@@ -888,7 +887,7 @@
     <string name="format_phone_numbers">電話番号の形式</string>
     <string name="hello">こんにちは</string>
     <string name="about_footer">スロバキアより❤️を込めて</string>
-    <string name="donate_to_fossify">Fossifyに寄付</string>
+    <string name="donate_to_easy">Easyに寄付</string>
     <string name="platforms">プラットフォーム</string>
     <string name="translation_czech">チェコ語</string>
     <string name="translation_hindi">ヒンディー語</string>
@@ -899,13 +898,13 @@
     <string name="purchase_simple_thank_you">Simple Thank Youを購入</string>
     <string name="translation_lithuanian">リトアニア語</string>
     <string name="translation_nepali">ネパール語</string>
-    <string name="faq_2_text_commons"><![CDATA["\n            はい、もちろんです。アプリについて広めたり、良いフィードバックと評価を行ったり、または翻訳に参加したりしていただけます。\n            翻訳のガイドは<a href=https://github.com/FossifyOrg/General-Discussion#contributing-translations>このウェブサイト</a>にあります。質問があれば、<a href=mailto:hello@fossify.org>hello@fossify.org</a>までご連絡ください。\n        "]]></string>
+    <string name="faq_2_text_commons"><![CDATA["\n            はい、もちろんです。アプリについて広めたり、良いフィードバックと評価を行ったり、または翻訳に参加したりしていただけます。\n            翻訳のガイドは<a href=https://github.com/AmrAdelElkholy/phone-contacts</a>にあります。質問があれば、<a href=mailto:></a>までご連絡ください。\n        "]]></string>
     <string name="date_time_pattern_info">以下の変数を使ってファイルの名前を自動的に設定できます。 \n \n%Y - 年 \n%M - 月 \n%D - 日 \n%h - 時 \n%m - 分 \n%s - 秒</string>
     <string name="faq_6_text_commons">この問題は、使用しているランチャーがアイコンのカスタマイズを完全にサポートしていない場合に生じます。Google Play、または、利用可能な場合はウィジェットからアプリを起動してみてください。開始したら、既定の緑のアイコンの色 #106D1F を復元してください。ごくまれに、アプリの再インストールが必要になる場合があります。</string>
     <string name="too_many_incorrect_attempts">間違ったロック解除の試行回数が多すぎます。 \n%d秒後に再度試してください。</string>
     <string name="version_placeholder">バージョン %s</string>
-    <string name="donate_short">&lt;a href=https://play.google.com/store/apps/details?id=org.fossify.thankyou&gt;Fossify Thank You&lt;/a&gt;を購入して私たちを援助してください。アプリには、全アプリで色をカスタマイズするなどの機能もあります。</string>
-    <string name="update_thank_you">Fossify Thank Youを最新バージョンに更新してください</string>
+    <string name="donate_short">&lt;a href=https://play.google.com/store/apps/details?id=com.elkhouly.thankyou&gt;Easy Thank You&lt;/a&gt;を購入して私たちを援助してください。アプリには、全アプリで色をカスタマイズするなどの機能もあります。</string>
+    <string name="update_thank_you">Easy Thank Youを最新バージョンに更新してください</string>
     <string name="little_to_no_fee">ゼロまたはわずか</string>
     <string name="fee_up_to_pct">最大%1$d%%</string>
     <plurals name="files_saved">
@@ -921,7 +920,7 @@
     <string name="number_of_items">アイテムの数</string>
     <string name="reorder_items_by_dragging">ドラッグしてアイテムを並び替え</string>
     <string name="days_letter">%d日</string>
-    <string name="requires_fossify_thank_you">Fossify Thank Youが必要です</string>
+    <string name="requires_easy_thank_you">Easy Thank Youが必要です</string>
     <string name="enables_more_customization">よりカスタマイズできるようになります</string>
     <string name="font">フォント</string>
     <string name="app_font">アプリのフォント</string>
@@ -929,7 +928,7 @@
     <string name="select_font_file">フォントファイルを選択…</string>
     <string name="invalid_font_file">無効なフォントファイルです</string>
     <string name="known_issues">既知の問題</string>
-    <string name="more_fossify_apps">他のFossifyアプリ</string>
+    <string name="more_easy_apps">他のEasyアプリ</string>
     <string name="badge_deprecated">(廃止予定)</string>
     <string name="label_with_badge">%1$s %2$s</string>
 </resources>

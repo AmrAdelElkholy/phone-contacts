@@ -114,7 +114,7 @@ android {
         )
     }
 
-    namespace = "org.fossify.phone"
+    namespace = "com.elkhouly.dialer"
 
     lint {
         checkReleaseBuilds = false

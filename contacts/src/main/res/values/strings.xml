@@ -54,7 +54,7 @@
     <string name="manage_shown_contact_fields">Manage shown contact fields</string>
     <string name="contacts">Contacts</string>
     <string name="show_only_contacts_with_numbers">Show only contacts with phone numbers</string>
-    <string name="show_private_contacts">Show private contacts to Fossify Phone, Messages, and Calendar</string>
+    <string name="show_private_contacts">Show private contacts to Easy Phone, Messages, and Calendar</string>
     <string name="merge_duplicate_contacts">Merge duplicate contacts</string>
 
     <!-- Favorites -->
@@ -108,6 +108,6 @@
     <string name="contacts_faq_1_text">Yes, all you have to do is go in Settings -> Manage shown contact fields. There you can select what fields should be visible. Some of them are even disabled by default, so you might find some new ones there.</string>
     <!--
         Haven't found some strings? There's more at
-        https://github.com/FossifyOrg/Commons/tree/master/commons/src/main/res
+        https://github.com/AmrAdelElkholy/phone-contacts
     -->
 </resources>

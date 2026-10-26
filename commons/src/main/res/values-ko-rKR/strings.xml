@@ -182,8 +182,8 @@
     <string name="undo_changes">변경사항 되돌리기</string>
     <string name="undo_changes_confirmation">변경된 사항을 취소하시겠습니까?</string>
     <string name="save_before_closing">저장하지 않은 변경사항이 있습니다. 종료하기 전에 저장하시겠습니까?</string>
-    <string name="global_theme_success">현재 테마가 모든 Fossify 앱에 적용되었습니다. 앞으로 이 테마의 변경사항도 자동으로 동기화됩니다.</string>
-    <string name="purchase_thank_you"><![CDATA[이 기능을 이용하시려면 개발지원을 위해 <a href="https://play.google.com/store/apps/details?id=org.fossify.thankyou">Fossify Thank You</a> 앱을 구매해주세요. 감사합니다!]]></string>
+    <string name="global_theme_success">현재 테마가 모든 Easy 앱에 적용되었습니다. 앞으로 이 테마의 변경사항도 자동으로 동기화됩니다.</string>
+    <string name="purchase_thank_you"><![CDATA[이 기능을 이용하시려면 개발지원을 위해 <a href="https://play.google.com/store/apps/details?id=com.elkhouly.thankyou">Easy Thank You</a> 앱을 구매해주세요. 감사합니다!]]></string>
     <string name="custom">사용자 정의</string>
     <string name="shared">공유</string>
     <string name="whats_new">새로운 기능</string>
@@ -535,7 +535,7 @@
     <string name="sanselan_title">Apache Sanselan (이미지 메타데이터 읽기)</string>
     <string name="filters_title">Android Photo Filters (이미지 필터)</string>
     <string name="gesture_views_title">Gesture Views (확대 가능한 이미지)</string>
-    <string name="pro_app_refund">플레이스토어에서 구매한 앱은 2시간 내에 삭제하면 자동으로 환불받을 수 있다는 사실을 항상 잊지 마시기 바랍니다. 만약 이후에 환불이 필요하시다면, hello@fossify.org 으로 연락 주시면 해결해 드리겠습니다. 이제 한번 써보는 것도 나쁘지 않겠죠 :)</string>
+    <string name="pro_app_refund">플레이스토어에서 구매한 앱은 2시간 내에 삭제하면 자동으로 환불받을 수 있다는 사실을 항상 잊지 마시기 바랍니다. 만약 이후에 환불이 필요하시다면,  으로 연락 주시면 해결해 드리겠습니다. 이제 한번 써보는 것도 나쁘지 않겠죠 :)</string>
     <string name="error">오류: %s</string>
     <string name="edit">편집</string>
     <string name="close">닫기</string>
@@ -590,7 +590,7 @@
         <item quantity="other">%d개 연락처</item>
     </plurals>
     <string name="remove_exif">EXIF 제거</string>
-    <string name="apply_to_all_apps">모든 Fossify 앱에 색상 적용</string>
+    <string name="apply_to_all_apps">모든 Easy 앱에 색상 적용</string>
     <string name="auto_light_dark_theme">자동 밝은/어두운 테마</string>
     <string name="storage">저장공간</string>
     <string name="shortcut">바로가기</string>
@@ -769,8 +769,8 @@
     <string name="time_remaining">남은 시간:\n%s</string>
     <string name="during_day_at_hh_mm">당일 hh:mm</string>
     <string name="during_day_at">당일 %1$02d:%2$02d</string>
-    <string name="purchase_simple_thank_you">Fossify Thank You 구매</string>
-    <string name="requires_fossify_thank_you">Fossify Thank You 필요</string>
+    <string name="purchase_simple_thank_you">Easy Thank You 구매</string>
+    <string name="requires_easy_thank_you">Easy Thank You 필요</string>
     <string name="enables_more_customization">더 많은 사용자 지정 기능 제공</string>
     <string name="general_settings">일반</string>
     <string name="color_customization">화면 및 스타일</string>
@@ -814,9 +814,8 @@
     <string name="upgrade">업그레이드</string>
     <string name="upgrade_calendar">기기에 저장된 일정은 .ics 파일로 내보낸 다음 가져오는 방식으로 직접 이전해야 합니다. 내보내기와 가져오기 버튼은 모두 메인 화면 메뉴에 있습니다.</string>
     <string name="known_issues">알려진 문제</string>
-    <string name="more_fossify_apps">다른 Fossify 앱</string>
+    <string name="more_easy_apps">다른 Easy 앱</string>
     <string name="rate_this_app">앱 평가하기</string>
-    <string name="copyright">v %1$s\nCopyright © Fossify %2$d</string>
     <string name="support">지원</string>
     <string name="help_us">도와주세요</string>
     <string name="social">소셜</string>
@@ -825,12 +824,12 @@
     <string name="version_placeholder">버전 %s</string>
     <string name="hello">안녕하세요 :)</string>
     <string name="about_footer">슬로바키아에서 ❤️을 담아 만들었습니다</string>
-    <string name="donate_short">개발을 지원하려면 &lt;a href=https://play.google.com/store/apps/details?id=org.fossify.thankyou&gt;Fossify Thank You&lt;/a&gt;를 구매해 주세요. 색상 사용자 지정을 포함한 모든 앱 기능도 잠금 해제됩니다.</string>
-    <string name="update_thank_you">Fossify Thank You를 최신 버전으로 업데이트하세요</string>
+    <string name="donate_short">개발을 지원하려면 &lt;a href=https://play.google.com/store/apps/details?id=com.elkhouly.thankyou&gt;Easy Thank You&lt;/a&gt;를 구매해 주세요. 색상 사용자 지정을 포함한 모든 앱 기능도 잠금 해제됩니다.</string>
+    <string name="update_thank_you">Easy Thank You를 최신 버전으로 업데이트하세요</string>
     <string name="make_sure_latest">최신 앱 버전을 사용하고 있는지도 확인하세요.</string>
     <string name="read_faq">FAQ 읽기</string>
     <string name="thank_you">감사합니다</string>
-    <string name="all_fossify_apps">모든 Fossify 앱</string>
+    <string name="all_easy_apps">모든 Easy 앱</string>
     <string name="app_launcher_short">앱 런처</string>
     <string name="calculator_short">계산기</string>
     <string name="calendar_short">캘린더</string>
@@ -849,7 +848,7 @@
     <string name="sms_messenger_short">SMS 메신저</string>
     <string name="thank_you_short">Thank You</string>
     <string name="voice_recorder_short">음성 녹음기</string>
-    <string name="donate_to_fossify">Fossify에 기부</string>
+    <string name="donate_to_easy">Easy에 기부</string>
     <string name="platforms">플랫폼</string>
     <string name="little_to_no_fee">수수료가 거의 없거나 없음</string>
     <string name="fee_up_to_pct">최대 %1$d%% 수수료</string>
@@ -857,7 +856,7 @@
     <string name="badge_deprecated">(지원 중단)</string>
     <string name="label_with_badge">%1$s %2$s</string>
     <string name="before_asking_question">질문하기 전에 먼저 다음 내용을 읽어 주세요:</string>
-    <string name="faq_2_text_commons"><![CDATA[물론입니다. 앱을 주변에 알리거나 좋은 피드백과 평가를 남겨 주세요. 새로운 언어로 앱을 번역하거나 기존 번역을 업데이트하는 것도 도움이 됩니다.\n번역 방법은 <a href="https://github.com/FossifyOrg/General-Discussion#contributing-translations">이 웹사이트</a>에서 확인할 수 있으며, 궁금한 점이 있으면 <a href="mailto:hello@fossify.org">hello@fossify.org</a>로 문의해 주세요.]]></string>
+    <string name="faq_2_text_commons"><![CDATA[물론입니다. 앱을 주변에 알리거나 좋은 피드백과 평가를 남겨 주세요. 새로운 언어로 앱을 번역하거나 기존 번역을 업데이트하는 것도 도움이 됩니다.\n번역 방법은 <a href="https://github.com/AmrAdelElkholy/phone-contacts">이 웹사이트</a>에서 확인할 수 있으며, 궁금한 점이 있으면 <a href="mailto:"></a>로 문의해 주세요.]]></string>
     <string name="faq_6_text_commons">런처가 앱 아이콘 사용자 지정을 완전히 지원하지 않을 때 발생하는 문제입니다. 가능하다면 Google Play 또는 위젯을 통해 앱을 실행해 보세요.\n앱을 실행한 뒤 기본 녹색 아이콘 색상인 #106D1F로 복원하세요. 그래도 해결되지 않으면 앱을 다시 설치해야 할 수도 있습니다.</string>
     <string name="faq_9_title_commons">여러 항목을 한 번에 선택하려면 어떻게 하나요?</string>
     <string name="faq_9_text_commons">여러 방법이 있습니다. 첫 번째는 항목 하나를 길게 눌러 선택 모드를 시작한 뒤 다른 항목을 짧게 눌러 추가로 선택하는 방법입니다. 두 번째는 PC에서 마우스로 항목을 선택하는 것과 비슷하게, 항목 하나를 길게 누른 상태에서 손가락을 떼지 않고 다른 항목 위로 드래그해 선택하는 방법입니다. 세 번째는 항목 하나를 길게 누른 뒤 다른 항목을 다시 길게 누르면 그 사이의 모든 항목이 선택됩니다.\n모든 항목을 선택하려면 항목 하나를 길게 누른 뒤 화면 왼쪽 위의 선택된 항목 수를 누르세요. 그러면 전체 항목을 선택하거나 선택 해제할 수 있습니다.</string>
@@ -867,7 +866,7 @@
     <string name="translation">번역</string>
     <string name="development">개발</string>
     <string name="other_help">기타 도움</string>
-    <string name="contributors_label"><![CDATA[이 목록에는 이 앱뿐 아니라 Fossify 제품군의 어느 앱이든 눈에 띄게 도움을 준 모든 사람이 포함됩니다. 번역은 자원봉사자들이 맡고 있습니다.\n함께 돕고 싶다면 알려 주세요. 번역 방법은 <a href="https://github.com/FossifyOrg/General-Discussion#contributing-translations">이 웹사이트</a>에서 확인할 수 있으며, 궁금한 점이 있으면 <a href="mailto:hello@fossify.org">hello@fossify.org</a>로 문의해 주세요.\n모든 기여자와 후원자 여러분께 감사드립니다!]]></string>
+    <string name="contributors_label"><![CDATA[이 목록에는 이 앱뿐 아니라 Easy 제품군의 어느 앱이든 눈에 띄게 도움을 준 모든 사람이 포함됩니다. 번역은 자원봉사자들이 맡고 있습니다.\n함께 돕고 싶다면 알려 주세요. 번역 방법은 <a href="https://github.com/AmrAdelElkholy/phone-contacts">이 웹사이트</a>에서 확인할 수 있으며, 궁금한 점이 있으면 <a href="mailto:"></a>로 문의해 주세요.\n모든 기여자와 후원자 여러분께 감사드립니다!]]></string>
     <string name="translation_arabic">아랍어</string>
     <string name="translation_azerbaijani">아제르바이잔어</string>
     <string name="translation_belarusian">벨라루스어</string>

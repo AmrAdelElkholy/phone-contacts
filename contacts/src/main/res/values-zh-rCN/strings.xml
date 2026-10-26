@@ -35,7 +35,7 @@
     <string name="manage_shown_contact_fields">管理显示的联系人字段</string>
     <string name="contacts">联系人</string>
     <string name="show_only_contacts_with_numbers">仅显示有电话号码的联系人</string>
-    <string name="show_private_contacts">将私密联系人显示给 Fossify 电话、Fossify 信息和 Fossify 日历</string>
+    <string name="show_private_contacts">将私密联系人显示给 Easy 电话、Easy 信息和 Easy 日历</string>
     <string name="merge_duplicate_contacts">合并重复的联系人</string>
     <string name="no_favorites">您似乎还没加入任何我的收藏联系人。</string>
     <string name="toggle_favorite">收藏/取消收藏</string>

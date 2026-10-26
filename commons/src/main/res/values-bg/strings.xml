@@ -321,7 +321,7 @@
     <string name="undo_changes_confirmation">Сигурни ли сте, че искате да отмените промените?</string>
     <string name="cannot_be_undone">Действието е необратимо.</string>
     <string name="save_before_closing">Има незапазени промени. Запазване преди изход?</string>
-    <string name="global_theme_success">Текущата тема е приложена на всички приложения на Fossify. Бъдещите промени на темата ще бъдат синхронизирани автоматично.</string>
+    <string name="global_theme_success">Текущата тема е приложена на всички приложения на Easy. Бъдещите промени на темата ще бъдат синхронизирани автоматично.</string>
     <string name="light_theme">Светла</string>
     <string name="dark_theme">Тъмна</string>
     <string name="auto_theme">Автоматична</string>
@@ -750,7 +750,6 @@
     <string name="invite_via">Препоръка с помощта на</string>
     <string name="donate">Дарения</string>
     <string name="follow_us">Последвайте ни</string>
-    <string name="copyright">v %1$s\nАвторски права © Fossify %2$d</string>
     <string name="support">Поддръжка</string>
     <string name="help_us">Помогнете ни</string>
     <string name="social">Общност</string>
@@ -853,7 +852,7 @@
     <string name="translation_chinese_tw">Китайски (традиционен)</string>
     <string name="third_party_licences">Лицензи на трети страни</string>
     <string name="welcome_to_app_name">Добре дошли при %s!</string>
-    <string name="pro_app_refund">Не забравяйте, че ако премахнете някое платено приложение в рамките на 2 часа след плащането, сумата автоматично ще бъде възстановена. Ако желаете възстановяване на сумата след този период, просто се свържете с нас на hello@fossify.org и ще ви ги върнем. Така е по-лесно да изпробвате приложенията :)</string>
+    <string name="pro_app_refund">Не забравяйте, че ако премахнете някое платено приложение в рамките на 2 часа след плащането, сумата автоматично ще бъде възстановена. Ако желаете възстановяване на сумата след този период, просто се свържете с нас на  и ще ви ги върнем. Така е по-лесно да изпробвате приложенията :)</string>
     <string name="developer_description">Група обикновени приложения с отворен код за Андроид с гъвкави приспособления, без реклами и ненужни разрешения.</string>
     <string name="audio">Аудио</string>
     <string name="genre">Жанр</string>
@@ -896,7 +895,7 @@
     <string name="theme_and_colors">Тема и цветове</string>
     <string name="known_issues">Известни дефекти</string>
     <string name="translation_belarusian">Беларуски</string>
-    <string name="contributors_label"><![CDATA[Този списък съдържа всички, които значително са помогнали за някое от приложенията в пакета на Fossify, а не само на това. Преводите се извършват от доброволци — уведомете ни, ако искате да помогнете и вие. Ръководството за превод се намира на <a href=https://github.com/FossifyOrg/General-Discussion#contributing-translations>тази страница</a>, или просто се свържете с нас на <a href=mailto:hello@fossify.org>hello@fossify.org</a>, ако имате въпроси. Благодарим на всички сътрудници и поддръжници!]]></string>
+    <string name="contributors_label"><![CDATA[Този списък съдържа всички, които значително са помогнали за някое от приложенията в пакета на Easy, а не само на това. Преводите се извършват от доброволци — уведомете ни, ако искате да помогнете и вие. Ръководството за превод се намира на <a href=https://github.com/AmrAdelElkholy/phone-contacts страница</a>, или просто се свържете с нас на <a href=mailto:></a>, ако имате въпроси. Благодарим на всички сътрудници и поддръжници!]]></string>
     <string name="m3u_parser_title">M3U Parser (обработка на списъци за възпроизвеждане m3u)</string>
     <string name="trial_expires_soon">Пробният период изтича скоро.</string>
     <string name="subsampling_title">Subsampling Scale Image View (мащабиране на изображенията в реално време)</string>
@@ -906,9 +905,9 @@
     <string name="exoplayer_title">ExoPlayer (възпроизвеждане на видео)</string>
     <string name="espresso_title">Espresso (помощ при изпитване)</string>
     <string name="notification_sound">Звук на известието</string>
-    <string name="donate_short">Подкрепете ни, като закупите &lt;a href=https://play.google.com/store/apps/details?id=org.fossify.thankyou&gt;Fossify Thank You&lt;/a&gt;. Така ще отключите всички възможности на приложението, включително настройка на цветовете.</string>
+    <string name="donate_short">Подкрепете ни, като закупите &lt;a href=https://play.google.com/store/apps/details?id=com.elkhouly.thankyou&gt;Easy Thank You&lt;/a&gt;. Така ще отключите всички възможности на приложението, включително настройка на цветовете.</string>
     <string name="cryptocurrency">Криптовалута</string>
-    <string name="update_thank_you">Обновете Fossify Thank You до последното издание</string>
+    <string name="update_thank_you">Обновете Easy Thank You до последното издание</string>
     <string name="translation_chuvash">Чувашки</string>
     <string name="translation_esperanto">Есперанто</string>
     <string name="glide_title">Glide (зареждане и складиране на изображения)</string>
@@ -924,9 +923,9 @@
     <string name="zip4j_title">Zip4j (работа с формата ZIP)</string>
     <string name="android_lame_title">AndroidLame (кодиране на mp3)</string>
     <string name="start_free_trial">Начало на пробен период</string>
-    <string name="all_fossify_apps">Всички приложения от Fossify</string>
+    <string name="all_easy_apps">Всички приложения от Easy</string>
     <string name="new_app"><![CDATA[Здравейте,<br><br>искаме само да ви кажем, че скоро пуснахме нови приложения:<br><br><a href=%1$s>%2$s</a><br><br><a href=%3$s>%4$s</a><br><br><a href=%5$s>%6$s</a><br><br>Можете да ги изтеглите като докоснете заглавията или пиктограмите им.<br><br>Благодарим ви]]></string>
-    <string name="donate_to_fossify">Даряване на Fossify</string>
+    <string name="donate_to_easy">Даряване на Easy</string>
     <string name="platforms">Платформи</string>
     <string name="little_to_no_fee">Почти без такси</string>
     <string name="fee_up_to_pct">Такса до %1$d %%</string>
@@ -939,14 +938,14 @@
     <string name="number_picker_title">Number Picker (контрол за въвеждане на числа)</string>
     <string name="audio_record_view_title">Audio Record View (визуализация на звуци)</string>
     <string name="app_icon_color_warning">Внимание: Някои начални екрани може да не изобразят правилно потребителските настройки на пиктограмите на приложенията. Ако пиктограмата изчезне, стартирате приложението от Google Play или, ако има, от приспособление. След това възстановете подразбирания зелен цвят на пиктограмата – #106D1F. В краен случаи може да се наложи преинсталиране на приложението.</string>
-    <string name="apply_to_all_apps">Прилагане на темата към всички приложения на Fossify</string>
-    <string name="purchase_thank_you"><![CDATA[Поръчайте <a href=https://play.google.com/store/apps/details?id=org.fossify.thankyou>Fossify Thank You</a>, за да използвате тази възможност и да подкрепите разработката. Благодарим ви!]]></string>
-    <string name="purchase_simple_thank_you">Поръчайте Fossify Thank You</string>
+    <string name="apply_to_all_apps">Прилагане на темата към всички приложения на Easy</string>
+    <string name="purchase_thank_you"><![CDATA[Поръчайте <a href=https://play.google.com/store/apps/details?id=com.elkhouly.thankyou>Easy Thank You</a>, за да използвате тази възможност и да подкрепите разработката. Благодарим ви!]]></string>
+    <string name="purchase_simple_thank_you">Поръчайте Easy Thank You</string>
     <plurals name="trial_expires_days">
         <item quantity="one">Пробният период изтича след %d ден.</item>
         <item quantity="other">Пробният период изтича след %d дена.</item>
     </plurals>
-    <string name="faq_2_text_commons"><![CDATA[Да, разбира се. Можете да разкажете за приложенията или да давате добри отзиви и оценки. Можете също така да помогнете, като преведете приложенията на нов език или подобрите съществуващи преводи. Ръководството за превод се намира на <a href=https://github.com/FossifyOrg/General-Discussion#contributing-translations>тази страница</a>, или просто се свържете с нас на <a href=mailto:hello@fossify.org>hello@fossify.org</a>, ако имате въпроси.]]></string>
+    <string name="faq_2_text_commons"><![CDATA[Да, разбира се. Можете да разкажете за приложенията или да давате добри отзиви и оценки. Можете също така да помогнете, като преведете приложенията на нов език или подобрите съществуващи преводи. Ръководството за превод се намира на <a href=https://github.com/AmrAdelElkholy/phone-contacts страница</a>, или просто се свържете с нас на <a href=mailto:></a>, ако имате въпроси.]]></string>
     <string name="faq_9_text_commons">Има много начини да го направите. Първият е да стартирате режим на избор чрез задържане върху даден елемент, след което кратко докоснете други елементи, за да ги изберете. Вторият начин е подобен на избирането на елементи с мишка, просто стартирайте режима за избор чрез задържане върху даден елемент, след което без да вдигате пръста, го плъзнете върху другите елементи, които желаете да изберете. Третият начин за избор на множество елементи е задържане върху даден елемент, след това задържане върху друг и всички елементи между тях ще бъдат избрани. Ако искате да изберете всички елементи, просто задръжте даден елемент, след което докоснете брояча на избрани елементи в горния ляв ъгъл. По този начин ще изберете или откажете избора на всички елементи.</string>
     <string name="faq_6_text_commons">Такъв проблем може да възникне ако началният екран не може да покаже правилно потребителските настройки на пиктограмата на приложението. Ако пиктограмата изчезне, стартирате приложението от Google Play или, ако има, от приспособление. След това възстановете подразбирания зелен цвят на пиктограмата – #106D1F. В краен случаи може да се наложи преинсталиране на приложението.</string>
     <string name="translation_kabyle">Кабилски</string>
@@ -957,10 +956,10 @@
     <string name="confirm_storage_access_restricted_text_open_system">Отваряне в системното приложение</string>
     <string name="confirm_storage_access_restricted_text_not_found">Не е намерено системно приложение за работа с файлове.</string>
     <string name="confirm_storage_access_restricted_text">Поради системни ограничения папката е недостъпна.</string>
-    <string name="more_fossify_apps">Други приложения на Fossify</string>
+    <string name="more_easy_apps">Други приложения на Easy</string>
     <string name="rate_this_app">Оценете приложението</string>
     <string name="evalex_title">EvalEx (изчсляване на математически изрази)</string>
-    <string name="requires_fossify_thank_you">Изисква Fossify Thank You</string>
+    <string name="requires_easy_thank_you">Изисква Easy Thank You</string>
     <string name="enables_more_customization">Възможност за повече приспособяване</string>
     <string name="translation_latvian">Латвийски</string>
     <plurals name="files_saved">

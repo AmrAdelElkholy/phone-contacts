@@ -38,7 +38,7 @@
     <string name="show_phone_numbers">फ़ोन नंबर दिखाएं</string>
     <string name="show_contact_thumbnails">संपर्क थंबनेल दिखाएँ</string>
     <string name="show_dialpad_button">मुख्य स्क्रीन पर एक डायलपैड बटन दिखाएँ</string>
-    <string name="show_private_contacts">Fossify Phone, Fossify SMS Messenger और Fossify Calendar में निजी संपर्क दिखाएं</string>
+    <string name="show_private_contacts">Easy Phone, Easy SMS Messenger और Easy Calendar में निजी संपर्क दिखाएं</string>
     <string name="merge_duplicate_contacts">डुप्लिकेट संपर्कों को मर्ज करें</string>
     <string name="import_contacts_from_vcf">.vcf फ़ाइल से संपर्क आयात करें</string>
     <string name="import_contacts_from_vcf_pro">.vcf फ़ाइल से संपर्क आयात करें (Pro)</string>

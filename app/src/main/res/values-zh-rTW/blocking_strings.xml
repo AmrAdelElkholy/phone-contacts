@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
-    <!-- commons labels these switches for messaging apps unless the package id starts with org.fossify.phone -->
-    <string name="block_unknown_messages">封鎖未儲存於通訊錄的號碼來電</string>
-    <string name="block_hidden_messages">封鎖隱藏號碼的來電</string>
-</resources>

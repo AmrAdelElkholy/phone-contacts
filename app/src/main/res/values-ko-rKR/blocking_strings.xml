@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
-    <!-- commons labels these switches for messaging apps unless the package id starts with org.fossify.phone -->
-    <string name="block_unknown_messages">모르는 번호의 전화 차단</string>
-    <string name="block_hidden_messages">발신번호표시제한 전화 차단</string>
-</resources>

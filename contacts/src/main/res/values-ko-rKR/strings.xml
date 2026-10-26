@@ -64,7 +64,7 @@
     <string name="websites">웹사이트</string>
     <string name="contacts_faq_1_text">네, 설정 -&gt; 표시되는 연락처 세부 항목 관리로 이동하면 됩니다. 이 메뉴에서 표시할 세부 항목을 선택할 수 있습니다. 일부 항목은 기본적으로 비활성화되어 있으니, 새로운 항목을 찾으실 수 있습니다.</string>
     <string name="phone_storage_hidden">휴대폰 저장공간 (다른 앱에서 확인 불가)</string>
-    <string name="show_private_contacts">Fossify 전화, Fossify SMS 메신저및 Fossify 캘린더에 비공개 연락처 표시하기</string>
+    <string name="show_private_contacts">Easy 전화, Easy SMS 메신저및 Easy 캘린더에 비공개 연락처 표시하기</string>
     <string name="job_position">직위</string>
     <string name="fields_empty">하나 이상의 세부 항목을 작성해야 합니다</string>
     <string name="country">국가</string>

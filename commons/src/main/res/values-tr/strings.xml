@@ -329,10 +329,10 @@
     <string name="undo_changes_confirmation">Değişikliklerinizi geri almak istediğinizden emin misiniz?</string>
     <string name="cannot_be_undone">Bu eylem geri alınamaz.</string>
     <string name="save_before_closing">Kaydedilmemiş değişiklikleriniz var. Çıkmadan önce kaydedilsin mi?</string>
-    <string name="apply_to_all_apps">Temayı tüm Fossify uygulamalarına uygula</string>
+    <string name="apply_to_all_apps">Temayı tüm Easy uygulamalarına uygula</string>
     <string name="app_icon_color_warning">Dikkat: Bazı başlatıcılar uygulama simgesi özelleştirmesini doğru şekilde yapamayabilir. Simge kaybolursa, uygulamayı Google Play veya erişilebiliyorsa bir widget aracılığıyla başlatmayı deneyin. Başlattıktan sonra, öntanımlı #106D1F yeşil simge rengini geri yükleyin. Aşırı durumlarda, uygulamanın yeniden kurulması gerekebilir.</string>
     <string name="global_theme_success">Renkler başarıyla güncellendi. \'Paylaşılan\' adlı yeni bir Tema eklendi, lütfen gelecekte tüm uygulama renklerini güncellemek için onu kullanın.</string>
-    <string name="purchase_thank_you"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Lütfen bu özelliği kullanmak ve geliştirme sürecine destek olmak için <a href="https://play.google.com/store/apps/details?id=org.fossify.thankyou">Fossify Teşekkürler</a> uygulamasını satın alın. Teşekkür ederiz!\n \u0020 \u0020 \u0020 \u0020]]></string>
+    <string name="purchase_thank_you"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Lütfen bu özelliği kullanmak ve geliştirme sürecine destek olmak için <a href="https://play.google.com/store/apps/details?id=com.elkhouly.thankyou">Easy Teşekkürler</a> uygulamasını satın alın. Teşekkür ederiz!\n \u0020 \u0020 \u0020 \u0020]]></string>
     <string name="light_theme">Aydınlık</string>
     <string name="dark_theme">Karanlık</string>
     <string name="auto_theme">Otomatik</string>
@@ -597,7 +597,7 @@
     <string name="during_day_at_hh_mm">Gün boyunca ss:dd</string>
     <string name="during_day_at">Gün boyunca %1$02d:%2$02d</string>
     <string name="settings">Ayarlar</string>
-    <string name="purchase_simple_thank_you">Fossify Teşekkürler\'i Satın Al</string>
+    <string name="purchase_simple_thank_you">Easy Teşekkürler\'i Satın Al</string>
     <string name="general_settings">Genel</string>
     <string name="color_customization">Görünüm &amp; Hissiyat</string>
     <string name="customize_colors">Görünümü özelleştir</string>
@@ -782,9 +782,9 @@
     <string name="additional_info">Ek bilgiler</string>
     <string name="app_version">Uygulama sürümü: %s</string>
     <string name="device_os">Aygıt İS: %s</string>
-    <string name="donate_short">Fossify\'dan memnun musunuz? &lt;a href=\"https://play.google.com/store/apps/details?id=org.fossify.thankyou\"&gt;Fossify Teşekkürler&lt;/a&gt;\'i satın alarak reklamsız uygulamalarımızın geliştirilmesine destek olun. Bu, aynı zamanda özel yazı tiplerinin kullanılmasını ve Fossify uygulamaları arasında özelleştirme ayarlarının paylaşılmasını da sağlayacaktır. Desteğiniz için teşekkür ederiz!</string>
+    <string name="donate_short">Easy\'dan memnun musunuz? &lt;a href=\"https://play.google.com/store/apps/details?id=com.elkhouly.thankyou\"&gt;Easy Teşekkürler&lt;/a&gt;\'i satın alarak reklamsız uygulamalarımızın geliştirilmesine destek olun. Bu, aynı zamanda özel yazı tiplerinin kullanılmasını ve Easy uygulamaları arasında özelleştirme ayarlarının paylaşılmasını da sağlayacaktır. Desteğiniz için teşekkür ederiz!</string>
     <string name="purchase">Satın al</string>
-    <string name="update_thank_you">Lütfen Fossify Teşekkürler\'i son sürüme güncelleyin</string>
+    <string name="update_thank_you">Lütfen Easy Teşekkürler\'i son sürüme güncelleyin</string>
     <string name="before_asking_question_read_faq">Bir soru sormadan önce, lütfen uygulama ayarlarını gözden geçirin ve önce Sık Sorulan Sorular bölümünü okuyun. Belki çözüm oradadır.</string>
     <string name="make_sure_latest">Ayrıca uygulamanın en son sürümünü kullandığınızdan emin olun.</string>
     <string name="read_it">Oku</string>
@@ -827,7 +827,7 @@
     <string name="faq_2_title_commons">Seni desteklemek istiyorum ama para bağışlayamıyorum. Yapabileceğim başka bir şey var mı?</string>
     <string name="faq_2_text_commons"><![CDATA[
             Evet tabi ki. Uygulamalar hakkında farkındalığı artırabilir veya iyi geri bildirim ve puanlar verebilirsiniz. Ayrıca, uygulamaları yeni bir dile çevirerek veya sadece mevcut çevirileri güncelleyerek de yardımcı olabilirsiniz.
-            Çeviri rehberi <a href="https://github.com/FossifyOrg/General-Discussion#contributing-translations">bu sayfadadır</a> veya herhangi bir sorunuz varsa <a href="mailto:hello@fossify.org">hello@fossify.org</a> adresinden bize ulaşın.
+            Çeviri rehberi <a href="https://github.com/AmrAdelElkholy/phone-contacts">bu sayfadadır</a> veya herhangi bir sorunuz varsa <a href="mailto:"></a> adresinden bize ulaşın.
         ]]></string>
     <string name="faq_3_title_commons">Bazı dosyaları yanlışlıkla sildim, onları nasıl kurtarabilirim?</string>
     <string name="faq_3_text_commons">Ne yazık ki, yapamazsınız. Onay penceresinden sonra dosyalar anında silinir, kullanılabilir çöp kutusu yoktur.</string>
@@ -848,8 +848,8 @@
     <string name="development">Geliştirme</string>
     <string name="other_help">Diğer yardımlar</string>
     <string name="contributors_label"><![CDATA[
-            Bu liste, yalnızca buna değil, Fossify paketindeki herhangi bir uygulamaya belirgin şekilde yardımcı olan herkesi içerir. Çeviriler gönüllüler tarafından yapılır,
-            siz de yardım etmek isterseniz bize bildirin. Çeviri rehberi <a href="https://github.com/FossifyOrg/General-Discussion#contributing-translations">bu sayfadadır</a> veya herhangi bir sorunuz varsa <a href="mailto:hello@fossify.org">hello@fossify.org</a> adresinden bize ulaşın.
+            Bu liste, yalnızca buna değil, Easy paketindeki herhangi bir uygulamaya belirgin şekilde yardımcı olan herkesi içerir. Çeviriler gönüllüler tarafından yapılır,
+            siz de yardım etmek isterseniz bize bildirin. Çeviri rehberi <a href="https://github.com/AmrAdelElkholy/phone-contacts">bu sayfadadır</a> veya herhangi bir sorunuz varsa <a href="mailto:"></a> adresinden bize ulaşın.
             Tüm katkıda bulunanlara ve diğer destekçilere teşekkürler!
         ]]></string>
     <string name="translation_arabic">Arapça</string>
@@ -940,7 +940,7 @@
         <item quantity="one">Deneme süreniz %d gün içinde sona erecektir.</item>
         <item quantity="other">Deneme süreniz %d gün içinde sona erecek.</item>
     </plurals>
-    <string name="pro_app_refund">Ücretli herhangi bir uygulamayı 2 saat içinde kaldırırsanız, otomatik olarak iade edileceğini unutmayın. İstediğiniz zaman geri ödeme almak isterseniz, hello@fossify.org adresinden bizimle iletişime geçmeniz yeterli olacaktır. Bu denemeyi kolaylaştırır :)</string>
+    <string name="pro_app_refund">Ücretli herhangi bir uygulamayı 2 saat içinde kaldırırsanız, otomatik olarak iade edileceğini unutmayın. İstediğiniz zaman geri ödeme almak isterseniz,  adresinden bizimle iletişime geçmeniz yeterli olacaktır. Bu denemeyi kolaylaştırır :)</string>
     <string name="developer_description">Özelleştirilebilir widget\'lara sahip, reklamlar ve gereksiz izinler içermeyen bir grup basit, açık kaynaklı Android uygulaması.</string>
     <string name="deletion_confirmation_short">%s silinsin mi?</string>
     <string name="pin">PIN</string>
@@ -951,12 +951,11 @@
     <string name="genre">Tür</string>
     <string name="exif">EXIF</string>
     <string name="notification_sound">Bildirim sesi</string>
-    <string name="copyright">v %1$s \nTelif hakkı © Fossify %2$d</string>
     <string name="alarm">Alarm</string>
     <string name="translation_esperanto">Esperanto</string>
     <string name="translation_chuvash">Çuvaşça</string>
     <string name="format_phone_numbers">Telefon numaralarını biçimlendir</string>
-    <string name="donate_to_fossify">Fossify\'a bağış yap</string>
+    <string name="donate_to_easy">Easy\'a bağış yap</string>
     <string name="platforms">Platformlar</string>
     <string name="little_to_no_fee">Çok az veya hiç ücret yok</string>
     <string name="fee_up_to_pct">%%%1$d\'ye kadar ücret</string>
@@ -964,7 +963,7 @@
     <string name="translation_gujarati">Guceratça</string>
     <string name="translation_belarusian">Belarusça</string>
     <string name="translation_central_kurdish">Orta Kürtçe</string>
-    <string name="all_fossify_apps">Tüm Fossify uygulamaları</string>
+    <string name="all_easy_apps">Tüm Easy uygulamaları</string>
     <string name="theme_and_colors">Tema &amp; renkler</string>
     <string name="known_issues">Bilinen sorunlar</string>
     <string name="translation_kabyle">Zuvaya</string>
@@ -974,10 +973,10 @@
     <string name="reorder_items_by_dragging">Ögeleri sürükleyerek yeniden sıralayın</string>
     <string name="confirm_storage_access_restricted_text_not_found">Sistem dosya yöneticisi uygulaması bulunamadı.</string>
     <string name="days_letter">%dd</string>
-    <string name="more_fossify_apps">Daha fazla Fossify uygulaması</string>
+    <string name="more_easy_apps">Daha fazla Easy uygulaması</string>
     <string name="rate_this_app">Uygulamayı değerlendirin</string>
     <string name="evalex_title">EvalEx (matematiksel ifade değerlendirmesi)</string>
-    <string name="requires_fossify_thank_you">Fossify Teşekkürler uygulamasını gerektirir</string>
+    <string name="requires_easy_thank_you">Easy Teşekkürler uygulamasını gerektirir</string>
     <string name="enables_more_customization">Daha fazla kişiselleştirme sağlar</string>
     <string name="translation_latvian">Letonca</string>
     <plurals name="files_saved">
@@ -1000,5 +999,5 @@
     <string name="jsoup_title">jsoup (HTML işleyici)</string>
     <string name="commons_csv_title">Apache Commons CSV (CSV işleyici)</string>
     <string name="rate_app_prompt">Uygulamayı beğendiniz mi? Lütfen Google Play\'de değerlendirin.</string>
-    <string name="donation_prompt">Bu uygulamayı kullanmaktan memnun kaldıysanız, lütfen Fossify\'ın geliştirilmesine destek olmayı düşünün.</string>
+    <string name="donation_prompt">Bu uygulamayı kullanmaktan memnun kaldıysanız, lütfen Easy\'ın geliştirilmesine destek olmayı düşünün.</string>
 </resources>

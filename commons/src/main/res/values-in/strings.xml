@@ -744,7 +744,7 @@
     <string name="trial_expires_soon">Masa percobaan Anda akan segera berakhir.</string>
     <string name="unlock_for_one_final_day">Buka kunci aplikasi untuk satu hari terakhir</string>
     <string name="welcome_to_app_name">Selamat datang di %s!</string>
-    <string name="pro_app_refund">Jangan lupa, jika Anda mencopot aplikasi berbayar apa pun dalam waktu 2 jam, uang Anda akan otomatis dikembalikan. Jika Anda ingin pengembalian dilakukan lain waktu, cukup hubungi hello@fossify.org dan Anda akan mendapatkannya. Itu mempermudah Anda untuk mencobanya terlebih dahulu. :)</string>
+    <string name="pro_app_refund">Jangan lupa, jika Anda mencopot aplikasi berbayar apa pun dalam waktu 2 jam, uang Anda akan otomatis dikembalikan. Jika Anda ingin pengembalian dilakukan lain waktu, cukup hubungi  dan Anda akan mendapatkannya. Itu mempermudah Anda untuk mencobanya terlebih dahulu. :)</string>
     <string name="developer_description">Sekelompok aplikasi Android sumber terbuka sederhana dengan widget yang dapat disesuaikan, tanpa iklan dan perizinan yang tidak diperlukan.</string>
     <string name="email">Surel</string>
     <string name="error">Galat: %s</string>
@@ -776,18 +776,18 @@
     <string name="translation_vietnamese">Vietnam</string>
     <string name="app_icon_color_warning">Peringatan: Beberapa peluncur tidak dapat menangani perubahan ikon aplikasi dengan benar. Jika ikon hilang, coba luncurkan aplikasi melalui Google Play atau widget jika tersedia. Setelah meluncurkan, pulihkan warna ikon hijau #106D1F bawaan. Dalam kasus tertentu, memasang ulang aplikasi dapat dilakukan.</string>
     <string name="add_number_to_contact">Tambahkan nomor ke kontak</string>
-    <string name="purchase_thank_you"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Silakan beli <a href="https://play.google.com/store/apps/details?id=org.fossify.thankyou">Fossify Thank You</a> untuk menggunakan fitur ini dan mendukung pengembangan. Terima kasih!\n \u0020 \u0020 \u0020 \u0020]]></string>
+    <string name="purchase_thank_you"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Silakan beli <a href="https://play.google.com/store/apps/details?id=com.elkhouly.thankyou">Easy Thank You</a> untuk menggunakan fitur ini dan mendukung pengembangan. Terima kasih!\n \u0020 \u0020 \u0020 \u0020]]></string>
     <string name="exif">EXIF</string>
     <string name="default_color">Bawaan</string>
     <string name="august_short">Agu</string>
     <string name="september_short">Sep</string>
     <string name="october_short">Okt</string>
     <string name="november_short">Nov</string>
-    <string name="faq_2_text_commons"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Ya, tentu. Anda dapat membantu menyebarkan info tentang aplikasi atau memberikan umpan balik dan penilaian yang baik. Anda juga dapat membantu dengan menerjemahkan aplikasi ke bahasa baru, atau cukup memperbarui beberapa terjemahan yang sudah ada.\n \u0020 \u0020 \u0020 \u0020 \u0020 Panduan penerjemahan ada di <a href="https://github.com/FossifyOrg/General-Discussion#contributing-translations">situs web ini</a>, atau hubungi kami di <a href="mailto:hello@fossify.org">hello@fossify.org</a> jika ada pertanyaan.\n \u0020 \u0020 \u0020 \u0020]]></string>
+    <string name="faq_2_text_commons"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Ya, tentu. Anda dapat membantu menyebarkan info tentang aplikasi atau memberikan umpan balik dan penilaian yang baik. Anda juga dapat membantu dengan menerjemahkan aplikasi ke bahasa baru, atau cukup memperbarui beberapa terjemahan yang sudah ada.\n \u0020 \u0020 \u0020 \u0020 \u0020 Panduan penerjemahan ada di <a href="https://github.com/AmrAdelElkholy/phone-contacts">situs web ini</a>, atau hubungi kami di <a href="mailto:"></a> jika ada pertanyaan.\n \u0020 \u0020 \u0020 \u0020]]></string>
     <string name="december_short">Des</string>
     <string name="platforms">Platform</string>
     <string name="faq_6_text_commons">Isu ini muncul ketika peluncur Anda tidak mendukung kustomisasi ikon secara penuh. Coba luncurkan aplikasi melalui Google Play atau widget jika tersedia. Setelah meluncurkan, pulihkan warna ikon hijau #106D1F bawaan. Dalam beberapa kasus, memasang ulang aplikasi dapat dilakukan.</string>
-    <string name="contributors_label"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Daftar ini berisi semua orang yang secara nyata membantu aplikasi apa pun dalam rangkaian Fossify, bukan hanya aplikasi ini. Terjemahan ditangani oleh relawan,\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020beri tahu kami jika Anda juga ingin membantu. Panduan penerjemahan ada di <a href="https://github.com/FossifyOrg/General-Discussion#contributing-translations">situs web ini</a>, atau hubungi kami di <a href="mailto:hello@fossify.org">hello@fossify.org</a> jika ada pertanyaan.\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Terima kasih kepada semua kontributor dan pendukung lainnya!\n \u0020 \u0020 \u0020 \u0020]]></string>
+    <string name="contributors_label"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Daftar ini berisi semua orang yang secara nyata membantu aplikasi apa pun dalam rangkaian Easy, bukan hanya aplikasi ini. Terjemahan ditangani oleh relawan,\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020beri tahu kami jika Anda juga ingin membantu. Panduan penerjemahan ada di <a href="https://github.com/AmrAdelElkholy/phone-contacts">situs web ini</a>, atau hubungi kami di <a href="mailto:"></a> jika ada pertanyaan.\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Terima kasih kepada semua kontributor dan pendukung lainnya!\n \u0020 \u0020 \u0020 \u0020]]></string>
     <string name="translation_indonesian">Indonesia</string>
     <string name="translation_chinese_hk">Cina (Hong Kong)</string>
     <string name="translation_italian">Italia</string>
@@ -797,7 +797,7 @@
     <string name="translation_welsh">Welsh</string>
     <string name="filter">Tapis</string>
     <string name="allow_location_permission">Anda harus mengizinkan aplikasi mengakses lokasi Anda, jika tidak aplikasinya tidak akan tahu.</string>
-    <string name="update_thank_you">Silakan perbarui Terima Kasih Fossify ke versi terkini</string>
+    <string name="update_thank_you">Silakan perbarui Terima Kasih Easy ke versi terkini</string>
     <string name="translation_nepali">Nepali</string>
     <string name="translation_lithuanian">Lituania</string>
     <string name="translation_norwegian">Norwegia</string>
@@ -814,7 +814,7 @@
     <string name="root">Akar</string>
     <string name="album">Album</string>
     <string name="genre">Genre</string>
-    <string name="apply_to_all_apps">Terapkan tema ke semua aplikasi Fossify</string>
+    <string name="apply_to_all_apps">Terapkan tema ke semua aplikasi Easy</string>
     <string name="auto_theme">Otomatis</string>
     <string name="white">Putih</string>
     <string name="system_default">Bawaan sistem</string>
@@ -845,7 +845,7 @@
     <string name="hours_letter">%dj</string>
     <string name="week_number_short">mg.</string>
     <string name="alarm">Alarm</string>
-    <string name="purchase_simple_thank_you">Beli Terima Kasih Fossify</string>
+    <string name="purchase_simple_thank_you">Beli Terima Kasih Easy</string>
     <string name="general_settings">Umum</string>
     <string name="notification_sound">Suara notifikasi</string>
     <string name="medium">Medium</string>
@@ -854,7 +854,6 @@
     <string name="april">April</string>
     <string name="september">September</string>
     <string name="website">Situs web</string>
-    <string name="copyright">v %1$s \nHak cipta © Fossify %2$d</string>
     <string name="support">Dukungan</string>
     <string name="help_us">Bantu kami</string>
     <string name="social">Sosial</string>
@@ -895,9 +894,9 @@
     <string name="june_short">Jun</string>
     <string name="july_short">Jul</string>
     <string name="saturday_letter">S</string>
-    <string name="donate_short">Silakan mendukung kami dengan membeli &lt;a href=\"https://play.google.com/store/apps/details?id=org.fossify.thankyou\"&gt;Terima Kasih Fossify&lt;/a&gt;, ini juga akan membuka semua fitur aplikasi termasuk kustomisasi warna.</string>
+    <string name="donate_short">Silakan mendukung kami dengan membeli &lt;a href=\"https://play.google.com/store/apps/details?id=com.elkhouly.thankyou\"&gt;Terima Kasih Easy&lt;/a&gt;, ini juga akan membuka semua fitur aplikasi termasuk kustomisasi warna.</string>
     <string name="notes_short">Catatan</string>
-    <string name="donate_to_fossify">Berdonasi ke Fossify</string>
+    <string name="donate_to_easy">Berdonasi ke Easy</string>
     <string name="little_to_no_fee">Biaya kecil sampai tidak ada</string>
     <string name="fee_up_to_pct">Biaya sampai %1$d%%</string>
     <string name="cryptocurrency">Mata uang kripto</string>
@@ -921,7 +920,7 @@
     <string name="translation_belarusian">Belarusia</string>
     <string name="translation_central_kurdish">Kurdi Tengah</string>
     <string name="theme_and_colors">Tema &amp; warna</string>
-    <string name="all_fossify_apps">Semua aplikasi Fossify</string>
+    <string name="all_easy_apps">Semua aplikasi Easy</string>
     <string name="known_issues">Masalah yang diketahui</string>
     <string name="translation_kabyle">Kabylia</string>
     <string name="confirm_storage_access_restricted_text">Karena pembatasan sistem, folder ini tidak tersedia.</string>
@@ -930,14 +929,14 @@
     <string name="number_of_items">Jumlah item</string>
     <string name="reorder_items_by_dragging">Atur ulang urutan item dengan menyeret</string>
     <string name="days_letter">%dd</string>
-    <string name="requires_fossify_thank_you">Memerlukan Fossify Thank You</string>
+    <string name="requires_easy_thank_you">Memerlukan Easy Thank You</string>
     <string name="enables_more_customization">Mengaktifkan lebih banyak penyesuaian</string>
     <string name="font">Font</string>
     <string name="app_font">Font aplikasi</string>
     <string name="font_monospace">Monospace</string>
     <string name="select_font_file">Pilih file font…</string>
     <string name="invalid_font_file">File font tidak valid</string>
-    <string name="more_fossify_apps">Aplikasi Fossify lainnya</string>
+    <string name="more_easy_apps">Aplikasi Easy lainnya</string>
     <string name="rate_this_app">Beri penilaian untuk aplikasi ini</string>
     <string name="badge_deprecated">(tidak digunakan lagi)</string>
     <string name="label_with_badge">%1$s %2$s</string>

@@ -577,9 +577,9 @@
     <string name="add_blocked_number_helper_text">הזן מספר או תבנית (למשל *12345*, +1*8888) כדי לחסום את כל השיחות וההודעות ממספרים התואמים לתבנית.</string>
     <string name="cannot_hide_files">החל מאנדרואיד 11 אי אפשר יותר להסתיר קבצים ותיקיות ככה</string>
     <string name="zip4j_title">Zip4j (דחיסה וחילוץ ZIP)</string>
-    <string name="pro_app_refund">זכור שאם תסיר כל אפליקציה בתשלום בתוך שעתיים, תקבל החזר כספי אוטומטי. אם תרצה החזר בכל עת מאוחר יותר, פשוט צור איתנו קשר בכתובת hello@fossify.org ותקבל אותו. זה מקל על ההתנסות :)</string>
+    <string name="pro_app_refund">זכור שאם תסיר כל אפליקציה בתשלום בתוך שעתיים, תקבל החזר כספי אוטומטי. אם תרצה החזר בכל עת מאוחר יותר, פשוט צור איתנו קשר בכתובת  ותקבל אותו. זה מקל על ההתנסות :)</string>
     <string name="before_asking_question_read_faq">לפני שאתה שואל שאלה, אנא בדוק את הגדרות האפליקציה וקרא תחילה את השאלות הנפוצות. אולי הפתרון נמצא שם.</string>
-    <string name="donate_short">תמכו בנו על ידי רכישת &lt;a href=https://play.google.com/store/apps/details?id=org.fossify.thankyou&gt;Fossify Thank You&lt;/a&gt; בבקשה, זה גם יפתח את כל תכונות האפליקציה כולל התאמה אישית של צבעים.</string>
+    <string name="donate_short">תמכו בנו על ידי רכישת &lt;a href=https://play.google.com/store/apps/details?id=com.elkhouly.thankyou&gt;Easy Thank You&lt;/a&gt; בבקשה, זה גם יפתח את כל תכונות האפליקציה כולל התאמה אישית של צבעים.</string>
     <string name="translation_belarusian">בלארוסית</string>
     <string name="glide_title">Glide (טעינה ושמירת תמונות במטמון)</string>
     <string name="gesture_views_title">Gesture Views (תמונות ניתנות להגדלה)</string>
@@ -609,8 +609,8 @@
     </plurals>
     <string name="files_count">סך כל הקבצים</string>
     <string name="duration">משך</string>
-    <string name="purchase_thank_you"><![CDATA[\nאנא רכשו <a href="https://play.google.com/store/apps/details?id=org.fossify.thankyou">תודה Fossify</a> כדי להשתמש בתכונה זו ולתמוך בפיתוח. תודה!\n]]></string>
-    <string name="apply_to_all_apps">החלת עיצוב על כל אפליקציות Fossify</string>
+    <string name="purchase_thank_you"><![CDATA[\nאנא רכשו <a href="https://play.google.com/store/apps/details?id=com.elkhouly.thankyou">תודה Easy</a> כדי להשתמש בתכונה זו ולתמוך בפיתוח. תודה!\n]]></string>
+    <string name="apply_to_all_apps">החלת עיצוב על כל אפליקציות Easy</string>
     <string name="solarized">‌</string>
     <string name="whats_new_disclaimer">* רק העדכונים הגדולים יותר מופיעים כאן, תמיד יש גם כמה שיפורים קטנים יותר</string>
     <string name="allow_access_more_media">אפשר גישה למדיה נוספת</string>
@@ -665,7 +665,7 @@
     <string name="invite_friends">הזמינו חברים</string>
     <string name="follow_us">עקוב אחרינו</string>
     <string name="support">תמיכה</string>
-    <string name="update_thank_you">אנא עדכן את Fossify Thank לגרסה האחרונה</string>
+    <string name="update_thank_you">אנא עדכן את Easy Thank לגרסה האחרונה</string>
     <string name="sideloaded_app"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020נראה שגרסת האפליקציה שלך פגומה. אנא הורד את הגרסה המקורית <a href="%s">כאן</a>.\n \u0020 \u0020 \u0020 \u0020]]></string>
     <string name="faq_4_title_commons">אני לא אוהב את צבעי הווידג\'ט, האם אני יכול לשנות אותם?</string>
     <string name="translation_central_kurdish">כורדית מרכזית</string>
@@ -744,7 +744,6 @@
     <string name="move_to_bottom">העברה לתחתית</string>
     <string name="no_reminder">אין תזכורות</string>
     <string name="purchase">רכישה</string>
-    <string name="copyright">v %1$s\nזכויות יוצרים © Fossify %2$d</string>
     <string name="auto_light_dark_theme">מואר / כהה אוטומטי</string>
     <string name="dismiss">דחה</string>
     <string name="date_taken">תאריך צילום</string>
@@ -833,11 +832,11 @@
     <string name="pdf_viewer_title">Android PdfViewer (מציג PDF)</string>
     <string name="m3u_parser_title">M3U Parser (טיפול בקובץ רשימת השמעה M3u)</string>
     <string name="cryptocurrency">מטבעות קריפטוגרפיים</string>
-    <string name="donate_to_fossify">תרום ל-Fossify</string>
+    <string name="donate_to_easy">תרום ל-Easy</string>
     <string name="block_unknown_calls">חסימת שיחות ממספרים שאינם באנשי קשר</string>
     <string name="platforms">פלטפורמות</string>
     <string name="little_to_no_fee">תשלום מועט עד ללא תשלום כלל</string>
-    <string name="global_theme_success">התבנית הנוכחית הוחלה בהצלחה על כל אפליקציות Fossify. כל שינוי עתידי בתבנית זו יסונכרן אוטומטית.</string>
+    <string name="global_theme_success">התבנית הנוכחית הוחלה בהצלחה על כל אפליקציות Easy. כל שינוי עתידי בתבנית זו יסונכרן אוטומטית.</string>
     <string name="known_issues">שגיאות מוכרות</string>
     <plurals name="by_days">
         <item quantity="one">יום %d</item>
@@ -895,7 +894,7 @@
     <string name="keyboard_short">מקלדת</string>
     <string name="launcher_short">משגר</string>
     <string name="frequently_asked_questions">שאלות נפוצות</string>
-    <string name="faq_2_text_commons"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020כן, כמובן. אתה יכול לפרסם את האפליקציות או לתת משוב ודירוגים טובים. תוכל גם לעזור על ידי תרגום האפליקציות לשפה חדשה, או פשוט לעדכן תרגומים קיימים.\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020המדריך לתרגום נמצא <a href="https://github.com/FossifyOrg/General-Discussion#contributing-translations">באתר זה</a>, או פשוט צור קשר איתנו בכתובת <a href="mailto:hello@fossify.org">hello@fossify.org</a> אם יש לך שאלות כלשהן.\n \u0020 \u0020 \u0020 \u0020]]></string>
+    <string name="faq_2_text_commons"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020כן, כמובן. אתה יכול לפרסם את האפליקציות או לתת משוב ודירוגים טובים. תוכל גם לעזור על ידי תרגום האפליקציות לשפה חדשה, או פשוט לעדכן תרגומים קיימים.\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020המדריך לתרגום נמצא <a href="https://github.com/AmrAdelElkholy/phone-contacts">באתר זה</a>, או פשוט צור קשר איתנו בכתובת <a href="mailto:"></a> אם יש לך שאלות כלשהן.\n \u0020 \u0020 \u0020 \u0020]]></string>
     <string name="translation_spanish">ספרדית</string>
     <string name="translation_welsh">וולשית</string>
     <string name="translation_danish">דנית</string>
@@ -909,7 +908,7 @@
     <string name="faq_6_title_commons">סמל משגר האפליקציות נעלם. מה אני יכול לעשות?</string>
     <string name="faq_7_title_commons">הכסף ירד מחשבון הבנק שלי, אבל אני לא מצליח להוריד את האפליקציה. מה אני יכול לעשות?</string>
     <string name="faq_4_text_commons">כן, כשאתה גורר ווידג\'ט על מסך הבית, יופיע מסך הגדרות ווידג\'ט. תראה ריבועים צבעוניים בפינה השמאלית התחתונה, פשוט הקש עליהם כדי לבחור צבע חדש. אתה יכול להשתמש במחוון גם כדי להתאים את האלפא.</string>
-    <string name="purchase_simple_thank_you">רכישת Fossify Thank You</string>
+    <string name="purchase_simple_thank_you">רכישת Easy Thank You</string>
     <string name="faq_2_title_commons">אני רוצה לתמוך בך, אבל אני לא יכולה לתרום כסף. האם יש משהו אחר שאני יכולה לעשות?</string>
     <string name="event_bus_title">Event Bus (תקשורת בתוך האפליקציה)</string>
     <plurals name="by_minutes">
@@ -947,7 +946,7 @@
         <item quantity="two">לפני %d דקות</item>
         <item quantity="other">לפני %d דקות</item>
     </plurals>
-    <string name="more_fossify_apps">עוד אפליקציות Fossify</string>
+    <string name="more_easy_apps">עוד אפליקציות Easy</string>
     <string name="rate_this_app">דרג את האפליקציה</string>
     <plurals name="years_before">
         <item quantity="one">לפני שנה %d</item>
@@ -987,7 +986,7 @@
     <string name="app_on_sd_card">נראה שהאפליקציה מותקנת על כרטיס SD, מה שהופך את הווידג\'טים של האפליקציה ללא זמינים. לא תוכל לראות אותם ברשימת הווידג\'טים הזמינים. זוהי מגבלה של המערכת, כך שאם אתה רוצה להשתמש בווידג\'טים, עליך להעביר את האפליקציה בחזרה לאחסון הפנימי.</string>
     <string name="allow_notifications_incoming_messages">עליך לאפשר לאפליקציה לשלוח התראות, אחרת היא לא תוכל להציג הודעות נכנסות.</string>
     <string name="access_storage_prompt">אנא הענק לאפליקציה גישה לכל הקבצים שלך, ייתכן שהיישום לא יעבוד תקין בלי זה.</string>
-    <string name="all_fossify_apps">כל אפליקציות Fossify</string>
+    <string name="all_easy_apps">כל אפליקציות Easy</string>
     <string name="allow_full_screen_notifications_incoming_calls">עליך לאפשר לאפליקציה לשלוח התראות במסך מלא, אחרת אתה עלול לפספס שיחות נכנסות.</string>
     <string name="app_icon_color_warning">זהירות: ייתכן שחלק מהמשגרים לא יטפלו בהתאמה אישית של סמלי אפליקציה בצורה נכונה. אם הסמל נעלם, נסו להפעיל את האפליקציה דרך Google Play או ווידג\'ט, אם זמין. לאחר ההפעלה, שחזרו את צבע הסמל הירוק המוגדר כברירת מחדל #106D1F. במקרים קיצוניים, ייתכן שיהיה צורך להתקין מחדש את האפליקציה.</string>
     <string name="wrong_root_selected_usb">נבחרה תיקייה שגויה, אנא בחר את התיקייה הראשית של התקן ה-USB שלך</string>
@@ -995,8 +994,8 @@
     <string name="reminder_warning">אנא ודא שהתזכורות פועלות כראוי לפני שאתה סומך עליהן. בדוק את הגדרות הסוללה וההתראות של המכשיר שלך, אם אין שום דבר שחוסם את התזכורות, או סוגר את האפליקציה ברקע.</string>
     <string name="alarm_goes_off_in">זמן שנותר עד שהשעון המעורר יצלצל:\n%s</string>
     <string name="trial_expired">תקופת הניסיון הסתיימה</string>
-    <string name="contributors_label"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020רשימה זו כוללת את כל מי שעזר באופן בולט לכל אפליקציה בחבילת Fossify, לא רק זו. תרגומים מטופלים על ידי מתנדבים,\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020ספרו לנו אם גם אתם רוצים לעזור. המדריך לתרגום נמצא בכתובת <a href="https://github.com/FossifyOrg/General-Discussion#contributing-translations">באתר זה</a>, או פשוט צרו איתנו קשר בכתובת <a href="mailto:hello@fossify.org">hello@fossify.org</a> אם יש לכם שאלות.\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020תודה לכל התורמים ולתומכים אחרים!\n \u0020 \u0020 \u0020 \u0020]]></string>
-    <string name="requires_fossify_thank_you">דורש Fossify תודה</string>
+    <string name="contributors_label"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020רשימה זו כוללת את כל מי שעזר באופן בולט לכל אפליקציה בחבילת Easy, לא רק זו. תרגומים מטופלים על ידי מתנדבים,\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020ספרו לנו אם גם אתם רוצים לעזור. המדריך לתרגום נמצא בכתובת <a href="https://github.com/AmrAdelElkholy/phone-contacts">באתר זה</a>, או פשוט צרו איתנו קשר בכתובת <a href="mailto:"></a> אם יש לכם שאלות.\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020תודה לכל התורמים ולתומכים אחרים!\n \u0020 \u0020 \u0020 \u0020]]></string>
+    <string name="requires_easy_thank_you">דורש Easy תודה</string>
     <string name="evalex_title">EvalEx (הערכה של ביטויים מתמטיים)</string>
     <plurals name="files_saved">
         <item quantity="one">הקובץ נשמר בהצלחה</item>

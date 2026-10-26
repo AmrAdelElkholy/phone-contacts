@@ -732,7 +732,6 @@
     <string name="invite_via">Saada kutse rakendusega</string>
     <string name="donate">Toeta meid</string>
     <string name="follow_us">Jälgi meid</string>
-    <string name="copyright">v %1$s \nAutoriõigused © Fossify (Lihtsad mobiiitarvikud) %2$d</string>
     <string name="support">Kasutajatugi</string>
     <string name="help_us">Osale arenduses</string>
     <string name="social">Sotsiaalmeedia</string>
@@ -874,18 +873,18 @@
         <item quantity="one">Selle rakenduse prooviperiood lõppeb %d päeva pärast.</item>
         <item quantity="other">Selle rakenduse prooviperiood lõppeb %d päeva pärast.</item>
     </plurals>
-    <string name="pro_app_refund">Palun arvesta, et kui eemaldad tasulise rakenduse nutiseadmest 2 tunni jooksul, siis ostusumma tagastatakse automaatselt. Kui soovit tagastust hiljem, siis saada e-kiri hello@fossify.org aadressile ning korraldame tagastuse. Mõlemal juhul on sul võimalik meie tasulisi rakendusi testida :)</string>
+    <string name="pro_app_refund">Palun arvesta, et kui eemaldad tasulise rakenduse nutiseadmest 2 tunni jooksul, siis ostusumma tagastatakse automaatselt. Kui soovit tagastust hiljem, siis saada e-kiri  aadressile ning korraldame tagastuse. Mõlemal juhul on sul võimalik meie tasulisi rakendusi testida :)</string>
     <string name="developer_description">Arendame Androidi jaoks avatud lähtekoodil põhinevaid lihtsaid tarvikuid ja milles pole reklaame ega vajadust asjatute õiguste jaoks.</string>
     <string name="exif">EXIF</string>
     <string name="minutes_letter">%dm</string>
     <string name="hours_letter">%dt</string>
     <string name="friday_letter">R</string>
-    <string name="update_thank_you">Palun uuenda rakendus Fossify Suur Tänu viimase versioonini</string>
-    <string name="contributors_label"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Selles loendis on kõik, kes aitasid märgatavalt arendada või tõlkida mis tahes rakendust komplektis „Fossify nutitarvikud“.Tõlkimisega tegelevad vabatahtlikud,\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020anna meile teada, kui soovid ka osaleda. Tõlkimise juhend asub <a href="https://github.com/FossifyOrg/General-Discussion#contributing-translations">meie Githubi lehel</a> või kui sul on küsimusi, siis võta meiega ühendust aadressil <a href="mailto:hello@fossify.org">hello@fossify.org</a>.\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Aitäh kõigile panustajatele ja teistele toetajatele!\n \u0020 \u0020 \u0020 \u0020]]></string>
+    <string name="update_thank_you">Palun uuenda rakendus Easy Suur Tänu viimase versioonini</string>
+    <string name="contributors_label"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Selles loendis on kõik, kes aitasid märgatavalt arendada või tõlkida mis tahes rakendust komplektis „Easy nutitarvikud“.Tõlkimisega tegelevad vabatahtlikud,\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020anna meile teada, kui soovid ka osaleda. Tõlkimise juhend asub <a href="https://github.com/AmrAdelElkholy/phone-contacts">meie Githubi lehel</a> või kui sul on küsimusi, siis võta meiega ühendust aadressil <a href="mailto:"></a>.\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Aitäh kõigile panustajatele ja teistele toetajatele!\n \u0020 \u0020 \u0020 \u0020]]></string>
     <string name="app_icon_color_warning">Hoiatus: Mõned käivitajad ei käsitse rakenduste ikoonide kohandamist korralikult. Kui ikoon kaob, proovi käivitada rakendus Google Play\'st või mõne muu olemasoleva vidina abil. Kui oled käivitanud rakenduse, seadista lihtsalt ikooni vaikimisi roheline toon #106D1F tagasi. Halvemal juhul pead rakenduse võib-olla uuesti paigaldama.</string>
     <string name="faq_6_text_commons">Selle põhjuseks on asjaolu, et see käivitaja ei toeta ikoonide kohandamist korralikult. Proovi käivitada rakendus Google Play või mõne sarnase saadaoleva vidina abil. Peale käivitamist, seadista lihtsalt tagasi ikooni vaikimisi roheline toon #106D1F. Halvemal juhul pead rakenduse võib-olla uuesti paigaldama.</string>
     <string name="audio">Audio</string>
-    <string name="purchase_simple_thank_you">Palun osta Fossify Suur Tänu</string>
+    <string name="purchase_simple_thank_you">Palun osta Easy Suur Tänu</string>
     <string name="march_short">Mär</string>
     <string name="april_short">Apr</string>
     <string name="july_short">Juuli</string>
@@ -897,7 +896,7 @@
     <string name="thursday_short">Neljap</string>
     <string name="friday_short">Reede</string>
     <string name="saturday_short">Laup</string>
-    <string name="donate_short">Kas Fossify rakendused meeldivad sulle? Palun toeta meie reklaamivabade rakenduste arendust ostes rakenduse &lt;a href=\"https://play.google.com/store/apps/details?id=org.fossify.thankyou\"&gt;Fossify Suur Tänu&lt;/a&gt;. Muu hulgas saad kõigis Fossify rakendustes kasutada enda valitud kirjatüüpe ja jagatud kohendusi. Täname sind toetuse eest!</string>
+    <string name="donate_short">Kas Easy rakendused meeldivad sulle? Palun toeta meie reklaamivabade rakenduste arendust ostes rakenduse &lt;a href=\"https://play.google.com/store/apps/details?id=com.elkhouly.thankyou\"&gt;Easy Suur Tänu&lt;/a&gt;. Muu hulgas saad kõigis Easy rakendustes kasutada enda valitud kirjatüüpe ja jagatud kohendusi. Täname sind toetuse eest!</string>
     <string name="translation_english">inglise keel</string>
     <string name="translation_bengali">bengali keel</string>
     <string name="translation_hindi">hindi keel</string>
@@ -909,8 +908,8 @@
     <string name="album">Album</string>
     <string name="genre">Žanr</string>
     <string name="f_number">F-number</string>
-    <string name="apply_to_all_apps">Kasuta seda kujundust kõikides Fossify rakendustes</string>
-    <string name="purchase_thank_you"><![CDATA["\n            Selle funktsionaalsuse kasutamiseks ja meie arendustöö toetamiseks palun osta <a href=https://play.google.com/store/apps/details?id=org.fossify.thankyou>Fossify Suur Tänu</a>. Täname sind juba ette!\n        "]]></string>
+    <string name="apply_to_all_apps">Kasuta seda kujundust kõikides Easy rakendustes</string>
+    <string name="purchase_thank_you"><![CDATA["\n            Selle funktsionaalsuse kasutamiseks ja meie arendustöö toetamiseks palun osta <a href=https://play.google.com/store/apps/details?id=com.elkhouly.thankyou>Easy Suur Tänu</a>. Täname sind juba ette!\n        "]]></string>
     <string name="deletion_confirmation_short">Kas kustutame %s?</string>
     <string name="pin">PIN</string>
     <string name="enter_password">Sisesta salasõna</string>
@@ -935,11 +934,11 @@
     <string name="sunday_letter">P</string>
     <string name="monday_short">Esmasp</string>
     <string name="sunday_short">Pühap</string>
-    <string name="faq_2_text_commons"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Jah, muidugi. Sa saad rakendust teistele tutvustada või jagada head tagasisidet ja hinnanguid. Samuti saad aidata ka rakenduste tõlkimisega uude keelde või lihtsalt mõne olemasoleva tõlke ajakohastamisega.\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Tõlkimise juhend asub <a href="https://github.com/FossifyOrg/General-Discussion#contributing-translations">siin lehel</a> või küsimuste puhul lihtsalt võta meiega ühendust aadressil <a href="mailto:hello@fossify.org">hello@fossify.org</a>.\n \u0020 \u0020 \u0020 \u0020]]></string>
+    <string name="faq_2_text_commons"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Jah, muidugi. Sa saad rakendust teistele tutvustada või jagada head tagasisidet ja hinnanguid. Samuti saad aidata ka rakenduste tõlkimisega uude keelde või lihtsalt mõne olemasoleva tõlke ajakohastamisega.\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Tõlkimise juhend asub <a href="https://github.com/AmrAdelElkholy/phone-contacts">siin lehel</a> või küsimuste puhul lihtsalt võta meiega ühendust aadressil <a href="mailto:"></a>.\n \u0020 \u0020 \u0020 \u0020]]></string>
     <string name="translation_esperanto">esperanto</string>
     <string name="translation_chuvash">tšuvašši</string>
     <string name="translation_gujarati">gudžarati</string>
-    <string name="donate_to_fossify">Toeta Fossify projektide arendust</string>
+    <string name="donate_to_easy">Toeta Easy projektide arendust</string>
     <string name="platforms">Platvormid</string>
     <string name="format_phone_numbers">Vorminda telefoninumbreid</string>
     <string name="little_to_no_fee">Praktiliselt tasuta</string>
@@ -948,7 +947,7 @@
     <string name="translation_belarusian">valgevene keel</string>
     <string name="translation_central_kurdish">sorani keel</string>
     <string name="theme_and_colors">Välimus ja värvid</string>
-    <string name="all_fossify_apps">Kõik Fossify rakendused</string>
+    <string name="all_easy_apps">Kõik Easy rakendused</string>
     <string name="known_issues">Teadaolevad vead</string>
     <string name="translation_kabyle">kabiili keel</string>
     <string name="number_of_items">Kirjete arv</string>
@@ -958,9 +957,9 @@
     <string name="confirm_storage_access_restricted_text_open_system">Ava süsteemi rakenduses</string>
     <string name="confirm_storage_access_restricted_text_not_found">Süsteemi failihaldurit ei õnnestu leida.</string>
     <string name="rate_this_app">Hinda seda rakendust</string>
-    <string name="more_fossify_apps">Vaata teisi Fossify rakendusi</string>
+    <string name="more_easy_apps">Vaata teisi Easy rakendusi</string>
     <string name="evalex_title">EvalEx (matemaatilise avaldise hindamine)</string>
-    <string name="requires_fossify_thank_you">Eeldab rakenduse „Fossify suur tänu“ olemasolu</string>
+    <string name="requires_easy_thank_you">Eeldab rakenduse „Easy suur tänu“ olemasolu</string>
     <string name="enables_more_customization">Võimaldab rakenduse täiendavad kohendamist</string>
     <string name="translation_latvian">läti keel</string>
     <plurals name="files_saved">
@@ -983,5 +982,5 @@
     <string name="jsoup_title">jsoup (HTML-vormingu parser)</string>
     <string name="commons_csv_title">Apache Commons CSV (CSV-vormingu parser)</string>
     <string name="rate_app_prompt">Kas sulle see rakendus meeldib? Hinda teda Google Play teenuses.</string>
-    <string name="donation_prompt">Kui sulle see rakendus meeldib, siis kaalu Fossify toetamist.</string>
+    <string name="donation_prompt">Kui sulle see rakendus meeldib, siis kaalu Easy toetamist.</string>
 </resources>

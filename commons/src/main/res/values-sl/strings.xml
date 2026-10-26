@@ -882,7 +882,7 @@
         <item quantity="few">Vaše poskusno obdobje poteče čez %d dni.</item>
         <item quantity="other">Vaše poskusno obdobje poteče čez %d dni.</item>
     </plurals>
-    <string name="pro_app_refund">Ne pozabite - če odstranite katerokoli plačljivo aplikacijo v dveh urah, dobite povrnjen avtomatično denar. Če želite povrnitev denarja po preteku tega časa, nas kontaktirajte na hello@fossify.org in poskrbeli bomo za to. Zaradi tega je preizkušanje aplikacije še bolj preprosto. :)</string>
+    <string name="pro_app_refund">Ne pozabite - če odstranite katerokoli plačljivo aplikacijo v dveh urah, dobite povrnjen avtomatično denar. Če želite povrnitev denarja po preteku tega časa, nas kontaktirajte na  in poskrbeli bomo za to. Zaradi tega je preizkušanje aplikacije še bolj preprosto. :)</string>
     <string name="developer_description">Skupina preprostih odprtokodnih aplikacij za Android s prilagodljivimi pripomočki, brez oglasov in nepotrebnih dovoljenj.</string>
     <string name="edit_contact">Uredi stik</string>
     <string name="on_contact_click">Ob kliku na stik</string>
@@ -936,9 +936,9 @@
     <string name="album">Album</string>
     <string name="genre">Žanr</string>
     <string name="exif">EXIF</string>
-    <string name="apply_to_all_apps">Uporabi temo za vse aplikacije Fossify</string>
+    <string name="apply_to_all_apps">Uporabi temo za vse aplikacije Easy</string>
     <string name="app_icon_color_warning">Pozor: Nekateri zaganjalniki morda ne bodo pravilno prilagodili ikon aplikacij. Če ikona izgine, poskusite zagnati aplikacijo prek trgovine Google Play ali pripomočka, če je na voljo. Po zagonu obnovite privzeto zeleno barvo ikone #106D1F. V skrajnih primerih bo morda potrebna ponovna namestitev aplikacije.</string>
-    <string name="purchase_thank_you"><![CDATA[\nZa uporabo te funkcije in podporo razvoju kupite aplikacijo <a href="https://play.google.com/store/apps/details?id=org.fossify.thankyou">Fossify Thank You</a>. Hvala!\n]]></string>
+    <string name="purchase_thank_you"><![CDATA[\nZa uporabo te funkcije in podporo razvoju kupite aplikacijo <a href="https://play.google.com/store/apps/details?id=com.elkhouly.thankyou">Easy Thank You</a>. Hvala!\n]]></string>
     <string name="allow_access_more_media">Dovoli dostop do več medijev</string>
     <string name="show_line_numbers">Prikaži številke vrstic</string>
     <string name="hide_line_numbers">Skrij številke vrstic</string>
@@ -963,8 +963,8 @@
     <string name="days_letter">%d d</string>
     <string name="week_number_short">ted.</string>
     <string name="alarm">Alarm</string>
-    <string name="purchase_simple_thank_you">Nakup Fossify Thank You</string>
-    <string name="requires_fossify_thank_you">Zahteva Fossify Thank You</string>
+    <string name="purchase_simple_thank_you">Nakup Easy Thank You</string>
+    <string name="requires_easy_thank_you">Zahteva Easy Thank You</string>
     <string name="enables_more_customization">Omogoča večjo prilagoditev</string>
     <string name="general_settings">Splošno</string>
     <string name="theme_and_colors">Teme in barve</string>
@@ -989,27 +989,26 @@
     <string name="tuesday_letter">T</string>
     <string name="saturday_letter">S</string>
     <string name="known_issues">Znane težave</string>
-    <string name="more_fossify_apps">Več aplikacij Fossify</string>
+    <string name="more_easy_apps">Več aplikacij Easy</string>
     <string name="rate_this_app">Ocenite to aplikacijo</string>
-    <string name="copyright">v %1$s\nCopyright © Fossify %2$d</string>
     <string name="support">Podpora</string>
     <string name="help_us">Pomagajte nam</string>
     <string name="social">Družabna omrežja</string>
     <string name="other">Ostalo</string>
     <string name="version_placeholder">Različica %s</string>
-    <string name="donate_short">Podprite nas z nakupom aplikacije &lt;a href=https://play.google.com/store/apps/details?id=org.fossify.thankyou&gt;Fossify Thank You&lt;/a&gt;, s čimer boste odklenili tudi vse funkcije aplikacije, vključno s prilagajanjem barv.</string>
-    <string name="update_thank_you">Posodobite Fossify Thank You na najnovejšo različico</string>
-    <string name="all_fossify_apps">Vse aplikacije Fossify</string>
-    <string name="donate_to_fossify">Darujte Kavdori</string>
+    <string name="donate_short">Podprite nas z nakupom aplikacije &lt;a href=https://play.google.com/store/apps/details?id=com.elkhouly.thankyou&gt;Easy Thank You&lt;/a&gt;, s čimer boste odklenili tudi vse funkcije aplikacije, vključno s prilagajanjem barv.</string>
+    <string name="update_thank_you">Posodobite Easy Thank You na najnovejšo različico</string>
+    <string name="all_easy_apps">Vse aplikacije Easy</string>
+    <string name="donate_to_easy">Darujte Kavdori</string>
     <string name="platforms">Platforme</string>
     <string name="little_to_no_fee">Majhna ali brez provizije</string>
     <string name="fee_up_to_pct">Provizija do %1$d%%</string>
     <string name="cryptocurrency">Kriptovalute</string>
     <string name="badge_deprecated">(zastarelo)</string>
     <string name="label_with_badge">%1$s %2$s</string>
-    <string name="faq_2_text_commons"><![CDATA[\nDa, seveda. Lahko širite glas o aplikacijah ali podate dobre povratne informacije in ocene. Pomagate lahko tudi s prevajanjem aplikacij v nov jezik ali pa preprosto posodobite nekatere obstoječe prevode.\nVodnik za prevajanje je na <a href="https://github.com/FossifyOrg/General-Discussion#contributing-translations">tej spletni strani</a> ali pa nas preprosto kontaktirajte na <a href="mailto:hello@fossify.org">hello@fossify.org</a>, če imate kakršna koli vprašanja.\n]]></string>
+    <string name="faq_2_text_commons"><![CDATA[\nDa, seveda. Lahko širite glas o aplikacijah ali podate dobre povratne informacije in ocene. Pomagate lahko tudi s prevajanjem aplikacij v nov jezik ali pa preprosto posodobite nekatere obstoječe prevode.\nVodnik za prevajanje je na <a href="https://github.com/AmrAdelElkholy/phone-contacts">tej spletni strani</a> ali pa nas preprosto kontaktirajte na <a href="mailto:"></a>, če imate kakršna koli vprašanja.\n]]></string>
     <string name="faq_6_text_commons">Do te težave pride, če vaš zaganjalnik ne podpira v celoti prilagajanja ikon. Poskusite zagnati aplikacijo prek trgovine Google Play ali pripomočka, če je na voljo. Po zagonu obnovite privzeto zeleno barvo ikone #106D1F. V skrajnih primerih bo morda potrebna ponovna namestitev aplikacije.</string>
-    <string name="contributors_label"><![CDATA[\nTa seznam vsebuje vse, ki so opazno pomagali kateri koli aplikaciji v paketu Fossify, ne le tej. Prevode opravljajo prostovoljci,\nsporočite nam, če želite pomagati tudi vi. Vodnik za prevajanje je na <a href="https://github.com/FossifyOrg/General-Discussion#contributing-translations">tej spletni strani</a> ali pa nas preprosto kontaktirajte na <a href="mailto:hello@fossify.org">hello@fossify.org</a>, če imate kakršna koli vprašanja.\nHvala vsem sodelujočim in drugim podpornikom!\n]]></string>
+    <string name="contributors_label"><![CDATA[\nTa seznam vsebuje vse, ki so opazno pomagali kateri koli aplikaciji v paketu Easy, ne le tej. Prevode opravljajo prostovoljci,\nsporočite nam, če želite pomagati tudi vi. Vodnik za prevajanje je na <a href="https://github.com/AmrAdelElkholy/phone-contacts">tej spletni strani</a> ali pa nas preprosto kontaktirajte na <a href="mailto:"></a>, če imate kakršna koli vprašanja.\nHvala vsem sodelujočim in drugim podpornikom!\n]]></string>
     <string name="translation_arabic">Arabščina</string>
     <string name="translation_azerbaijani">Azerbajdžanščina</string>
     <string name="translation_belarusian">Beloruščina</string>

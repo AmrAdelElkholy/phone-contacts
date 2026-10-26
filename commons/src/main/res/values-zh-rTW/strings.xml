@@ -203,8 +203,8 @@
     <string name="undo_changes_confirmation">確定要復原變更嗎？</string>
     <string name="cannot_be_undone">此動作無法復原。</string>
     <string name="save_before_closing">尚未儲存變更，離開前是否儲存？</string>
-    <string name="global_theme_success">目前主題已成功套用到所有 Fossify 應用程式。未來對此主題的任何變更都將自動同步。</string>
-    <string name="purchase_thank_you"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020請購買 <a href="https://play.google.com/store/apps/details?id=org.fossify.thankyou">Fossify Thank You</a> 以使用此功能並支持開發者。謝謝！\n \u0020 \u0020 \u0020 \u0020]]></string>
+    <string name="global_theme_success">目前主題已成功套用到所有 Easy 應用程式。未來對此主題的任何變更都將自動同步。</string>
+    <string name="purchase_thank_you"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020請購買 <a href="https://play.google.com/store/apps/details?id=com.elkhouly.thankyou">Easy Thank You</a> 以使用此功能並支持開發者。謝謝！\n \u0020 \u0020 \u0020 \u0020]]></string>
     <string name="light_theme">淺色主題</string>
     <string name="dark_theme">深色主題</string>
     <string name="dark_red">暗紅主題</string>
@@ -599,7 +599,7 @@
     <string name="indicator_fast_scroll_title">Indicator Fast Scroll（滾動條上字母）</string>
     <string name="event_bus_title">Event Bus（應用程式溝通）</string>
     <string name="audio_record_view_title">Audio Record View (音訊視覺化)</string>
-    <string name="pro_app_refund">別忘記如果您在2小時內解除安裝任何付費應用程式，將會自動被退款。若您在之後隨時想退款，只要透過 @fossify.org 聯絡我們，即可收到退款。這麼一來輕鬆就能試用了 :)</string>
+    <string name="pro_app_refund">別忘記如果您在2小時內解除安裝任何付費應用程式，將會自動被退款。若您在之後隨時想退款，只要透過 @easy.org 聯絡我們，即可收到退款。這麼一來輕鬆就能試用了 :)</string>
     <string name="dial_number">撥打電話號碼</string>
     <string name="notifications">通知</string>
     <string name="no_access_to_contacts">此應用程式無法存取您的聯絡人</string>
@@ -699,7 +699,7 @@
     <string name="unblock_contact">解除封鎖聯絡人</string>
     <string name="format_phone_numbers">設定電話號碼格式</string>
     <string name="theme_and_colors">佈景主題與色彩</string>
-    <string name="all_fossify_apps">所有 Fossify 應用程式</string>
+    <string name="all_easy_apps">所有 Easy 應用程式</string>
     <string name="authenticate">驗證</string>
     <string name="biometrics">生物特徵</string>
     <string name="open_biometric_dialog">開啟生物特徵驗證互動視窗</string>
@@ -747,7 +747,6 @@
     <string name="do_not_show_again">不要再顯示</string>
     <string name="during_day_at_hh_mm">白天 hh:mm</string>
     <string name="during_day_at">白天 %1$02d:%2$02d</string>
-    <string name="copyright">v %1$s\n版權所有 © Fossify %2$d</string>
     <string name="sms_messenger_short">簡訊</string>
     <string name="thank_you_short">感謝您</string>
     <string name="voice_recorder_short">錄音機</string>
@@ -776,7 +775,7 @@
     <string name="empty_password_new">請輸入密碼</string>
     <string name="empty_password">請輸入密碼</string>
     <string name="invalid_password">密碼錯誤</string>
-    <string name="purchase_simple_thank_you">購買 Fossify Thank You</string>
+    <string name="purchase_simple_thank_you">購買 Easy Thank You</string>
     <string name="general_settings">一般</string>
     <string name="customize_notifications">自訂通知</string>
     <string name="notification_sound">通知音效</string>
@@ -788,12 +787,12 @@
     <string name="june_short">6月</string>
     <string name="july_short">7月</string>
     <string name="other">其他</string>
-    <string name="donate_short">請透過購買 &lt;a href=https://play.google.com/store/apps/details?id=org.fossify.thankyou&gt;Fossify Thank You&lt;/a&gt; 來支援我們，這也將解鎖所有應用程式功能，包括顏色自訂。</string>
-    <string name="update_thank_you">請將 Fossify Thank You 更新到最新版本</string>
+    <string name="donate_short">請透過購買 &lt;a href=https://play.google.com/store/apps/details?id=com.elkhouly.thankyou&gt;Easy Thank You&lt;/a&gt; 來支援我們，這也將解鎖所有應用程式功能，包括顏色自訂。</string>
+    <string name="update_thank_you">請將 Easy Thank You 更新到最新版本</string>
     <string name="faq_9_text_commons">有幾種方法可以做到。第一種是長按一個項目以啟動選取模式，然後點選其他項目來選取它們。第二種類似於在電腦上用滑鼠選擇項目，長按一個項目以啟動選取模式，然後手指不放開拖曳至其他項目上進行選取。第三種方法是先長按一個項目，然後再長按另一個項目，中間的所有內容都會被選取。如果您想選取所有項目，只需長按一個項目，然後點選左上角的已選取項目計數器，即可全選或取消全選。</string>
     <string name="translation">翻譯</string>
     <string name="development">開發</string>
-    <string name="contributors_label"><![CDATA["\n            此清單包含所有對 Fossify 套件中任何應用程式提供明顯幫助的人，不僅僅是這個應用程式。翻譯是由志工處理的，如果您也想幫忙，請告訴我們。\n            翻譯指南位於 <a href=https://github.com/FossifyOrg/General-Discussion#contributing-translations>這個網站</a>，或者如果您有任何問題，可以直接透過 <a href=mailto:hello@fossify.org>hello@fossify.org</a> 聯絡我們。\n            感謝所有貢獻者和其他支持者！\n        "]]></string>
+    <string name="contributors_label"><![CDATA["\n            此清單包含所有對 Easy 套件中任何應用程式提供明顯幫助的人，不僅僅是這個應用程式。翻譯是由志工處理的，如果您也想幫忙，請告訴我們。\n            翻譯指南位於 <a href=https://github.com/AmrAdelElkholy/phone-contacts</a>，或者如果您有任何問題，可以直接透過 <a href=mailto:></a> 聯絡我們。\n            感謝所有貢獻者和其他支持者！\n        "]]></string>
     <string name="translation_belarusian">白俄羅斯文</string>
     <string name="translation_bulgarian">保加利亞文</string>
     <string name="translation_catalan">加泰隆尼亞語</string>
@@ -828,7 +827,7 @@
     <string name="genre">類型</string>
     <string name="remove_exif_confirmation">您確定要移除 EXIF 資訊，例如 GPS 座標、相機型號等等嗎？</string>
     <string name="exif_removed">已成功移除 EXIF 資訊</string>
-    <string name="apply_to_all_apps">將佈景主題套用至所有 Fossify 應用程式</string>
+    <string name="apply_to_all_apps">將佈景主題套用至所有 Easy 應用程式</string>
     <string name="auto_theme">自動</string>
     <string name="select_text">選取文字</string>
     <string name="allow_access_more_media">允許存取更多媒體</string>
@@ -891,12 +890,12 @@
     <string name="unlock_for_one_final_day">解鎖應用程式到最後一天</string>
     <string name="welcome_to_app_name">歡迎使用 %s！</string>
     <string name="faq_6_text_commons">當您的啟動器不完全支援圖示自訂時，就會發生此問題。請嘗試透過 Google Play 或小工具（如果有的話）啟動應用程式。啟動後，請將應用程式圖示顏色還原為預設的綠色 #106D1F。在極少數情況下，可能會需要重新安裝應用程式。</string>
-    <string name="faq_2_text_commons"><![CDATA["\n            當然可以。您可以幫忙宣傳應用程式，或者提供良好的意見回饋和評分。您也可以幫忙將應用程式翻譯成新的語言，或者更新現有的翻譯。.\n            翻譯指南位於<a href=https://github.com/FossifyOrg/General-Discussion#contributing-translations>這個網站</a>，或者如果您有任何問題，可以直接透過 <a href=mailto:hello@fossify.org>hello@fossify.org</a> 聯絡我們。\n        "]]></string>
+    <string name="faq_2_text_commons"><![CDATA["\n            當然可以。您可以幫忙宣傳應用程式，或者提供良好的意見回饋和評分。您也可以幫忙將應用程式翻譯成新的語言，或者更新現有的翻譯。.\n            翻譯指南位於<a href=https://github.com/AmrAdelElkholy/phone-contacts</a>，或者如果您有任何問題，可以直接透過 <a href=mailto:></a> 聯絡我們。\n        "]]></string>
     <string name="faq_9_title_commons">如何一次選取多個項目？</string>
     <string name="faq_10_title_commons">我已購買應用程式，但無法在其他裝置上下載。</string>
     <string name="developer_description">一系列簡單、開放原始碼的 Android 應用程式，具有可自訂的小工具，沒有廣告和不必要的權限。</string>
     <string name="little_to_no_fee">很少或沒有費用</string>
-    <string name="donate_to_fossify">贊助 Fossify</string>
+    <string name="donate_to_easy">贊助 Easy</string>
     <string name="platforms">平臺</string>
     <string name="fee_up_to_pct">費用最高 %1$d%%</string>
     <string name="cryptocurrency">加密貨幣</string>
@@ -930,10 +929,10 @@
     <string name="days_letter">%d天</string>
     <string name="translation_kabyle">卡拜爾語</string>
     <string name="confirm_storage_access_restricted_text">由於系統限制，無法使用此資料夾。</string>
-    <string name="more_fossify_apps">更多 Fossify 應用程式</string>
+    <string name="more_easy_apps">更多 Easy 應用程式</string>
     <string name="rate_this_app">為此應用程式評分</string>
     <string name="evalex_title">EvalEx（數學表達式評估）</string>
-    <string name="requires_fossify_thank_you">需要 Fossify Thank You</string>
+    <string name="requires_easy_thank_you">需要 Easy Thank You</string>
     <string name="enables_more_customization">啟用更多自訂</string>
     <string name="translation_latvian">拉脫維亞語</string>
     <plurals name="files_saved">

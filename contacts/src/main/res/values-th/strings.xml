@@ -46,7 +46,7 @@
     <string name="manage_shown_contact_fields">จัดการช้อมูลรายชื่อที่แสดง</string>
     <string name="contacts">รายชื่อ</string>
     <string name="show_only_contacts_with_numbers">แสดงเฉพาะรายชื่อที่มีหมายเลขโทรศัพท์</string>
-    <string name="show_private_contacts">แสดงรายชื่อส่วนตัวใน Fossify Phone, Messages และ Calendar</string>
+    <string name="show_private_contacts">แสดงรายชื่อส่วนตัวใน Easy Phone, Messages และ Calendar</string>
     <string name="merge_duplicate_contacts">รวมรายชื่อที่ซ้ำกัน</string>
     <string name="no_favorites">ดูเหมือนคุณยังไม่ได้เพิ่มรายชื่อโปรดใดๆ</string>
     <string name="search_contacts">ค้นหารายชื่อ</string>

@@ -71,7 +71,7 @@
     <string name="contacts_faq_1_title">連絡先に表示される項目を変更することはできますか？</string>
     <string name="contacts_faq_1_text">可能です。「設定」の「連絡先に表示するフィールドを管理」から、表示する項目を選択できます。これらの中にはデフォルトで無効になっている項目もあるので、新しい項目が見つかるかもしれません。</string>
     <string name="format_phone_numbers">電話番号の形式</string>
-    <string name="show_private_contacts">非公開の連絡先をFossify電話、Fossify SMSメッセンジャー、Fossifyカレンダーに表示</string>
+    <string name="show_private_contacts">非公開の連絡先をEasy電話、Easy SMSメッセンジャー、Easyカレンダーに表示</string>
     <string name="street">通り</string>
     <string name="neighborhood">部屋番号</string>
     <string name="city">市</string>

@@ -161,7 +161,7 @@
     <string name="change_color">Change colour</string>
     <string name="changing_color_description">Changing a colour will make it switch to Custom theme</string>
     <string name="solarized">Solarized</string>
-    <string name="pro_app_refund">Don\'t forget that if you uninstall any paid app within 2 hours, you will automatically be refunded. If you want a refund any time later, just contact us at hello@fossify.org and you will get it. That makes it easy to try it out :)</string>
+    <string name="pro_app_refund">Don\'t forget that if you uninstall any paid app within 2 hours, you will automatically be refunded. If you want a refund any time later, just contact us at  and you will get it. That makes it easy to try it out :)</string>
     <string name="developer_description">A group of simple, open source Android apps with customisable widgets, without ads and unnecessary permissions.</string>
     <plurals name="items">
         <item quantity="one">%d item</item>

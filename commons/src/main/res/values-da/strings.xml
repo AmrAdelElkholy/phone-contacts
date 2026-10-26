@@ -321,7 +321,7 @@
     <string name="cannot_be_undone">Handlingen kan ikke fortrydes.</string>
     <string name="save_before_closing">Du har ændringer der ikke er gemt. Vil du gemme dem?</string>
     <string name="global_theme_success">Farverne er ændret. Et nyt udseende kaldet \"Tilpasset\" er tilføjet, brug det ved opdatering af alle app-farver fremover.</string>
-    <string name="purchase_thank_you"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Køb <a href="https://play.google.com/store/apps/details?id=org.fossify.thankyou">Fossify Thank You</a> for at bruge denne funktion og understøtte appens udvikling. Tak!\n \u0020 \u0020 \u0020 \u0020]]></string>
+    <string name="purchase_thank_you"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Køb <a href="https://play.google.com/store/apps/details?id=com.elkhouly.thankyou">Easy Thank You</a> for at bruge denne funktion og understøtte appens udvikling. Tak!\n \u0020 \u0020 \u0020 \u0020]]></string>
     <string name="light_theme">Lys</string>
     <string name="dark_theme">Mørk</string>
     <string name="auto_light_dark_theme">Auto lyst / mørkt</string>
@@ -774,7 +774,7 @@
     <string name="faq_2_title_commons">Jeg vil gerne støtte dig, men jeg kan ikke donere penge. Er der andet jeg kan gøre?</string>
     <string name="faq_2_text_commons"><![CDATA[
             Ja, selvfølgelig. Du kan sprede budskabet om vores apps eller give god feedback og gode vurderinger. Du kan også hjælpe ved at oversætte apps til et nyt sprog eller blot opdatere nogle af de eksisterende oversættelser.
-            Vejledningen til oversættelse findes på <a href="https://github.com/FossifyOrg/General-Discussion#contributing-translations">dette websted</a>, eller mail til os på adressen <a href="mailto:hello@fossify.org">hello@fossify.org</a>, hvis du har spørgsmål.
+            Vejledningen til oversættelse findes på <a href="https://github.com/AmrAdelElkholy/phone-contacts">dette websted</a>, eller mail til os på adressen <a href="mailto:"></a>, hvis du har spørgsmål.
         ]]></string>
     <string name="faq_3_title_commons">Jeg fik slettet nogle filer ved en fejl, hvordan kan jeg gendanne dem?</string>
     <string name="faq_3_text_commons">Det kan du desværre ikke. Filer er væk så snart sletningen er bekræftet, og der er ingen papirkurv.</string>
@@ -794,8 +794,8 @@
     <string name="development">Udvikling</string>
     <string name="other_help">Anden hjælp</string>
     <string name="contributors_label"><![CDATA[
-            Denne liste indeholder alle, der har hjulpet med en app i Fossify-pakken, ikke kun denne. Oversættelser håndteres af frivillige,
-            så lad os vide, hvis du også vil hjælpe. Vejledningen til oversættelse findes på <a href="https://github.com/FossifyOrg/General-Discussion#contributing-translations">denne hjemmeside</a>, eller send en mail til <a href="mailto:hello@fossify.org">hello@fossify.org</a>, hvis du har spørgsmål.
+            Denne liste indeholder alle, der har hjulpet med en app i Easy-pakken, ikke kun denne. Oversættelser håndteres af frivillige,
+            så lad os vide, hvis du også vil hjælpe. Vejledningen til oversættelse findes på <a href="https://github.com/AmrAdelElkholy/phone-contacts">denne hjemmeside</a>, eller send en mail til <a href="mailto:"></a>, hvis du har spørgsmål.
             Tak til alle bidragydere og andre støtter!
         ]]></string>
     <string name="translation_arabic">Arabisk</string>
@@ -880,7 +880,7 @@
         <item quantity="one">Din prøveperiode udløber om %d dag.</item>
         <item quantity="other">Din prøveperiode udløber om %d dage.</item>
     </plurals>
-    <string name="pro_app_refund">Husk at hvis du afinstallerer en betalt app indenfor 2 timer, får du automatisk pengene tilbage. Vil du have refunderet beløbet på et senere tidspunkt, så send en mail til hello@fossify.org. På den måde kan du prøvekøre appen uden omkostninger :)</string>
+    <string name="pro_app_refund">Husk at hvis du afinstallerer en betalt app indenfor 2 timer, får du automatisk pengene tilbage. Vil du have refunderet beløbet på et senere tidspunkt, så send en mail til . På den måde kan du prøvekøre appen uden omkostninger :)</string>
     <string name="developer_description">En gruppe simple, open source apps til Android med widgets, der kan tilpasses, uden reklamer og unødvendige tilladelser.</string>
     <string name="ok">OK</string>
     <string name="format_phone_numbers">Formatér telefonnumre</string>
@@ -898,7 +898,7 @@
     <string name="album">Album</string>
     <string name="genre">Genre</string>
     <string name="exif">EXIF</string>
-    <string name="apply_to_all_apps">Anvend tema på alle Fossify-apps</string>
+    <string name="apply_to_all_apps">Anvend tema på alle Easy-apps</string>
     <string name="app_icon_color_warning">Advarsel: Visse launchere håndterer muligvis ikke tilpasning af appikoner korrekt. Hvis ikonet forsvinder, kan du prøve at starte appen via Google Play eller en widget, hvis tilgængelig. Efter start skal du gendanne den grønne standardikonfarve #106D1F. I ekstreme tilfælde kan det være nødvendigt at geninstallere appen.</string>
     <string name="auto_theme">Auto</string>
     <string name="allow_access_more_media">Tillad adgang til flere medier</string>
@@ -921,8 +921,8 @@
     <string name="minutes_letter">%dm</string>
     <string name="days_letter">%dd</string>
     <string name="alarm">Alarm</string>
-    <string name="purchase_simple_thank_you">Køb Fossify \"Thank You\"</string>
-    <string name="requires_fossify_thank_you">Kræver Fossify Thank You</string>
+    <string name="purchase_simple_thank_you">Køb Easy \"Thank You\"</string>
+    <string name="requires_easy_thank_you">Kræver Easy Thank You</string>
     <string name="theme_and_colors">Tema &amp; farver</string>
     <string name="medium">Medium</string>
     <string name="start_week_on">Start ugen på</string>
@@ -948,17 +948,16 @@
     <string name="sunday_letter">S</string>
     <string name="website">Hjemmeside</string>
     <string name="known_issues">Kendte problemer</string>
-    <string name="more_fossify_apps">Flere Fossify apps</string>
+    <string name="more_easy_apps">Flere Easy apps</string>
     <string name="rate_this_app">Bedøm denne app</string>
-    <string name="copyright">v %1$s\nCopyright © Fossify %2$d</string>
     <string name="support">Support</string>
     <string name="social">Social</string>
     <string name="version_placeholder">Version %s</string>
-    <string name="donate_short">Støt os ved at købe &lt;a href=https://play.google.com/store/apps/details?id=org.fossify.thankyou&gt;Fossify Thank you&lt;/a&gt;. Det låser også op for alle appens funktioner, herunder tilpasning af farver.</string>
-    <string name="update_thank_you">Opdater venligst Fossify Thank You til den nyeste version</string>
-    <string name="all_fossify_apps">Alle Fossify apps</string>
+    <string name="donate_short">Støt os ved at købe &lt;a href=https://play.google.com/store/apps/details?id=com.elkhouly.thankyou&gt;Easy Thank you&lt;/a&gt;. Det låser også op for alle appens funktioner, herunder tilpasning af farver.</string>
+    <string name="update_thank_you">Opdater venligst Easy Thank You til den nyeste version</string>
+    <string name="all_easy_apps">Alle Easy apps</string>
     <string name="launcher_short">Launcher</string>
-    <string name="donate_to_fossify">Donér til Fossify</string>
+    <string name="donate_to_easy">Donér til Easy</string>
     <string name="platforms">Platforme</string>
     <string name="little_to_no_fee">Lidt eller intet gebyr</string>
     <string name="fee_up_to_pct">Gebyr på op til %1$d%%</string>

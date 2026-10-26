@@ -5,7 +5,7 @@
     android:layout_height="wrap_content"
     android:paddingEnd="@dimen/activity_margin">
 
-    <org.fossify.commons.views.MyEditText
+    <com.elkhouly.commons.views.MyEditText
         android:id="@+id/contact_street"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -18,7 +18,7 @@
         android:textCursorDrawable="@null"
         android:textSize="@dimen/bigger_text_size"/>
 
-    <org.fossify.commons.views.MyTextView
+    <com.elkhouly.commons.views.MyTextView
         android:id="@+id/contact_structured_address_type"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -39,7 +39,7 @@
         android:orientation="horizontal"
         android:baselineAligned="false">
 
-        <org.fossify.commons.views.MyEditText
+        <com.elkhouly.commons.views.MyEditText
             android:id="@+id/contact_neighborhood"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -52,7 +52,7 @@
             android:textCursorDrawable="@null"
             android:textSize="@dimen/bigger_text_size"/>
 
-        <org.fossify.commons.views.MyEditText
+        <com.elkhouly.commons.views.MyEditText
             android:id="@+id/contact_pobox"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -74,7 +74,7 @@
         android:orientation="horizontal"
         android:baselineAligned="false">
 
-        <org.fossify.commons.views.MyEditText
+        <com.elkhouly.commons.views.MyEditText
             android:id="@+id/contact_postcode"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -87,7 +87,7 @@
             android:textCursorDrawable="@null"
             android:textSize="@dimen/bigger_text_size"/>
 
-        <org.fossify.commons.views.MyEditText
+        <com.elkhouly.commons.views.MyEditText
             android:id="@+id/contact_city"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -101,7 +101,7 @@
             android:textSize="@dimen/bigger_text_size"/>
     </LinearLayout>
 
-    <org.fossify.commons.views.MyEditText
+    <com.elkhouly.commons.views.MyEditText
         android:id="@+id/contact_region"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -115,7 +115,7 @@
         android:textCursorDrawable="@null"
         android:textSize="@dimen/bigger_text_size"/>
 
-    <org.fossify.commons.views.MyEditText
+    <com.elkhouly.commons.views.MyEditText
         android:id="@+id/contact_country"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

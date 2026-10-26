@@ -327,7 +327,7 @@
     <string name="cannot_be_undone">Toimintoa ei ole mahdollista kumota.</string>
     <string name="save_before_closing">Sinulla on tallentamattomia muutoksia. Tallennetaanko ennen sulkemista?</string>
     <string name="global_theme_success">Värit päivitetty. Uusi teema nimeltä \'Jaettu\' käytä sitä jatkossa muokataksesi värejä kaikissa sovelluksissa.</string>
-    <string name="purchase_thank_you"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Osta <a href="https://play.google.com/store/apps/details?id=org.fossify.thankyou">Fossify Thank You</a> avataksesi ominaisuuden ja tukeaksesi kehitystä. Kiitos!\n \u0020 \u0020 \u0020 \u0020]]></string>
+    <string name="purchase_thank_you"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Osta <a href="https://play.google.com/store/apps/details?id=com.elkhouly.thankyou">Easy Thank You</a> avataksesi ominaisuuden ja tukeaksesi kehitystä. Kiitos!\n \u0020 \u0020 \u0020 \u0020]]></string>
     <string name="light_theme">Vaalea</string>
     <string name="dark_theme">Tumma</string>
     <string name="auto_theme">Automaattinen</string>
@@ -889,7 +889,7 @@
         <item quantity="one">Kokeilujaksosi päättyy %d päivän kuluttua.</item>
         <item quantity="other">Kokeilujaksosi päättyy %d päivän kuluttua.</item>
     </plurals>
-    <string name="pro_app_refund">Muista, että saat rahasi automaattisesti takaisin, jos poistat minkä tahansa maksullisista sovelluksistamme kahden tunnin sisällä asentamisesta. Jos haluat rahasi milloin vain myöhemmin takaisin, ota yhteyttä sähköpostitse hello@fossify.org ja saat rahat takaisin. Tämä tekee kokeilun helpoksi :)</string>
+    <string name="pro_app_refund">Muista, että saat rahasi automaattisesti takaisin, jos poistat minkä tahansa maksullisista sovelluksistamme kahden tunnin sisällä asentamisesta. Jos haluat rahasi milloin vain myöhemmin takaisin, ota yhteyttä sähköpostitse  ja saat rahat takaisin. Tämä tekee kokeilun helpoksi :)</string>
     <string name="developer_description">Yksinkertaisia vapaan lähdekoodin Android-sovelluksia kustomoitavilla pienoissovelluksilla, ilman mainoksia ja tarpeettomia käyttöoikeuksia.</string>
     <string name="block_contact">Estä yhteystieto</string>
     <string name="april_short">Huh</string>
@@ -905,7 +905,6 @@
     <string name="may_short">Tou</string>
     <string name="june_short">Kes</string>
     <string name="july_short">Hei</string>
-    <string name="copyright">v %1$s \nCopyright © Fossify %2$d</string>
     <string name="deletion_confirmation_short">Poistetaanko %s?</string>
     <string name="pin">PIN</string>
     <string name="add_password">Lisää salasana</string>
@@ -920,7 +919,7 @@
     <string name="audio">Ääni</string>
     <string name="genre">Tyylilaji</string>
     <string name="exif">EXIF</string>
-    <string name="apply_to_all_apps">Ota värit käyttöön kaikissa Fossify-sovelluksissa</string>
+    <string name="apply_to_all_apps">Ota värit käyttöön kaikissa Easy-sovelluksissa</string>
     <string name="enter_password">Syötä salasana</string>
     <string name="password">Salasana</string>
     <string name="notification_sound">Ilmoitusääni</string>
@@ -934,16 +933,16 @@
     <string name="reorder_items_by_dragging">Uudelleenjärjestele kohteita vetämällä</string>
     <string name="known_issues">Tunnettuja ongelmia</string>
     <string name="number_of_items">Kohteiden lukumäärä</string>
-    <string name="all_fossify_apps">Kaikki Fossify sovellukset</string>
+    <string name="all_easy_apps">Kaikki Easy sovellukset</string>
     <string name="allow_alarm_sleep_timer">Sovellus tarvitsee pääsyn hälytyksiin. Muutoin hälytystä ei voi kytkeä pois päältä uniajastimen ajan loputtua.</string>
-    <string name="purchase_simple_thank_you">Osta Fossify Thank You</string>
+    <string name="purchase_simple_thank_you">Osta Easy Thank You</string>
     <string name="theme_and_colors">Teema ja värit</string>
     <string name="app_icon_color_warning">Varoitus: Tietyt käynnistimet eivät välttämättä käsittele mukautettuja sovelluskuvakkeita oikein. Mikäli kuvake katoaa, yritä käynnistää sovellus Google Play:n tai sovelman kautta. Käynnistyksen jälkeen, palauta kuvakkeen vihreä väri #106D1F. Joissain tapauksissa sovelluksen uudelleenasennus voi olla tarpeen.</string>
-    <string name="donate_to_fossify">Lahjoita Fossify:lle</string>
+    <string name="donate_to_easy">Lahjoita Easy:lle</string>
     <string name="platforms">Alustat</string>
     <string name="days_letter">%dp</string>
-    <string name="donate_short">Tue meitä ostamalla &lt;a href=https://play.google.com/store/apps/details?id=org.fossify.thankyou&gt;Fossify Thank You&lt;/a&gt; saadaksesi käyttöön kaikki sovellusominaisuudet mukaan luettuna värien mukautusominaisuuden.</string>
-    <string name="update_thank_you">Päivitä Fossify Thank You viimeisimpään versioon</string>
+    <string name="donate_short">Tue meitä ostamalla &lt;a href=https://play.google.com/store/apps/details?id=com.elkhouly.thankyou&gt;Easy Thank You&lt;/a&gt; saadaksesi käyttöön kaikki sovellusominaisuudet mukaan luettuna värien mukautusominaisuuden.</string>
+    <string name="update_thank_you">Päivitä Easy Thank You viimeisimpään versioon</string>
     <string name="translation_kabyle">Kabyyli</string>
     <string name="confirm_storage_access_restricted_text">Järjestelmärajoitusten vuoksi tämä kansio ei ole käytettävissä.</string>
     <string name="confirm_storage_access_restricted_text_open_system">Avaa järjestelmäsovelluksessa</string>
@@ -957,11 +956,11 @@
     <string name="translation_gujarati">Gujarati</string>
     <string name="translation_belarusian">Valko-Venäjä</string>
     <string name="translation_chuvash">Tšuvassi</string>
-    <string name="faq_2_text_commons"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Tottakai. Voit levittää sovelluksista sanaa tai antaa arvosteluita. Voit myös auttaa kääntämällä sovelluksia uusille kielille tai päivittämällä jo olemassaolevia kieliä.\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Käännösohjeet seuraavasta <a href="https://github.com/FossifyOrg/General-Discussion#contributing-translations">osoitteesta</a> tai ottamalla yhteyttä osoitteeseen <a href="mailto:hello@fossify.org">hello@fossify.org</a>\n \u0020 \u0020 \u0020 \u0020]]></string>
-    <string name="contributors_label"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Tämä lista sisältää Fossify-perheen sovellusten kehityksessä autteneet henkilöt. Käännökset on tehty vapaaehtoisten voimin. Ota yhteyttä mikäli haluat auttaa. Käännösohjeet seuraavasta: <a href="https://github.com/FossifyOrg/General-Discussion#contributing-translations">osoitteesta</a>. Voit myös olla yhteydessä osoitteeseen <a href="mailto:hello@fossify.org">hello@fossify.org</a>\n\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Kiitos kaikille kehitystyössä avustaneille ja tukijoille!\n \u0020 \u0020 \u0020 \u0020]]></string>
-    <string name="more_fossify_apps">Lisää Fossify-sovelluksia</string>
+    <string name="faq_2_text_commons"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Tottakai. Voit levittää sovelluksista sanaa tai antaa arvosteluita. Voit myös auttaa kääntämällä sovelluksia uusille kielille tai päivittämällä jo olemassaolevia kieliä.\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Käännösohjeet seuraavasta <a href="https://github.com/AmrAdelElkholy/phone-contacts">osoitteesta</a> tai ottamalla yhteyttä osoitteeseen <a href="mailto:"></a>\n \u0020 \u0020 \u0020 \u0020]]></string>
+    <string name="contributors_label"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Tämä lista sisältää Easy-perheen sovellusten kehityksessä autteneet henkilöt. Käännökset on tehty vapaaehtoisten voimin. Ota yhteyttä mikäli haluat auttaa. Käännösohjeet seuraavasta: <a href="https://github.com/AmrAdelElkholy/phone-contacts">osoitteesta</a>. Voit myös olla yhteydessä osoitteeseen <a href="mailto:"></a>\n\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Kiitos kaikille kehitystyössä avustaneille ja tukijoille!\n \u0020 \u0020 \u0020 \u0020]]></string>
+    <string name="more_easy_apps">Lisää Easy-sovelluksia</string>
     <string name="rate_this_app">Arvostele sovellus</string>
-    <string name="requires_fossify_thank_you">Vaatii Fossify Thank You:n</string>
+    <string name="requires_easy_thank_you">Vaatii Easy Thank You:n</string>
     <string name="evalex_title">EvalEx (matemaattisen lausekkeen arviointi)</string>
     <plurals name="files_saved">
         <item quantity="one">Tiedosto tallennettu onnistuneesti</item>

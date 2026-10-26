@@ -946,7 +946,7 @@
         <item quantity="many">Aquesta versió de prova caduca d\'aquí a %d dies.</item>
         <item quantity="other">Aquesta versió de prova caduca d\'aquí a %d dies.</item>
     </plurals>
-    <string name="pro_app_refund">No oblideu que si desinstal·leu qualsevol aplicació de pagament en un termini de 2 hores, el càrrec es retornarà automàticament. Si voleu un reemborsament més tard, poseu-vos en contacte amb nosaltres a hello@fossify.org i el rebreu. Això fa que sigui fàcil provar-ho :)</string>
+    <string name="pro_app_refund">No oblideu que si desinstal·leu qualsevol aplicació de pagament en un termini de 2 hores, el càrrec es retornarà automàticament. Si voleu un reemborsament més tard, poseu-vos en contacte amb nosaltres a  i el rebreu. Això fa que sigui fàcil provar-ho :)</string>
     <string name="developer_description">Un grup d\'aplicacions Android simples i de codi obert amb ginys personalitzables, sense anuncis ni permisos innecessaris.</string>
     <string name="deletion_confirmation_short">Suprimeixo %s?</string>
     <string name="no">No</string>
@@ -954,7 +954,7 @@
     <string name="usb">USB</string>
     <string name="faq_2_text_commons"><![CDATA[
             Sí, és clar. Podeu difondre les aplicacions o fer comentaris i valoracions bones. També podeu ajudar traduint les aplicacions a una llengua nova, o simplement actualitzant algunes traduccions existents.
-            La guia per a traduir es troba en <a href="https://github.com/FossifyOrg/General-Discussion#contributing-translations">aquest lloc web</a>, o senzillament poseu-vos en contacte amb nosaltres a <a href="mailto:hello@fossify.org">hello@fossify.org</a> si teniu cap pregunta.
+            La guia per a traduir es troba en <a href="https://github.com/AmrAdelElkholy/phone-contacts">aquest lloc web</a>, o senzillament poseu-vos en contacte amb nosaltres a <a href="mailto:"></a> si teniu cap pregunta.
         ]]></string>
     <string name="error">Error: %s</string>
     <string name="notes">Notes</string>
@@ -962,9 +962,9 @@
     <string name="zero">Zero</string>
     <string name="audio">Àudio</string>
     <string name="genre">Gènere</string>
-    <string name="apply_to_all_apps">Aplicar el tema a totes les aplicacions de Fossify</string>
+    <string name="apply_to_all_apps">Aplicar el tema a totes les aplicacions de Easy</string>
     <string name="purchase_thank_you"><![CDATA[
-            Compreu la <a href=https://play.google.com/store/apps/details?id=org.fossify.thankyou>Fossify Thank You</a> per a fer servir aquesta característica i col·laborar amb el desenvolupament. Gràcies!
+            Compreu la <a href=https://play.google.com/store/apps/details?id=com.elkhouly.thankyou>Easy Thank You</a> per a fer servir aquesta característica i col·laborar amb el desenvolupament. Gràcies!
         ]]></string>
     <string name="enter_password">Introduïu la contrasenya</string>
     <string name="password">Contrasenya</string>
@@ -973,23 +973,22 @@
     <string name="minutes_letter">%dm</string>
     <string name="hours_letter">%dh</string>
     <string name="week_number_short">st.</string>
-    <string name="purchase_simple_thank_you">Compreu el Fossify Thank You</string>
+    <string name="purchase_simple_thank_you">Compreu el Easy Thank You</string>
     <string name="general_settings">General</string>
     <string name="notification_sound">So de notificació</string>
     <string name="text">Text</string>
-    <string name="copyright">v %1$s \nCopyright © Fossify %2$d</string>
     <string name="social">Social</string>
-    <string name="donate_short">Gaudiu de Fossify? Ajudeu el desenvolupament de les nostres aplicacions lliures d\'anuncis comprant la &lt;a href=\"https://play.google.com/store/apps/details?id=org.fossify.thankyou\"&gt;Fossify Thank You&lt;/a&gt;. També activarà les lletres personalitzades i la personalització compartida de totes les aplicacions Fossify. Gràcies per la vostra ajuda!</string>
+    <string name="donate_short">Gaudiu de Easy? Ajudeu el desenvolupament de les nostres aplicacions lliures d\'anuncis comprant la &lt;a href=\"https://play.google.com/store/apps/details?id=com.elkhouly.thankyou\"&gt;Easy Thank You&lt;/a&gt;. També activarà les lletres personalitzades i la personalització compartida de totes les aplicacions Easy. Gràcies per la vostra ajuda!</string>
     <string name="app_icon_color_warning">Atenció: És possible que alguns llançadors no gestionin correctament la personalització de la icona de l\'aplicació. Si la icona desapareix, intenteu llançar l\'aplicació a través de Google Play o d\'un giny, si és accessible. Després del llançament, restaureu el color predeterminat de la icona verda #106D1F. En casos extrems, pot ser necessària la reinstal·lació de l\'aplicació.</string>
     <string name="faq_6_text_commons">Aquest problema sorgeix quan el llançador no admet completament la personalització d\'icones. Intenteu llançar l\'aplicació a través de Google Play o d\'un giny, si és accessible. Després del llançament, restaureu el color predeterminat de la icona verda #106D1F. En casos extrems, pot ser necessària la reinstal·lació de l\'aplicació.</string>
     <string name="block_contact">Bloqueja el contacte</string>
     <string name="exif">EXIF</string>
     <string name="contributors_label"><![CDATA[
-            Aquesta llista conté tots els que van ajudar notablement a qualsevol aplicació de la suite Fossify, no només aquesta. Les traduccions són gestionades per voluntaris,
-            feu-nos saber si vós també voleu ajudar. La guia per a traduir es troba en <a href="https://github.com/FossifyOrg/General-Discussion#contributing-translations">aquest lloc web</a>, o simplement poseu-vos en contacte amb nosaltres a <a href="mailto:hello@fossify.org">hello@fossify.org</a> si teniu qualsevol pregunta.
+            Aquesta llista conté tots els que van ajudar notablement a qualsevol aplicació de la suite Easy, no només aquesta. Les traduccions són gestionades per voluntaris,
+            feu-nos saber si vós també voleu ajudar. La guia per a traduir es troba en <a href="https://github.com/AmrAdelElkholy/phone-contacts">aquest lloc web</a>, o simplement poseu-vos en contacte amb nosaltres a <a href="mailto:"></a> si teniu qualsevol pregunta.
             Gràcies a tots els col·laboradors i altres patrocinadors!
         ]]></string>
-    <string name="update_thank_you">Actualitzeu Fossify Thank You a l\'última versió</string>
+    <string name="update_thank_you">Actualitzeu Easy Thank You a l\'última versió</string>
     <string name="notes_short">Notes</string>
     <string name="translation_hindi">Hindi</string>
     <string name="translation_chuvash">Txuvaix</string>
@@ -997,14 +996,14 @@
     <string name="translation_gujarati">Gujarati</string>
     <string name="format_phone_numbers">Format dels números de telèfon</string>
     <string name="platforms">Plataformes</string>
-    <string name="donate_to_fossify">Donació a Fossify</string>
+    <string name="donate_to_easy">Donació a Easy</string>
     <string name="little_to_no_fee">Molt poc o de franc</string>
     <string name="fee_up_to_pct">Una tarifa de fins a %1$d%%</string>
     <string name="cryptocurrency">Criptomoneda</string>
     <string name="translation_belarusian">Belarús</string>
     <string name="translation_central_kurdish">Kurd central</string>
     <string name="theme_and_colors">Tema i colors</string>
-    <string name="all_fossify_apps">Totes les aplicacions Fossify</string>
+    <string name="all_easy_apps">Totes les aplicacions Easy</string>
     <string name="known_issues">Problemes coneguts</string>
     <string name="translation_kabyle">Cabilenc</string>
     <string name="number_of_items">Nombre d\'elements</string>
@@ -1013,10 +1012,10 @@
     <string name="confirm_storage_access_restricted_text">A causa de les restriccions del sistema, aquesta carpeta no està disponible.</string>
     <string name="confirm_storage_access_restricted_text_open_system">Obre amb l\'aplicació de sistema</string>
     <string name="confirm_storage_access_restricted_text_not_found">No s\'ha pogut trobar cap aplicació de gestió de fitxers del sistema.</string>
-    <string name="more_fossify_apps">Més aplicacions Fossify</string>
+    <string name="more_easy_apps">Més aplicacions Easy</string>
     <string name="rate_this_app">Valoreu aquesta aplicació</string>
     <string name="evalex_title">EvalEx (avaluació d\'expressions matemàtiques)</string>
-    <string name="requires_fossify_thank_you">Cal Fossify Thank You</string>
+    <string name="requires_easy_thank_you">Cal Easy Thank You</string>
     <string name="enables_more_customization">Habilita més personalització</string>
     <string name="translation_latvian">Letó</string>
     <plurals name="files_saved">
@@ -1040,5 +1039,5 @@
     <string name="jsoup_title">jsoup (analitzador de HTML)</string>
     <string name="commons_csv_title">Apache Commons CSV (analitzador de CSV)</string>
     <string name="rate_app_prompt">Gaudiu de l\'aplicació? Valoreu-la a Google Play.</string>
-    <string name="donation_prompt">Si us agrada utilitzar aquesta aplicació, considereu donar suport al desenvolupament de Fossify.</string>
+    <string name="donation_prompt">Si us agrada utilitzar aquesta aplicació, considereu donar suport al desenvolupament de Easy.</string>
 </resources>

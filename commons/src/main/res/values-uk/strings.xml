@@ -993,25 +993,24 @@
         <item quantity="many">Термін дії пробного періоду закінчується через %d днів.</item>
         <item quantity="other">Термін дії пробного періоду закінчується через %d днів.</item>
     </plurals>
-    <string name="pro_app_refund">Пам\'ятайте: якщо ви видалите будь-який платний застосунок протягом 2 годин, вам буде автоматично повернена сума покупки. Якщо ви захочете повернути гроші пізніше, сконтактуйте з нами за адресою hello@fossify.org, і ви їх отримаєте. Таким чином ви можете легко спробувати застосунок :)</string>
+    <string name="pro_app_refund">Пам\'ятайте: якщо ви видалите будь-який платний застосунок протягом 2 годин, вам буде автоматично повернена сума покупки. Якщо ви захочете повернути гроші пізніше, сконтактуйте з нами за адресою , і ви їх отримаєте. Таким чином ви можете легко спробувати застосунок :)</string>
     <string name="developer_description">Група простих Android-застосунків з відкритим вихідним кодом, персоналізованими віджетами, без реклами та непотрібних дозволів.</string>
-    <string name="purchase_simple_thank_you">Придбайте Fossify Thank You</string>
-    <string name="contributors_label"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020У цьому списку зазначені всі, хто помітно допоміг будь-якому застосунку з набору Fossify, а не лише цьому. Перекладами займаються волонтери.\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Дайте нам знати, якщо теж хочете допомогти. Посібник із перекладу доступний на <a href="https://github.com/FossifyOrg/General-Discussion#contributing-translations">цьому сайті</a>, або просто напишіть нам на <a href="mailto:hello@fossify.org">hello@fossify.org</a>, якщо у вас є запитання.\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Дякуємо всім вкладникам і всім, хто нас підтримує!\n \u0020 \u0020 \u0020 \u0020]]></string>
-    <string name="faq_2_text_commons"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Так, звісно. Ви можете розповідати про застосунки або залишати позитивні відгуки й оцінки. Також можна допомогти, переклавши застосунки новою мовою або просто оновивши наявні переклади.\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Інструкція з перекладу доступна на <a href="https://github.com/FossifyOrg/General-Discussion#contributing-translations">цьому сайті</a>. Якщо у вас виникли запитання, просто напишіть нам на адресу <a href="mailto:hello@fossify.org">hello@fossify.org</a>.\n \u0020 \u0020 \u0020 \u0020]]></string>
-    <string name="purchase_thank_you"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Придбайте <a href="https://play.google.com/store/apps/details?id=org.fossify.thankyou">Fossify Thank You</a>, щоб користуватися цією функцією та підтримати розробку. Дякуємо!\n \u0020 \u0020 \u0020 \u0020]]></string>
-    <string name="donate_short">Подобається Fossify? Підтримайте розробку наших застосунків без реклами, придбавши &lt;a href=\"https://play.google.com/store/apps/details?id=org.fossify.thankyou\"&gt;Fossify Thank You&lt;/a&gt;. Це також дасть змогу використовувати власні шрифти та спільні налаштування в усіх застосунках Fossify. Дякуємо за вашу підтримку!</string>
+    <string name="purchase_simple_thank_you">Придбайте Easy Thank You</string>
+    <string name="contributors_label"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020У цьому списку зазначені всі, хто помітно допоміг будь-якому застосунку з набору Easy, а не лише цьому. Перекладами займаються волонтери.\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Дайте нам знати, якщо теж хочете допомогти. Посібник із перекладу доступний на <a href="https://github.com/AmrAdelElkholy/phone-contacts">цьому сайті</a>, або просто напишіть нам на <a href="mailto:"></a>, якщо у вас є запитання.\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Дякуємо всім вкладникам і всім, хто нас підтримує!\n \u0020 \u0020 \u0020 \u0020]]></string>
+    <string name="faq_2_text_commons"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Так, звісно. Ви можете розповідати про застосунки або залишати позитивні відгуки й оцінки. Також можна допомогти, переклавши застосунки новою мовою або просто оновивши наявні переклади.\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Інструкція з перекладу доступна на <a href="https://github.com/AmrAdelElkholy/phone-contacts">цьому сайті</a>. Якщо у вас виникли запитання, просто напишіть нам на адресу <a href="mailto:"></a>.\n \u0020 \u0020 \u0020 \u0020]]></string>
+    <string name="purchase_thank_you"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Придбайте <a href="https://play.google.com/store/apps/details?id=com.elkhouly.thankyou">Easy Thank You</a>, щоб користуватися цією функцією та підтримати розробку. Дякуємо!\n \u0020 \u0020 \u0020 \u0020]]></string>
+    <string name="donate_short">Подобається Easy? Підтримайте розробку наших застосунків без реклами, придбавши &lt;a href=\"https://play.google.com/store/apps/details?id=com.elkhouly.thankyou\"&gt;Easy Thank You&lt;/a&gt;. Це також дасть змогу використовувати власні шрифти та спільні налаштування в усіх застосунках Easy. Дякуємо за вашу підтримку!</string>
     <string name="pin">PIN</string>
     <string name="ok">OK</string>
     <string name="exif">EXIF</string>
-    <string name="apply_to_all_apps">Застосувати тему до всіх програм Fossify</string>
+    <string name="apply_to_all_apps">Застосувати тему до всіх програм Easy</string>
     <string name="week_number_short">тиж.</string>
     <string name="usb">USB</string>
-    <string name="copyright">v %1$s \nCopyright © Fossify %2$d</string>
-    <string name="update_thank_you">Будь ласка, оновіть Fossify Thank You до останньої версії</string>
+    <string name="update_thank_you">Будь ласка, оновіть Easy Thank You до останньої версії</string>
     <string name="faq_6_text_commons">Ця проблема виникає, коли ваш лаунчер не повністю підтримує персоналізацію значків. Спробуйте запустити застосунок через Google Play або віджет, якщо він доступний. Після запуску, відновіть стандартний зелений колір значка #106D1F. В окремих випадках може знадобитись перевстановлення застосунку.</string>
     <string name="app_icon_color_warning">Увага: деякі лаунчери можуть неправильно обробляти налаштування кольору значка застосунку. Якщо вона зникне, спробуйте запустити застосунок через Google Play або віджет, якщо він доступний. Після запуску відновіть стандартний зелений колір #106D1F. В окремих випадках може знадобитись перевстановлення застосунку.</string>
     <string name="translation_chuvash">Чуваська</string>
-    <string name="donate_to_fossify">Пожертвувати Fossify</string>
+    <string name="donate_to_easy">Пожертвувати Easy</string>
     <string name="platforms">Платформи</string>
     <string name="little_to_no_fee">Невелика комісія</string>
     <string name="fee_up_to_pct">До %1$d%% комісії</string>
@@ -1022,7 +1021,7 @@
     <string name="translation_belarusian">Білоруський</string>
     <string name="translation_central_kurdish">Центрально курдський</string>
     <string name="theme_and_colors">Тема та кольори</string>
-    <string name="all_fossify_apps">Всі застосунки Fossify</string>
+    <string name="all_easy_apps">Всі застосунки Easy</string>
     <string name="known_issues">Відомі проблеми</string>
     <string name="translation_kabyle">Кабільська</string>
     <string name="number_of_items">Кількість предметів</string>
@@ -1031,10 +1030,10 @@
     <string name="confirm_storage_access_restricted_text">Через системні обмеження ця тека недоступна.</string>
     <string name="confirm_storage_access_restricted_text_open_system">Відкрити в системному застосунку</string>
     <string name="confirm_storage_access_restricted_text_not_found">Не вдалося знайти застосунок системний файловий менеджер.</string>
-    <string name="more_fossify_apps">Більше застосунків Fossify</string>
+    <string name="more_easy_apps">Більше застосунків Easy</string>
     <string name="rate_this_app">Оцініть цей застосунок</string>
     <string name="evalex_title">EvalEx (оцінка математичного виразу)</string>
-    <string name="requires_fossify_thank_you">Потрібно Fossify Дякую</string>
+    <string name="requires_easy_thank_you">Потрібно Easy Дякую</string>
     <string name="enables_more_customization">Дозволяє більше налаштувань</string>
     <string name="translation_latvian">Латиська</string>
     <plurals name="files_saved">
@@ -1059,5 +1058,5 @@
     <string name="jsoup_title">jsoup (аналізатор HTML)</string>
     <string name="commons_csv_title">Apache Commons CSV (аналізатор CSV)</string>
     <string name="rate_app_prompt">Подобається застосунок? Оцініть його в Google Play.</string>
-    <string name="donation_prompt">Якщо вам подобається користуватися цим застосунком, підтримайте розробку Fossify.</string>
+    <string name="donation_prompt">Якщо вам подобається користуватися цим застосунком, підтримайте розробку Easy.</string>
 </resources>

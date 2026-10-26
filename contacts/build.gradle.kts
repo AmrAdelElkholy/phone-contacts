@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    namespace = "org.fossify.contacts"
+    namespace = "com.elkhouly.contacts"
     compileSdk = project.libs.versions.app.build.compileSDKVersion.get().toInt()
 
     defaultConfig {

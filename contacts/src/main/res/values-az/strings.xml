@@ -70,6 +70,6 @@
     <string name="merge_duplicate_contacts">Dublikat kontaktları birləşdir</string>
     <string name="show_only_contacts_with_numbers">Yalnız telefon nömrəsi olan kontaktları göstər</string>
     <string name="contacts_dialpad">Zəng paneli</string>
-    <string name="show_private_contacts">Şəxsi kontaktları Fossify Telefon, Fossify SMS Messencer və Fossify Təqvimdə göstər</string>
+    <string name="show_private_contacts">Şəxsi kontaktları Easy Telefon, Easy SMS Messencer və Easy Təqvimdə göstər</string>
     <string name="street">Küçə</string>
 </resources>

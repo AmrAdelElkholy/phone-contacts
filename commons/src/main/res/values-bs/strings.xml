@@ -331,7 +331,7 @@
     <string name="cannot_be_undone">Ovo je nepovratna radnja.</string>
     <string name="save_before_closing">Imate ne spremljene promjene. Želite li spremiti prije izlaska?</string>
     <string name="global_theme_success">Uspješno ažurirane boje. Nova tema pod nazivom \'Shared\' je dodana, molimo koristite ju za ažuriranje svih boja u aplikaciji u budućnosti.</string>
-    <string name="purchase_thank_you"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Molimo kupite <a href="https://play.google.com/store/apps/details?id=org.fossify.thankyou">Fossify Thank You</a> za otključavanje ove funkcije i podršku razvoju. Hvala!\n \u0020 \u0020 \u0020 \u0020]]></string>
+    <string name="purchase_thank_you"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Molimo kupite <a href="https://play.google.com/store/apps/details?id=com.elkhouly.thankyou">Easy Thank You</a> za otključavanje ove funkcije i podršku razvoju. Hvala!\n \u0020 \u0020 \u0020 \u0020]]></string>
     <string name="light_theme">Svijetla</string>
     <string name="dark_theme">Tamna</string>
     <string name="auto_theme">Automatski</string>
@@ -937,7 +937,7 @@
         <item quantity="few">Tvoj probni period ističe za %d dana.</item>
         <item quantity="other">Tvoj probni period ističe za %d dana.</item>
     </plurals>
-    <string name="pro_app_refund">Ako deinstaliraš bilo koju plaćenu aplikaciju u roku od 2 sata automatski ćeš dobiti povrat novca. Ako kasnije želiš povrat novca, jednostavno nas kontaktiraj na hello@fossify.org. To olakšava isprobavanje :)</string>
+    <string name="pro_app_refund">Ako deinstaliraš bilo koju plaćenu aplikaciju u roku od 2 sata automatski ćeš dobiti povrat novca. Ako kasnije želiš povrat novca, jednostavno nas kontaktiraj na . To olakšava isprobavanje :)</string>
     <string name="developer_description">Skup jednostavnih Android aplikacija otvorenog koda s prilagodljivim widgetima, bez oglasa i nepotrebnih dozvola.</string>
     <string name="filter">Filter</string>
     <string name="root">Početak</string>

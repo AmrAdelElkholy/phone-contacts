@@ -327,7 +327,7 @@
     <string name="cannot_be_undone">Denna åtgärd kan inte ångras.</string>
     <string name="save_before_closing">Du har ändringar som inte är sparade. Spara innan du lämnar?</string>
     <string name="global_theme_success">Färgerna har uppdaterats. Ett nytt Tema som heter \'Delat\' har lagts till, använd det för att uppdatera alla apparnas färger i framtiden.</string>
-    <string name="purchase_thank_you"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Köp <a href="https://play.google.com/store/apps/details?id=org.fossify.thankyou">Fossify Thank You</a> om du vill använda den här funktionen och stödja utvecklingen. Tack!\n \u0020 \u0020 \u0020 \u0020]]></string>
+    <string name="purchase_thank_you"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Köp <a href="https://play.google.com/store/apps/details?id=com.elkhouly.thankyou">Easy Thank You</a> om du vill använda den här funktionen och stödja utvecklingen. Tack!\n \u0020 \u0020 \u0020 \u0020]]></string>
     <string name="light_theme">Ljust</string>
     <string name="dark_theme">Mörkt</string>
     <string name="auto_theme">Automatiskt</string>
@@ -893,13 +893,13 @@
         <item quantity="one">Din prövotid tar slut om %d dag.</item>
         <item quantity="other">Din prövotid tar slut om %d dagar.</item>
     </plurals>
-    <string name="pro_app_refund">Glöm inte att om du avinstallerar någon betalapp inom 2 timmar kommer du automatiskt att få en återbetalning. Om du vill ha en återbetalning när som helst senare, kontakta oss bara på hello@fossify.org så får du det. Det gör det enkelt att testa :)</string>
+    <string name="pro_app_refund">Glöm inte att om du avinstallerar någon betalapp inom 2 timmar kommer du automatiskt att få en återbetalning. Om du vill ha en återbetalning när som helst senare, kontakta oss bara på  så får du det. Det gör det enkelt att testa :)</string>
     <string name="developer_description">En mängd enkla, öppen källkod Android appar med anpassningsbara widgets, inga annonser eller onödiga behörigheter.</string>
-    <string name="purchase_simple_thank_you">Köp Fossify Thank You</string>
+    <string name="purchase_simple_thank_you">Köp Easy Thank You</string>
     <string name="translation_bengali">Bengali</string>
     <string name="translation_bulgarian">Bulgariska</string>
     <string name="translation_tamil">Tamil</string>
-    <string name="update_thank_you">Uppdatera Fossify Thank You till den senaste versionen</string>
+    <string name="update_thank_you">Uppdatera Easy Thank You till den senaste versionen</string>
     <string name="translation_hindi">Hindi</string>
     <string name="translation_nepali">Nepali</string>
     <string name="format_phone_numbers">Formatera telefonnummer</string>
@@ -908,13 +908,13 @@
     <string name="theme_and_colors">Tema och färger</string>
     <string name="april">April</string>
     <string name="friday_letter">F</string>
-    <string name="all_fossify_apps">Alla Fossify-appar</string>
+    <string name="all_easy_apps">Alla Easy-appar</string>
     <string name="platforms">Plattformar</string>
     <string name="known_issues">Kända problem</string>
     <string name="tuesday_letter">T</string>
     <string name="thursday_letter">T</string>
     <string name="ok">OK</string>
-    <string name="apply_to_all_apps">Använd tema på alla Fossify-appar</string>
+    <string name="apply_to_all_apps">Använd tema på alla Easy-appar</string>
     <string name="alarm">Alarm</string>
     <string name="text">Text</string>
     <string name="usb">USB</string>
@@ -923,7 +923,7 @@
     <string name="december">December</string>
     <string name="sunday_letter">S</string>
     <string name="monday_letter">M</string>
-    <string name="donate_to_fossify">Donera till Fossify</string>
+    <string name="donate_to_easy">Donera till Easy</string>
     <string name="little_to_no_fee">Liten eller ingen avgift</string>
     <string name="fee_up_to_pct">Upp till %1$d%% avgift</string>
     <string name="cryptocurrency">Kryptovaluta</string>
@@ -933,7 +933,6 @@
     <string name="reorder_items_by_dragging">Ordna om objekt genom att dra</string>
     <string name="number_of_items">Antal objekt</string>
     <string name="translation_kabyle">Kabyliska</string>
-    <string name="copyright">v %1$s\n\nUpphovsrätt © Fossify %2$d</string>
     <string name="confirm_storage_access_restricted_text">På grund av systemrestriktioner så är inte denna mapp tillgänglig.</string>
     <string name="confirm_storage_access_restricted_text_open_system">Öppna med systemapp</string>
     <string name="seconds_letter">%ds</string>
@@ -955,22 +954,22 @@
     <string name="days_letter">%dd</string>
     <string name="july_short">Jul</string>
     <string name="august_short">Aug</string>
-    <string name="more_fossify_apps">Fler Fossify-appar</string>
+    <string name="more_easy_apps">Fler Easy-appar</string>
     <string name="rate_this_app">Betygsätt denna app</string>
     <string name="artist">Artist</string>
     <string name="hours_letter">%dh</string>
     <string name="support">Support</string>
     <string name="confirm_storage_access_restricted_text_not_found">Det gick inte att hitta någon systemapp för filhantering.</string>
     <string name="evalex_title">EvalEx (utvärdering av matematiska uttryck)</string>
-    <string name="requires_fossify_thank_you">Kräver Fossify Thank You</string>
+    <string name="requires_easy_thank_you">Kräver Easy Thank You</string>
     <string name="string_to_add">Text som ska läggas till</string>
-    <string name="donate_short">Stöd oss genom att köpa &lt;a href=https://play.google.com/store/apps/details?id=org.fossify.thankyou&gt;Fossify Thank You&lt;/a&gt;, detta låser också upp alla appfunktioner inklusive färganpassning.</string>
+    <string name="donate_short">Stöd oss genom att köpa &lt;a href=https://play.google.com/store/apps/details?id=com.elkhouly.thankyou&gt;Easy Thank You&lt;/a&gt;, detta låser också upp alla appfunktioner inklusive färganpassning.</string>
     <string name="app_icon_color_warning">Varning! Vissa startprogram hanterar kanske inte anpassning av appikoner korrekt. Om ikonen försvinner kan du, om det är möjligt, prova att starta appen via Google Play eller en widget. När du har startat appen återställer du ikonens gröna standardfärg #106D1F. I extrema fall kan det vara nödvändigt att installera om appen.</string>
     <string name="faq_6_text_commons">Det här problemet uppstår när startprogrammet inte har fullt stöd för ikonanpassning. Prova att starta appen via Google Play eller en widget, om det är möjligt. När du har startat appen återställer du ikonens gröna standardfärg #106D1F. I extrema fall kan det vara nödvändigt att installera om appen.</string>
-    <string name="contributors_label"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Den här listan innehåller alla som på ett märkbart sätt har bidragit till någon Fossify-app, inte bara den här. Översättningarna hanteras av volontärer,\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020kontakta oss om du också vill hjälpa till. Översättningsguiden finns på <a href="https://github.com/FossifyOrg/General-Discussion#contributing-translations">den här webbplatsen</a>, kontakta oss på <a href="mailto:hello@fossify.org">hello@fossify.org</a> om du har några frågor.\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Tack till alla bidragsgivare och andra supportrar!\n \u0020 \u0020 \u0020 \u0020]]></string>
+    <string name="contributors_label"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Den här listan innehåller alla som på ett märkbart sätt har bidragit till någon Easy-app, inte bara den här. Översättningarna hanteras av volontärer,\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020kontakta oss om du också vill hjälpa till. Översättningsguiden finns på <a href="https://github.com/AmrAdelElkholy/phone-contacts">den här webbplatsen</a>, kontakta oss på <a href="mailto:"></a> om du har några frågor.\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Tack till alla bidragsgivare och andra supportrar!\n \u0020 \u0020 \u0020 \u0020]]></string>
     <string name="enables_more_customization">Möjliggör mer anpassning</string>
     <string name="translation_latvian">Lettiska</string>
-    <string name="faq_2_text_commons"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Ja, naturligtvis. Du kan sprida information om apparna eller ge bra feedback och betyg. Du kan också hjälpa till genom att översätta apparna till ett nytt språk eller bara uppdatera några befintliga översättningar.\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Översättningsguiden finns på <a href="https://github.com/FossifyOrg/General-Discussion#contributing-translations">den här webbplatsen</a>, kontakta oss på <a href="mailto:hello@fossify.org">hello@fossify.org</a> om du har några frågor.\n \u0020 \u0020 \u0020 \u0020]]></string>
+    <string name="faq_2_text_commons"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Ja, naturligtvis. Du kan sprida information om apparna eller ge bra feedback och betyg. Du kan också hjälpa till genom att översätta apparna till ett nytt språk eller bara uppdatera några befintliga översättningar.\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Översättningsguiden finns på <a href="https://github.com/AmrAdelElkholy/phone-contacts">den här webbplatsen</a>, kontakta oss på <a href="mailto:"></a> om du har några frågor.\n \u0020 \u0020 \u0020 \u0020]]></string>
     <plurals name="files_saved">
         <item quantity="one">Filen har sparats</item>
         <item quantity="other">Filerna har sparats</item>
@@ -991,5 +990,5 @@
     <string name="jsoup_title">jsoup (HTML-parser)</string>
     <string name="commons_csv_title">Apache Commons CSV (CSV-parser)</string>
     <string name="rate_app_prompt">Gillar du appen? Betygsätt den gärna på Google Play.</string>
-    <string name="donation_prompt">Överväg gärna att stödja utvecklingen av Fossify om du gillar den här appen.</string>
+    <string name="donation_prompt">Överväg gärna att stödja utvecklingen av Easy om du gillar den här appen.</string>
 </resources>

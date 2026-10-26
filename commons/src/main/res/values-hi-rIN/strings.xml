@@ -313,8 +313,8 @@
     <string name="undo_changes_confirmation">क्या आप वाकई अपने परिवर्तन पूर्ववत करना चाहते हैं?</string>
     <string name="cannot_be_undone">यह कार्रवाई पूर्ववत नहीं की जा सकती।</string>
     <string name="save_before_closing">आपके पास सहेजे नहीं गए परिवर्तन हैं। बाहर निकलने से पहले सहेजें?</string>
-    <string name="apply_to_all_apps">सभी Fossify ऐप्स पर रंग लागू करें</string>
-    <string name="purchase_thank_you"><![CDATA["\n                           कृपया इस प्रकार्य को अनलॉक करने और विकास का समर्थन करने के लिए <a href=https://play.google.com/store/apps/details?id=org.fossify.thankyou>Fossify Thank You</a> खरीदें। धन्यवाद!\n                     "]]></string>
+    <string name="apply_to_all_apps">सभी Easy ऐप्स पर रंग लागू करें</string>
+    <string name="purchase_thank_you"><![CDATA["\n                           कृपया इस प्रकार्य को अनलॉक करने और विकास का समर्थन करने के लिए <a href=https://play.google.com/store/apps/details?id=com.elkhouly.thankyou>Easy Thank You</a> खरीदें। धन्यवाद!\n                     "]]></string>
     <string name="dark_red">गहरा लाल</string>
     <string name="stop_showing_hidden">छुपे हुए मीडिया को दिखाना बंद करें</string>
     <string name="remove">हटाएं</string>
@@ -405,12 +405,12 @@
     <string name="help_us">हमारी सहायता करें</string>
     <string name="social">सामाजिक</string>
     <string name="other_help">अन्य सहायता</string>
-    <string name="donate_short">कृपया &lt;a href=https://play.google.com/store/apps/details?id=org.fossify.thankyou&gt;Fossify Thank You&lt;/a&gt; खरीदकर हमारा समर्थन करें, यह रंग सहित सभी ऐप सुविधाओं को भी अनलॉक कर देगा। अनुकूलन।</string>
+    <string name="donate_short">कृपया &lt;a href=https://play.google.com/store/apps/details?id=com.elkhouly.thankyou&gt;Easy Thank You&lt;/a&gt; खरीदकर हमारा समर्थन करें, यह रंग सहित सभी ऐप सुविधाओं को भी अनलॉक कर देगा। अनुकूलन।</string>
     <string name="gallery_short">गैलरी</string>
     <string name="flashlight_short">फ़्लैशलाइट</string>
     <string name="keyboard_short">कीबोर्ड</string>
     <string name="sideloaded_app"><![CDATA[ऐसा लगता है कि आपका ऐप वर्शन दूषित है। कृपया मूल वर्शन <a href=%s>यहां</a> से डाउनलोड करें।]]></string>
-    <string name="faq_2_text_commons"><![CDATA[हाँ बिल्कुल। आप ऐप्स के बारे में प्रचार कर सकते हैं या अच्छी प्रतिक्रिया और रेटिंग दे सकते हैं। आप ऐप्स को नई भाषा में अनुवाद करके या बस कुछ मौजूदा अनुवादों को अपडेट करके भी सहायता कर सकते हैं। अनुवाद करने की मार्गदर्शिका <a href=https://github.com/FossifyOrg/general-Discussion#contributing-translations>इस वेबसाइट</a> पर है, या यदि आपके कोई प्रश्न हैं तो बस <a href=mailto:hello@fossify.org>hello@fossify.org</a> पर हमसे संपर्क करें।]]></string>
+    <string name="faq_2_text_commons"><![CDATA[हाँ बिल्कुल। आप ऐप्स के बारे में प्रचार कर सकते हैं या अच्छी प्रतिक्रिया और रेटिंग दे सकते हैं। आप ऐप्स को नई भाषा में अनुवाद करके या बस कुछ मौजूदा अनुवादों को अपडेट करके भी सहायता कर सकते हैं। अनुवाद करने की मार्गदर्शिका <a href=https://github.com/AmrAdelElkholy/phone-contacts वेबसाइट</a> पर है, या यदि आपके कोई प्रश्न हैं तो बस <a href=mailto:></a> पर हमसे संपर्क करें।]]></string>
     <string name="faq_3_title_commons">मैंने गलती से कुछ फाइलें हटा दी हैं, मैं उन्हें कैसे पुनर्प्राप्त कर सकता हूं?</string>
     <string name="faq_4_text_commons">हां, जैसे ही आप किसी विजेट को अपनी होम स्क्रीन पर खींचते हैं तो एक विजेट विन्यास स्क्रीन दिखाई देती है। आपको निचले बाएं कोने पर रंगीन वर्ग दिखाई देंगे, नया रंग चुनने के लिए बस उन्हें दबाएं। आप अल्फा को समायोजित करने के लिए स्लाइडर का भी उपयोग कर सकते हैं।</string>
     <string name="glide_title">Glide (छवि लोडिंग और कैशिंग)</string>
@@ -421,8 +421,8 @@
     <string name="trial_expired">ट्रायल समाप्त</string>
     <string name="trial_expires_soon">आपका परीक्षण शीघ्र ही समाप्त हो रहा है।</string>
     <string name="unlock_for_one_final_day">एक आखिरी दिन के लिए ऐप को अनलॉक करें</string>
-    <string name="pro_app_refund">यह न भूलें कि यदि आप किसी भी भुगतान किए गए ऐप को 2 घंटे के भीतर अनइंस्टॉल करते हैं, तो आपको स्वचालित रूप से धनवापसी कर दी जाएगी। यदि आप बाद में कभी भी रिफंड चाहते हैं, तो बस hello@fossify.org पर हमसे संपर्क करें और आपको यह मिल जाएगा। इससे इसे आज़माना आसान हो जाता है :)</string>
-    <string name="contributors_label"><![CDATA[इस सूची में वे सभी लोग शामिल हैं जिन्होंने केवल इस ऐप को ही नहीं, बल्कि Fossify suite के भीतर किसी भी ऐप की उल्लेखनीय रूप से सहायता की। अनुवाद स्वयंसेवकों द्वारा किया जाता है, यदि आप भी सहायता करना चाहते हैं तो हमें बताएं। अनुवाद करने की मार्गदर्शिका <a href=https://github.com/FossifyOrg/general-Discussion#contributing-translations>this website</a> पर है, या यदि आपके कोई प्रश्न हैं तो बस <a href=mailto:hello@fossify.org>hello@fossify.org</a> पर हमसे संपर्क करें। सभी योगदानकर्ताओं और अन्य समर्थकों को धन्यवाद!]]></string>
+    <string name="pro_app_refund">यह न भूलें कि यदि आप किसी भी भुगतान किए गए ऐप को 2 घंटे के भीतर अनइंस्टॉल करते हैं, तो आपको स्वचालित रूप से धनवापसी कर दी जाएगी। यदि आप बाद में कभी भी रिफंड चाहते हैं, तो बस  पर हमसे संपर्क करें और आपको यह मिल जाएगा। इससे इसे आज़माना आसान हो जाता है :)</string>
+    <string name="contributors_label"><![CDATA[इस सूची में वे सभी लोग शामिल हैं जिन्होंने केवल इस ऐप को ही नहीं, बल्कि Easy suite के भीतर किसी भी ऐप की उल्लेखनीय रूप से सहायता की। अनुवाद स्वयंसेवकों द्वारा किया जाता है, यदि आप भी सहायता करना चाहते हैं तो हमें बताएं। अनुवाद करने की मार्गदर्शिका <a href=https://github.com/AmrAdelElkholy/phone-contacts website</a> पर है, या यदि आपके कोई प्रश्न हैं तो बस <a href=mailto:></a> पर हमसे संपर्क करें। सभी योगदानकर्ताओं और अन्य समर्थकों को धन्यवाद!]]></string>
     <string name="iso_speed">ISO गति</string>
     <string name="use_default">तयशुदा उपयोग करें</string>
     <string name="default_color">तयशुदा</string>
@@ -683,7 +683,7 @@
     <string name="no_sound">कोई ध्वनि नहीं</string>
     <string name="during_day_at_hh_mm">दिन के दौरान hh:mm पर</string>
     <string name="during_day_at">दिन के दौरान %1$02d:%2$02d पर</string>
-    <string name="purchase_simple_thank_you">Fossify Thank You ख़रीदें</string>
+    <string name="purchase_simple_thank_you">Easy Thank You ख़रीदें</string>
     <string name="general_settings">सामान्य</string>
     <string name="color_customization">रंग अनुकूलन</string>
     <string name="customize_colors">रंग अनुकूलित करें</string>
@@ -813,7 +813,6 @@
     <string name="upgrade">अपग्रेड</string>
     <string name="upgrade_calendar">आपको स्थानीय रूप से संग्रहीत ईवेंट को .ics फ़ाइल में निर्यात करके, फिर आयात करके मैन्युअल रूप से प्रवासन करना होगा। आप मुख्य स्क्रीन मेनू पर निर्यात/आयात दोनों बटन पा सकते हैं।</string>
     <string name="donate">दान करें</string>
-    <string name="copyright">v %1$s \nकॉपीराइट © Fossify %2$d</string>
     <string name="other">अन्य</string>
     <string name="hello">नमस्ते :)</string>
     <string name="privacy_policy">गोपनीयता नीति</string>
@@ -823,7 +822,7 @@
     <string name="app_version">ऐप संस्करण: %s</string>
     <string name="device_os">डिवाइस OS: %s</string>
     <string name="purchase">खरीदें</string>
-    <string name="update_thank_you">कृपया Fossify Thank You को नवीनतम संस्करण में अपडेट करें</string>
+    <string name="update_thank_you">कृपया Easy Thank You को नवीनतम संस्करण में अपडेट करें</string>
     <string name="before_asking_question_read_faq">कोई प्रश्न पूछने से पहले, कृपया ऐप सेटिंग जांचें और पहले अक्सर पूछे जाने वाले प्रश्न पढ़ें। शायद समाधान वहीं है।</string>
     <string name="make_sure_latest">यह भी सुनिश्चित करें कि आप नवीनतम ऐप संस्करण का उपयोग कर रहे हैं।</string>
     <string name="new_app"><![CDATA[अरे,<br><br> मैं आपको बता रहा हूं कि हाल ही में कुछ नए ऐप्स जारी किए गए हैं:<br><br> <a href=%1$s>%2$s</a><br><br> <a href=%3$s>%4$s</a><br><br> <a href=%5$s>%6$s</a><br><br> आप इन्हें डाउनलोड कर सकते हैं उनके शीर्षक या चिह्न दबाकर।<br><br> धन्यवाद]]></string>
@@ -941,11 +940,11 @@
     <string name="translation_gujarati">गुजराती</string>
     <string name="fee_up_to_pct">%1$d%% तक शुल्क</string>
     <string name="cryptocurrency">क्रिप्टोकरेंसी</string>
-    <string name="donate_to_fossify">Fossify को दान करें</string>
+    <string name="donate_to_easy">Easy को दान करें</string>
     <string name="format_phone_numbers">फोन नंबर प्रारूपित करें</string>
     <string name="platforms">प्लेटफार्म</string>
     <string name="little_to_no_fee">बहुत कम या कोई शुल्क नहीं</string>
-    <string name="all_fossify_apps">सारे Fossify ऐप्स</string>
+    <string name="all_easy_apps">सारे Easy ऐप्स</string>
     <string name="reorder_items_by_dragging">आइटम को खींचकर क्रमित करें</string>
     <string name="known_issues">ज्ञात समस्याएं</string>
     <string name="confirm_storage_access_restricted_text_open_system">सिस्टम ऐप में खोलें</string>

@@ -289,7 +289,7 @@
     <string name="cannot_be_undone">Ова радња се не може опозвати.</string>
     <string name="save_before_closing">Имате несачуване измене. Сачувај пре изласка?</string>
     <string name="global_theme_success">Боје су ажуриране успешно. Нова тема под именом \'Shared\' је додата, молимо вас да је користите за ажурирање свих боја у будућности.</string>
-    <string name="purchase_thank_you"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Молимо вас купите <a href="https://play.google.com/store/apps/details?id=org.fossify.thankyou">Fossify Thank You</a> да бисте откључали ову функцију и подржали наш развој. Хвала вам!\n \u0020 \u0020 \u0020 \u0020]]></string>
+    <string name="purchase_thank_you"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Молимо вас купите <a href="https://play.google.com/store/apps/details?id=com.elkhouly.thankyou">Easy Thank You</a> да бисте откључали ову функцију и подржали наш развој. Хвала вам!\n \u0020 \u0020 \u0020 \u0020]]></string>
     <string name="light_theme">Светла</string>
     <string name="dark_theme">Тамна</string>
     <string name="auto_light_dark_theme">Ауто светло / тамно</string>
@@ -812,7 +812,7 @@
     <string name="m3u_parser_title">М3У Парсер (руковање датотекама листе песама м3у)</string>
     <string name="android_lame_title">АндроидЛаме (мп3 кодер)</string>
     <string name="zip4j_title">Zip4j (ЗИП компресија и декомпресија)</string>
-    <string name="pro_app_refund">Не заборавите да ако деинсталирате било коју плаћену апликацију у року од 2 сата, новац ће вам аутоматски бити враћен. Ако желите повраћај новца било када касније, само нас контактирајте на hello@fossify.org и добићете га. То олакшава испробавање :)</string>
+    <string name="pro_app_refund">Не заборавите да ако деинсталирате било коју плаћену апликацију у року од 2 сата, новац ће вам аутоматски бити враћен. Ако желите повраћај новца било када касније, само нас контактирајте на  и добићете га. То олакшава испробавање :)</string>
     <string name="developer_description">Група једноставних Андроид апликација отвореног кода са прилагодљивим виџетима, без огласа и непотребних дозвола.</string>
     <string name="close">Затвори</string>
     <string name="error">Грешка: %s</string>

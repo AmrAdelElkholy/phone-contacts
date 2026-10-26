@@ -70,7 +70,7 @@
     <string name="contacts_faq_1_text">Ja, dat kan via Instellingen -&gt; Contactvelden tonen/verbergen. Dat laat kiezen welke velden zichtbaar moeten zijn. Sommige velden zijn standaard verborgen, dus misschien zijn er via deze optie meer te ontdekken.</string>
     <string name="instant_messaging">Instant messaging (IM)</string>
     <string name="websites">Websites</string>
-    <string name="show_private_contacts">Privécontacten tonen aan Fossify Telefoon, Fossify Berichten en Fossify Agenda</string>
+    <string name="show_private_contacts">Privécontacten tonen aan Easy Telefoon, Easy Berichten en Easy Agenda</string>
     <string name="format_phone_numbers">Telefoonnummers automatisch opmaken</string>
     <string name="city">Plaatsnaam</string>
     <string name="region">Provincie/Staat</string>

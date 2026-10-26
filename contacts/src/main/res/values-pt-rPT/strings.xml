@@ -33,7 +33,7 @@
     <string name="create_group">Criar um grupo</string>
     <string name="remove_photo">Remover foto</string>
     <string name="show_dialpad_button">Mostrar botão Marcador no ecrã principal</string>
-    <string name="show_private_contacts">Partilhar contactos entre Fossify Phone, Fossify Messages e Fossify Calendar</string>
+    <string name="show_private_contacts">Partilhar contactos entre Easy Phone, Easy Messages e Easy Calendar</string>
     <string name="show_only_contacts_with_numbers">Mostrar apenas contactos com número de telefone</string>
     <string name="search_groups">Pesquisar grupos</string>
     <string name="export_contacts">Exportar contactos</string>

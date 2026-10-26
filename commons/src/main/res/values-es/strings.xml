@@ -334,8 +334,8 @@
     <string name="cannot_be_undone">Esta acción no se puede deshacer.</string>
     <string name="save_before_closing">Tiene cambios sin aplicar. ¿Guardar antes de salir?</string>
     <string name="app_icon_color_warning">Precaución: Es posible que algunos lanzadores no gestionen correctamente la personalización de los iconos de las aplicaciones. Si el icono desaparece, intente iniciar la aplicación a través de Google Play o un widget, si es accesible. Una vez iniciada, restaura el icono verde #106D1F predeterminado. En casos extremos, puede ser necesario reinstalar la aplicación.</string>
-    <string name="global_theme_success">El tema actual se ha aplicado correctamente a todas las aplicaciones de Fossify. Cualquier cambio futuro en este tema se sincronizará automáticamente.</string>
-    <string name="purchase_thank_you"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Adquiera <a href="https://play.google.com/store/apps/details?id=org.fossify.thankyou">Fossify Thank You</a> para usar esta función y apoyar el desarrollo. ¡Gracias!\n \u0020 \u0020 \u0020 \u0020]]></string>
+    <string name="global_theme_success">El tema actual se ha aplicado correctamente a todas las aplicaciones de Easy. Cualquier cambio futuro en este tema se sincronizará automáticamente.</string>
+    <string name="purchase_thank_you"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Adquiera <a href="https://play.google.com/store/apps/details?id=com.elkhouly.thankyou">Easy Thank You</a> para usar esta función y apoyar el desarrollo. ¡Gracias!\n \u0020 \u0020 \u0020 \u0020]]></string>
     <string name="light_theme">Claro</string>
     <string name="dark_theme">Oscuro</string>
     <string name="auto_light_dark_theme">Claro / Negro automático</string>
@@ -782,7 +782,6 @@
     <string name="invite_via">Invitar con</string>
     <string name="donate">Donar</string>
     <string name="follow_us">Síguenos</string>
-    <string name="copyright">v %1$s \nCopyright © Fossify %2$d</string>
     <string name="support">Soporte</string>
     <string name="help_us">Ayúdenos</string>
     <string name="other">Otro</string>
@@ -836,7 +835,7 @@
     <string name="faq_2_title_commons">Quiero apoyarte, pero no puedo donar dinero. ¿Hay algo mas que pueda hacer?</string>
     <string name="faq_2_text_commons"><![CDATA[
             Sí, por supuesto. Puede correr la voz sobre las aplicaciones o dar buenos comentarios y calificaciones. También puede ayudar traduciendo las aplicaciones a un nuevo idioma o simplemente actualizando algunas traducciones existentes.
-             La guía para traducir se encuentra en <a href="https://github.com/FossifyOrg/General-Discussion#contributing-translations">este sitio web</a>, o simplemente contáctenos en <a href="mailto:hello@fossify.org">hello@fossify.org</a> si tiene alguna pregunta.
+             La guía para traducir se encuentra en <a href="https://github.com/AmrAdelElkholy/phone-contacts">este sitio web</a>, o simplemente contáctenos en <a href="mailto:"></a> si tiene alguna pregunta.
         ]]></string>
     <string name="faq_3_title_commons">Borré algunos archivos por error, ¿cómo puedo recuperarlos?</string>
     <string name="faq_3_text_commons">Tristemente, no puedes. Los archivos se eliminan instantáneamente después del diálogo de confirmación, no hay papelera disponible.</string>
@@ -857,8 +856,8 @@
     <string name="development">Desarrollo</string>
     <string name="other_help">Otra ayuda</string>
     <string name="contributors_label"><![CDATA[
-            Esta lista contiene a todos los que ayudaron notablemente a cualquier aplicación dentro de la suite Fossify, no solo a esta. Las traducciones son manejadas por voluntarios,
-             Háganos saber si usted también quiere ayudar. La guía para traducir se encuentra en <a href="https://github.com/FossifyOrg/General-Discussion#contributing-translations">este sitio web</a>, o simplemente contáctenos en <a href="mailto:hello@fossify.org">hello@fossify.org</a> si tiene alguna pregunta.
+            Esta lista contiene a todos los que ayudaron notablemente a cualquier aplicación dentro de la suite Easy, no solo a esta. Las traducciones son manejadas por voluntarios,
+             Háganos saber si usted también quiere ayudar. La guía para traducir se encuentra en <a href="https://github.com/AmrAdelElkholy/phone-contacts">este sitio web</a>, o simplemente contáctenos en <a href="mailto:"></a> si tiene alguna pregunta.
              ¡Gracias a todos los contribuyentes y otros patrocinadores! 
         ]]></string>
     <string name="translation_arabic">Árabe</string>
@@ -947,7 +946,7 @@
         <item quantity="many">Su prueba expira en %d días.</item>
         <item quantity="other">Su prueba expira en %d días.</item>
     </plurals>
-    <string name="pro_app_refund">No olvides que si desinstalas cualquier aplicación de paga dentro de un periodo de 2 horas, automáticamente recibirás un rembolso. Si quieres un rembolso en cualquier otro momento, solo contáctanos en hello@fossify.org y lo recibirás. Eso hace que sea fácil probarlo :)</string>
+    <string name="pro_app_refund">No olvides que si desinstalas cualquier aplicación de paga dentro de un periodo de 2 horas, automáticamente recibirás un rembolso. Si quieres un rembolso en cualquier otro momento, solo contáctanos en  y lo recibirás. Eso hace que sea fácil probarlo :)</string>
     <string name="developer_description">Un grupo de aplicaciones de Android simples y de código abierto con widgets personalizables, sin anuncios y permisos innecesarios.</string>
     <string name="error">Error: %s</string>
     <string name="exif">EXIF</string>
@@ -957,7 +956,7 @@
     <string name="audio">Audio</string>
     <string name="block_contact">Bloquear contacto</string>
     <string name="genre">Género</string>
-    <string name="apply_to_all_apps">Aplicar el tema a todas las aplicaciones de Fossify</string>
+    <string name="apply_to_all_apps">Aplicar el tema a todas las aplicaciones de Easy</string>
     <string name="auto_theme">Automático</string>
     <string name="deletion_confirmation_short">¿Borrar %s?</string>
     <string name="no">No</string>
@@ -970,7 +969,7 @@
     <string name="hours_letter">%dh</string>
     <string name="week_number_short">semana</string>
     <string name="general_settings">General</string>
-    <string name="purchase_simple_thank_you">Comprar Fossify Thank You</string>
+    <string name="purchase_simple_thank_you">Comprar Easy Thank You</string>
     <string name="notification_sound">Sonido de la notificación</string>
     <string name="widgets">Widgets</string>
     <string name="january_short">En.</string>
@@ -987,13 +986,13 @@
     <string name="saturday_letter">S</string>
     <string name="website">Página web</string>
     <string name="social">Social</string>
-    <string name="update_thank_you">Por favor, actualice Fossify Thank You a la última versión</string>
-    <string name="donate_short">Apóyanos comprando &lt;a href=https://play.google.com/store/apps/details?id=org.fossify.thankyou&gt;Fossify Thank You&lt;/a&gt; por favor, también desbloqueará todas las características de la app incluyendo la personalización de colores.</string>
+    <string name="update_thank_you">Por favor, actualice Easy Thank You a la última versión</string>
+    <string name="donate_short">Apóyanos comprando &lt;a href=https://play.google.com/store/apps/details?id=com.elkhouly.thankyou&gt;Easy Thank You&lt;/a&gt; por favor, también desbloqueará todas las características de la app incluyendo la personalización de colores.</string>
     <string name="translation_bulgarian">Búlgaro</string>
     <string name="translation_chuvash">Chuvasio</string>
     <string name="translation_gujarati">Guyaratí</string>
     <string name="translation_esperanto">Esperanto</string>
-    <string name="donate_to_fossify">Apoya a Fossify</string>
+    <string name="donate_to_easy">Apoya a Easy</string>
     <string name="format_phone_numbers">Formatear números de teléfono</string>
     <string name="platforms">Plataformas</string>
     <string name="little_to_no_fee">Pequeña comisión</string>
@@ -1002,7 +1001,7 @@
     <string name="translation_belarusian">Bielorruso</string>
     <string name="translation_central_kurdish">Kurdo sorani</string>
     <string name="theme_and_colors">Tema y colores</string>
-    <string name="all_fossify_apps">Todas las aplicaciones de Fossify</string>
+    <string name="all_easy_apps">Todas las aplicaciones de Easy</string>
     <string name="known_issues">Problemas conocidos</string>
     <string name="translation_kabyle">Cabilio</string>
     <string name="number_of_items">Número de elementos</string>
@@ -1011,9 +1010,9 @@
     <string name="confirm_storage_access_restricted_text">Debido a las restricciones del sistema, esta carpeta no está disponible.</string>
     <string name="confirm_storage_access_restricted_text_open_system">Abrir en la aplicación del sistema</string>
     <string name="confirm_storage_access_restricted_text_not_found">No se pudo encontrar una aplicación de administrador de archivos del sistema.</string>
-    <string name="more_fossify_apps">Más aplicaciones Fossify</string>
+    <string name="more_easy_apps">Más aplicaciones Easy</string>
     <string name="rate_this_app">Valorar esta aplicación</string>
-    <string name="requires_fossify_thank_you">Requiere Fossify Thank You</string>
+    <string name="requires_easy_thank_you">Requiere Easy Thank You</string>
     <string name="enables_more_customization">Permite más personalización</string>
     <string name="translation_latvian">Letón</string>
     <string name="evalex_title">EvalEx (evaluación de expresiones matemáticas)</string>

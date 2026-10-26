@@ -308,7 +308,7 @@
     <string name="cannot_be_undone">Ova se radnja ne može poništiti.</string>
     <string name="save_before_closing">Imaš nespremljene promjene. Želiš li ih spremiti prije izlaska?</string>
     <string name="global_theme_success">Uspješno ažurirane boje. Nova tema pod nazivom \'Shared\' je dodana, molimo koristite ju za ažuriranje svih boja u aplikaciji u budućnosti.</string>
-    <string name="purchase_thank_you"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Kupi <a href="https://play.google.com/store/apps/details?id=org.fossify.thankyou">Fossify Hvala</a> za korištenje ove funkcije te za podržavanje razvoja. Hvala!\n \u0020 \u0020 \u0020 \u0020]]></string>
+    <string name="purchase_thank_you"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Kupi <a href="https://play.google.com/store/apps/details?id=com.elkhouly.thankyou">Easy Hvala</a> za korištenje ove funkcije te za podržavanje razvoja. Hvala!\n \u0020 \u0020 \u0020 \u0020]]></string>
     <string name="light_theme">Svijetla</string>
     <string name="dark_theme">Tamna</string>
     <string name="auto_theme">Automatski</string>
@@ -908,7 +908,7 @@
         <item quantity="few">Tvoje probno razdoblje isteče za %d dana.</item>
         <item quantity="other">Tvoje probno razdoblje isteče za %d dana.</item>
     </plurals>
-    <string name="pro_app_refund">Ako deinstaliraš bilo koju plaćenu aplikaciju u roku od 2 sata automatski ćeš dobiti povrat novca. Ako kasnije želiš povrat novca, jednostavno nas kontaktiraj na hello@fossify.org. To olakšava isprobavanje :)</string>
+    <string name="pro_app_refund">Ako deinstaliraš bilo koju plaćenu aplikaciju u roku od 2 sata automatski ćeš dobiti povrat novca. Ako kasnije želiš povrat novca, jednostavno nas kontaktiraj na . To olakšava isprobavanje :)</string>
     <string name="developer_description">Skup jednostavnih Android aplikacija otvorenog koda s prilagodljivim widgetima, bez oglasa i nepotrebnih dozvola.</string>
     <string name="show_line_numbers">Prikaži brojeve redaka</string>
     <string name="hide_line_numbers">Sakrij brojeve redaka</string>
@@ -917,7 +917,7 @@
     <string name="faq_6_text_commons">Ovaj problem nastaje kada tvoj pokretač ne podržava u potpunosti prilagođavanje ikona. Pokušaj pokrenuti aplikaciju putem Google Playa ili widgeta, ako je dostupan. Nakon pokretanja vrati standardnu zelenu boju ikone #106D1F. U ekstremnim slučajevima može biti potrebno ponovo instalirati aplikaciju.</string>
     <string name="date_added">Datum dodavanja</string>
     <string name="pin_must_be_4_digits_long">PIN mora imati najmanje 4 znamenke</string>
-    <string name="purchase_simple_thank_you">Kupi Fossify hvala</string>
+    <string name="purchase_simple_thank_you">Kupi Easy hvala</string>
     <string name="close">Zatvori</string>
     <string name="error">Greška: %s</string>
     <string name="audio">Audio</string>
@@ -949,7 +949,7 @@
     <string name="genre">Žanr</string>
     <string name="exif">EXIF</string>
     <string name="default_color">Standardna boja</string>
-    <string name="apply_to_all_apps">Primijeni temu na sve Fossify aplikacije</string>
+    <string name="apply_to_all_apps">Primijeni temu na sve Easy aplikacije</string>
     <string name="allow_access_more_media">Dozvoli pristup daljnjim medijima</string>
     <string name="more_options">Više opcija</string>
     <string name="pin">PIN</string>
@@ -961,22 +961,21 @@
     <string name="files_tab">Datoteke</string>
     <string name="recent_files_tab">Nedavne datoteke</string>
     <string name="usb">USB</string>
-    <string name="copyright">v %1$s \nAutorska prava © Fossify %2$d</string>
-    <string name="update_thank_you">Ažuriraj aplikaciju Fossify hvala na najnoviju verziju</string>
+    <string name="update_thank_you">Ažuriraj aplikaciju Easy hvala na najnoviju verziju</string>
     <string name="exoplayer_title">ExoPlayer (video player)</string>
     <string name="sms_messenger_short">SMS Messenger</string>
     <string name="faq_7_text_commons">Plaćanjima u potpunosti upravlja Google. Njihov sustav povremeno ima kvarove. Jednostavno izbrišite predmemoriju aplikacije Google Play i ponovo pokrenite uređaj. Nakon toga pokušajte ponovo preuzeti aplikaciju.</string>
     <string name="faq_10_title_commons">Kupio/la sam aplikaciju, ali je ne mogu preuzeti na drugom uređaju.</string>
     <string name="app_icon_color_warning">Oprez: Određeni pokretači možda neće ispravno rukovati prilagodbom ikone aplikacije. Ako ikona nestane, pokušaj pokrenuti aplikaciju putem Google Playa ili widgeta. Nakon pokretanja obnovi standardnu zelenu boju ikone #106D1F. U ekstremnim slučajevima može biti potrebno ponovo instalirati aplikaciju.</string>
     <string name="faq_10_text_commons">Pokušaj izbrisati predmemoriju aplikacije Google Play i ponovo pokrenuti uređaj. To je neka greška Google Playa, koja nije povezana sa samom aplikacijom.</string>
-    <string name="donate_short">Podrži nas kupnjom aplikacije &lt;a href=https://play.google.com/store/apps/details?id=org.fossify.thankyou&gt;Fossify hvala&lt;/a&gt;. Time će se otključati sve funkcije aplikacije uključujući prilagođavanje boja.</string>
-    <string name="faq_2_text_commons"><![CDATA["\n            Da naravno. Možete širiti vijest o aplikacijama ili slati povratne informacije i ocjene. Također možete pomoći prevođenjem aplikacija na novi jezik ili aktualizirati postojeće prijevode.\n            Vodič za prevođenje nalazi se na <a href=https://github.com/FossifyOrg/General-Discussion#contributing-translations>ovoj web stranici</a> ili nas kontaktiraj na <a href=mailto:hello@fossify.org>hello@fossify.org</a> ako imaš pitanja.\n        "]]></string>
-    <string name="contributors_label"><![CDATA["\n            Ovaj popis sadrži sve osobe koje su značajno pomogli bilo kojoj aplikaciji unutar paketa Fossify, ne samo ovoj. Prijevode obavljaju volonteri,\n            javi nam ako želiš pomoći. Vodič za prevođenje nalazi se na <a href=https://github.com/FossifyOrg/General-Discussion#contributing-translations>ovoj web stranici</a> ili nas kontaktiraj na <a href=mailto:hello@fossify.org>hello@fossify.org</a> ako imaš pitanja.\n            Hvala svim suradnicima i ostalim podržavateljima!\n        "]]></string>
+    <string name="donate_short">Podrži nas kupnjom aplikacije &lt;a href=https://play.google.com/store/apps/details?id=com.elkhouly.thankyou&gt;Easy hvala&lt;/a&gt;. Time će se otključati sve funkcije aplikacije uključujući prilagođavanje boja.</string>
+    <string name="faq_2_text_commons"><![CDATA["\n            Da naravno. Možete širiti vijest o aplikacijama ili slati povratne informacije i ocjene. Također možete pomoći prevođenjem aplikacija na novi jezik ili aktualizirati postojeće prijevode.\n            Vodič za prevođenje nalazi se na <a href=https://github.com/AmrAdelElkholy/phone-contacts web stranici</a> ili nas kontaktiraj na <a href=mailto:></a> ako imaš pitanja.\n        "]]></string>
+    <string name="contributors_label"><![CDATA["\n            Ovaj popis sadrži sve osobe koje su značajno pomogli bilo kojoj aplikaciji unutar paketa Easy, ne samo ovoj. Prijevode obavljaju volonteri,\n            javi nam ako želiš pomoći. Vodič za prevođenje nalazi se na <a href=https://github.com/AmrAdelElkholy/phone-contacts web stranici</a> ili nas kontaktiraj na <a href=mailto:></a> ako imaš pitanja.\n            Hvala svim suradnicima i ostalim podržavateljima!\n        "]]></string>
     <string name="translation_chuvash">Čuvaški</string>
     <string name="translation_esperanto">Esperanto</string>
     <string name="translation_gujarati">Gudžaratski</string>
     <string name="little_to_no_fee">Malo do bez naknade</string>
-    <string name="donate_to_fossify">Doniraj projektu Fossify</string>
+    <string name="donate_to_easy">Doniraj projektu Easy</string>
     <string name="fee_up_to_pct">Do %1$d%% naknade</string>
     <string name="platforms">Platforme</string>
     <string name="format_phone_numbers">Formatiraj telefonske brojeve</string>
@@ -984,7 +983,7 @@
     <string name="theme_and_colors">Teme i boje</string>
     <string name="translation_belarusian">Bjeloruski</string>
     <string name="translation_kabyle">Kabilski</string>
-    <string name="all_fossify_apps">Sve Fossify aplikacije</string>
+    <string name="all_easy_apps">Sve Easy aplikacije</string>
     <string name="translation_central_kurdish">Centralnokurdski</string>
     <string name="known_issues">Poznati problemi</string>
     <string name="confirm_storage_access_restricted_text">Zbog sustavskih ograničenja ova mapa nije dostupna.</string>
@@ -993,8 +992,8 @@
     <string name="number_of_items">Broj stavki</string>
     <string name="reorder_items_by_dragging">Promijeni redoslijed stavki povlačenjem</string>
     <string name="days_letter">%d d</string>
-    <string name="requires_fossify_thank_you">Zahtijeva Fossify Hvala</string>
-    <string name="more_fossify_apps">Još Fossify aplikacija</string>
+    <string name="requires_easy_thank_you">Zahtijeva Easy Hvala</string>
+    <string name="more_easy_apps">Još Easy aplikacija</string>
     <string name="rate_this_app">Ocijeni ovu aplikaciju</string>
     <string name="evalex_title">EvalEx (evaluacija matematičkog izraza)</string>
     <string name="enables_more_customization">Omogućuje više prilagođavanja</string>

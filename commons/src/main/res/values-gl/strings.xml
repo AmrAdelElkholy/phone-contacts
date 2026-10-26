@@ -840,10 +840,10 @@
         <item quantity="one">A túa proba caduca en %d día.</item>
         <item quantity="other">A túa proba caduca en %d días.</item>
     </plurals>
-    <string name="pro_app_refund">Non esquezas que se desinstalas calquera app de pago antes de 2 horas, devolveránseche os cartos automáticamente. Se queres unha devolución máis tarde, contáctanos en hello@fossify.org e terala. Isto fai que sexa fácil probala :)</string>
+    <string name="pro_app_refund">Non esquezas que se desinstalas calquera app de pago antes de 2 horas, devolveránseche os cartos automáticamente. Se queres unha devolución máis tarde, contáctanos en  e terala. Isto fai que sexa fácil probala :)</string>
     <string name="developer_description">Un grupo de aplicacións Android sinxelas e de código aberto con widgets persoalizables, sen anuncios e permisos innecesarios.</string>
     <string name="audio">Audio</string>
-    <string name="faq_2_text_commons"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Claro que si. Podes falarlle á xente sobre as aplicacións ou valoralas positivamente. Tamén podes colaborar traducíndoas ao teu idioma ou actualizando e mantendo as xa existentes.\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Aquí tes a guía para traducir <a href="https://github.com/FossifyOrg/General-Discussion#contributing-translations">nesta web</a>, ou contacta con nós en <a href="mailto:hello@fossify.org">hello@fossify.org</a> se queres facer algunha pregunta.\n \u0020 \u0020 \u0020 \u0020]]></string>
+    <string name="faq_2_text_commons"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Claro que si. Podes falarlle á xente sobre as aplicacións ou valoralas positivamente. Tamén podes colaborar traducíndoas ao teu idioma ou actualizando e mantendo as xa existentes.\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Aquí tes a guía para traducir <a href="https://github.com/AmrAdelElkholy/phone-contacts">nesta web</a>, ou contacta con nós en <a href="mailto:"></a> se queres facer algunha pregunta.\n \u0020 \u0020 \u0020 \u0020]]></string>
     <plurals name="files_saved">
         <item quantity="one">Ficheiro gardado correctamente</item>
         <item quantity="other">Ficheiros gardados correctamente</item>
@@ -879,9 +879,9 @@
     <string name="genre">Xénero</string>
     <string name="exif">EXIF</string>
     <string name="altitude">Altitude</string>
-    <string name="apply_to_all_apps">Aplicar o tema a todas as apps Fossify</string>
+    <string name="apply_to_all_apps">Aplicar o tema a todas as apps Easy</string>
     <string name="app_icon_color_warning">Precaución: Certos Lanzadores non xestionan correctamente a personalización. Se a icona desparece, intenta iniciar a app a través de Google Play ou un widget, se está accesible. Despois de iniciar, restablece a cor verde #106D1F. En casos extremos pode que precises reinstalar a app.</string>
-    <string name="purchase_thank_you"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Por favor merca <a href="https://play.google.com/store/apps/details?id=org.fossify.thankyou">Fossify Thank You</a> para usar esta característica e axudar ao desenvolvemento. Grazas!\n \u0020 \u0020 \u0020 \u0020]]></string>
+    <string name="purchase_thank_you"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Por favor merca <a href="https://play.google.com/store/apps/details?id=com.elkhouly.thankyou">Easy Thank You</a> para usar esta característica e axudar ao desenvolvemento. Grazas!\n \u0020 \u0020 \u0020 \u0020]]></string>
     <string name="auto_theme">Auto</string>
     <string name="white">Branco</string>
     <string name="allow_access_more_media">Permitir acceso a máis multimedia</string>
@@ -894,15 +894,14 @@
     <string name="show_line_numbers">Mostrar números de liña</string>
     <string name="website">Sitio web</string>
     <string name="known_issues">Problemas coñecidos</string>
-    <string name="more_fossify_apps">Máis apps Fossify</string>
+    <string name="more_easy_apps">Máis apps Easy</string>
     <string name="rate_this_app">Valora esta app</string>
-    <string name="copyright">v %1$s\nCopyright © Fossify %2$d</string>
     <string name="social">Social</string>
     <string name="version_placeholder">Versión %s</string>
-    <string name="all_fossify_apps">Todas as apps Fossify</string>
+    <string name="all_easy_apps">Todas as apps Easy</string>
     <string name="file_manager_short">Xestor de ficheiros</string>
     <string name="notes_short">Notas</string>
-    <string name="donate_to_fossify">Doar a Fossify</string>
+    <string name="donate_to_easy">Doar a Easy</string>
     <string name="platforms">Plataformas</string>
     <string name="little_to_no_fee">Pouquiño ou nada</string>
     <string name="fee_up_to_pct">Ata %1$d%%</string>
@@ -944,8 +943,8 @@
     <string name="hours_letter">%dh</string>
     <string name="days_letter">%dd</string>
     <string name="week_number_short">sem.</string>
-    <string name="purchase_simple_thank_you">Merca Fossify Thank You</string>
-    <string name="requires_fossify_thank_you">Require Fossify Thank You</string>
+    <string name="purchase_simple_thank_you">Merca Easy Thank You</string>
+    <string name="requires_easy_thank_you">Require Easy Thank You</string>
     <string name="enables_more_customization">Permite máis personalizacións</string>
     <string name="general_settings">Xeral</string>
     <string name="theme_and_colors">Tema e cores</string>
@@ -971,12 +970,12 @@
     <string name="november_short">Nov</string>
     <string name="december_short">Dec</string>
     <string name="saturday_letter">S</string>
-    <string name="donate_short">Apóianos mercando &lt;a href=https://play.google.com/store/apps/details?id=org.fossify.thankyou&gt;Grazas Fossify&lt;/a&gt;, desbloquearás todas as características da app incluíndo a personalización da cor.</string>
-    <string name="update_thank_you">Por favor actualiza Grazas Fossify á última vesión</string>
+    <string name="donate_short">Apóianos mercando &lt;a href=https://play.google.com/store/apps/details?id=com.elkhouly.thankyou&gt;Grazas Easy&lt;/a&gt;, desbloquearás todas as características da app incluíndo a personalización da cor.</string>
+    <string name="update_thank_you">Por favor actualiza Grazas Easy á última vesión</string>
     <string name="badge_deprecated">(retirada)</string>
     <string name="label_with_badge">%1$s %2$s</string>
     <string name="faq_6_text_commons">Este problema xurde cando o lanzador non é compatible coa personalización das iconas. Intenta iniciar a app a través de Google Play ou un widget, se é accesible. Após iniciala, restablece a cor verde #106D1F orixinal. En casos extremos pode ser preciso ter que reinstalar a aplicación.</string>
-    <string name="contributors_label"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Nesta lista están todas as persoas que colaborarón significativamente con Fossify, non só esta app. As traducións fanas persoas voluntarias,\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020contacta con nós se tamén queres axudar. As instruccións para traducir están <a href="https://github.com/FossifyOrg/General-Discussion#contributing-translations">nesta páxina web</a>, ou simplemente contacta con nós en <a href="mailto:hello@fossify.org">hello@fossify.org</a> se tes algunha pregunta.\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Grazas a todas as colaboradoras e persoas que nos apoian!\n \u0020 \u0020 \u0020 \u0020]]></string>
+    <string name="contributors_label"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Nesta lista están todas as persoas que colaborarón significativamente con Easy, non só esta app. As traducións fanas persoas voluntarias,\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020contacta con nós se tamén queres axudar. As instruccións para traducir están <a href="https://github.com/AmrAdelElkholy/phone-contacts">nesta páxina web</a>, ou simplemente contacta con nós en <a href="mailto:"></a> se tes algunha pregunta.\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Grazas a todas as colaboradoras e persoas que nos apoian!\n \u0020 \u0020 \u0020 \u0020]]></string>
     <string name="edit_contact">Editar contacto</string>
     <string name="on_contact_click">Ao tocar no contacto</string>
     <string name="call_contact">Chamar</string>

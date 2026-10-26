@@ -1,39 +1,39 @@
 <resources>
-    <string name="package_name">org.fossify.commons</string>
+    <string name="package_name">com.elkhouly.commons</string>
     <string name="pro">Pro</string>
-    <string name="fossify_commons">Fossify Commons</string>
+    <string name="easy_commons">Easy Commons</string>
     <string name="progress">%1$s / %2$s</string>
-    <string name="donate_url">https://fossify.org/donate</string>
-    <string name="thank_you_url">https://play.google.com/store/apps/details?id=org.fossify.thankyou</string>
+    <string name="donate_url">https://github.com/AmrAdelElkholy/phone-contacts</string>
+    <string name="thank_you_url">https://play.google.com/store/apps/details?id=com.elkhouly.thankyou</string>
     <string name="a_m">am</string>
     <string name="p_m">pm</string>
     <string name="material_you">Material You</string>
 
     <!-- App names -->
-    <string name="simple_app_launcher">Fossify App Launcher</string>
-    <string name="simple_calculator">Fossify Calculator</string>
-    <string name="simple_calendar">Fossify Calendar</string>
-    <string name="simple_camera">Fossify Camera</string>
-    <string name="simple_clock">Fossify Clock</string>
-    <string name="simple_contacts">Fossify Contacts</string>
-    <string name="simple_dialer">Fossify Dialer</string>
-    <string name="simple_draw">Fossify Draw</string>
-    <string name="simple_file_manager">Fossify File Manager</string>
-    <string name="simple_flashlight">Fossify Flashlight</string>
-    <string name="simple_gallery">Fossify Gallery</string>
-    <string name="simple_keyboard">Fossify Keyboard</string>
-    <string name="simple_launcher">Fossify Launcher</string>
-    <string name="simple_music_player">Fossify Music Player</string>
-    <string name="simple_notes">Fossify Notes</string>
-    <string name="simple_sms_messenger">Fossify SMS Messenger</string>
-    <string name="simple_thank_you">Fossify Thank You</string>
-    <string name="simple_voice_recorder">Fossify Voice Recorder</string>
+    <string name="simple_app_launcher">Easy App Launcher</string>
+    <string name="simple_calculator">Easy Calculator</string>
+    <string name="simple_calendar">Easy Calendar</string>
+    <string name="simple_camera">Easy Camera</string>
+    <string name="simple_clock">Easy Clock</string>
+    <string name="simple_contacts">Easy Phone</string>
+    <string name="simple_dialer">Easy Phone</string>
+    <string name="simple_draw">Easy Draw</string>
+    <string name="simple_file_manager">Easy File Manager</string>
+    <string name="simple_flashlight">Easy Flashlight</string>
+    <string name="simple_gallery">Easy Gallery</string>
+    <string name="simple_keyboard">Easy Keyboard</string>
+    <string name="simple_launcher">Easy Launcher</string>
+    <string name="simple_music_player">Easy Music Player</string>
+    <string name="simple_notes">Easy Notes</string>
+    <string name="simple_sms_messenger">Easy SMS Messenger</string>
+    <string name="simple_thank_you">Easy Thank You</string>
+    <string name="simple_voice_recorder">Easy Voice Recorder</string>
 
     <!-- About -->
     <string name="two_string_placeholder">%1$s%2$s</string>
-    <string name="my_website">\nhttps://fossify.org</string>
-    <string name="my_email">hello@fossify.org</string>
-    <string name="my_fake_email">noreply@fossify.org</string>
+    <string name="my_website">\nhttps://github.com/AmrAdelElkholy/phone-contacts</string>
+    <string name="my_email"></string>
+    <string name="my_fake_email"></string>
     <string name="reddit">Reddit</string>
     <string name="telegram">Telegram</string>
     <string name="github">GitHub</string>
@@ -167,7 +167,7 @@
     <string name="evalex_text">Copyright 2012-2023 by Udo Klimaschewski\n\nLicensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at\n\nhttps://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</string>
     <string name="evalex_url">https://github.com/ezylang/EvalEx</string>
     <string name="mammoth_text">Copyright (c) 2015, Michael Williamson\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\n2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</string>
-    <string name="mammoth_url">https://github.com/FossifyOrg/java-mammoth</string>
+    <string name="mammoth_url">https://github.com/mwilliamson/java-mammoth</string>
     <string name="commonmark_text">Copyright (c) 2015, Atlassian Pty Ltd\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n* Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\n* Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</string>
     <string name="commonmark_url">https://github.com/commonmark/commonmark-java</string>
     <string name="jsoup_text">The MIT License\n\nCopyright (c) 2009-2026 Jonathan Hedley\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</string>

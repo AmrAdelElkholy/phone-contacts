@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true" />
 
-    <org.fossify.commons.views.MyAppCompatCheckbox
+    <com.elkhouly.commons.views.MyAppCompatCheckbox
         android:id="@+id/hide_year"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

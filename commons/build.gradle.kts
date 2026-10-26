@@ -10,7 +10,7 @@ plugins {
 }
 
 android {
-    namespace = "org.fossify.commons"
+    namespace = "com.elkhouly.commons"
 
     compileSdk = libs.versions.app.build.compileSDKVersion.get().toInt()
 

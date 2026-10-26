@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<org.fossify.phone.fragments.RecentsFragment xmlns:android="http://schemas.android.com/apk/res/android"
+<com.elkhouly.dialer.fragments.RecentsFragment xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/recents_fragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <org.fossify.commons.views.MyTextView
+    <com.elkhouly.commons.views.MyTextView
         android:id="@+id/recents_placeholder"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -20,7 +20,7 @@
         android:textStyle="italic"
         android:visibility="gone" />
 
-    <org.fossify.commons.views.MyTextView
+    <com.elkhouly.commons.views.MyTextView
         android:id="@+id/recents_placeholder_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -33,7 +33,7 @@
         android:textSize="@dimen/bigger_text_size"
         android:visibility="gone" />
 
-    <org.fossify.commons.views.MyRecyclerView
+    <com.elkhouly.commons.views.MyRecyclerView
         android:id="@+id/recents_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -41,7 +41,7 @@
         android:layoutAnimation="@anim/layout_animation"
         android:paddingBottom="@dimen/recyclerview_fab_padding"
         android:scrollbars="none"
-        app:layoutManager="org.fossify.commons.views.MyLinearLayoutManager" />
+        app:layoutManager="com.elkhouly.commons.views.MyLinearLayoutManager" />
 
     <com.google.android.material.progressindicator.CircularProgressIndicator
         android:id="@+id/progress_indicator"
@@ -50,4 +50,4 @@
         android:layout_centerInParent="true"
         android:indeterminate="true"
         app:trackCornerRadius="@dimen/small_margin" />
-</org.fossify.phone.fragments.RecentsFragment>
+</com.elkhouly.dialer.fragments.RecentsFragment>

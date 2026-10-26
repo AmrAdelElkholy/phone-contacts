@@ -266,7 +266,7 @@
     <string name="undo_changes_confirmation">Sunteți sigur că vreţi să anulați modificările?</string>
     <string name="save_before_closing">Aveți modificări nesalvate. Salvați înainte de a ieși?</string>
     <string name="global_theme_success">Culorile au fost actualizate cu succes. A fost adăugată o nouă temă numită \'Partajată\', vă rugăm să o folosiți pentru actualizarea tuturor culorilor aplicației în viitor.</string>
-    <string name="purchase_thank_you"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Vă rugăm cumpăraţi <a href="https://play.google.com/store/apps/details?id=org.fossify.thankyou">Fossify Thank You</a> pentru a debloca această funcţie şi pentru a sprijini dezvoltatorii. Vă mulţumim!\n \u0020 \u0020 \u0020 \u0020]]></string>
+    <string name="purchase_thank_you"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Vă rugăm cumpăraţi <a href="https://play.google.com/store/apps/details?id=com.elkhouly.thankyou">Easy Thank You</a> pentru a debloca această funcţie şi pentru a sprijini dezvoltatorii. Vă mulţumim!\n \u0020 \u0020 \u0020 \u0020]]></string>
     <string name="light_theme">Luminoasă</string>
     <string name="dark_theme">Întunecată</string>
     <string name="auto_theme">Automatic</string>
@@ -738,7 +738,7 @@
     <string name="faq_2_title_commons">Vreau să te sprijin, dar nu pot dona bani. Pot să fac altceva?</string>
     <string name="faq_2_text_commons"><![CDATA[
             Da, bineînțeles. Puteți să răspândiți vestea despre aplicațiile Simple sau să oferiți feedback și evaluări bune pe magaziul Google Play. De asemenea, puteți ajuta prin traducerea aplicațiilor într-o limbă nouă sau doar prin actualizarea unor traduceri existente.
-            Ghidul de traducere se găsește la <a href="https://github.com/FossifyOrg/General-Discussion#contributing-translations">acest site</a>, sau pur și simplu contactați-ne la <a href="mailto:hello@fossify.org">hello@fossify.org</a> dacă aveți întrebări.
+            Ghidul de traducere se găsește la <a href="https://github.com/AmrAdelElkholy/phone-contacts">acest site</a>, sau pur și simplu contactați-ne la <a href="mailto:"></a> dacă aveți întrebări.
         ]]></string>
     <string name="faq_3_title_commons">Am șters niște fișiere din greșeală, cum pot să le recuperez?</string>
     <string name="faq_3_text_commons">Din păcate, nu se poate. Fișierele sunt șterse instantaneu după dialogul de confirmare, nu există nici un coș de gunoi disponibil.</string>
@@ -827,7 +827,7 @@
     <string name="audio_record_view_title">Audio Record View (vizualizare audio)</string>
     <string name="sms_mms_title">SMS MMS (Gestionarea SMS și MMS)</string>
     <string name="apng_title">APNG Android (suport WebP animat)</string>
-    <string name="pro_app_refund">Nu uitați că, dacă dezinstalați orice aplicație plătită în termen de 2 ore, veți fi rambursat automat. Dacă doriți o rambursare oricând mai târziu, contactați-ne la hello@fossify.org și o veți obține. Astfel, este ușor să o încercați. :)</string>
+    <string name="pro_app_refund">Nu uitați că, dacă dezinstalați orice aplicație plătită în termen de 2 ore, veți fi rambursat automat. Dacă doriți o rambursare oricând mai târziu, contactați-ne la  și o veți obține. Astfel, este ușor să o încercați. :)</string>
     <string name="developer_description">Un grup de aplicații Android simple, open source, cu widget-uri personalizabile, fără reclame și permisiuni inutile.</string>
     <string name="pager">Paginator</string>
     <string name="row_count">Număr de rânduri</string>
@@ -903,7 +903,7 @@
     <string name="deletion_confirmation_short">Ștergeți %s?</string>
     <string name="pin">PIN</string>
     <string name="password">Parola</string>
-    <string name="purchase_simple_thank_you">Achiziționați Mulțumesc Fossify (Thank You)</string>
+    <string name="purchase_simple_thank_you">Achiziționați Mulțumesc Easy (Thank You)</string>
     <string name="general_settings">General</string>
     <string name="text">Text</string>
     <string name="allow_notifications_reminders">Trebuie să permiți aplicației să afișeze notificări, altfel nu va putea afișa memento-uri.</string>

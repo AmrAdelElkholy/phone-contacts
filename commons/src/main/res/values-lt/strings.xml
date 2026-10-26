@@ -737,7 +737,6 @@
     <string name="invite_via">Pasiūlyti per</string>
     <string name="donate">Paaukoti</string>
     <string name="follow_us">Sekite mus</string>
-    <string name="copyright">v %1$s \nAutorių teisės © Fossify %2$d</string>
     <string name="support">Palaikymas</string>
     <string name="help_us">Padėkite mums</string>
     <string name="social">Socialiniai tinklai</string>
@@ -866,7 +865,7 @@
     <string name="audio_record_view_title">Audio Record View (garso vizualizavimas)</string>
     <string name="sms_mms_title">SMS MMS (SMS ir MMS apdorojimas)</string>
     <string name="apng_title">APNG Android (animuotų WebP palaikymas)</string>
-    <string name="pro_app_refund">Nepamirškite, jog jeigu per 2 valandas pašalinsite bet kurią mokamą programėlę, jums automatiškai bus grąžinti pinigai. Jei norėsite susigrąžinti pinigus vėliau, susisiekite su mumis el. paštu hello@fossify.org ir juos atgausite. Tokiu būdu galite lengvai išbandyti programėlę :)</string>
+    <string name="pro_app_refund">Nepamirškite, jog jeigu per 2 valandas pašalinsite bet kurią mokamą programėlę, jums automatiškai bus grąžinti pinigai. Jei norėsite susigrąžinti pinigus vėliau, susisiekite su mumis el. paštu  ir juos atgausite. Tokiu būdu galite lengvai išbandyti programėlę :)</string>
     <string name="developer_description">Paprastų, atvirojo kodo „Android“ progamėlių rinkinys su tinkinamais valdikliais, be reklamų ir nereikalingų leidimų.</string>
     <string name="edit_contact">Taisyti adresatą</string>
     <string name="on_contact_click">Spustelėjus ant adresato</string>

@@ -339,7 +339,7 @@
     <string name="cannot_be_undone">Táto akcia sa nedá vrátiť späť.</string>
     <string name="save_before_closing">Máte neuložené zmeny. Chcete ich uložiť pred ukončením?</string>
     <string name="global_theme_success">Farby boli úspešne aktualizované. Bola pridaná nová \'Zdieľaná\' téma, prosím použite ju pri ďalšej úprave farieb.</string>
-    <string name="purchase_thank_you"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Prosím zakúpte si <a href="https://play.google.com/store/apps/details?id=org.fossify.thankyou">Jednoduché ďakujem</a> na odomknutie tejto funkcie a podporu vývoja. Vďaka!\n \u0020 \u0020 \u0020 \u0020]]></string>
+    <string name="purchase_thank_you"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Prosím zakúpte si <a href="https://play.google.com/store/apps/details?id=com.elkhouly.thankyou">Jednoduché ďakujem</a> na odomknutie tejto funkcie a podporu vývoja. Vďaka!\n \u0020 \u0020 \u0020 \u0020]]></string>
     <string name="light_theme">Svetlá</string>
     <string name="dark_theme">Tmavá</string>
     <string name="auto_theme">Automatická</string>
@@ -878,7 +878,7 @@
     <string name="faq_2_title_commons">Chcem vás podporiť, ale neviem poslať peniaze. Viem pre vás urobiť aj niečo iné?</string>
     <string name="faq_2_text_commons"><![CDATA[
             Áno, samozrejme. Môžete napr. šíriť apky medzi známymi, alebo nám poslať užitočnú odozvu a hodnotenia. Viete pomôcť aj preložením apiek do nových jazykov, alebo upraviť existujúce preklady.
-            Návod na prekladanie je na <a href="https://github.com/FossifyOrg/General-Discussion#contributing-translations">tejto webstránke</a>, alebo nám v prípade potreby napíšte na <a href="mailto:hello@fossify.org">hello@fossify.org</a>.
+            Návod na prekladanie je na <a href="https://github.com/AmrAdelElkholy/phone-contacts">tejto webstránke</a>, alebo nám v prípade potreby napíšte na <a href="mailto:"></a>.
         ]]></string>
     <string name="faq_3_title_commons">Náhodou som vymazal niektoré súbory, viem ich obnoviť?</string>
     <string name="faq_3_text_commons">Žiaľ, nie. Súbory sú mazané okamžite po potvrdení, nie je dostupný žiadny smetný kôš.</string>
@@ -898,8 +898,8 @@
     <string name="development">Vývoj</string>
     <string name="other_help">Iná pomoc</string>
     <string name="contributors_label"><![CDATA[
-            Tento zoznam obsahuje každého, kto citeľne pomohol ktorejkoľvek apke z celej sady Fossify, nie iba tejto apke. Preklady sú spracovávané dobrovoľníkmi,
-            dajte nám vedieť, ak chcete pomôcť tiež. Návod na prekladanie je na <a href="https://github.com/FossifyOrg/General-Discussion#contributing-translations">tejto webstránke</a>, alebo ak máte nejaké otázky, tak nám jednoducho napíšte na <a href="mailto:hello@fossify.org">hello@fossify.org</a>.
+            Tento zoznam obsahuje každého, kto citeľne pomohol ktorejkoľvek apke z celej sady Easy, nie iba tejto apke. Preklady sú spracovávané dobrovoľníkmi,
+            dajte nám vedieť, ak chcete pomôcť tiež. Návod na prekladanie je na <a href="https://github.com/AmrAdelElkholy/phone-contacts">tejto webstránke</a>, alebo ak máte nejaké otázky, tak nám jednoducho napíšte na <a href="mailto:"></a>.
             Ďakujeme všetkým prispievateľom a iným podporovateľom!
         ]]></string>
     <string name="translation_arabic">Arabčina</string>
@@ -991,7 +991,7 @@
         <item quantity="many">Vaša skúšobná doba uplynie o %d dní.</item>
         <item quantity="other">Vaša skúšobná doba uplynie o %d dní.</item>
     </plurals>
-    <string name="pro_app_refund">Nezabudnite, že ak odinštalujete platenú verziu do 2 hodín, peniaze vám budú automaticky vrátené. Ak ich budete chcieť späť hocikedy neskôr, len nám dajte vedieť na hello@fossify.org. To vám zabezpečí jednoduchý spôsob na ich vyskúšanie :)</string>
+    <string name="pro_app_refund">Nezabudnite, že ak odinštalujete platenú verziu do 2 hodín, peniaze vám budú automaticky vrátené. Ak ich budete chcieť späť hocikedy neskôr, len nám dajte vedieť na . To vám zabezpečí jednoduchý spôsob na ich vyskúšanie :)</string>
     <string name="developer_description">Skupina jednoduchých, open source Android apiek s nastaviteľnými widgetmi, bez reklám a nepotrebných oprávnení.</string>
     <string name="ok">OK</string>
     <string name="audio">Zvuk</string>
@@ -1003,7 +1003,7 @@
     <string name="confirm_storage_access_restricted_text_not_found">Nepodarilo sa nájsť systémového správcu súborov.</string>
     <string name="album">Album</string>
     <string name="exif">EXIF</string>
-    <string name="apply_to_all_apps">Použiť tieto farby na všetky aplikácie Fossify</string>
+    <string name="apply_to_all_apps">Použiť tieto farby na všetky aplikácie Easy</string>
     <string name="app_icon_color_warning">Upozornenie: V niektorých spúšťačoch môže prispôsobenie ikony spôsobiť problémy. Ak by ikona zmizla, skúste spustiť aplikáciu cez Google Play alebo widget, ak je to možné. Po spustení znovu obnovte pôvodnú zelenú farbu ikony #106D1F. V extrémnych prípadoch môže byť potrebné aplikáciu odinštalovať a znovu nainštalovať.</string>
     <string name="number_of_items">Počet položiek</string>
     <string name="reorder_items_by_dragging">Poradie položiek zmeníte potiahnutím</string>
@@ -1013,8 +1013,8 @@
     <string name="hours_letter">%dh</string>
     <string name="days_letter">%dd</string>
     <string name="week_number_short">týž.</string>
-    <string name="purchase_simple_thank_you">Kúpiť Fossify Ďakujem</string>
-    <string name="requires_fossify_thank_you">Vyžaduje Fossify Ďakujem</string>
+    <string name="purchase_simple_thank_you">Kúpiť Easy Ďakujem</string>
+    <string name="requires_easy_thank_you">Vyžaduje Easy Ďakujem</string>
     <string name="theme_and_colors">Motív a farby</string>
     <string name="text">Text</string>
     <string name="usb">USB</string>
@@ -1032,13 +1032,12 @@
     <string name="december_short">Dec</string>
     <string name="saturday_letter">S</string>
     <string name="known_issues">Známe problémy</string>
-    <string name="more_fossify_apps">Ďalšie aplikácie Fossify</string>
+    <string name="more_easy_apps">Ďalšie aplikácie Easy</string>
     <string name="rate_this_app">Ohodnoťte túto aplikáciu</string>
-    <string name="copyright">v %1$s\nCopyright © Fossify %2$d</string>
-    <string name="donate_short">Prosím, podporte nás zakúpením &lt;a href=https://play.google.com/store/apps/details?id=org.fossify.thankyou&gt;Fossify Thank You (Ďakujem)&lt;/a&gt;. Odomknú sa vám taktiež všetky funkcie aplikácií vrátane úpravy farieb.</string>
-    <string name="update_thank_you">Prosím aktualizujte Fossify Ďakujem na najnovšiu verziu</string>
-    <string name="all_fossify_apps">Všetky Fossify aplikácie</string>
-    <string name="donate_to_fossify">Prispieť projektu Fossify</string>
+    <string name="donate_short">Prosím, podporte nás zakúpením &lt;a href=https://play.google.com/store/apps/details?id=com.elkhouly.thankyou&gt;Easy Thank You (Ďakujem)&lt;/a&gt;. Odomknú sa vám taktiež všetky funkcie aplikácií vrátane úpravy farieb.</string>
+    <string name="update_thank_you">Prosím aktualizujte Easy Ďakujem na najnovšiu verziu</string>
+    <string name="all_easy_apps">Všetky Easy aplikácie</string>
+    <string name="donate_to_easy">Prispieť projektu Easy</string>
     <string name="platforms">Platformy</string>
     <string name="little_to_no_fee">Malý alebo žiadny poplatok</string>
     <string name="fee_up_to_pct">Poplatok až %1$d%%</string>

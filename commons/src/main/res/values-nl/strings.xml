@@ -312,7 +312,7 @@
     <string name="undo_changes_confirmation">Wijzigingen inderdaad ongedaan maken?</string>
     <string name="cannot_be_undone">Deze bewerking kan niet ongedaan worden gemaakt.</string>
     <string name="save_before_closing">Er zijn niet opgeslagen wijzigingen. Opslaan voor het afsluiten?</string>
-    <string name="global_theme_success">Het huidige thema is toegepast op alle Fossify apps. Toekomstige aanpassingen zullen automatisch worden doorgevoerd in alle apps.</string>
+    <string name="global_theme_success">Het huidige thema is toegepast op alle Easy apps. Toekomstige aanpassingen zullen automatisch worden doorgevoerd in alle apps.</string>
     <string name="light_theme">Licht</string>
     <string name="dark_theme">Donker</string>
     <string name="auto_theme">Automatisch</string>
@@ -777,7 +777,7 @@
     <string name="faq_2_title_commons">Ik wil een bijdrage leveren, maar ik kan geen geld doneren. Kan ik iets anders doen?</string>
     <string name="faq_2_text_commons"><![CDATA[
             Maar natuurlijk! Vertel anderen over deze apps of geef feedback en beoordelingen. Ook het vertalen van de apps in een nieuwe taal of het bijwerken van bestaande vertalingen wordt gewaardeerd.
-            Een handleiding voor vertaling is te vinden op <a href="https://github.com/FossifyOrg/General-Discussion#contributing-translations">deze website</a>, of stuur een bericht naar <a href="mailto:hello@fossify.org">hello@fossify.org</a> voor hulp.
+            Een handleiding voor vertaling is te vinden op <a href="https://github.com/AmrAdelElkholy/phone-contacts">deze website</a>, of stuur een bericht naar <a href="mailto:"></a> voor hulp.
         ]]></string>
     <string name="faq_3_title_commons">Ik heb per ongeluk bestanden verwijderd, hoe kan ik deze herstellen?</string>
     <string name="faq_3_text_commons">Helaas kan dat niet. Bestanden worden onmiddellijk na het bevestigingen verwijderd, er is geen prullenbak beschikbaar.</string>
@@ -849,7 +849,7 @@
         <item quantity="one">Deze proefversie verloopt over %d dag.</item>
         <item quantity="other">Deze proefversie verloopt over %d dagen.</item>
     </plurals>
-    <string name="pro_app_refund">Bij het verwijderen van de app binnen 2 uur na aanschaf wordt het aankoopbedrag automatisch teruggestort. Wilt u op een later tijdstip een terugbetaling, neem dan contact op via hello@fossify.org en het wordt geregeld. Zodoende blijft het gemakkelijk om de app uit te proberen :)</string>
+    <string name="pro_app_refund">Bij het verwijderen van de app binnen 2 uur na aanschaf wordt het aankoopbedrag automatisch teruggestort. Wilt u op een later tijdstip een terugbetaling, neem dan contact op via  en het wordt geregeld. Zodoende blijft het gemakkelijk om de app uit te proberen :)</string>
     <string name="developer_description">Een verzameling eenvoudige opensource Android-apps met widgets, zonder advertenties of onnodige rechten.</string>
     <string name="ok">OK</string>
     <string name="later">Later</string>
@@ -871,16 +871,15 @@
     <string name="genre">Genre</string>
     <string name="camera">Camera</string>
     <string name="exif">EXIF</string>
-    <string name="apply_to_all_apps">Thema toepassen op alle Fossify apps</string>
-    <string name="purchase_thank_you"><![CDATA["\n            Overweeg om <a href=https://play.google.com/store/apps/details?id=org.fossify.thankyou>Fossify Bedankje</a> aan te schaffen om deze functie te kunnen gebruiken en om verdere ontwikkeling te ondersteunen. Alvast bedankt!\n        "]]></string>
+    <string name="apply_to_all_apps">Thema toepassen op alle Easy apps</string>
+    <string name="purchase_thank_you"><![CDATA["\n            Overweeg om <a href=https://play.google.com/store/apps/details?id=com.elkhouly.thankyou>Easy Bedankje</a> aan te schaffen om deze functie te kunnen gebruiken en om verdere ontwikkeling te ondersteunen. Alvast bedankt!\n        "]]></string>
     <string name="system_default">Systeeminstelling</string>
     <string name="show_line_numbers">Regelnummers tonen</string>
     <string name="hide_line_numbers">Regelnummers verbergen</string>
-    <string name="purchase_simple_thank_you">Fossify Bedankje aanschaffen</string>
-    <string name="donate_short">Bevalt Fossify? Steun dan de ontwikkeling van onze advertentievrije apps door &lt;a href=\"https://play.google.com/store/apps/details?id=org.fossify.thankyou\"&gt;Fossify Bedankje&lt;/a&gt; aan te schaffen. Dit geeft ook de mogelijkheid om lettertypen aan te passen en de aanpassingen te delen tussen alle Fossify-apps. Bedankt!</string>
-    <string name="update_thank_you">Update Fossify Bedankje naar de nieuwste versie</string>
+    <string name="purchase_simple_thank_you">Easy Bedankje aanschaffen</string>
+    <string name="donate_short">Bevalt Easy? Steun dan de ontwikkeling van onze advertentievrije apps door &lt;a href=\"https://play.google.com/store/apps/details?id=com.elkhouly.thankyou\"&gt;Easy Bedankje&lt;/a&gt; aan te schaffen. Dit geeft ook de mogelijkheid om lettertypen aan te passen en de aanpassingen te delen tussen alle Easy-apps. Bedankt!</string>
+    <string name="update_thank_you">Update Easy Bedankje naar de nieuwste versie</string>
     <string name="app_icon_color_warning">Let op: Sommige launchers verwerken het aanpassen van het icoon mogelijk niet goed. Als het icoon verdwijnt, probeer dan de app te starten via Google Play, F-Droid of een widget. Herstel na het starten de groene standaardkleur #106D1F. In extreme gevallen kan het zijn dat de app opnieuw geïnstalleerd moet worden.</string>
-    <string name="copyright">v %1$s \nCopyright © Fossify %2$d</string>
     <string name="seconds_letter">%ds</string>
     <string name="minutes_letter">%dm</string>
     <string name="week_number_short">wk.</string>
@@ -907,14 +906,14 @@
     <string name="wednesday_letter">W</string>
     <string name="website">Website</string>
     <string name="camera_short">Camera</string>
-    <string name="contributors_label"><![CDATA["\n            Deze lijst bevat de namen van iedereen die aan een app binnen de Fossify suite heeft bijgedragen. Vertalingen worden gedaan door vrijwilligers,\n            dus laat het ons weten als je ook wilt helpen. Lees de instructies <a href=https://github.com/FossifyOrg/General-Discussion#contributing-translations>op deze website</a>, of stuur bij vragen een bericht naar <a href=mailto:hello@fossify.org>hello@fossify.org</a>.\n            Bedankt voor alle bijdragen en andere ondersteuning!\n        "]]></string>
+    <string name="contributors_label"><![CDATA["\n            Deze lijst bevat de namen van iedereen die aan een app binnen de Easy suite heeft bijgedragen. Vertalingen worden gedaan door vrijwilligers,\n            dus laat het ons weten als je ook wilt helpen. Lees de instructies <a href=https://github.com/AmrAdelElkholy/phone-contacts deze website</a>, of stuur bij vragen een bericht naar <a href=mailto:></a>.\n            Bedankt voor alle bijdragen en andere ondersteuning!\n        "]]></string>
     <string name="launcher_short">Launcher</string>
     <string name="faq_6_text_commons">Dit probleem doet zich voor wanneer je launcher het aanpassen van pictogrammen niet volledig ondersteunt. Probeer de app te starten via Google Play of een widget, indien mogelijk. Herstel na het starten de standaard groene icoonkleur #106D1F. In extreme gevallen kan het nodig zijn om de app opnieuw te installeren.</string>
     <string name="translation_tamil">Tamil</string>
     <string name="format_phone_numbers">Telefoonnummers automatisch opmaken</string>
     <string name="little_to_no_fee">Weinig tot geen kosten</string>
     <string name="platforms">Platformen</string>
-    <string name="donate_to_fossify">Doneer aan Fossify</string>
+    <string name="donate_to_easy">Doneer aan Easy</string>
     <string name="cryptocurrency">Cryptocurrency</string>
     <string name="fee_up_to_pct">Kosten tot %1$d%%</string>
     <string name="translation_hindi">Hindi</string>
@@ -926,7 +925,7 @@
     <string name="gson_title">Gson (JSON-parser)</string>
     <string name="translation_belarusian">Wit-Russisch</string>
     <string name="translation_central_kurdish">Centraal Koerdisch</string>
-    <string name="all_fossify_apps">Alle Fossify apps</string>
+    <string name="all_easy_apps">Alle Easy apps</string>
     <string name="theme_and_colors">Thema &amp; kleuren</string>
     <string name="known_issues">Bekende problemen</string>
     <string name="during_day_at">Overdag om %1$02d.%2$02du</string>
@@ -938,8 +937,8 @@
     <string name="confirm_storage_access_restricted_text_open_system">Openen in systeemapp</string>
     <string name="confirm_storage_access_restricted_text">Deze map is door systeembeperkingen niet beschikbaar.</string>
     <string name="rate_this_app">Beoordeel deze app</string>
-    <string name="more_fossify_apps">Meer Fossify-apps</string>
-    <string name="requires_fossify_thank_you">Vereist Fossify Bedankje</string>
+    <string name="more_easy_apps">Meer Easy-apps</string>
+    <string name="requires_easy_thank_you">Vereist Easy Bedankje</string>
     <string name="enables_more_customization">Maakt meer aanpassingen mogelijk</string>
     <string name="translation_latvian">Lets</string>
     <string name="exoplayer_title">ExoPlayer (videospeler)</string>
@@ -959,5 +958,5 @@
     <string name="call_contact">Contact bellen</string>
     <string name="view_contact">Contactgegevens bekijken</string>
     <string name="rate_app_prompt">Bevalt de app goed? Geef dan een beoordeling op Google Play.</string>
-    <string name="donation_prompt">Bevalt Fossify? Overweeg dan om de ontwikkeling te steunen.</string>
+    <string name="donation_prompt">Bevalt Easy? Overweeg dan om de ontwikkeling te steunen.</string>
 </resources>

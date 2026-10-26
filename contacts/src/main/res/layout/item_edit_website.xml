@@ -5,7 +5,7 @@
     android:layout_height="wrap_content"
     android:paddingEnd="@dimen/activity_margin">
 
-    <org.fossify.commons.views.MyEditText
+    <com.elkhouly.commons.views.MyEditText
         android:id="@+id/contact_website"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

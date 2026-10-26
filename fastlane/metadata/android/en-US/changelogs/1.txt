@@ -1,1 +1,3 @@
-* Initial release
+* First release of Easy Phone
+* Dialer and contacts manager in one app
+* WhatsApp and WhatsApp Business shortcuts

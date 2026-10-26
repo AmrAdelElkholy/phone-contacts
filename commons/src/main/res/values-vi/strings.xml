@@ -288,9 +288,9 @@
     <string name="undo_changes_confirmation">Hoàn tác các thay đổi?</string>
     <string name="cannot_be_undone">Hành động này không thể hoàn tác.</string>
     <string name="save_before_closing">Bạn có các thay đổi chưa lưu. Lưu trước khi thoát?</string>
-    <string name="global_theme_success">Chủ đề hiện tại đã được áp dụng thành công cho tất cả ứng dụng Fossify. Bất kỳ thay đổi nào trong tương lai đối với chủ đề này sẽ được đồng bộ hóa tự động.</string>
+    <string name="global_theme_success">Chủ đề hiện tại đã được áp dụng thành công cho tất cả ứng dụng Easy. Bất kỳ thay đổi nào trong tương lai đối với chủ đề này sẽ được đồng bộ hóa tự động.</string>
     <string name="purchase_thank_you"><![CDATA[
-            Hãy mua <a href="https://play.google.com/store/apps/details?id=org.fossify.thankyou">Fossify Thank You</a> để dùng tính năng này và hỗ trợ nhà phát triển. Cảm ơn!
+            Hãy mua <a href="https://play.google.com/store/apps/details?id=com.elkhouly.thankyou">Easy Thank You</a> để dùng tính năng này và hỗ trợ nhà phát triển. Cảm ơn!
         ]]></string>
     <string name="light_theme">Sáng</string>
     <string name="dark_theme">Tối</string>
@@ -627,7 +627,7 @@
     <string name="sanselan_title">Apache Sanselan (đọc siêu dữ liệu hình ảnh)</string>
     <string name="filters_title">Android Photo Filters (bộ lọc hình ảnh)</string>
     <string name="gesture_views_title">Gesture Views (thu phóng hình ảnh)</string>
-    <string name="pro_app_refund">Đừng quên rằng nếu bạn gỡ cài đặt bất kỳ ứng dụng trả phí nào trong vòng 2 giờ, bạn sẽ tự động được hoàn tiền. Nếu bạn muốn hoàn lại tiền bất cứ lúc nào sau đó, chỉ cần liên hệ với chúng tôi qua hello@fossify.org và bạn sẽ được hoàn ngay. Thật dễ đúng không :)</string>
+    <string name="pro_app_refund">Đừng quên rằng nếu bạn gỡ cài đặt bất kỳ ứng dụng trả phí nào trong vòng 2 giờ, bạn sẽ tự động được hoàn tiền. Nếu bạn muốn hoàn lại tiền bất cứ lúc nào sau đó, chỉ cần liên hệ với chúng tôi qua  và bạn sẽ được hoàn ngay. Thật dễ đúng không :)</string>
     <string name="developer_description">Một bộ sưu tập ứng dụng Android đơn giản, mã nguồn mở, với các widget có thể tùy chỉnh, không quảng cáo và không yêu cầu quyền không cần thiết.</string>
     <string name="faq_9_title_commons">Làm sao chọn nhiều mục cùng lúc?</string>
     <string name="error">Lỗi: %s</string>
@@ -666,7 +666,6 @@
     <string name="theme_and_colors">Chủ đề &amp; màu</string>
     <string name="widgets">Widget</string>
     <string name="list_view">Danh sách</string>
-    <string name="copyright">v %1$s\nBản quyền © Fossify %2$d</string>
     <string name="root">Root</string>
     <string name="exif">EXIF</string>
     <string name="system_default">Theo hệ thống</string>
@@ -740,10 +739,10 @@
     <string name="donate">Ủng hộ</string>
     <string name="platforms">Nền tảng</string>
     <string name="file_manager_short">Quản lý Tệp</string>
-    <string name="donate_to_fossify">Ủng hộ Fossify</string>
+    <string name="donate_to_easy">Ủng hộ Easy</string>
     <string name="contributors">Những người đóng góp</string>
     <string name="translation">Biên dịch</string>
-    <string name="purchase_simple_thank_you">Fossify Thank You</string>
+    <string name="purchase_simple_thank_you">Easy Thank You</string>
     <string name="known_issues">Báo lỗi</string>
     <string name="support">Hỗ trợ</string>
     <string name="help_us">Ủng hộ</string>
@@ -753,7 +752,7 @@
     <string name="version_placeholder">Phiên bản %s</string>
     <string name="hello">Xin chào :)</string>
     <string name="about_footer">Lập trình bằng ❤️ từ Slovakia</string>
-    <string name="all_fossify_apps">Bộ ứng dụng Fossify</string>
+    <string name="all_easy_apps">Bộ ứng dụng Easy</string>
     <string name="translation_vietnamese">Tiếng Việt</string>
     <string name="little_to_no_fee">Ít hoặc không tốn phí</string>
     <string name="fee_up_to_pct">Phí tối đa %1$d%%</string>
@@ -767,21 +766,21 @@
     <string name="date_time_pattern_info">Bạn có thể sử dụng các mẫu sau để đặt tên tệp tự động.:\n\n%Y - năm\n%M - tháng\n%D - ngày\n%h - giờ\n%m - phút\n%s - giây</string>
     <string name="faq_2_text_commons"><![CDATA[
             Tất nhiên rồi. Bạn có thể chia sẻ thông tin về ứng dụng hoặc xếp hạng và đánh giá tích cực. Bạn cũng có thể giúp đỡ bằng cách dịch ứng dụng sang ngôn ngữ mới, hoặc chỉ cần cập nhật một số bản dịch hiện có.
-            Hướng dẫn dịch thuật có tại <a href="https://github.com/FossifyOrg/General-Discussion#contributing-translations">trang web này</a>, hoặc liên hệ qua <a href="mailto:hello@fossify.org">hello@fossify.org</a> nếu bạn có câu hỏi khác.
+            Hướng dẫn dịch thuật có tại <a href="https://github.com/AmrAdelElkholy/phone-contacts">trang web này</a>, hoặc liên hệ qua <a href="mailto:"></a> nếu bạn có câu hỏi khác.
         ]]></string>
     <string name="contributors_label"><![CDATA[
-            Danh sách này gồm những người đã đóng góp đáng kể cho bất kỳ ứng dụng nào của Fossify, không chỉ riêng ứng dụng này. Việc dịch thuật được thực hiện bởi các tình nguyện viên,
-            cho chúng tôi biết nếu bạn cũng muốn đóng góp. Xem hướng dẫn dịch thuật tại <a href="https://github.com/FossifyOrg/General-Discussion#contributing-translations">trang web này</a>, hoặc liên hệ qua <a href="mailto:hello@fossify.org">hello@fossify.org</a> nếu bạn có câu hỏi khác.
+            Danh sách này gồm những người đã đóng góp đáng kể cho bất kỳ ứng dụng nào của Easy, không chỉ riêng ứng dụng này. Việc dịch thuật được thực hiện bởi các tình nguyện viên,
+            cho chúng tôi biết nếu bạn cũng muốn đóng góp. Xem hướng dẫn dịch thuật tại <a href="https://github.com/AmrAdelElkholy/phone-contacts">trang web này</a>, hoặc liên hệ qua <a href="mailto:"></a> nếu bạn có câu hỏi khác.
             Xin cảm ơn tất cả những người đóng góp và hỗ trợ!
         ]]></string>
     <string name="m3u_parser_title">M3U Parser (xử lý tệp danh sách phát m3u)</string>
-    <string name="more_fossify_apps">Bộ ứng dụng Fossify</string>
+    <string name="more_easy_apps">Bộ ứng dụng Easy</string>
     <string name="faq_6_text_commons">Sự cố này xảy ra khi trình launcher của bạn không hỗ trợ việc tùy chỉnh biểu tượng. Hãy thử mở ứng dụng thông qua Google Play hoặc widget (nếu có). Sau khi mở được, hãy khôi phục màu biểu tượng xanh lá cây mặc định #106D1F. Trong trường hợp nghiêm trọng, có thể cần phải cài đặt lại ứng dụng.</string>
     <string name="faq_10_title_commons">Làm sao khi đã mua ứng dụng nhưng không thể tải trên thiết bị khác?</string>
     <string name="faq_10_text_commons">Chỉ cần xóa bộ nhớ cache ứng dụng Google Play của bạn và khởi động lại thiết bị. Đây là lỗi do Google Play.</string>
     <string name="rate_this_app">Xếp hạng ứng dụng</string>
-    <string name="requires_fossify_thank_you">Cần mua Fossify Thank You trước</string>
-    <string name="apply_to_all_apps">Áp dụng màu cho tất cả ứng dụng Fossify</string>
+    <string name="requires_easy_thank_you">Cần mua Easy Thank You trước</string>
+    <string name="apply_to_all_apps">Áp dụng màu cho tất cả ứng dụng Easy</string>
     <string name="enables_more_customization">Cho phép tùy chỉnh nhiều hơn</string>
     <string name="number_of_items">Số lượng mục</string>
     <string name="format_phone_numbers">Định dạng số điện thoại</string>
@@ -863,8 +862,8 @@
     <string name="october_short">Th10</string>
     <string name="november_short">Th11</string>
     <string name="december_short">Th12</string>
-    <string name="donate_short">Thích Fossify? Ủng hộ việc phát triển các ứng dụng không có quảng cáo của chúng tôi bằng cách mua &lt;a href=\"https://play.google.com/store/apps/details?id=org.fossify.thankyou\"&gt;Fossify Thank You&lt;/a&gt;. Nó cho phép sử dụng phông chữ tùy chỉnh và chia sẻ tùy chỉnh giữa các ứng dụng Fossify. Cảm ơn sự hỗ trợ của bạn!</string>
-    <string name="update_thank_you">Vui lòng cập nhật Fossify Thank You lên phiên bản mới nhất</string>
+    <string name="donate_short">Thích Easy? Ủng hộ việc phát triển các ứng dụng không có quảng cáo của chúng tôi bằng cách mua &lt;a href=\"https://play.google.com/store/apps/details?id=com.elkhouly.thankyou\"&gt;Easy Thank You&lt;/a&gt;. Nó cho phép sử dụng phông chữ tùy chỉnh và chia sẻ tùy chỉnh giữa các ứng dụng Easy. Cảm ơn sự hỗ trợ của bạn!</string>
+    <string name="update_thank_you">Vui lòng cập nhật Easy Thank You lên phiên bản mới nhất</string>
     <string name="thank_you">Cảm ơn bạn</string>
     <string name="app_launcher_short">Trình khởi động ứng dụng</string>
     <string name="calculator_short">Máy tính</string>
@@ -961,6 +960,6 @@
     <string name="commonmark_title">CommonMark (Markdown parser)</string>
     <string name="jsoup_title">jsoup (HTML parser)</string>
     <string name="commons_csv_title">Apache Commons CSV (CSV parser)</string>
-    <string name="donation_prompt">Nếu bạn thích sử dụng ứng dụng này, vui lòng cân nhắc hỗ trợ việc phát triển Fossify.</string>
+    <string name="donation_prompt">Nếu bạn thích sử dụng ứng dụng này, vui lòng cân nhắc hỗ trợ việc phát triển Easy.</string>
     <string name="rate_app_prompt">Bạn thấy ứng dụng tốt? Hãy đánh giá ứng dụng trên Google Play.</string>
 </resources>

@@ -67,7 +67,7 @@
     <string name="must_be_at_edit">Du må være på redigeringsskjermen for å endre en kontakt</string>
     <string name="change_photo">Endre bilde</string>
     <string name="target_contact_source">Mål for kontaktkilde</string>
-    <string name="show_private_contacts">Vis private kontakter i Fossify Phone, Fossify SMS Messenger og Fossify Calendar</string>
+    <string name="show_private_contacts">Vis private kontakter i Easy Phone, Easy SMS Messenger og Easy Calendar</string>
     <string name="format_phone_numbers">Formatere telefonnumre</string>
     <string name="street">Gate</string>
     <string name="city">By</string>

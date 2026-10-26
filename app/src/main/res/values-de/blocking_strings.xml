@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
-    <!-- commons labels these switches for messaging apps unless the package id starts with org.fossify.phone -->
-    <string name="block_unknown_messages">Anrufe von Nummern, die nicht in den Kontakten gespeichert sind, blockieren</string>
-    <string name="block_hidden_messages">Anrufe von unterdrückten Nummern blockieren</string>
-</resources>

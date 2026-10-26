@@ -430,7 +430,7 @@
     <string name="undo_changes_confirmation">Ĉu vi vere volas malfari viajn ŝanĝojn?</string>
     <string name="cannot_be_undone">Oni ne povas malfari tiun ĉi akcion.</string>
     <string name="save_before_closing">Estas nekonservitaj ŝanĝoj. Ĉu konservi ilin antaŭ eliri?</string>
-    <string name="purchase_thank_you"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Bonvolu aĉeti <a href="https://play.google.com/store/apps/details?id=org.fossify.thankyou">Fossify Dankon</a> por uzi ĉi tiun funkcion kaj subteni la programadon. Dankon!\n \u0020 \u0020 \u0020 \u0020]]></string>
+    <string name="purchase_thank_you"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Bonvolu aĉeti <a href="https://play.google.com/store/apps/details?id=com.elkhouly.thankyou">Easy Dankon</a> por uzi ĉi tiun funkcion kaj subteni la programadon. Dankon!\n \u0020 \u0020 \u0020 \u0020]]></string>
     <string name="light_theme">Hela</string>
     <string name="dark_theme">Malhela</string>
     <string name="auto_theme">Aŭtomata</string>
@@ -442,9 +442,9 @@
     <string name="shared">Komuna</string>
     <string name="whats_new">Novaĵoj</string>
     <string name="whats_new_disclaimer">* nur la plej grandaj ĝisdatigoj aperas ĉi tie, sed ĉiam ankaŭ estas malpli grandaj plibonigoj</string>
-    <string name="global_theme_success">La aktuala etoso estis sukcese aplikata al ĉiuj aplikaĵoj de Fossify. De nun, ŝanĝoj al tiu ĉi etoso estos aŭtomate sinkronigitaj.</string>
+    <string name="global_theme_success">La aktuala etoso estis sukcese aplikata al ĉiuj aplikaĵoj de Easy. De nun, ŝanĝoj al tiu ĉi etoso estos aŭtomate sinkronigitaj.</string>
     <string name="app_icon_color_warning">Atentu: Kelkaj lanĉiloj eble ne traktos ĝuste la tajloradon de aplikaĵaj bildsimboloj. Se la bildsimbolo malaperas, provu lanĉi la aplikaĵon per Google Play aŭ fenestraĵo, se tio eblas. Post lanĉi ĝin, restaŭru la defaŭltan verdan koloron #106D1F de la bildsimbolo. En ekstremaj kazoj, eble endos reinstali la aplikaĵon.</string>
-    <string name="apply_to_all_apps">Apliki etoson al ĉiuj aplikaĵoj de Fossify</string>
+    <string name="apply_to_all_apps">Apliki etoson al ĉiuj aplikaĵoj de Easy</string>
     <string name="faq_6_text_commons">Tiu ĉi problemo aperas kiam via lanĉilo ne tute subtenas la tajloradon de bildsimboloj. Provu lanĉi la aplikaĵon per Google Play aŭ fenestraĵo, se tio eblas. Post lanĉi ĝin, restaŭru la defaŭltan verdan koloron #106D1F de la bildsimbolo. En ekstremaj kazoj, eble endos reinstali la aplikaĵon.</string>
     <string name="maximum_share_reached">Ne eblas kunhavigi tiom ĉi da enhavo samtempe</string>
     <string name="send_email">Sendi retmesaĝon</string>
@@ -691,7 +691,7 @@
     <string name="notification_sound">Sciigosono</string>
     <string name="customize_colors">Tajlori aspekton</string>
     <string name="during_day_at">Dum la tago je %1$02d:%2$02d</string>
-    <string name="purchase_simple_thank_you">Aĉeti Fossify Dankon</string>
+    <string name="purchase_simple_thank_you">Aĉeti Easy Dankon</string>
     <string name="no_reminder">Neniu memorigilo</string>
     <string name="alarm_warning">Bonvolu certigi, ke la alarmo ĝuste funkcias antaŭ dependi de ĝi. Ĝi povus misfunkcii pro sistemaj limigoj ligitaj al la konservado de la baterio.</string>
     <string name="alarm">Alarmo</string>
@@ -849,11 +849,10 @@
     <string name="read_faq">Legi oftajn demandojn</string>
     <string name="make_sure_latest">Certigu ankaŭ, ke vi uzas la plej aktualan version de la aplikaĵo.</string>
     <string name="email_label">Sendu viajn komentojn aŭ sugestojn al</string>
-    <string name="copyright">v %1$s\nKopirajto © Fossify %2$d</string>
     <string name="social">Sociaj retejoj</string>
     <string name="privacy_policy">Privateca politiko</string>
-    <string name="donate_short">Ĉu vi ĝuas Fossify? Subtenu niajn senreklamajn aplikaĵojn per aĉeti &lt;a href=\"https://play.google.com/store/apps/details?id=org.fossify.thankyou\"&gt;Fossify Dankon&lt;/a&gt;. Ĝi ankaŭ ŝaltos la tajloradon de tiparoj kaj la kunhavigadon de tajlorado inter aplikaĵoj de Fossify. Dankon pro via subteno!</string>
-    <string name="update_thank_you">Bonvolu ĝisdatigi Fossify Dankon al la plej nova versio</string>
+    <string name="donate_short">Ĉu vi ĝuas Easy? Subtenu niajn senreklamajn aplikaĵojn per aĉeti &lt;a href=\"https://play.google.com/store/apps/details?id=com.elkhouly.thankyou\"&gt;Easy Dankon&lt;/a&gt;. Ĝi ankaŭ ŝaltos la tajloradon de tiparoj kaj la kunhavigadon de tajlorado inter aplikaĵoj de Easy. Dankon pro via subteno!</string>
+    <string name="update_thank_you">Bonvolu ĝisdatigi Easy Dankon al la plej nova versio</string>
     <string name="before_asking_question_read_faq">Antaŭ fari demandon, bonvolu kontroli la aplikaĵajn agordojn kaj legi la oftajn demandojn. La solvo eble estos tie.</string>
     <string name="read_it">Legi</string>
     <string name="website_label">Por fontkodo, iru al</string>
@@ -868,8 +867,8 @@
     <string name="draw_short">Desegno</string>
     <string name="sms_messenger_short">SMS-mesaĝilo</string>
     <string name="sideloaded_app"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Ŝajnas, ke la versio de via aplikaĵo estas difektita. Bonvolu elŝuti la originan version <a href="%s">ĉi tie</a>.\n \u0020 \u0020 \u0020 \u0020]]></string>
-    <string name="donate_to_fossify">Donaci al Fossify</string>
-    <string name="all_fossify_apps">Ĉiuj aplikaĵoj de Fossify</string>
+    <string name="donate_to_easy">Donaci al Easy</string>
+    <string name="all_easy_apps">Ĉiuj aplikaĵoj de Easy</string>
     <string name="voice_recorder_short">Sonregistrilo</string>
     <string name="before_asking_question">Antaŭ fari demandon, bonvolu legi la</string>
     <string name="faq_1_title_commons">Kial mi ne vidas la fenestraĵon de tiu ĉi aplikaĵo en la listo de fenestraĵoj?</string>
@@ -879,7 +878,7 @@
     <string name="little_to_no_fee">Malmultekosta aŭ senpaga</string>
     <string name="fee_up_to_pct">Pago ĝis %1$d%%</string>
     <string name="cryptocurrency">Ĉifrovaluto</string>
-    <string name="faq_2_text_commons"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Jes, kompreneble. Vi povus mencii niajn aplikaĵojn al aliuloj, bone taksi ilin aŭ doni al ni utilajn komentojn. Vi ankaŭ povus helpi nin traduki la aplikaĵojn en novan lingvon aŭ simple ĝisdatigi tiujn kiuj jam ekzistas.\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020La tradukada gvido troviĝas <a href="https://github.com/FossifyOrg/General-Discussion#contributing-translations">ĉi tie</a>, aŭ simple kontaktu nin je <a href="mailto:hello@fossify.org">hello@fossify.org</a> se vi havas demandojn.\n \u0020 \u0020 \u0020 \u0020]]></string>
+    <string name="faq_2_text_commons"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Jes, kompreneble. Vi povus mencii niajn aplikaĵojn al aliuloj, bone taksi ilin aŭ doni al ni utilajn komentojn. Vi ankaŭ povus helpi nin traduki la aplikaĵojn en novan lingvon aŭ simple ĝisdatigi tiujn kiuj jam ekzistas.\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020La tradukada gvido troviĝas <a href="https://github.com/AmrAdelElkholy/phone-contacts">ĉi tie</a>, aŭ simple kontaktu nin je <a href="mailto:"></a> se vi havas demandojn.\n \u0020 \u0020 \u0020 \u0020]]></string>
     <string name="faq_3_title_commons">Mi senvole forigis kelkajn dosierojn. Kiel mi povas restaŭri ilin?</string>
     <string name="faq_9_title_commons">Kiel mi povas elekti multajn elementojn samtempe?</string>
     <string name="faq_3_text_commons">Tio bedaŭrinde ne eblas. Dosieroj estas tuje forigitaj post la konfirma dialogo, kaj neniu rubujo ekzistas.</string>
@@ -905,7 +904,7 @@
     <string name="translation_central_kurdish">Centra kurda</string>
     <string name="translation_kabyle">Kabila</string>
     <string name="translation">Tradukado</string>
-    <string name="contributors_label"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Tiu ĉi listo enhavas ĉiujn kiuj rimarkeble helpis iun ajn aplikaĵon de Fossify, ne nur tiu ĉi. La tradukado estas traktita pro volontuloj.\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Sciigu nin se vi ankaŭ ŝatus helpi nin. La traduka gvido troviĝas <a href="https://github.com/FossifyOrg/General-Discussion#contributing-translations">ĉi tie</a>, aŭ vi povas kontakti nin je <a href="mailto:hello@fossify.org">hello@fossify.org</a> se vi havas demandojn.\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Dankon al ĉiuj kontribuantoj kaj aliaj subtenantoj!\n \u0020 \u0020 \u0020 \u0020]]></string>
+    <string name="contributors_label"><![CDATA[\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Tiu ĉi listo enhavas ĉiujn kiuj rimarkeble helpis iun ajn aplikaĵon de Easy, ne nur tiu ĉi. La tradukado estas traktita pro volontuloj.\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Sciigu nin se vi ankaŭ ŝatus helpi nin. La traduka gvido troviĝas <a href="https://github.com/AmrAdelElkholy/phone-contacts">ĉi tie</a>, aŭ vi povas kontakti nin je <a href="mailto:"></a> se vi havas demandojn.\n \u0020 \u0020 \u0020 \u0020 \u0020 \u0020Dankon al ĉiuj kontribuantoj kaj aliaj subtenantoj!\n \u0020 \u0020 \u0020 \u0020]]></string>
     <string name="m3u_parser_title">M3U Parser (traktado de dosieroj de m3u-ludlistoj)</string>
     <string name="android_lame_title">AndroidLame (mp3-kodilo)</string>
     <string name="trial_expired">Provo finiĝis</string>
@@ -942,7 +941,7 @@
     <string name="apng_title">APNG Android (subteno de WebP-aj movbildoj)</string>
     <string name="pdf_viewer_title">Android PdfViewer (PDF-legilo)</string>
     <string name="zip4j_title">Zip4j (densigado kaj maldensigado de ZIP-dosieroj)</string>
-    <string name="pro_app_refund">Ne forgesu, ke se vi malinstalas iun ajn pagan aplikaĵon ene de du horoj, vi estos aŭtomate repagita. Se vi volas repagon post tiam, simple kontaktu nin je hello@fossify.org, kaj vi ricevos repagon. Tiel, facilas provi ĝin :)</string>
+    <string name="pro_app_refund">Ne forgesu, ke se vi malinstalas iun ajn pagan aplikaĵon ene de du horoj, vi estos aŭtomate repagita. Se vi volas repagon post tiam, simple kontaktu nin je , kaj vi ricevos repagon. Tiel, facilas provi ĝin :)</string>
     <string name="developer_description">Aro de simplaj, malfermitkodaj aplikaĵoj de Android kun tajloreblaj fenestraĵoj, sen reklamoj nek nenecesaj permesoj.</string>
     <string name="start_free_trial">Komenci senpagan provon</string>
     <string name="trial_expires_soon">Via provo baldaŭ finiĝos.</string>
@@ -957,9 +956,9 @@
     <string name="confirm_storage_access_restricted_text">Pro sistemaj limigoj, tiu ĉi dosierujo ne disponeblas.</string>
     <string name="confirm_storage_access_restricted_text_open_system">Malfermi per sistema aplikaĵo</string>
     <string name="confirm_storage_access_restricted_text_not_found">Neniu sistema dosieradministrilo-aplikaĵo estis trovita.</string>
-    <string name="more_fossify_apps">Pli da aplikaĵoj de Fossify</string>
+    <string name="more_easy_apps">Pli da aplikaĵoj de Easy</string>
     <string name="rate_this_app">Taksi tiun ĉi aplikaĵon</string>
-    <string name="requires_fossify_thank_you">Postulas Fossify Dankon</string>
+    <string name="requires_easy_thank_you">Postulas Easy Dankon</string>
     <string name="evalex_title">EvalEx (taksado de matematika esprimo)</string>
     <string name="enables_more_customization">Ebligas pli da tajlorado</string>
     <string name="translation_latvian">Latva</string>
@@ -983,5 +982,5 @@
     <string name="jsoup_title">jsoup (analizilo de HTML)</string>
     <string name="commons_csv_title">Apache Commons CSV (analizilo de CSV)</string>
     <string name="rate_app_prompt">Cu vi ĝuas la aplikaĵon? Bonvolu taksi ĝin sur Google Play.</string>
-    <string name="donation_prompt">Se via ĝuas uzi tiun ĉi aplikaĵon, bonvolu konsideri subteni Fossify.</string>
+    <string name="donation_prompt">Se via ĝuas uzi tiun ĉi aplikaĵon, bonvolu konsideri subteni Easy.</string>
 </resources>
