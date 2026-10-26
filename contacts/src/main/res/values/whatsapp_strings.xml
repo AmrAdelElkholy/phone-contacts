@@ -5,4 +5,6 @@
     <string name="whatsapp_not_installed">WhatsApp is not installed</string>
     <string name="whatsapp_business_not_installed">WhatsApp Business is not installed</string>
     <string name="whatsapp_invalid_number">Invalid phone number</string>
+    <string name="whatsapp_country_required">Country code required</string>
+    <string name="whatsapp_country_message">%s has no country code. Choose its country, it will be remembered for this number. Long press the WhatsApp button to change it later.</string>
 </resources>

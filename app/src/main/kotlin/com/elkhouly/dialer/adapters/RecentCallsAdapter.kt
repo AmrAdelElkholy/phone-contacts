@@ -55,6 +55,7 @@ import com.elkhouly.dialer.extensions.areMultipleSIMsAvailable
 import com.elkhouly.dialer.extensions.callContactWithSimWithConfirmationCheck
 import com.elkhouly.dialer.extensions.config
 import com.elkhouly.dialer.extensions.getDayCode
+import com.elkhouly.contacts.extensions.changeWhatsAppCountry
 import com.elkhouly.contacts.extensions.openWhatsAppChat
 import com.elkhouly.dialer.extensions.startAddContactIntent
 import com.elkhouly.dialer.extensions.startCallWithConfirmationCheck
@@ -630,6 +631,14 @@ class RecentCallsAdapter(
                 }
                 itemRecentsWhatsappBusiness.setOnClickListener {
                     if (actModeCallback.isSelectable) viewClicked(call) else activity.openWhatsAppChat(call.phoneNumber, true)
+                }
+                itemRecentsWhatsapp.setOnLongClickListener {
+                    activity.changeWhatsAppCountry(call.phoneNumber, false)
+                    true
+                }
+                itemRecentsWhatsappBusiness.setOnLongClickListener {
+                    activity.changeWhatsAppCountry(call.phoneNumber, true)
+                    true
                 }
             }
         }

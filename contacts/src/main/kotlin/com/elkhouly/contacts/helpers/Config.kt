@@ -17,4 +17,10 @@ class Config(context: Context) : BaseConfig(context) {
         set(autoBackupContactSources) = prefs.edit().remove(AUTO_BACKUP_CONTACT_SOURCES).putStringSet(AUTO_BACKUP_CONTACT_SOURCES, autoBackupContactSources)
             .apply()
 
+    // country chosen for a local number (no + or 00) when opening it in WhatsApp
+    fun getWhatsAppRegion(number: String): String? = prefs.getString(getWhatsAppRegionKey(number), null)
+
+    fun saveWhatsAppRegion(number: String, region: String) = prefs.edit().putString(getWhatsAppRegionKey(number), region).apply()
+
+    private fun getWhatsAppRegionKey(number: String) = "$WHATSAPP_REGION_PREFIX${number.filter { it.isDigit() }}"
 }

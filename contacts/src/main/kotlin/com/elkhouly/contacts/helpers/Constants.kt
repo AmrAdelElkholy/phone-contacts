@@ -35,6 +35,7 @@ val tabsList = arrayListOf(
 )
 // separate key, the dialer stores its own tab mask under SHOW_TABS
 const val CONTACTS_SHOW_TABS = "contacts_show_tabs"
+const val WHATSAPP_REGION_PREFIX = "whatsapp_region_"
 const val ALL_TABS_MASK = TAB_CONTACTS or TAB_FAVORITES or TAB_GROUPS
 
 // phone number/email types

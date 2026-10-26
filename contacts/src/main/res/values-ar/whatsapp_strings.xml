@@ -5,4 +5,6 @@
     <string name="whatsapp_not_installed">واتساب مش متثبت</string>
     <string name="whatsapp_business_not_installed">واتساب بيزنس مش متثبت</string>
     <string name="whatsapp_invalid_number">رقم غير صالح</string>
+    <string name="whatsapp_country_required">كود الدولة مطلوب</string>
+    <string name="whatsapp_country_message">الرقم %s من غير كود دولة. اختار الدولة، وهتتحفظ للرقم ده. ولو حبيت تغيّرها بعدين اضغط مطوّل على زرار الواتساب.</string>
 </resources>

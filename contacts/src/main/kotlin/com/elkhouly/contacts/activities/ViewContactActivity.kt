@@ -404,6 +404,8 @@ class ViewContactActivity : ContactActivity() {
 
                     contactWhatsapp.setOnClickListener { openWhatsAppChat(phoneNumber.value, false) }
                     contactWhatsappBusiness.setOnClickListener { openWhatsAppChat(phoneNumber.value, true) }
+                    contactWhatsapp.setOnLongClickListener { changeWhatsAppCountry(phoneNumber.value, false); true }
+                    contactWhatsappBusiness.setOnLongClickListener { changeWhatsAppCountry(phoneNumber.value, true); true }
 
                     defaultToggleIcon.isVisible = phoneNumber.isPrimary
                     defaultToggleIcon.applyColorFilter(getProperTextColor())
