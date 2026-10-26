@@ -536,7 +536,8 @@ class MainActivity : SimpleActivity(), RefreshContactsListener {
         val showTabsMask = config.showTabs
         return when (config.defaultTab) {
             TAB_LAST_USED -> config.lastUsedViewPagerPage
-            TAB_CONTACTS -> 0
+            // the dialer defaults to its call history tab, which this screen doesn't have
+            TAB_CONTACTS, TAB_CALL_HISTORY -> 0
             TAB_FAVORITES -> if (showTabsMask and TAB_CONTACTS > 0) 1 else 0
             else -> {
                 if (showTabsMask and TAB_GROUPS > 0) {

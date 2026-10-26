@@ -8,6 +8,8 @@ import android.telephony.TelephonyManager
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import com.elkhouly.commons.helpers.BaseConfig
+import com.elkhouly.commons.helpers.DEFAULT_TAB
+import com.elkhouly.commons.helpers.TAB_CALL_HISTORY
 import com.elkhouly.dialer.extensions.getPhoneAccountHandleModel
 import com.elkhouly.dialer.extensions.putPhoneAccountHandle
 import com.elkhouly.dialer.models.SpeedDial
@@ -17,6 +19,13 @@ import java.util.Locale
 class Config(context: Context) : BaseConfig(context) {
     companion object {
         fun newInstance(context: Context) = Config(context)
+    }
+
+    // the call history with its dialpad is the home screen unless another default tab was picked
+    fun ensureCallHistoryDefaultTab() {
+        if (!prefs.contains(DEFAULT_TAB)) {
+            defaultTab = TAB_CALL_HISTORY
+        }
     }
 
     private val regionHint: String by lazy {

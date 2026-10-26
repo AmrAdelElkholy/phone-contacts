@@ -18,4 +18,6 @@
     <!-- keep these 2 values in dp to avoid scaling -->
     <dimen name="dialpad_text_size">28dp</dimen>
     <dimen name="dialpad_letters_text_size">12dp</dimen>
+    <dimen name="dialpad_panel_corner_radius">28dp</dimen>
+    <dimen name="dialpad_sim_button_height">52dp</dimen>
 </resources>

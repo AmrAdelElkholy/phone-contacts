@@ -41,6 +41,7 @@ import com.elkhouly.dialer.fragments.ContactsFragment
 import com.elkhouly.dialer.fragments.FavoritesFragment
 import com.elkhouly.dialer.fragments.MyViewPagerFragment
 import com.elkhouly.dialer.fragments.RecentsFragment
+import com.elkhouly.dialer.helpers.MainDialpad
 import com.elkhouly.dialer.helpers.OPEN_DIAL_PAD_AT_LAUNCH
 import com.elkhouly.dialer.helpers.RecentsHelper
 import com.elkhouly.dialer.helpers.tabsList
@@ -55,6 +56,8 @@ class MainActivity : SimpleActivity() {
     private val binding by viewBinding(ActivityMainBinding::inflate)
 
     private var launchedDialer = false
+    private var mainDialpad: MainDialpad? = null
+    private var isRecentsScrollHooked = false
     private var storedShowTabs = 0
     private var storedFontSize = 0
     private var storedStartNameWithSurname = false
@@ -103,8 +106,22 @@ class MainActivity : SimpleActivity() {
             setDefaultCallerIdApp()
         }
 
+        config.ensureCallHistoryDefaultTab()
         setupTabs()
         Contact.sorting = config.sorting
+        mainDialpad = MainDialpad(
+            activity = this,
+            binding = binding,
+            onInputChanged = { text ->
+                if (text.isEmpty()) {
+                    getRecentsFragment()?.onSearchClosed()
+                } else {
+                    getRecentsFragment()?.onSearchQueryChanged(text)
+                }
+            },
+            getLastCalledNumber = { getRecentsFragment()?.getLastCalledNumber() },
+            onExpandedChanged = ::updateDialpadVisibility
+        )
     }
 
     override fun onResume() {
@@ -121,6 +138,8 @@ class MainActivity : SimpleActivity() {
         binding.mainDialpadButton.setImageDrawable(dialpadIcon)
 
         updateTextColors(binding.mainHolder)
+        mainDialpad?.onResume()
+        updateDialpadVisibility()
         setupTabColors()
 
         getAllFragments().forEach {
@@ -183,6 +202,9 @@ class MainActivity : SimpleActivity() {
     override fun onBackPressedCompat(): Boolean {
         return if (binding.mainMenu.isSearchOpen) {
             binding.mainMenu.closeSearch()
+            true
+        } else if (mainDialpad?.input?.isNotEmpty() == true) {
+            mainDialpad?.clearInput()
             true
         } else {
             false
@@ -383,6 +405,7 @@ class MainActivity : SimpleActivity() {
                     it?.finishActMode()
                 }
                 refreshMenuItems()
+                updateDialpadVisibility()
             }
         })
 
@@ -398,11 +421,16 @@ class MainActivity : SimpleActivity() {
 
                 binding.mainTabsHolder.getTabAt(wantedTab)?.select()
                 refreshMenuItems()
+                updateDialpadVisibility()
             }, 100L)
         }
 
         binding.mainDialpadButton.setOnClickListener {
-            launchDialpad()
+            if (isOnRecentsTab()) {
+                mainDialpad?.expand()
+            } else {
+                launchDialpad()
+            }
         }
 
         binding.viewPager.onGlobalLayout {
@@ -484,6 +512,25 @@ class MainActivity : SimpleActivity() {
                 }
             } else {
                 refreshFragments()
+            }
+        }
+    }
+
+    private fun isOnRecentsTab() = getRecentsFragment() != null && getCurrentFragment() == getRecentsFragment()
+
+    // the inline dialpad lives on the call history tab, the FAB reopens it after it was hidden
+    private fun updateDialpadVisibility() {
+        val onRecents = isOnRecentsTab()
+        mainDialpad?.setVisible(onRecents)
+        binding.mainDialpadButton.beVisibleIf(!onRecents || mainDialpad?.isExpanded == false)
+
+        val recentsFragment = getRecentsFragment()
+        if (!isRecentsScrollHooked && recentsFragment != null) {
+            isRecentsScrollHooked = true
+            recentsFragment.setOnListDraggedListener {
+                if (isOnRecentsTab() && mainDialpad?.input?.isEmpty() == true) {
+                    mainDialpad?.collapse()
+                }
             }
         }
     }

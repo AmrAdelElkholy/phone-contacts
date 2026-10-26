@@ -22,8 +22,76 @@
             android:id="@+id/view_pager"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            app:layout_constraintBottom_toTopOf="@+id/main_tabs_holder"
+            app:layout_constraintBottom_toTopOf="@+id/main_dialpad_panel"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/main_dialpad_panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialpad_panel_background"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/medium_margin"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/main_tabs_holder">
+
+            <com.elkhouly.commons.views.MyEditText
+                android:id="@+id/main_dialpad_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="center"
+                android:inputType="phone"
+                android:layoutDirection="ltr"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/dialpad_text_size"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/main_dialpad_keys"
+                layout="@layout/dialpad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/main_dialpad_actions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layoutDirection="ltr"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/medium_margin"
+                android:paddingTop="@dimen/medium_margin"
+                android:paddingEnd="@dimen/medium_margin"
+                android:paddingBottom="@dimen/medium_margin">
+
+                <ImageView
+                    android:id="@+id/main_dialpad_hide"
+                    android:layout_width="@dimen/dialpad_sim_button_height"
+                    android:layout_height="@dimen/dialpad_sim_button_height"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="@string/dialpad"
+                    android:padding="@dimen/normal_margin"
+                    android:src="@drawable/ic_dialpad_vector" />
+
+                <LinearLayout
+                    android:id="@+id/main_dialpad_call_buttons"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" />
+
+                <ImageView
+                    android:id="@+id/main_dialpad_clear_char"
+                    android:layout_width="@dimen/dialpad_sim_button_height"
+                    android:layout_height="@dimen/dialpad_sim_button_height"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="@string/delete"
+                    android:padding="@dimen/normal_margin"
+                    android:src="@drawable/ic_clear_outline_vector" />
+
+            </LinearLayout>
+        </LinearLayout>
 
         <com.elkhouly.commons.views.MyFloatingActionButton
             android:id="@+id/main_dialpad_button"
