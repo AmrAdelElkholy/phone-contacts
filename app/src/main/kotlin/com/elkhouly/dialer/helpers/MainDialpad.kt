@@ -2,6 +2,7 @@ package com.elkhouly.dialer.helpers
 
 import android.annotation.SuppressLint
 import android.os.Handler
+import android.text.TextUtils
 import android.os.Looper
 import android.util.TypedValue
 import android.view.Gravity
@@ -156,7 +157,7 @@ class MainDialpad(
         } else {
             sims.take(2).forEachIndexed { index, sim ->
                 val carrier = sim.label.removeSuffix(" (${sim.phoneNumber})")
-                holder.addView(createCallButton("${index + 1}  $carrier") { call(index) })
+                holder.addView(createCallButton("${index + 1} $carrier") { call(index) })
             }
         }
     }
@@ -168,15 +169,16 @@ class MainDialpad(
         return TextView(activity).apply {
             text = label
             gravity = Gravity.CENTER
-            maxLines = 1
+            isSingleLine = true
+            ellipsize = TextUtils.TruncateAt.END
             setTextColor(contentColor)
-            setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.resources.getDimension(com.elkhouly.commons.R.dimen.bigger_text_size))
+            setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.resources.getDimension(com.elkhouly.commons.R.dimen.normal_text_size))
             background = ResourcesCompat.getDrawable(activity.resources, R.drawable.pill_background, activity.theme)?.mutate()
             background.applyColorFilter(primaryColor)
             val icon = activity.resources.getColoredDrawableWithColor(R.drawable.ic_phone_vector, contentColor)
             setCompoundDrawablesRelativeWithIntrinsicBounds(icon, null, null, null)
             compoundDrawablePadding = margin
-            setPaddingRelative(margin * 2, 0, margin * 2, 0)
+            setPaddingRelative(margin * 2, 0, margin, 0)
             layoutParams = LinearLayout.LayoutParams(
                 0,
                 activity.resources.getDimensionPixelSize(R.dimen.dialpad_sim_button_height),
