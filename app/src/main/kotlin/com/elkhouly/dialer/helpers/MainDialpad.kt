@@ -104,7 +104,7 @@ class MainDialpad(
     fun setInput(number: String) {
         binding.mainDialpadInput.apply {
             setText(number)
-            setSelection(text.length)
+            setSelection(number.length)
         }
     }
 
