@@ -101,6 +101,13 @@ class MainDialpad(
         onExpandedChanged()
     }
 
+    fun setInput(number: String) {
+        binding.mainDialpadInput.apply {
+            setText(number)
+            setSelection(text.length)
+        }
+    }
+
     fun clearInput() {
         binding.mainDialpadInput.setText("")
     }

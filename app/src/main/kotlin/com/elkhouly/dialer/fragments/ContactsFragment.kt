@@ -128,7 +128,10 @@ class ContactsFragment(context: Context, attributeSet: AttributeSet) : MyViewPag
                     recyclerView = binding.fragmentList,
                     refreshItemsListener = this,
                     itemClick = {
-                        activity?.handleGenericContactClick(it as Contact)
+                        val contact = it as Contact
+                    if ((activity as? MainActivity)?.pickContactNumberForDialpad(contact) != true) {
+                        activity?.handleGenericContactClick(contact)
+                    }
                     },
                     profileIconClick = {
                         activity?.startContactDetailsIntent(it as Contact)

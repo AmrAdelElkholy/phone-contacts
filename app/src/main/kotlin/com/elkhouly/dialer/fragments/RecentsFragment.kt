@@ -2,7 +2,6 @@ package com.elkhouly.dialer.fragments
 
 import android.content.Context
 import android.util.AttributeSet
-import androidx.recyclerview.widget.RecyclerView
 import com.elkhouly.commons.extensions.baseConfig
 import com.elkhouly.commons.extensions.beGone
 import com.elkhouly.commons.extensions.beGoneIf
@@ -93,16 +92,6 @@ class RecentsFragment(
     }
 
     fun getLastCalledNumber(): String? = allRecentCalls.filterIsInstance<RecentCall>().firstOrNull()?.phoneNumber
-
-    fun setOnListDraggedListener(listener: () -> Unit) {
-        binding.recentsList.addOnScrollListener(object : RecyclerView.OnScrollListener() {
-            override fun onScrollStateChanged(recyclerView: RecyclerView, newState: Int) {
-                if (newState == RecyclerView.SCROLL_STATE_DRAGGING) {
-                    listener()
-                }
-            }
-        })
-    }
 
     override fun onSearchClosed() {
         searchQuery = null

@@ -30,8 +30,15 @@ class CallNotificationManager(private val context: Context) {
     @SuppressLint("NewApi")
     fun setupNotification(lowPriority: Boolean = false) {
         getCallContact(context.applicationContext, CallManager.getPrimaryCall()) { callContact ->
-            val callContactAvatar = callContactAvatarHelper.getCallContactAvatar(callContact)
+            // the contact lookup is async, a call ended in the meantime must not leave an
+            // ongoing notification behind (getState() is null once no call is left)
             val callState = CallManager.getState()
+            if (callState == null || callState == Call.STATE_DISCONNECTED || callState == Call.STATE_DISCONNECTING) {
+                cancelNotification()
+                return@getCallContact
+            }
+
+            val callContactAvatar = callContactAvatarHelper.getCallContactAvatar(callContact)
             val isHighPriority = callState == Call.STATE_RINGING && !lowPriority
             val channelId =
                 if (isHighPriority) "simple_dialer_call_high_priority" else "simple_dialer_call"

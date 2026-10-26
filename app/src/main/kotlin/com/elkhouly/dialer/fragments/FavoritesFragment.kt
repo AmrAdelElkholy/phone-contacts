@@ -23,6 +23,7 @@ import com.elkhouly.commons.models.contacts.Contact
 import com.elkhouly.commons.views.MyGridLayoutManager
 import com.elkhouly.commons.views.MyLinearLayoutManager
 import com.elkhouly.dialer.R
+import com.elkhouly.dialer.activities.MainActivity
 import com.elkhouly.dialer.activities.SimpleActivity
 import com.elkhouly.dialer.adapters.ContactsAdapter
 import com.elkhouly.dialer.databinding.FragmentFavoritesBinding
@@ -127,7 +128,10 @@ class FavoritesFragment(context: Context, attributeSet: AttributeSet) : MyViewPa
                 showDeleteButton = false,
                 enableDrag = true,
                 itemClick = {
-                    activity?.handleGenericContactClick(it as Contact)
+                    val contact = it as Contact
+                    if ((activity as? MainActivity)?.pickContactNumberForDialpad(contact) != true) {
+                        activity?.handleGenericContactClick(contact)
+                    }
                 },
                 profileIconClick = {
                     activity?.startContactDetailsIntent(it as Contact)

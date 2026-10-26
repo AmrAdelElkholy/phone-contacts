@@ -63,7 +63,8 @@ class MainActivity : SimpleActivity() {
 
     private var launchedDialer = false
     private var mainDialpad: MainDialpad? = null
-    private var isRecentsScrollHooked = false
+    private val scrollHookedFragments = HashSet<Int>()
+    private var dialpadFilteredFragment: MyViewPagerFragment<*>? = null
     private var storedShowTabs = 0
     private var storedFontSize = 0
     private var storedStartNameWithSurname = false
@@ -118,13 +119,7 @@ class MainActivity : SimpleActivity() {
         mainDialpad = MainDialpad(
             activity = this,
             binding = binding,
-            onInputChanged = { text ->
-                if (text.isEmpty()) {
-                    getRecentsFragment()?.onSearchClosed()
-                } else {
-                    getRecentsFragment()?.onSearchQueryChanged(text)
-                }
-            },
+            onInputChanged = ::applyDialpadFilter,
             getLastCalledNumber = { getRecentsFragment()?.getLastCalledNumber() },
             onExpandedChanged = ::updateDialpadVisibility
         )
@@ -411,7 +406,7 @@ class MainActivity : SimpleActivity() {
                     it?.finishActMode()
                 }
                 refreshMenuItems()
-                updateDialpadVisibility()
+                onTabChangedForDialpad()
             }
         })
 
@@ -432,11 +427,7 @@ class MainActivity : SimpleActivity() {
         }
 
         binding.mainDialpadButton.setOnClickListener {
-            if (isOnRecentsTab()) {
-                mainDialpad?.expand()
-            } else {
-                launchDialpad()
-            }
+            mainDialpad?.expand()
         }
 
         binding.viewPager.onGlobalLayout {
@@ -524,22 +515,70 @@ class MainActivity : SimpleActivity() {
 
     private fun isOnRecentsTab() = getRecentsFragment() != null && getCurrentFragment() == getRecentsFragment()
 
-    // the inline dialpad lives on the call history tab, the FAB reopens it after it was hidden
+    // the inline dialpad is shown expanded on the call history and opened with the FAB elsewhere
     private fun updateDialpadVisibility() {
-        val onRecents = isOnRecentsTab()
-        mainDialpad?.setVisible(onRecents)
-        binding.mainDialpadButton.beVisibleIf(!onRecents || mainDialpad?.isExpanded == false)
+        mainDialpad?.setVisible(true)
+        binding.mainDialpadButton.beVisibleIf(mainDialpad?.isExpanded == false)
 
-        val recentsFragment = getRecentsFragment()
-        if (!isRecentsScrollHooked && recentsFragment != null) {
-            isRecentsScrollHooked = true
-            recentsFragment.setOnListDraggedListener {
-                if (isOnRecentsTab() && mainDialpad?.input?.isEmpty() == true) {
-                    mainDialpad?.collapse()
+        getAllFragments().filterNotNull().forEach { fragment ->
+            if (scrollHookedFragments.add(fragment.id)) {
+                fragment.setOnListDraggedListener {
+                    if (fragment == getCurrentFragment() && mainDialpad?.input?.isEmpty() == true) {
+                        mainDialpad?.collapse()
+                    }
                 }
             }
         }
     }
+
+    private fun onTabChangedForDialpad() {
+        val input = mainDialpad?.input.orEmpty()
+        if (input.isEmpty() && !isOnRecentsTab()) {
+            // contacts and favorites open with their full list visible
+            mainDialpad?.collapse()
+        }
+        applyDialpadFilter(input)
+        updateDialpadVisibility()
+    }
+
+    // typing on the dialpad filters whichever tab is open
+    private fun applyDialpadFilter(text: String) {
+        val current = getCurrentFragment()
+        if (dialpadFilteredFragment != current) {
+            dialpadFilteredFragment?.onSearchClosed()
+        }
+
+        dialpadFilteredFragment = current
+        if (text.isEmpty()) {
+            current?.onSearchClosed()
+        } else {
+            current?.onSearchQueryChanged(text)
+        }
+    }
+
+    // with the dialpad open, picking a contact puts its number on the dialpad instead of calling
+    fun pickContactNumberForDialpad(contact: Contact): Boolean {
+        if (mainDialpad?.isExpanded != true) {
+            return false
+        }
+
+        val numbers = contact.phoneNumbers
+        when (numbers.size) {
+            0 -> toast(com.elkhouly.commons.R.string.no_phone_number_found)
+            1 -> mainDialpad?.setInput(getDialableNumber(numbers.first().value))
+            else -> {
+                val items = numbers.mapIndexed { index, number ->
+                    RadioItem(index, "${number.value} (${getPhoneNumberTypeText(number.type, number.label)})")
+                } as ArrayList<RadioItem>
+                RadioGroupDialog(this, items) {
+                    mainDialpad?.setInput(getDialableNumber(numbers[it as Int].value))
+                }
+            }
+        }
+        return true
+    }
+
+    private fun getDialableNumber(number: String) = number.filter { it.isDigit() || it == '+' || it == '*' || it == '#' }
 
     private fun launchDialpad() {
         Intent(applicationContext, DialpadActivity::class.java).apply {

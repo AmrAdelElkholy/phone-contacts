@@ -3,6 +3,7 @@ package com.elkhouly.dialer.fragments
 import android.content.Context
 import android.util.AttributeSet
 import android.widget.RelativeLayout
+import androidx.recyclerview.widget.RecyclerView
 import com.elkhouly.commons.adapters.MyRecyclerViewAdapter
 import com.elkhouly.commons.extensions.getProperPrimaryColor
 import com.elkhouly.commons.extensions.getProperTextColor
@@ -42,6 +43,18 @@ abstract class MyViewPagerFragment<BINDING : MyViewPagerFragment.InnerBinding>(c
                 (this@MyViewPagerFragment.activity!! as MainActivity).refreshFragments()
             }
         }
+    }
+
+    // lets the main screen hide its dialpad once the user starts scrolling a list
+    fun setOnListDraggedListener(listener: () -> Unit) {
+        val list = innerBinding.fragmentList ?: innerBinding.recentsList ?: return
+        list.addOnScrollListener(object : RecyclerView.OnScrollListener() {
+            override fun onScrollStateChanged(recyclerView: RecyclerView, newState: Int) {
+                if (newState == RecyclerView.SCROLL_STATE_DRAGGING) {
+                    listener()
+                }
+            }
+        })
     }
 
     fun finishActMode() {
