@@ -1,9 +1,10 @@
 package com.elkhouly.contacts.dialogs
 
+import android.graphics.drawable.ColorDrawable
 import android.widget.ArrayAdapter
 import com.elkhouly.commons.activities.BaseSimpleActivity
 import com.elkhouly.commons.extensions.getAlertDialogBuilder
-import com.elkhouly.commons.extensions.getProperBackgroundColor
+import com.elkhouly.commons.extensions.getDialogBackgroundColor
 import com.elkhouly.commons.extensions.getProperPrimaryColor
 import com.elkhouly.commons.extensions.getProperTextColor
 import com.elkhouly.commons.extensions.setupDialogStuff
@@ -26,7 +27,10 @@ class WhatsAppCountryDialog(
         binding.whatsappCountrySpinner.apply {
             adapter = ArrayAdapter(activity, android.R.layout.simple_spinner_item, regions.map(::getRegionLabel))
             setSelection(regions.indexOf(preselectedRegion).coerceAtLeast(0))
-            setColors(activity.getProperTextColor(), activity.getProperPrimaryColor(), activity.getProperBackgroundColor())
+            // match the dialog, the default popup background is dark and hides the text
+            val dialogBackgroundColor = activity.getDialogBackgroundColor()
+            setColors(activity.getProperTextColor(), activity.getProperPrimaryColor(), dialogBackgroundColor)
+            setPopupBackgroundDrawable(ColorDrawable(dialogBackgroundColor))
         }
 
         activity.getAlertDialogBuilder()
