@@ -102,6 +102,7 @@ class RecentsFragment(
     }
 
     override fun onSearchClosed() {
+        android.util.Log.i("EasyPerf", "onSearchClosed", Throwable())
         searchQuery = null
         showOrHidePlaceholder(allRecentCalls.isEmpty())
         recentsAdapter?.updateItems(allRecentCalls)
@@ -155,6 +156,7 @@ class RecentsFragment(
     }
 
     private fun gotRecents(recents: List<CallLogItem>) {
+        android.util.Log.i("EasyPerf", "gotRecents size=${recents.size}", Throwable())
         binding.progressIndicator.hide()
         if (recents.isEmpty()) {
             binding.apply {
@@ -202,7 +204,9 @@ class RecentsFragment(
     }
 
     private fun refreshCallLog(loadAll: Boolean = false, callback: (() -> Unit)? = null) {
+        android.util.Log.i("EasyPerf", "full start loadAll=$loadAll existing=${allRecentCalls.size}")
         getRecentCalls(loadAll) {
+            android.util.Log.i("EasyPerf", "full done loadAll=$loadAll items=${it.size}")
             allRecentCalls = it
             if (searchQuery.isNullOrEmpty()) {
                 activity?.runOnUiThread { gotRecents(it) }
@@ -218,7 +222,9 @@ class RecentsFragment(
     // that follows adds photos and number types. It isn't kept in allRecentCalls, which the
     // full load merges with
     private fun showQuickCallLog() {
+        android.util.Log.i("EasyPerf", "quick start")
         val onQuickCalls: (List<RecentCall>) -> Unit = { calls ->
+            android.util.Log.i("EasyPerf", "quick calls=${calls.size}")
             val callLog = groupCallsByDate(calls)
             activity?.runOnUiThread {
                 // only the full load may report an empty history, until then keep the spinner
