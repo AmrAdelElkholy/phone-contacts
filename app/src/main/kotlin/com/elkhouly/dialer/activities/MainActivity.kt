@@ -533,7 +533,10 @@ class MainActivity : SimpleActivity() {
 
     private fun onTabChangedForDialpad() {
         val input = mainDialpad?.input.orEmpty()
-        if (input.isEmpty() && !isOnRecentsTab()) {
+        if (isOnRecentsTab()) {
+            // the call history always comes with its dialpad, like the stock dialer
+            mainDialpad?.expand()
+        } else if (input.isEmpty()) {
             // contacts and favorites open with their full list visible
             mainDialpad?.collapse()
         }
