@@ -1,10 +1,13 @@
 package com.elkhouly.dialer.extensions
 
 import android.annotation.SuppressLint
+import android.content.Context
 import android.content.Intent
 import android.telecom.PhoneAccount
 import android.telecom.PhoneAccountHandle
 import android.telecom.TelecomManager
+import android.telephony.SubscriptionManager
+import android.telephony.TelephonyManager
 import com.elkhouly.commons.R
 import com.elkhouly.commons.activities.BaseSimpleActivity
 import com.elkhouly.commons.dialogs.CallConfirmationDialog
@@ -17,6 +20,7 @@ import com.elkhouly.commons.extensions.openFullScreenIntentSettings
 import com.elkhouly.commons.extensions.openNotificationSettings
 import com.elkhouly.commons.extensions.telecomManager
 import com.elkhouly.commons.helpers.PERMISSION_READ_PHONE_STATE
+import com.elkhouly.commons.helpers.isRPlus
 import com.elkhouly.commons.models.contacts.Contact
 import com.elkhouly.dialer.BuildConfig
 import com.elkhouly.dialer.activities.DialerActivity
@@ -106,6 +110,7 @@ fun SimpleActivity.getHandleToUse(
         if (it) {
             val defaultHandle =
                 telecomManager.getDefaultOutgoingPhoneAccount(PhoneAccount.SCHEME_TEL)
+                    ?: getDefaultVoiceSimHandle()
             when {
                 forceSimSelector -> showSelectSimDialog(phoneNumber, callback)
                 intent?.hasExtra(TelecomManager.EXTRA_PHONE_ACCOUNT_HANDLE) == true -> {
@@ -167,6 +172,27 @@ fun SimpleActivity.handleFullScreenNotificationsPermission(callback: (granted: B
                     callback(false)
                 }
             )
+        }
+    }
+}
+
+// Some OEMs (e.g. MagicOS) store the calling SIM chosen in system settings only as the
+// default voice subscription, leaving Telecom's default outgoing account empty
+@SuppressLint("MissingPermission")
+private fun Context.getDefaultVoiceSimHandle(): PhoneAccountHandle? {
+    val subId = SubscriptionManager.getDefaultVoiceSubscriptionId()
+    if (subId == SubscriptionManager.INVALID_SUBSCRIPTION_ID) {
+        return null
+    }
+
+    val iccId = getSystemService(SubscriptionManager::class.java)
+        ?.getActiveSubscriptionInfo(subId)?.iccId
+    val telephonyManager = getSystemService(TelephonyManager::class.java)
+    return telecomManager.callCapablePhoneAccounts.firstOrNull { handle ->
+        if (isRPlus() && telephonyManager != null) {
+            telephonyManager.getSubscriptionId(handle) == subId
+        } else {
+            handle.id == subId.toString() || (iccId != null && handle.id == iccId)
         }
     }
 }
