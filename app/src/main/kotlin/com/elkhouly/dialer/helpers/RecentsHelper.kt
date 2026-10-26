@@ -30,15 +30,13 @@ class RecentsHelper(private val context: Context) {
         queryLimit: Int = QUERY_LIMIT,
         callback: (List<RecentCall>) -> Unit,
     ) {
-        val privateCursor = context.getMyContactsCursor(favoritesOnly = false, withPhoneNumbersOnly = true)
         if (!context.hasPermission(PERMISSION_READ_CALL_LOG)) {
             callback(ArrayList())
             return
         }
 
-        ContactsHelper(context).getContacts(getAll = true, showOnlyContactsWithNumbers = true) { contacts ->
+        ContactsCache.get(context) { contacts, privateContacts ->
             ensureBackgroundThread {
-                val privateContacts = MyContactsContentProvider.getContacts(context, privateCursor)
                 if (privateContacts.isNotEmpty()) {
                     contacts.addAll(privateContacts)
                 }
@@ -228,10 +226,9 @@ class RecentsHelper(private val context: Context) {
                         photoUri = contactPhotosMap[number]!!
                     } else {
                         val contact = contacts.firstOrNull { it.doesHavePhoneNumber(number) }
-                        if (contact != null) {
-                            photoUri = contact.photoUri
-                            contactPhotosMap[number] = contact.photoUri
-                        }
+                        photoUri = contact?.photoUri.orEmpty()
+                        // remember misses too, unknown numbers otherwise rescan every contact per call
+                        contactPhotosMap[number] = photoUri
                     }
                 }
 

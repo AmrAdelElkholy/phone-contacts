@@ -7,12 +7,9 @@ import com.elkhouly.commons.extensions.baseConfig
 import com.elkhouly.commons.extensions.beGone
 import com.elkhouly.commons.extensions.beGoneIf
 import com.elkhouly.commons.extensions.beVisible
-import com.elkhouly.commons.extensions.getMyContactsCursor
 import com.elkhouly.commons.extensions.hasPermission
 import com.elkhouly.commons.extensions.isVisible
 import com.elkhouly.commons.extensions.underlineText
-import com.elkhouly.commons.helpers.ContactsHelper
-import com.elkhouly.commons.helpers.MyContactsContentProvider
 import com.elkhouly.commons.helpers.PERMISSION_READ_CALL_LOG
 import com.elkhouly.commons.helpers.SMT_PRIVATE
 import com.elkhouly.commons.helpers.ensureBackgroundThread
@@ -27,6 +24,7 @@ import com.elkhouly.dialer.extensions.runAfterAnimations
 import com.elkhouly.dialer.extensions.startAddContactIntent
 import com.elkhouly.dialer.extensions.startCallWithConfirmationCheck
 import com.elkhouly.dialer.extensions.startContactDetailsIntent
+import com.elkhouly.dialer.helpers.ContactsCache
 import com.elkhouly.dialer.helpers.RecentsHelper
 import com.elkhouly.dialer.interfaces.RefreshItemsListener
 import com.elkhouly.dialer.models.CallLogItem
@@ -235,9 +233,8 @@ class RecentsFragment(
             return
         }
 
-        ContactsHelper(context).getContacts(showOnlyContactsWithNumbers = true) { contacts ->
+        ContactsCache.get(context) { contacts, privateContacts ->
             ensureBackgroundThread {
-                val privateContacts = getPrivateContacts()
                 val updatedCalls = updateNamesIfEmpty(
                     calls = maybeFilterPrivateCalls(calls, privateContacts),
                     contacts = contacts,
@@ -249,11 +246,6 @@ class RecentsFragment(
                 )
             }
         }
-    }
-
-    private fun getPrivateContacts(): ArrayList<Contact> {
-        val privateCursor = context.getMyContactsCursor(favoritesOnly = false, withPhoneNumbersOnly = true)
-        return MyContactsContentProvider.getContacts(context, privateCursor)
     }
 
     private fun maybeFilterPrivateCalls(calls: List<RecentCall>, privateContacts: List<Contact>): List<RecentCall> {

@@ -41,6 +41,7 @@ import com.elkhouly.dialer.fragments.ContactsFragment
 import com.elkhouly.dialer.fragments.FavoritesFragment
 import com.elkhouly.dialer.fragments.MyViewPagerFragment
 import com.elkhouly.dialer.fragments.RecentsFragment
+import com.elkhouly.dialer.helpers.ContactsCache
 import com.elkhouly.dialer.helpers.MainDialpad
 import com.elkhouly.dialer.helpers.OPEN_DIAL_PAD_AT_LAUNCH
 import com.elkhouly.dialer.helpers.RecentsHelper
@@ -542,6 +543,8 @@ class MainActivity : SimpleActivity() {
     }
 
     fun refreshFragments() {
+        // reload contacts once for this refresh, every consumer below shares that load
+        ContactsCache.invalidate()
         cacheContacts()
         getContactsFragment()?.refreshItems()
         getFavoritesFragment()?.refreshItems()
@@ -665,10 +668,8 @@ class MainActivity : SimpleActivity() {
     }
 
     fun cacheContacts() {
-        val privateCursor = getMyContactsCursor(favoritesOnly = false, withPhoneNumbersOnly = true)
-        ContactsHelper(this).getContacts(getAll = true, showOnlyContactsWithNumbers = true) { contacts ->
+        ContactsCache.get(this) { contacts, privateContacts ->
             if (SMT_PRIVATE !in config.ignoredContactSources) {
-                val privateContacts = MyContactsContentProvider.getContacts(this, privateCursor)
                 if (privateContacts.isNotEmpty()) {
                     contacts.addAll(privateContacts)
                     contacts.sort()
