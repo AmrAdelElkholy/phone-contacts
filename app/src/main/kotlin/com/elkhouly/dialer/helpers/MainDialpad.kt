@@ -174,7 +174,7 @@ class MainDialpad(
             ellipsize = TextUtils.TruncateAt.END
             setLineSpacing(0f, 0.9f)
             setTextColor(contentColor)
-            setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.resources.getDimension(com.elkhouly.commons.R.dimen.small_text_size))
+            setTextSize(TypedValue.COMPLEX_UNIT_PX, activity.resources.getDimension(com.elkhouly.commons.R.dimen.smaller_text_size))
             background = ResourcesCompat.getDrawable(activity.resources, R.drawable.pill_background, activity.theme)?.mutate()
             background.applyColorFilter(primaryColor)
             val icon = activity.resources.getColoredDrawableWithColor(R.drawable.ic_phone_vector, contentColor)
