@@ -2,11 +2,17 @@ package com.elkhouly.dialer.helpers
 
 import android.content.Context
 import android.net.Uri
+import android.provider.ContactsContract
+import android.provider.ContactsContract.PhoneLookup
 import android.telecom.Call
 import com.elkhouly.commons.extensions.formatPhoneNumber
 import com.elkhouly.commons.extensions.getMyContactsCursor
 import com.elkhouly.commons.extensions.getPhoneNumberTypeText
-import com.elkhouly.commons.helpers.ContactsHelper
+import com.elkhouly.commons.extensions.getIntValue
+import com.elkhouly.commons.extensions.getLongValue
+import com.elkhouly.commons.extensions.getStringValue
+import com.elkhouly.commons.extensions.hasPermission
+import com.elkhouly.commons.helpers.PERMISSION_READ_CONTACTS
 import com.elkhouly.commons.helpers.MyContactsContentProvider
 import com.elkhouly.commons.helpers.ensureBackgroundThread
 import com.elkhouly.dialer.R
@@ -37,44 +43,65 @@ fun getCallContact(context: Context, call: Call?, callback: (CallContact) -> Uni
         val uri = Uri.decode(handle)
         if (uri.startsWith("tel:")) {
             val number = uri.substringAfter("tel:")
-            ContactsHelper(context).getContacts(getAll = true, showOnlyContactsWithNumbers = true) { contacts ->
-                val privateContacts = MyContactsContentProvider.getContacts(context, privateCursor)
-                if (privateContacts.isNotEmpty()) {
-                    contacts.addAll(privateContacts)
-                }
-
-                val contactsWithMultipleNumbers = contacts.filter { it.phoneNumbers.size > 1 }
-                val numbersToContactIDMap = HashMap<String, Int>()
-                contactsWithMultipleNumbers.forEach { contact ->
-                    contact.phoneNumbers.forEach { phoneNumber ->
-                        numbersToContactIDMap[phoneNumber.value] = contact.contactId
-                        numbersToContactIDMap[phoneNumber.normalizedNumber] = contact.contactId
-                    }
-                }
-
-                callContact.number = if (context.config.formatPhoneNumbers) {
-                    number.formatPhoneNumber()
-                } else {
-                    number
-                }
-
-                val contact = contacts.firstOrNull { it.doesHavePhoneNumber(number) }
-                if (contact != null) {
-                    callContact.name = contact.getNameToDisplay()
-                    callContact.photoUri = contact.photoUri
-
-                    if (contact.phoneNumbers.size > 1) {
-                        val specificPhoneNumber = contact.phoneNumbers.firstOrNull { it.value == number }
-                        if (specificPhoneNumber != null) {
-                            callContact.numberLabel = context.getPhoneNumberTypeText(specificPhoneNumber.type, specificPhoneNumber.label)
-                        }
-                    }
-                } else {
-                    callContact.name = callContact.number
-                }
-
-                callback(callContact)
+            callContact.number = if (context.config.formatPhoneNumbers) {
+                number.formatPhoneNumber()
+            } else {
+                number
             }
+
+            // a direct lookup answers in milliseconds, loading every contact took seconds and
+            // left the incoming call screen without a name meanwhile
+            if (!lookupContact(context, number, callContact)) {
+                val privateContacts = MyContactsContentProvider.getContacts(context, privateCursor)
+                val contact = privateContacts.firstOrNull { it.doesHavePhoneNumber(number) }
+                callContact.name = contact?.getNameToDisplay() ?: callContact.number
+                callContact.photoUri = contact?.photoUri.orEmpty()
+            }
+
+            callback(callContact)
         }
     }
+}
+
+private fun lookupContact(context: Context, number: String, callContact: CallContact): Boolean {
+    if (number.isEmpty() || !context.hasPermission(PERMISSION_READ_CONTACTS)) {
+        return false
+    }
+
+    val uri = Uri.withAppendedPath(PhoneLookup.CONTENT_FILTER_URI, Uri.encode(number))
+    val projection = arrayOf(PhoneLookup._ID, PhoneLookup.DISPLAY_NAME, PhoneLookup.PHOTO_URI, PhoneLookup.TYPE, PhoneLookup.LABEL)
+    try {
+        context.contentResolver.query(uri, projection, null, null, null)?.use { cursor ->
+            if (!cursor.moveToFirst()) {
+                return false
+            }
+
+            val name = cursor.getStringValue(PhoneLookup.DISPLAY_NAME).orEmpty()
+            if (name.isEmpty()) {
+                return false
+            }
+
+            callContact.name = name
+            callContact.photoUri = cursor.getStringValue(PhoneLookup.PHOTO_URI).orEmpty()
+
+            // like before, the number type is only shown for contacts with several numbers
+            val contactId = cursor.getLongValue(PhoneLookup._ID)
+            if (getPhoneNumbersCount(context, contactId) > 1) {
+                callContact.numberLabel = context.getPhoneNumberTypeText(
+                    cursor.getIntValue(PhoneLookup.TYPE),
+                    cursor.getStringValue(PhoneLookup.LABEL).orEmpty()
+                )
+            }
+            return true
+        }
+    } catch (_: Exception) {
+    }
+    return false
+}
+
+private fun getPhoneNumbersCount(context: Context, contactId: Long): Int {
+    val uri = ContactsContract.CommonDataKinds.Phone.CONTENT_URI
+    val selection = "${ContactsContract.CommonDataKinds.Phone.CONTACT_ID} = ?"
+    return context.contentResolver.query(uri, arrayOf(ContactsContract.CommonDataKinds.Phone._ID), selection, arrayOf(contactId.toString()), null)
+        ?.use { it.count } ?: 0
 }
