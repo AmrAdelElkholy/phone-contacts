@@ -73,9 +73,11 @@ class RecentsHelper(private val context: Context) {
                 }
 
                 callback(
-                    recentCalls
-                        .sortedByDescending { it.startTS }
-                        .distinctBy { it.id }
+                    markBlockedCalls(
+                        recentCalls
+                            .sortedByDescending { it.startTS }
+                            .distinctBy { it.id }
+                    )
                 )
             }
         }
@@ -284,11 +286,16 @@ class RecentsHelper(private val context: Context) {
             } while (cursor.moveToNext() && recentCalls.size < queryLimit)
         }
 
-        val blockedNumbers = context.getBlockedNumbers()
+        return recentCalls
+    }
 
-        // blocked calls stay in the history, marked so the list can show them in red
-        return recentCalls.map {
-            if (context.isNumberBlocked(it.phoneNumber, blockedNumbers)) it.copy(isBlocked = true) else it
+    // blocked calls stay in the history, marked so the list can show them in red. Calls kept
+    // from an earlier load are checked again, the number may have been (un)blocked since
+    private fun markBlockedCalls(calls: List<RecentCall>): List<RecentCall> {
+        val blockedNumbers = context.getBlockedNumbers()
+        return calls.map {
+            val isBlocked = context.isNumberBlocked(it.phoneNumber, blockedNumbers)
+            if (it.isBlocked != isBlocked) it.copy(isBlocked = isBlocked) else it
         }
     }
 
