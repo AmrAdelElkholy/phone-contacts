@@ -19,6 +19,8 @@ import com.elkhouly.dialer.R
 import com.elkhouly.dialer.extensions.config
 import com.elkhouly.dialer.extensions.isConference
 import com.elkhouly.dialer.models.CallContact
+import com.google.i18n.phonenumbers.NumberParseException
+import com.google.i18n.phonenumbers.PhoneNumberUtil
 
 fun getCallContact(context: Context, call: Call?, callback: (CallContact) -> Unit) {
     if (call.isConference()) {
@@ -68,6 +70,27 @@ private fun lookupContact(context: Context, number: String, callContact: CallCon
         return false
     }
 
+    // the system match is loose already, but phones set to strict matching miss a contact saved
+    // without the country code when the call comes in international form, try the local forms too
+    return getLookupCandidates(number).any { lookupContactByNumber(context, it, callContact) }
+}
+
+private fun getLookupCandidates(number: String): List<String> {
+    val candidates = mutableListOf(number)
+    if (number.startsWith("+") || number.startsWith("00")) {
+        try {
+            val util = PhoneNumberUtil.getInstance()
+            val parsed = util.parse(if (number.startsWith("00")) "+${number.drop(2)}" else number, null)
+            val national = util.getNationalSignificantNumber(parsed)
+            candidates.add("0$national")
+            candidates.add(national)
+        } catch (_: NumberParseException) {
+        }
+    }
+    return candidates.distinct()
+}
+
+private fun lookupContactByNumber(context: Context, number: String, callContact: CallContact): Boolean {
     val uri = Uri.withAppendedPath(PhoneLookup.CONTENT_FILTER_URI, Uri.encode(number))
     val projection = arrayOf(PhoneLookup._ID, PhoneLookup.DISPLAY_NAME, PhoneLookup.PHOTO_URI, PhoneLookup.TYPE, PhoneLookup.LABEL)
     try {
