@@ -17,11 +17,14 @@ fun SimpleActivity.handleGenericContactClick(contact: Contact) {
     }
 }
 
-fun SimpleActivity.launchCreateNewContactIntent() {
+fun SimpleActivity.launchCreateNewContactIntent(phoneNumber: String = "") {
     Intent().apply {
         action = Intent.ACTION_INSERT
         data = ContactsContract.Contacts.CONTENT_URI
         `package` = packageName
+        if (phoneNumber.isNotEmpty()) {
+            putExtra(ContactsContract.Intents.Insert.PHONE, phoneNumber)
+        }
         launchActivityIntent(this)
     }
 }

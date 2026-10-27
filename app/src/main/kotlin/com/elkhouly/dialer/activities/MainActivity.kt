@@ -9,6 +9,7 @@ import android.content.res.Configuration
 import android.graphics.drawable.Drawable
 import android.graphics.drawable.Icon
 import android.graphics.drawable.LayerDrawable
+import android.net.Uri
 import android.os.Bundle
 import android.os.Handler
 import android.provider.Settings
@@ -124,6 +125,7 @@ class MainActivity : SimpleActivity() {
             getLastCalledNumber = { getRecentsFragment()?.getLastCalledNumber() },
             onExpandedChanged = ::updateDialpadVisibility
         )
+        handleDialIntent(intent)
     }
 
     override fun onResume() {
@@ -252,7 +254,7 @@ class MainActivity : SimpleActivity() {
                 when (menuItem.itemId) {
                     R.id.clear_call_history -> clearCallHistory()
                     R.id.blocked_numbers -> startActivity(Intent(this@MainActivity, ManageBlockedNumbersActivity::class.java))
-                    R.id.create_new_contact -> launchCreateNewContactIntent()
+                    R.id.create_new_contact -> launchCreateNewContactIntent(mainDialpad?.input.orEmpty())
                     R.id.contacts_manager -> startActivity(Intent(this@MainActivity, ContactsManagerActivity::class.java))
                     R.id.sort -> showSortingDialog(showCustomSorting = getCurrentFragment() is FavoritesFragment)
                     R.id.filter -> showFilterDialog()
@@ -555,6 +557,13 @@ class MainActivity : SimpleActivity() {
         updateDialpadVisibility()
     }
 
+    private fun reapplyDialpadFilter() {
+        val input = mainDialpad?.input.orEmpty()
+        if (input.isNotEmpty()) {
+            getCurrentFragment()?.onSearchQueryChanged(input)
+        }
+    }
+
     // typing on the dialpad filters whichever tab is open
     private fun applyDialpadFilter(text: String) {
         val current = getCurrentFragment()
@@ -594,6 +603,27 @@ class MainActivity : SimpleActivity() {
 
     private fun getDialableNumber(number: String) = number.filter { it.isDigit() || it == '+' || it == '*' || it == '#' }
 
+    override fun onNewIntent(intent: Intent) {
+        super.onNewIntent(intent)
+        setIntent(intent)
+        if (handleDialIntent(intent)) {
+            binding.mainTabsHolder.getTabAt(binding.mainTabsHolder.tabCount - 1)?.select()
+        }
+    }
+
+    // numbers shared from other apps (tel: links, "call" buttons) land on the inline dialpad
+    private fun handleDialIntent(intent: Intent?): Boolean {
+        val action = intent?.action
+        if (action != Intent.ACTION_DIAL && !(action == Intent.ACTION_VIEW && intent.scheme == "tel")) {
+            return false
+        }
+
+        val number = Uri.decode(intent.dataString.orEmpty()).substringAfter("tel:", "")
+        mainDialpad?.expand()
+        mainDialpad?.setInput(number)
+        return true
+    }
+
     private fun launchDialpad() {
         Intent(applicationContext, DialpadActivity::class.java).apply {
             startActivity(this)
@@ -612,8 +642,9 @@ class MainActivity : SimpleActivity() {
         val delay = if (isOnRecentsTab()) CONTACT_TABS_REFRESH_DELAY_MS else 0L
         binding.viewPager.postDelayed({
             if (!isDestroyed && !isFinishing) {
-                getContactsFragment()?.refreshItems()
-                getFavoritesFragment()?.refreshItems()
+                // reapply the dialpad filter, the new lists would show unfiltered or miss a new contact
+                getContactsFragment()?.refreshItems(callback = ::reapplyDialpadFilter)
+                getFavoritesFragment()?.refreshItems(callback = ::reapplyDialpadFilter)
             }
         }, delay)
     }
