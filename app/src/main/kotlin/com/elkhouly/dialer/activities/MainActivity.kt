@@ -425,7 +425,7 @@ class MainActivity : SimpleActivity() {
 
                 binding.mainTabsHolder.getTabAt(wantedTab)?.select()
                 refreshMenuItems()
-                updateDialpadVisibility()
+                onTabChangedForDialpad()
             }, 100L)
         }
 
@@ -516,7 +516,15 @@ class MainActivity : SimpleActivity() {
         }
     }
 
-    private fun isOnRecentsTab() = getRecentsFragment() != null && getCurrentFragment() == getRecentsFragment()
+    // decided by position, the fragment views may not exist yet while the app is opening
+    private fun isOnRecentsTab(): Boolean {
+        val showTabs = config.showTabs
+        if (showTabs and TAB_CALL_HISTORY == 0) {
+            return false
+        }
+        val recentsPosition = tabsList.count { showTabs and it != 0 } - 1
+        return binding.viewPager.currentItem == recentsPosition
+    }
 
     // the inline dialpad is shown expanded on the call history and opened with the FAB elsewhere
     private fun updateDialpadVisibility() {
