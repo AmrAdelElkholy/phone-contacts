@@ -420,8 +420,10 @@ class MainActivity : SimpleActivity() {
             Handler().postDelayed({
                 var wantedTab = getDefaultTab()
 
-                // open the Recents tab if we got here by clicking a missed call notification
-                if (intent.action == Intent.ACTION_VIEW && config.showTabs and TAB_CALL_HISTORY > 0) {
+                // open the Recents tab if we got here by clicking a missed call notification,
+                // or with a number from another app, the call history carries the dialpad
+                val opensRecents = intent.action == Intent.ACTION_VIEW || intent.action == Intent.ACTION_DIAL
+                if (opensRecents && config.showTabs and TAB_CALL_HISTORY > 0) {
                     wantedTab = binding.mainTabsHolder.tabCount - 1
                 }
 
