@@ -22,6 +22,9 @@ import com.google.i18n.phonenumbers.geocoding.PhoneNumberOfflineGeocoder
 import com.elkhouly.commons.adapters.MyRecyclerViewListAdapter
 import com.elkhouly.commons.dialogs.ConfirmationDialog
 import com.elkhouly.commons.extensions.addBlockedNumber
+import com.elkhouly.commons.extensions.deleteBlockedNumber
+import com.elkhouly.commons.extensions.getBlockedNumbers
+import com.elkhouly.commons.extensions.isNumberBlocked
 import com.elkhouly.commons.extensions.adjustAlpha
 import com.elkhouly.commons.extensions.adjustForContrast
 import com.elkhouly.commons.extensions.applyColorFilter
@@ -260,11 +263,27 @@ class RecentCallsAdapter(
                 activity.addBlockedNumber(number)
             }
 
-            val recentCalls = currentList.toMutableList().also { it.removeAll(callsToBlock) }
-            activity.runOnUiThread {
-                submitList(recentCalls)
-                finishActMode()
-            }
+            updateBlockedState()
+        }
+    }
+
+    private fun unblockNumber(call: RecentCall) {
+        ensureBackgroundThread {
+            activity.deleteBlockedNumber(call.phoneNumber)
+            updateBlockedState()
+        }
+    }
+
+    // blocked calls stay listed, only their marking changes
+    private fun updateBlockedState() {
+        val blockedNumbers = activity.getBlockedNumbers()
+        val recentCalls = currentList.map {
+            if (it is RecentCall) it.copy(isBlocked = activity.isNumberBlocked(it.phoneNumber, blockedNumbers)) else it
+        }
+        activity.runOnUiThread {
+            refreshItemsListener?.refreshItems()
+            submitList(recentCalls)
+            finishActMode()
         }
     }
 
@@ -381,7 +400,7 @@ class RecentCallsAdapter(
                 findItem(R.id.cab_whatsapp).isVisible = !call.isUnknownNumber
                 findItem(R.id.cab_whatsapp_business).isVisible = !call.isUnknownNumber
                 findItem(R.id.cab_show_call_details).isVisible = !call.isUnknownNumber
-                findItem(R.id.cab_block_number).title = activity.getString(R.string.block_number)
+                findItem(R.id.cab_block_number).title = activity.getString(if (call.isBlocked) R.string.unblock else R.string.block_number)
                 findItem(R.id.cab_block_number).isVisible = isNougatPlus() && !call.isUnknownNumber
                 findItem(R.id.cab_remove_default_sim).isVisible = (activity.config.getCustomSIM(selectedNumber) ?: "") != "" && !call.isUnknownNumber
             }
@@ -432,8 +451,12 @@ class RecentCallsAdapter(
                     }
 
                     R.id.cab_block_number -> {
-                        selectedKeys.add(callId)
-                        askConfirmBlock()
+                        if (call.isBlocked) {
+                            unblockNumber(call)
+                        } else {
+                            selectedKeys.add(callId)
+                            askConfirmBlock()
+                        }
                     }
 
                     R.id.cab_remove -> {
@@ -516,7 +539,7 @@ class RecentCallsAdapter(
 
                 itemRecentsName.apply {
                     text = nameToShow
-                    setTextColor(textColor)
+                    setTextColor(if (call.isBlocked) missedCallColor else textColor)
                     setTextSize(TypedValue.COMPLEX_UNIT_PX, currentFontSize)
                     isSelected = true
                 }
@@ -694,6 +717,7 @@ class RecentCallsDiffCallback : DiffUtil.ItemCallback<CallLogItem>() {
                         oldItem.specificNumber == newItem.specificNumber &&
                         oldItem.specificType == newItem.specificType &&
                         oldItem.isUnknownNumber == newItem.isUnknownNumber &&
+                        oldItem.isBlocked == newItem.isBlocked &&
                         oldItem.groupedCalls?.size == newItem.groupedCalls?.size
             }
 

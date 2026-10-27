@@ -30,6 +30,11 @@
         android:title="@string/clear_call_history"
         app:showAsAction="never" />
     <item
+        android:id="@+id/blocked_numbers"
+        android:icon="@drawable/ic_block_vector"
+        android:title="@string/blocked_numbers"
+        app:showAsAction="never" />
+    <item
         android:id="@+id/change_view_type"
         android:icon="@drawable/ic_change_view_vector"
         android:title="@string/change_view_type"

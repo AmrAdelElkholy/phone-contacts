@@ -286,8 +286,10 @@ class RecentsHelper(private val context: Context) {
 
         val blockedNumbers = context.getBlockedNumbers()
 
-        return recentCalls
-            .filter { !context.isNumberBlocked(it.phoneNumber, blockedNumbers) }
+        // blocked calls stay in the history, marked so the list can show them in red
+        return recentCalls.map {
+            if (context.isNumberBlocked(it.phoneNumber, blockedNumbers)) it.copy(isBlocked = true) else it
+        }
     }
 
     fun removeRecentCalls(ids: List<Int>, callback: () -> Unit) {

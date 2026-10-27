@@ -18,6 +18,7 @@ import android.widget.Toast
 import androidx.viewpager.widget.ViewPager
 import com.google.android.material.snackbar.Snackbar
 import me.grantland.widget.AutofitHelper
+import com.elkhouly.commons.activities.ManageBlockedNumbersActivity
 import com.elkhouly.commons.dialogs.ChangeViewTypeDialog
 import com.elkhouly.commons.dialogs.ConfirmationDialog
 import com.elkhouly.commons.dialogs.PermissionRequiredDialog
@@ -221,6 +222,7 @@ class MainActivity : SimpleActivity() {
         val currentFragment = getCurrentFragment()
         binding.mainMenu.requireToolbar().menu.apply {
             findItem(R.id.clear_call_history).isVisible = currentFragment == getRecentsFragment()
+            findItem(R.id.blocked_numbers).isVisible = currentFragment == getRecentsFragment() && isNougatPlus()
             findItem(R.id.sort).isVisible = currentFragment != getRecentsFragment()
             findItem(R.id.filter).isVisible = currentFragment != getRecentsFragment()
             findItem(R.id.create_new_contact).isVisible = currentFragment == getContactsFragment()
@@ -249,6 +251,7 @@ class MainActivity : SimpleActivity() {
             requireToolbar().setOnMenuItemClickListener { menuItem ->
                 when (menuItem.itemId) {
                     R.id.clear_call_history -> clearCallHistory()
+                    R.id.blocked_numbers -> startActivity(Intent(this@MainActivity, ManageBlockedNumbersActivity::class.java))
                     R.id.create_new_contact -> launchCreateNewContactIntent()
                     R.id.contacts_manager -> startActivity(Intent(this@MainActivity, ContactsManagerActivity::class.java))
                     R.id.sort -> showSortingDialog(showCustomSorting = getCurrentFragment() is FavoritesFragment)
