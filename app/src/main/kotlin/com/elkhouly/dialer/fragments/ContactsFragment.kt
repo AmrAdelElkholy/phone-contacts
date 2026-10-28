@@ -36,6 +36,7 @@ class ContactsFragment(context: Context, attributeSet: AttributeSet) : MyViewPag
     RefreshItemsListener {
     private lateinit var binding: FragmentLettersLayoutBinding
     private var allContacts = ArrayList<Contact>()
+    private var isLoaded = false
 
     override fun onFinishInflate() {
         super.onFinishInflate()
@@ -100,6 +101,7 @@ class ContactsFragment(context: Context, attributeSet: AttributeSet) : MyViewPag
             (activity as MainActivity).cacheContacts()
 
             activity?.runOnUiThread {
+                isLoaded = true
                 gotContacts(contacts)
                 callback?.invoke()
             }
@@ -160,6 +162,13 @@ class ContactsFragment(context: Context, attributeSet: AttributeSet) : MyViewPag
     }
 
     override fun onSearchQueryChanged(text: String) {
+        if (!isLoaded) {
+            // a number opened from another app filters right away, wait for the contacts instead
+            // of flashing "no contacts found", the filter is applied again once they are loaded
+            binding.fragmentPlaceholder.beGone()
+            return
+        }
+
         val fixedText = text.trim().replace("\\s+".toRegex(), " ")
         val shouldNormalize = fixedText.normalizeString() == fixedText
         val filtered = allContacts.filter { contact ->
@@ -192,6 +201,7 @@ class ContactsFragment(context: Context, attributeSet: AttributeSet) : MyViewPag
                 binding.fragmentPlaceholder2.text = context.getString(R.string.create_new_contact)
                 ContactsHelper(context).getContacts(showOnlyContactsWithNumbers = true) { contacts ->
                     activity?.runOnUiThread {
+                        isLoaded = true
                         gotContacts(contacts)
                     }
                 }
