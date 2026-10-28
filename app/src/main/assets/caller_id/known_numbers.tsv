@@ -1,0 +1,24 @@
+# Curated hotlines for offline caller ID, see docs/caller-id/PLAN.md
+# Columns are tab separated: region, number, category, English name, Arabic name
+# Categories: emergency, bank, telecom, government, hospital, delivery, airline, company
+# Check every entry against the organization's official website before adding it
+EG	122	emergency	Police	الشرطة
+EG	123	emergency	Ambulance	الإسعاف
+EG	180	emergency	Fire department	المطافئ
+SA	911	emergency	Unified emergency	الطوارئ الموحد
+SA	999	emergency	Police	الشرطة
+SA	997	emergency	Red Crescent ambulance	الهلال الأحمر
+SA	998	emergency	Civil Defense	الدفاع المدني
+EG	19623	bank	National Bank of Egypt	البنك الأهلي المصري
+EG	19888	bank	Banque Misr	بنك مصر
+EG	19666	bank	CIB	البنك التجاري الدولي
+EG	19700	bank	QNB Egypt	بنك QNB مصر
+SA	920003344	bank	Al Rajhi Bank	مصرف الراجحي
+SA	920001000	bank	Saudi National Bank	البنك الأهلي السعودي
+EG	888	telecom	Vodafone	فودافون
+EG	110	telecom	Orange	أورنج
+EG	333	telecom	e& (Etisalat)	اتصالات
+EG	111	telecom	WE	وي
+SA	900	telecom	STC	اس تي سي
+SA	1100	telecom	Mobily	موبايلي
+SA	959	telecom	Zain	زين

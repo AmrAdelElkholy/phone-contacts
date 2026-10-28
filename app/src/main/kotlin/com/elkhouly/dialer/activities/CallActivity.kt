@@ -585,6 +585,9 @@ class CallActivity : SimpleActivity() {
                 if (numberLabel.isNotEmpty()) {
                     callerNumber.text = "$number - $numberLabel"
                 }
+            } else if (numberLabel.isNotEmpty()) {
+                // an unknown number is already the title, show what kind of number it is below
+                callerNumber.text = numberLabel
             } else {
                 callerNumber.beGone()
             }

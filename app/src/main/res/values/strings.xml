@@ -91,6 +91,23 @@
     <string name="faq_2_text">Due to system restrictions, emergency calls can only be made through your system\'s default dialer or phone app. To ensure emergency calls work properly, you need to keep the system app installed and enabled.</string>
     <string name="faq_3_title">Why are some of my contacts missing from the app?</string>
     <string name="faq_3_text">Easy Phone only displays contacts that have a phone number associated with them. Contacts without a phone number are not shown in the app.</string>
+    <!-- Caller ID -->
+    <string name="caller_id_mobile">Mobile</string>
+    <string name="caller_id_landline">Landline</string>
+    <string name="caller_id_toll_free">Toll-free</string>
+    <string name="caller_id_premium_rate">Premium rate</string>
+    <string name="caller_id_shared_cost">Shared cost</string>
+    <string name="caller_id_voip">Internet call</string>
+    <string name="caller_id_company_number">Company number</string>
+    <string name="caller_id_category_emergency">Emergency</string>
+    <string name="caller_id_category_bank">Bank</string>
+    <string name="caller_id_category_telecom">Mobile operator</string>
+    <string name="caller_id_category_government">Government</string>
+    <string name="caller_id_category_hospital">Hospital</string>
+    <string name="caller_id_category_delivery">Delivery</string>
+    <string name="caller_id_category_airline">Airline</string>
+    <string name="caller_id_category_company">Company</string>
+
     <!--
         Haven't found some strings? There's more at
         https://github.com/AmrAdelElkholy/phone-contacts

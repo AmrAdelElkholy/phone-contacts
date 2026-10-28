@@ -1,6 +1,7 @@
 [versions]
 #jetbrains
 geocoderVersion = "3.40"
+carrierVersion = "2.40"
 kotlin = "2.4.20"
 kotlinxSerializationJson = "1.11.0"
 #Detekt
@@ -29,6 +30,7 @@ compose-detekt = { module = "io.nlopez.compose.rules:detekt", version.ref = "det
 eventbus = { module = "org.greenrobot:eventbus", version.ref = "eventbus" }
 #Kotlin
 geocoder = { module = "com.googlecode.libphonenumber:geocoder", version.ref = "geocoderVersion" }
+carrier = { module = "com.googlecode.libphonenumber:carrier", version.ref = "carrierVersion" }
 kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
 #Other
 indicator-fast-scroll = { module = "org.fossify:IndicatorFastScroll", version.ref = "indicatorFastScroll" }

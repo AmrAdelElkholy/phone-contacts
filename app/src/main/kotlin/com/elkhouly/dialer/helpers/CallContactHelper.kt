@@ -56,8 +56,15 @@ fun getCallContact(context: Context, call: Call?, callback: (CallContact) -> Uni
             if (!lookupContact(context, number, callContact)) {
                 val privateContacts = MyContactsContentProvider.getContacts(context, privateCursor)
                 val contact = privateContacts.firstOrNull { it.doesHavePhoneNumber(number) }
-                callContact.name = contact?.getNameToDisplay() ?: callContact.number
-                callContact.photoUri = contact?.photoUri.orEmpty()
+                if (contact != null) {
+                    callContact.name = contact.getNameToDisplay()
+                    callContact.photoUri = contact.photoUri
+                } else {
+                    // not a contact, show a known hotline name and what kind of number it is
+                    val callerId = CallerIdHelper.identify(context, number)
+                    callContact.name = callerId?.name ?: callContact.number
+                    callContact.numberLabel = callerId?.details.orEmpty()
+                }
             }
 
             callback(callContact)

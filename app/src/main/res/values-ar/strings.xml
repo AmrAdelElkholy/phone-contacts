@@ -76,4 +76,20 @@
     <string name="call_notification_channel">حالة المكالمة</string>
     <string name="call_notification_channel_high_priority">حالة المكالمة (أولوية عالية)</string>
     <string name="calling_accounts">حسابات المكالمة</string>
+    <!-- Caller ID -->
+    <string name="caller_id_mobile">محمول</string>
+    <string name="caller_id_landline">أرضي</string>
+    <string name="caller_id_toll_free">رقم مجاني</string>
+    <string name="caller_id_premium_rate">رقم بتكلفة إضافية</string>
+    <string name="caller_id_shared_cost">تكلفة مشتركة</string>
+    <string name="caller_id_voip">اتصال عبر الإنترنت</string>
+    <string name="caller_id_company_number">رقم شركة</string>
+    <string name="caller_id_category_emergency">طوارئ</string>
+    <string name="caller_id_category_bank">بنك</string>
+    <string name="caller_id_category_telecom">شركة اتصالات</string>
+    <string name="caller_id_category_government">جهة حكومية</string>
+    <string name="caller_id_category_hospital">مستشفى</string>
+    <string name="caller_id_category_delivery">توصيل</string>
+    <string name="caller_id_category_airline">طيران</string>
+    <string name="caller_id_category_company">شركة</string>
 </resources>
