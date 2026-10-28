@@ -27,7 +27,17 @@ Rebuild with `python tools/caller-id/build_osm_db.py --refresh` (needs `pip inst
       itself helps every app; other open sources to be evaluated
 
 ## Phase 2: hosted database
-- [ ] Not started
+Server code in `server/caller-id` (Worker + D1 `easy-phone-caller-id`), deploy with `npx wrangler deploy`.
+- [x] D1 schema with versions and tombstones (`migrations/0001_numbers.sql`)
+- [x] Worker: `/v1/delta`, `/v1/status`, token protected `/v1/admin/numbers`
+- [x] Seeded with the APK data as version 1 (`tools/caller-id/build_server_seed.py`)
+- [x] Deployed at https://easy-phone-caller-id.amr-adel-elkholy.workers.dev
+- [x] App downloads changes once a day into a local overlay, server rows win over the APK data
+- [x] Admin tool `tools/caller-id/push_numbers.py` (token in `server/caller-id/.dev.vars`, not committed)
+- [x] INTERNET permission and privacy policy updated
+- [ ] Custom domain `easyphone-api.amrelkhouly.com`, then point `CALLER_ID_URL` at it
+- [ ] Play Data safety form: declare no data collected, downloads only
+- [ ] Online lookup of single unknown numbers (optional, off by default)
 
 ## Phase 3: spam reports
 - [ ] Not started
@@ -42,3 +52,5 @@ Rebuild with `python tools/caller-id/build_osm_db.py --refresh` (needs `pip inst
   4,621 usable numbers after normalization (39 numbers shared by many places dropped).
   Database 320 KB, copied out of the APK once per update and queried read-only. Hotlines from
   `known_numbers.tsv` win over OSM. Attribution added to About and NOTICE.md.
+- 2026-10-28: phase 2 server live with 4,633 numbers. Checked from the phone: the app asked
+  `/v1/delta?since=1` on launch and got an empty update, as expected.

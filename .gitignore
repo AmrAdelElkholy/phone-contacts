@@ -11,3 +11,6 @@ keystore.properties
 fastlane/fastlane.json
 fastlane/report.xml
 .kotlin/
+
+# Wrangler cache, holds the Cloudflare account id
+.wrangler/
