@@ -1,3 +1,7 @@
 * First release of Easy Phone
 * Dialer and contacts manager in one app
-* WhatsApp and WhatsApp Business shortcuts
+* Call history opens with an inline dialpad and one call button per SIM
+* Typing on the dialpad filters calls and contacts instantly
+* WhatsApp and WhatsApp Business shortcuts, with a country picker for local numbers
+* Blocked calls stay in the history in red, blocked numbers reachable from the menu
+* Faster startup and instant caller names on incoming calls
