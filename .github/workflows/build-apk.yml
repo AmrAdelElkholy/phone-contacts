@@ -40,12 +40,12 @@ jobs:
           chmod +x gradlew
           ./gradlew assembleFossRelease bundleGplayRelease --no-daemon
 
-      - uses: actions/upload-artifact@v5
+      - uses: actions/upload-artifact@v7
         with:
           name: easy-phone-apk
           path: app/build/outputs/apk/foss/release/*.apk
 
-      - uses: actions/upload-artifact@v5
+      - uses: actions/upload-artifact@v7
         with:
           name: easy-phone-play-bundle
           path: app/build/outputs/bundle/gplayRelease/*.aab
