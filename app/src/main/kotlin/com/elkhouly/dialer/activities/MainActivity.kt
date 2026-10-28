@@ -43,6 +43,7 @@ import com.elkhouly.dialer.fragments.ContactsFragment
 import com.elkhouly.dialer.fragments.FavoritesFragment
 import com.elkhouly.dialer.fragments.MyViewPagerFragment
 import com.elkhouly.dialer.fragments.RecentsFragment
+import com.elkhouly.dialer.helpers.CallerIdHelper
 import com.elkhouly.dialer.helpers.ContactsCache
 import com.elkhouly.dialer.helpers.MainDialpad
 import com.elkhouly.dialer.helpers.OPEN_DIAL_PAD_AT_LAUNCH
@@ -169,6 +170,7 @@ class MainActivity : SimpleActivity() {
         }
 
         checkShortcuts()
+        CallerIdHelper.syncUpdates(this)
         Handler().postDelayed({
             getRecentsFragment()?.refreshItems()
         }, 2000)

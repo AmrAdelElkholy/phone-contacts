@@ -1,6 +1,6 @@
 # Privacy Policy
 
-_Last updated: 2026-10-26_
+_Last updated: 2026-10-28_
 
 Easy Phone ("the app") is a phone and contacts app. This policy explains what
 data the app accesses and what it does with it.
@@ -17,8 +17,13 @@ To work as your phone and contacts app, Easy Phone asks for access to:
 
 ## What happens to that data
 
-- All data stays **on your device**. The app has no servers, no accounts, no
-  analytics and no ads, and it does not send your data anywhere.
+- All your data stays **on your device**. The app has no accounts, no analytics
+  and no ads, and it never sends your contacts, call log or phone numbers anywhere.
+- **Caller ID**: names for unknown numbers come from a database inside the app.
+  About once a day the app downloads updates to that database from our server,
+  hosted on Cloudflare. The download contains no information about you;
+  like any internet request, the server sees your IP address, which is not stored
+  beyond Cloudflare's standard short-term request logs.
 - Contact backups and exports are written only to the location you choose.
 - When you tap a WhatsApp button, the app opens WhatsApp with that number.
   Anything that happens inside WhatsApp is covered by WhatsApp's own privacy policy.

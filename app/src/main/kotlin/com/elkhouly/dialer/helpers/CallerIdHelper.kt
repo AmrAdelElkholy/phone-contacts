@@ -56,16 +56,34 @@ object CallerIdHelper {
 
     private fun findKnownNumber(context: Context, number: String, homeRegion: String): KnownNumber? {
         val numbers = getKnownNumbers(context)
-        if (numbers.isEmpty()) {
-            return null
-        }
 
         // a local number may belong to either country of a dual SIM phone, try the home one first
         val regions = if (isInternational(number)) listOf(homeRegion) else (listOf(homeRegion) + FALLBACK_REGIONS).distinct()
         val keys = regions.mapNotNull { region -> parse(number, region)?.let { getKey(it) } }.distinct()
 
+        // server updates are the newest, a number removed there stays removed even if the APK has it
+        keys.firstNotNullOfOrNull { CallerIdUpdates.find(context, it) }?.let { update ->
+            return if (update.deleted) null else KnownNumber(update.category, update.nameEn, update.nameAr)
+        }
+
         // the hand checked hotlines win over the crowd sourced places
         return keys.firstNotNullOfOrNull { numbers[it] } ?: keys.firstNotNullOfOrNull { findPlace(context, it) }
+    }
+
+    fun syncUpdates(context: Context) {
+        CallerIdUpdates.syncIfDue(context) { getBaselineVersion(context) }
+    }
+
+    // the data version the APK ships, the server sends rows newer than this
+    private fun getBaselineVersion(context: Context): Long {
+        val database = getPlaces(context) ?: return 0L
+        return try {
+            database.rawQuery("SELECT value FROM metadata WHERE key = 'version'", null).use { cursor ->
+                if (cursor.moveToFirst()) cursor.getString(0).toLongOrNull() ?: 0L else 0L
+            }
+        } catch (_: Exception) {
+            0L
+        }
     }
 
     private fun findPlace(context: Context, key: String): KnownNumber? {

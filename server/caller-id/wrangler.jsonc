@@ -1,0 +1,18 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "easy-phone-caller-id",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-10-28",
+  "observability": {
+    "enabled": true,
+    "traces": { "enabled": true }
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "easy-phone-caller-id",
+      "database_id": "5f342dff-a95a-4f1e-b9bf-be7f1fe43a0c",
+      "migrations_dir": "migrations"
+    }
+  ]
+}

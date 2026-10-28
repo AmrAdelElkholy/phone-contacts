@@ -39,6 +39,9 @@ OUTPUT = ROOT / "app" / "src" / "main" / "assets" / "caller_id" / "osm_places.db
 # a number shared by more distinct names than this is a switchboard or a placeholder, not useful
 MAX_DISTINCT_NAMES = 3
 
+# version of the data shipped in the APK, see tools/caller-id/build_server_seed.py
+BASELINE_VERSION = 1
+
 ARABIC = re.compile(r"[؀-ۿ]")
 
 QUERY = """
@@ -174,6 +177,8 @@ def main():
     db.executemany("INSERT INTO places VALUES (?, ?, ?, ?)", rows)
     db.execute("CREATE TABLE metadata (key TEXT PRIMARY KEY, value TEXT NOT NULL) WITHOUT ROWID")
     db.execute("INSERT INTO metadata VALUES ('source', '© OpenStreetMap contributors, ODbL 1.0')")
+    # the server holds this same data as version BASELINE_VERSION, phones download newer rows only
+    db.execute("INSERT INTO metadata VALUES ('version', ?)", (str(BASELINE_VERSION),))
     db.commit()
     db.execute("VACUUM")
     db.close()
