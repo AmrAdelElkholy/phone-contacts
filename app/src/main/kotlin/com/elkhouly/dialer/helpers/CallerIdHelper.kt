@@ -115,7 +115,7 @@ object CallerIdHelper {
             context.assets.open(KNOWN_NUMBERS_FILE).bufferedReader().useLines { lines ->
                 lines.filter { it.isNotBlank() && !it.startsWith("#") }.forEach { line ->
                     // region, number, category, English name, Arabic name
-                    val columns = line.split('\t')
+                    val columns = line.trimEnd().split('\t')
                     if (columns.size >= 4) {
                         val parsed = parse(columns[1], columns[0]) ?: return@forEach
                         result[getKey(parsed)] = KnownNumber(columns[2], columns[3], columns.getOrNull(4).orEmpty())
