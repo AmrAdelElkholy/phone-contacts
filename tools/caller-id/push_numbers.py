@@ -16,7 +16,7 @@ import phonenumbers
 
 from build_osm_db import ROOT
 
-SERVER = "https://easy-phone-caller-id.amr-adel-elkholy.workers.dev"
+SERVER = "https://easyphone-api.amrelkhouly.com"
 DEV_VARS = ROOT / "server" / "caller-id" / ".dev.vars"
 
 

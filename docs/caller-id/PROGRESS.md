@@ -35,7 +35,8 @@ Server code in `server/caller-id` (Worker + D1 `easy-phone-caller-id`), deploy w
 - [x] App downloads changes once a day into a local overlay, server rows win over the APK data
 - [x] Admin tool `tools/caller-id/push_numbers.py` (token in `server/caller-id/.dev.vars`, not committed)
 - [x] INTERNET permission and privacy policy updated
-- [ ] Custom domain `easyphone-api.amrelkhouly.com`, then point `CALLER_ID_URL` at it
+- [x] Custom domain https://easyphone-api.amrelkhouly.com, used by the app and the admin tool
+      (the workers.dev address stays on for the build installed before the switch)
 - [ ] Play Data safety form: declare no data collected, downloads only
 - [ ] Online lookup of single unknown numbers (optional, off by default)
 
@@ -54,3 +55,4 @@ Server code in `server/caller-id` (Worker + D1 `easy-phone-caller-id`), deploy w
   `known_numbers.tsv` win over OSM. Attribution added to About and NOTICE.md.
 - 2026-10-28: phase 2 server live with 4,633 numbers. Checked from the phone: the app asked
   `/v1/delta?since=1` on launch and got an empty update, as expected.
+- 2026-10-28: API moved to easyphone-api.amrelkhouly.com.

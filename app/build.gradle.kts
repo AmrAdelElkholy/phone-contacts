@@ -39,7 +39,7 @@ android {
         manifestPlaceholders["baseAppId"] = project.property("APP_ID").toString()
         versionCode = project.property("VERSION_CODE").toString().toInt()
         // caller ID updates, see docs/caller-id/PLAN.md and server/caller-id
-        buildConfigField("String", "CALLER_ID_URL", "\"https://easy-phone-caller-id.amr-adel-elkholy.workers.dev\"")
+        buildConfigField("String", "CALLER_ID_URL", "\"https://easyphone-api.amrelkhouly.com\"")
     }
 
     signingConfigs {
