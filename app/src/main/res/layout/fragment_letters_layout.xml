@@ -35,6 +35,16 @@
             android:textSize="@dimen/bigger_text_size"
             android:visibility="gone" />
 
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/fragment_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/big_margin"
+            android:indeterminate="true"
+            android:visibility="gone"
+            app:trackCornerRadius="@dimen/small_margin" />
+
         <com.elkhouly.commons.views.MyRecyclerView
             android:id="@+id/fragment_list"
             android:layout_width="match_parent"

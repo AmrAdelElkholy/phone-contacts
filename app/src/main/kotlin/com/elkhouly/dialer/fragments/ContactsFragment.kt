@@ -102,6 +102,7 @@ class ContactsFragment(context: Context, attributeSet: AttributeSet) : MyViewPag
 
             activity?.runOnUiThread {
                 isLoaded = true
+                binding.fragmentProgress.hide()
                 gotContacts(contacts)
                 callback?.invoke()
             }
@@ -156,6 +157,7 @@ class ContactsFragment(context: Context, attributeSet: AttributeSet) : MyViewPag
     }
 
     override fun onSearchClosed() {
+        binding.fragmentProgress.hide()
         binding.fragmentPlaceholder.beVisibleIf(allContacts.isEmpty())
         (binding.fragmentList.adapter as? ContactsAdapter)?.updateItems(allContacts)
         setupLetterFastScroller(allContacts)
@@ -166,6 +168,7 @@ class ContactsFragment(context: Context, attributeSet: AttributeSet) : MyViewPag
             // a number opened from another app filters right away, wait for the contacts instead
             // of flashing "no contacts found", the filter is applied again once they are loaded
             binding.fragmentPlaceholder.beGone()
+            binding.fragmentProgress.show()
             return
         }
 
@@ -202,6 +205,7 @@ class ContactsFragment(context: Context, attributeSet: AttributeSet) : MyViewPag
                 ContactsHelper(context).getContacts(showOnlyContactsWithNumbers = true) { contacts ->
                     activity?.runOnUiThread {
                         isLoaded = true
+                        binding.fragmentProgress.hide()
                         gotContacts(contacts)
                     }
                 }
