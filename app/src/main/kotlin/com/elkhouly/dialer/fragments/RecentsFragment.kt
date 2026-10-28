@@ -134,6 +134,10 @@ class RecentsFragment(
 
             prepareCallLog(recentCalls) {
                 activity?.runOnUiThread {
+                    if (recentsAdapter == null) {
+                        // searching before the first load finished, the list isn't set up yet
+                        gotRecents(it)
+                    }
                     showOrHidePlaceholder(recentCalls.isEmpty())
                     recentsAdapter?.updateItems(it, fixedText)
                 }
@@ -212,6 +216,8 @@ class RecentsFragment(
             if (searchQuery.isNullOrEmpty()) {
                 activity?.runOnUiThread { gotRecents(it) }
             } else {
+                // the dialpad already holds a number, show its matches and stop the spinner
+                activity?.runOnUiThread { binding.progressIndicator.hide() }
                 updateSearchResult()
             }
 

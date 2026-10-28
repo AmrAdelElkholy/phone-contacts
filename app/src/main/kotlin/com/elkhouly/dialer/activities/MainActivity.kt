@@ -420,10 +420,11 @@ class MainActivity : SimpleActivity() {
             Handler().postDelayed({
                 var wantedTab = getDefaultTab()
 
-                // open the Recents tab if we got here by clicking a missed call notification,
-                // or with a number from another app, the call history carries the dialpad
-                val opensRecents = intent.action == Intent.ACTION_VIEW || intent.action == Intent.ACTION_DIAL
-                if (opensRecents && config.showTabs and TAB_CALL_HISTORY > 0) {
+                // a number from another app opens the contacts filtered to it, so a saved number shows its contact
+                if (isDialIntent(intent) && config.showTabs and TAB_CONTACTS > 0) {
+                    wantedTab = 0
+                } else if (intent.action == Intent.ACTION_VIEW && config.showTabs and TAB_CALL_HISTORY > 0) {
+                    // open the Recents tab if we got here by clicking a missed call notification
                     wantedTab = binding.mainTabsHolder.tabCount - 1
                 }
 
@@ -608,15 +609,20 @@ class MainActivity : SimpleActivity() {
     override fun onNewIntent(intent: Intent) {
         super.onNewIntent(intent)
         setIntent(intent)
-        if (handleDialIntent(intent)) {
-            binding.mainTabsHolder.getTabAt(binding.mainTabsHolder.tabCount - 1)?.select()
+        if (handleDialIntent(intent) && config.showTabs and TAB_CONTACTS > 0) {
+            binding.mainTabsHolder.getTabAt(0)?.select()
+            applyDialpadFilter(mainDialpad?.input.orEmpty())
         }
     }
 
     // numbers shared from other apps (tel: links, "call" buttons) land on the inline dialpad
-    private fun handleDialIntent(intent: Intent?): Boolean {
+    private fun isDialIntent(intent: Intent?): Boolean {
         val action = intent?.action
-        if (action != Intent.ACTION_DIAL && !(action == Intent.ACTION_VIEW && intent.scheme == "tel")) {
+        return action == Intent.ACTION_DIAL || (action == Intent.ACTION_VIEW && intent.scheme == "tel")
+    }
+
+    private fun handleDialIntent(intent: Intent?): Boolean {
+        if (intent == null || !isDialIntent(intent)) {
             return false
         }
 
@@ -641,7 +647,7 @@ class MainActivity : SimpleActivity() {
 
         // give the call history a head start when it's the visible tab, low end phones
         // otherwise load every list at once
-        val delay = if (isOnRecentsTab()) CONTACT_TABS_REFRESH_DELAY_MS else 0L
+        val delay = if (isOnRecentsTab() && !isDialIntent(intent)) CONTACT_TABS_REFRESH_DELAY_MS else 0L
         binding.viewPager.postDelayed({
             if (!isDestroyed && !isFinishing) {
                 // reapply the dialpad filter, the new lists would show unfiltered or miss a new contact
