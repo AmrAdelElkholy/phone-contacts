@@ -18,10 +18,13 @@ See [PLAN.md](PLAN.md) for the full plan.
 - [ ] More categories: government, hospitals, delivery, airlines
 
 ### 1.3 OpenStreetMap places
-- [ ] Extraction script (Overpass) for EG and SA
-- [ ] Normalization and SQLite build
-- [ ] Lookup in the app
-- [ ] OSM attribution in About and NOTICE.md
+Rebuild with `python tools/caller-id/build_osm_db.py --refresh` (needs `pip install phonenumbers`).
+- [x] Extraction script (Overpass) for EG and SA
+- [x] Normalization and SQLite build
+- [x] Lookup in the app
+- [x] OSM attribution in About and NOTICE.md
+- [ ] Grow coverage: OSM has few phone numbers in EG and SA, adding missing places to OSM
+      itself helps every app; other open sources to be evaluated
 
 ## Phase 2: hosted database
 - [ ] Not started
@@ -35,3 +38,7 @@ See [PLAN.md](PLAN.md) for the full plan.
   network on the call screen and notification. 20 hotlines (emergency, banks, operators in EG
   and SA) show their name there and in the call history. APK grew about 150 KB.
   Not yet seen on a real incoming call; the hotline list still needs the owner's review.
+- 2026-10-28: 1.3 built. OpenStreetMap gave 2,498 places in EG and 4,119 in SA with a phone,
+  4,621 usable numbers after normalization (39 numbers shared by many places dropped).
+  Database 320 KB, copied out of the APK once per update and queried read-only. Hotlines from
+  `known_numbers.tsv` win over OSM. Attribution added to About and NOTICE.md.
