@@ -3,6 +3,11 @@
   "name": "easy-phone-caller-id",
   "main": "src/index.ts",
   "compatibility_date": "2026-10-28",
+  "routes": [
+    { "pattern": "easyphone-api.amrelkhouly.com", "custom_domain": true }
+  ],
+  // the workers.dev address stays on for app versions released before the domain
+  "workers_dev": true,
   "observability": {
     "enabled": true,
     "traces": { "enabled": true }
