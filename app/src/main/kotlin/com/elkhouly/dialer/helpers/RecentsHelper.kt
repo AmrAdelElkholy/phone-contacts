@@ -228,7 +228,10 @@ class RecentsHelper(private val context: Context) {
                 }
 
                 if (number != null && name == number && !isUnknownNumber) {
-                    CallerIdHelper.getKnownName(context, number)?.let { name = it }
+                    val knownName = CallerIdHelper.getKnownName(context, number)
+                    if (knownName != null) {
+                        name = knownName
+                    }
                 }
 
                 if (name.isEmpty() || name == "-1") {
