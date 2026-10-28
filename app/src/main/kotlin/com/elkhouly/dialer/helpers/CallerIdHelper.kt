@@ -1,6 +1,7 @@
 package com.elkhouly.dialer.helpers
 
 import android.content.Context
+import android.database.sqlite.SQLiteDatabase
 import android.telephony.TelephonyManager
 import com.elkhouly.dialer.R
 import com.google.i18n.phonenumbers.NumberParseException
@@ -10,17 +11,20 @@ import com.google.i18n.phonenumbers.PhoneNumberUtil.PhoneNumberType
 import com.google.i18n.phonenumbers.Phonenumber.PhoneNumber
 import com.google.i18n.phonenumbers.ShortNumberInfo
 import com.google.i18n.phonenumbers.geocoding.PhoneNumberOfflineGeocoder
+import java.io.File
 import java.util.Locale
 
 /**
  * Offline caller ID for numbers that match no contact, see docs/caller-id/PLAN.md.
- * [name] comes from the curated hotlines file, [details] describe the number itself,
- * like "Vodafone · Mobile" or "Cairo · Landline".
+ * [name] comes from the curated hotlines file or the OpenStreetMap places database, [details]
+ * describe the number itself, like "Vodafone · Mobile" or "Cairo · Landline".
  */
 data class CallerId(val name: String?, val details: String)
 
 object CallerIdHelper {
     private const val KNOWN_NUMBERS_FILE = "caller_id/known_numbers.tsv"
+    private const val PLACES_ASSET = "caller_id/osm_places.db"
+    private const val PLACES_DIR = "caller_id"
 
     // the regions local numbers are tried in after the SIM's own, matching the WhatsApp country picker
     private val FALLBACK_REGIONS = listOf("EG", "SA")
@@ -29,6 +33,8 @@ object CallerIdHelper {
 
     private val util = PhoneNumberUtil.getInstance()
     private var knownNumbers: Map<String, KnownNumber>? = null
+    private var places: SQLiteDatabase? = null
+    private var homeRegion: String? = null
 
     fun identify(context: Context, number: String): CallerId? {
         val homeRegion = getHomeRegion(context)
@@ -56,7 +62,43 @@ object CallerIdHelper {
 
         // a local number may belong to either country of a dual SIM phone, try the home one first
         val regions = if (isInternational(number)) listOf(homeRegion) else (listOf(homeRegion) + FALLBACK_REGIONS).distinct()
-        return regions.firstNotNullOfOrNull { region -> parse(number, region)?.let { numbers[getKey(it)] } }
+        val keys = regions.mapNotNull { region -> parse(number, region)?.let { getKey(it) } }.distinct()
+
+        // the hand checked hotlines win over the crowd sourced places
+        return keys.firstNotNullOfOrNull { numbers[it] } ?: keys.firstNotNullOfOrNull { findPlace(context, it) }
+    }
+
+    private fun findPlace(context: Context, key: String): KnownNumber? {
+        val database = getPlaces(context) ?: return null
+        return try {
+            database.rawQuery("SELECT category, name_en, name_ar FROM places WHERE number = ?", arrayOf(key)).use { cursor ->
+                if (cursor.moveToFirst()) KnownNumber(cursor.getString(0), cursor.getString(1), cursor.getString(2)) else null
+            }
+        } catch (_: Exception) {
+            null
+        }
+    }
+
+    // SQLite can't open a file inside the APK, the database is copied out once per app update
+    @Synchronized
+    private fun getPlaces(context: Context): SQLiteDatabase? {
+        places?.let { return it }
+
+        return try {
+            val updateTime = context.packageManager.getPackageInfo(context.packageName, 0).lastUpdateTime
+            val dir = File(context.noBackupFilesDir, PLACES_DIR).apply { mkdirs() }
+            val file = File(dir, "osm_places_$updateTime.db")
+            if (!file.exists()) {
+                dir.listFiles()?.forEach { it.delete() }
+                val temp = File(dir, "${file.name}.tmp")
+                context.assets.open(PLACES_ASSET).use { input -> temp.outputStream().use { input.copyTo(it) } }
+                temp.renameTo(file)
+            }
+
+            SQLiteDatabase.openDatabase(file.path, null, SQLiteDatabase.OPEN_READONLY).also { places = it }
+        } catch (_: Exception) {
+            null
+        }
     }
 
     private fun getNumberDetails(context: Context, number: String, parsed: PhoneNumber, homeRegion: String): String {
@@ -97,13 +139,19 @@ object CallerIdHelper {
             "hospital" -> R.string.caller_id_category_hospital
             "delivery" -> R.string.caller_id_category_delivery
             "airline" -> R.string.caller_id_category_airline
+            "pharmacy" -> R.string.caller_id_category_pharmacy
+            "restaurant" -> R.string.caller_id_category_restaurant
+            "hotel" -> R.string.caller_id_category_hotel
+            "education" -> R.string.caller_id_category_education
+            "shop" -> R.string.caller_id_category_shop
+            "place" -> R.string.caller_id_category_place
             else -> R.string.caller_id_category_company
         }
         return context.getString(id)
     }
 
     private fun getLocalizedName(known: KnownNumber): String {
-        return if (Locale.getDefault().language == "ar" && known.nameAr.isNotEmpty()) known.nameAr else known.nameEn
+        return if (Locale.getDefault().language == "ar" && known.nameAr.isNotEmpty()) known.nameAr else known.nameEn.ifEmpty { known.nameAr }
     }
 
     @Synchronized
@@ -142,11 +190,14 @@ object CallerIdHelper {
         }
     }
 
+    // looked up once, the call history asks for every unknown number
     private fun getHomeRegion(context: Context): String {
+        homeRegion?.let { return it }
+
         val telephonyManager = context.getSystemService(TelephonyManager::class.java)
-        return listOf(telephonyManager?.simCountryIso, telephonyManager?.networkCountryIso, Locale.getDefault().country)
+        return (listOf(telephonyManager?.simCountryIso, telephonyManager?.networkCountryIso, Locale.getDefault().country)
             .firstOrNull { !it.isNullOrBlank() }
             ?.uppercase(Locale.US)
-            ?: FALLBACK_REGIONS.first()
+            ?: FALLBACK_REGIONS.first()).also { homeRegion = it }
     }
 }

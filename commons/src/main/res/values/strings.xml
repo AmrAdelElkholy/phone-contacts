@@ -906,7 +906,7 @@
     <string name="rate_app_prompt">Enjoying the app? Please rate it on Google Play.</string>
     <string name="donate">Donate</string>
     <string name="follow_us">Follow us</string>
-    <string name="copyright">v %1$s\n© %2$d Easy Phone · GPL-3.0</string>
+    <string name="copyright">v %1$s\n© %2$d Easy Phone · GPL-3.0\nCaller ID data © OpenStreetMap contributors, ODbL</string>
     <string name="support">Support</string>
     <string name="help_us">Help us</string>
     <string name="social">Social</string>

@@ -92,4 +92,10 @@
     <string name="caller_id_category_delivery">توصيل</string>
     <string name="caller_id_category_airline">طيران</string>
     <string name="caller_id_category_company">شركة</string>
+    <string name="caller_id_category_pharmacy">صيدلية</string>
+    <string name="caller_id_category_restaurant">مطعم</string>
+    <string name="caller_id_category_hotel">فندق</string>
+    <string name="caller_id_category_education">تعليم</string>
+    <string name="caller_id_category_shop">متجر</string>
+    <string name="caller_id_category_place">مكان</string>
 </resources>
